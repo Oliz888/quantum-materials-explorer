@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Techniques × Materials — Quantum Materials Explorer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<style>
+  .filter-group { display: flex; gap: 6px; }
+  .filter-btn {
+    border: 1px solid var(--border); background: #eef0f3;
+    padding: 5px 12px; font-size: 12px; font-weight: 600;
+    color: var(--text-mid); cursor: pointer; border-radius: 6px;
+    transition: all .12s;
+  }
+  .filter-btn.active { background: var(--tech); color: white; border-color: var(--tech); }
+  .filter-btn:not(.active):hover { background: #e0e3e8; }
+</style>
+</head>
+<body>
+<script src="auth.js"></script>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">Quantum <span>Materials Explorer</span></a>
+  <a href="index.html">Materials Hypergraph</a>
+  <a href="collaboration.html">Collaboration</a>
+  <a href="techniques.html" class="active">Techniques × Materials</a>
+  <a href="phenomena.html">Phenomena Map</a>
+</nav>
+
+<header>
+  <div>
+    <h1>Technique × Material Bipartite Network</h1>
+    <div class="subtitle">Methods bridge materials — the key finding from Shi et al. (2015). Which techniques unlock which materials?</div>
+  </div>
+  <div class="control-group">
+    <div class="filter-group">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="Characterization">Characterization</button>
+      <button class="filter-btn" data-cat="Synthesis">Synthesis</button>
+      <button class="filter-btn" data-cat="Computational">Computational</button>
+    </div>
+  </div>
+  <div class="control-group">
+    <input type="text" id="search" placeholder="Search…">
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="layout">
+  <div id="network"></div>
+  <aside id="sidebar">
+    <div class="placeholder" id="placeholder">Click any node to explore technique–material connections.<br><br>
+      <b>Shi et al.'s key insight:</b> "Methods play a bridging role — things connect disproportionately through nodes of a different type."<br><br>
+      This bipartite view shows which experimental and computational techniques have been applied to which quantum materials.
+    </div>
+    <div id="detail" style="display:none"></div>
+
+    <div class="legend">
+      <div class="section-title">Legend</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#059669"></div> Characterization technique</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#d97706"></div> Synthesis technique</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div> Computational technique</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Material</div>
+      <div style="margin-top:10px">
+        <div class="legend-item"><b>Edge width</b> ∝ papers using technique on material</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script src="data.js?v=4"></script>
+<script>
+const container = document.getElementById("network");
+let network, currentFilter = "all";
+
+function buildGraph(filter) {
+  const techs = filter === "all" ? QM.techniques : QM.techniques.filter(t => t.cat === filter);
+  const techIds = new Set(techs.map(t => t.id));
+
+  const edges = QM.techMatEdges().filter(e => techIds.has(e.from));
+  const activeMats = new Set(edges.map(e => e.to));
+
+  const techNodes = techs.map(t => {
+    const pc = QM.papers.filter(p => p.techniques.includes(t.id)).length;
+    return {
+      id: t.id, label: t.name, group: "tech",
+      color: { background: t.color, border: t.color, highlight: { background: t.color, border: "#1f2937" }},
+      size: 14 + pc * 3, font: { size: 12, color: "#1f2937", bold: true },
+      shape: "diamond", _data: t, _type: "tech"
+    };
+  });
+
+  const matNodes = QM.materials.filter(m => activeMats.has(m.id)).map(m => {
+    const pc = QM.papers.filter(p => p.materials.includes(m.id)).length;
+    return {
+      id: m.id, label: m.name, group: "mat",
+      color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
+      size: 12 + pc * 3, font: { size: 11, color: "#1f2937" },
+      shape: "dot", _data: m, _type: "mat"
+    };
+  });
+
+  const visEdges = edges.map(e => ({
+    from: e.from, to: e.to, width: 1 + e.weight * 2,
+    color: { color: "rgba(0,0,0,.08)", highlight: "#2563eb" },
+    smooth: { type: "curvedCW", roundness: 0.1 }
+  }));
+
+  document.getElementById("stats").innerHTML =
+    `<b>${techNodes.length}</b> techniques · <b>${matNodes.length}</b> materials · <b>${visEdges.length}</b> links`;
+
+  return {
+    nodes: new vis.DataSet([...techNodes, ...matNodes]),
+    edges: new vis.DataSet(visEdges)
+  };
+}
+
+function init() {
+  const data = buildGraph("all");
+  network = new vis.Network(container, data, {
+    physics: { barnesHut: { gravitationalConstant: -5000, springLength: 220, springConstant: 0.015 }, stabilization: { iterations: 250 }},
+    interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
+    edges: { smooth: { type: "curvedCW", roundness: 0.1 }}
+  });
+  network.on("click", function(e) {
+    if (e.nodes.length) showDetail(e.nodes[0]);
+    else hideDetail();
+  });
+}
+
+function showDetail(id) {
+  const isTech = id.startsWith("t");
+  const entity = QM.get(id);
+  if (!entity) return;
+
+  const ps = QM.papers.filter(p =>
+    isTech ? p.techniques.includes(id) : p.materials.includes(id)
+  ).sort((a,b) => b.year - a.year);
+
+  let html = `<h2>${entity.name}</h2><div class="meta-row">`;
+  if (isTech) {
+    html += `<span class="badge tech">${entity.cat}</span>`;
+    const mats = [...new Set(ps.flatMap(p => p.materials))].map(m => QM.get(m));
+    html += `<span class="count-pill">${ps.length} papers</span>
+      <span class="count-pill">${mats.length} materials</span></div>`;
+    html += `<div class="section-title">Materials Studied With This Technique</div><div class="topic-chips">`;
+    mats.forEach(m => { html += `<span class="topic-chip mat">${m.name} (${m.cls})</span>`; });
+    html += `</div>`;
+    const phens = [...new Set(ps.flatMap(p => p.phenomena))].map(p => QM.get(p));
+    html += `<div class="section-title">Phenomena Investigated</div><div class="topic-chips">`;
+    phens.forEach(p => { html += `<span class="topic-chip phenom">${p.name}</span>`; });
+    html += `</div>`;
+  } else {
+    html += `<span class="badge mat">${entity.cls}</span>`;
+    const techs = [...new Set(ps.flatMap(p => p.techniques))].map(t => QM.get(t));
+    html += `<span class="count-pill">${ps.length} papers</span>
+      <span class="count-pill">${techs.length} techniques</span></div>`;
+    html += `<div class="section-title">Techniques Applied to This Material</div><div class="topic-chips">`;
+    techs.forEach(t => { html += `<span class="topic-chip tech">${t.name} (${t.cat})</span>`; });
+    html += `</div>`;
+    const phens = [...new Set(ps.flatMap(p => p.phenomena))].map(p => QM.get(p));
+    html += `<div class="section-title">Phenomena Observed</div><div class="topic-chips">`;
+    phens.forEach(p => { html += `<span class="topic-chip phenom">${p.name}</span>`; });
+    html += `</div>`;
+  }
+
+  const auths = [...new Set(ps.flatMap(p => p.authors))].map(a => QM.get(a));
+  html += `<div class="section-title">Researchers</div><div class="topic-chips">`;
+  auths.forEach(a => { html += `<span class="topic-chip author">${a.name}</span>`; });
+  html += `</div>`;
+
+  html += `<div class="section-title">Papers (${ps.length})</div>`;
+  ps.forEach(p => {
+    html += `<div class="paper-card">
+      <span class="paper-title">${p.title}</span>
+      <span class="paper-year">${p.year}</span>
+      ${p.journal ? `<div class="paper-journal">${p.journal}</div>` : ""}
+      <div class="paper-meta">${p.authors.map(a => QM.get(a).name).join(", ")}</div>
+    </div>`;
+  });
+
+  document.getElementById("detail").innerHTML = html;
+  document.getElementById("detail").style.display = "block";
+  document.getElementById("placeholder").style.display = "none";
+  document.querySelector(".legend").style.display = "none";
+}
+
+function hideDetail() {
+  document.getElementById("detail").style.display = "none";
+  document.getElementById("placeholder").style.display = "block";
+  document.querySelector(".legend").style.display = "block";
+}
+
+document.querySelectorAll(".filter-btn").forEach(btn => {
+  btn.addEventListener("click", function() {
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    this.classList.add("active");
+    currentFilter = this.dataset.cat;
+    network.setData(buildGraph(currentFilter));
+  });
+});
+
+document.getElementById("search").addEventListener("input", function() {
+  const q = this.value.toLowerCase();
+  const data = buildGraph(currentFilter);
+  if (q) {
+    data.nodes.forEach(n => {
+      const match = n.label.toLowerCase().includes(q);
+      data.nodes.update({ id: n.id, hidden: !match });
+    });
+  }
+  network.setData(data);
+});
+
+init();
+</script>
+</body>
+</html>

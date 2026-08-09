@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Materials Hypergraph — Quantum Materials Explorer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="auth.js"></script>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">Quantum <span>Materials Explorer</span></a>
+  <a href="index.html" class="active">Materials Hypergraph</a>
+  <a href="collaboration.html">Collaboration</a>
+  <a href="techniques.html">Techniques × Materials</a>
+  <a href="phenomena.html">Phenomena Map</a>
+</nav>
+
+<header>
+  <div>
+    <h1>Materials Discovery Hypergraph</h1>
+    <div class="subtitle">Materials as nodes, connected when co-studied in papers. Inspired by Shi, Foster &amp; Evans (2015).</div>
+  </div>
+  <div class="control-group">
+    <label>Through:</label>
+    <input type="range" id="yearSlider" min="2020" max="2026" value="2026">
+    <span id="yearLabel" style="font-weight:700;min-width:35px">2026</span>
+    <button class="year-play-btn" id="playBtn">▶</button>
+  </div>
+  <div class="control-group">
+    <input type="text" id="search" placeholder="Search materials…">
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="layout">
+  <div id="network"></div>
+  <aside id="sidebar">
+    <div class="placeholder" id="placeholder">Click any material node to see its connections, techniques, phenomena, and papers.</div>
+    <div id="detail" style="display:none"></div>
+
+    <div class="legend">
+      <div class="section-title">Legend</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c0392b"></div> Nickelate / Iron-Based SC</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div> Moiré / Van der Waals Material</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#8e44ad"></div> Heavy Fermion / Topological Semimetal</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#2980b9"></div> Excitonic Insulator / Photonic</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#d35400"></div> Altermagnet</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#27ae60"></div> Magnetic Metal / Kondo Intermetallic</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e74c3c"></div> Topological Insulator / Quantum Hall</div>
+      <div style="margin-top:10px">
+        <div class="legend-item"><b>Node size</b> ∝ number of papers</div>
+        <div class="legend-item"><b>Edge width</b> ∝ co-occurrence strength</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script src="data.js?v=4"></script>
+<script>
+const container = document.getElementById("network");
+let network, allNodes, allEdges;
+
+function buildGraph(maxYear) {
+  const filteredPapers = QM.papers.filter(p => p.year <= maxYear);
+  const matCounts = {};
+  filteredPapers.forEach(p => p.materials.forEach(m => { matCounts[m] = (matCounts[m]||0)+1; }));
+
+  const activeMats = new Set(Object.keys(matCounts));
+  const nodes = QM.materials.filter(m => activeMats.has(m.id)).map(m => ({
+    id: m.id, label: m.name, color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
+    size: 12 + matCounts[m.id] * 4, font: { size: 12, color: "#1f2937" },
+    title: m.name + " (" + m.cls + ")\n" + matCounts[m.id] + " papers",
+    _data: m
+  }));
+
+  const edgeCounts = {};
+  filteredPapers.forEach(p => {
+    for (let i = 0; i < p.materials.length; i++)
+      for (let j = i+1; j < p.materials.length; j++) {
+        const key = [p.materials[i], p.materials[j]].sort().join("--");
+        edgeCounts[key] = (edgeCounts[key]||0) + 1;
+      }
+  });
+  const edges = Object.entries(edgeCounts).map(([k,w]) => {
+    const [a,b] = k.split("--");
+    return { from: a, to: b, width: 1 + w * 2, color: { color: "rgba(0,0,0,.12)", highlight: "#2563eb" }, smooth: { type: "continuous" }};
+  });
+
+  document.getElementById("stats").innerHTML =
+    `<b>${nodes.length}</b> materials · <b>${edges.length}</b> edges<br>${filteredPapers.length}/${QM.papers.length} papers`;
+
+  return { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+}
+
+function init() {
+  const data = buildGraph(2026);
+  allNodes = data.nodes; allEdges = data.edges;
+  network = new vis.Network(container, data, {
+    physics: { barnesHut: { gravitationalConstant: -3000, springLength: 180, springConstant: 0.02 }, stabilization: { iterations: 200 }},
+    interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
+    nodes: { shape: "dot", borderWidth: 2 },
+    edges: { smooth: { type: "continuous" }}
+  });
+  network.on("click", function(e) {
+    if (e.nodes.length) showDetail(e.nodes[0]);
+    else hideDetail();
+  });
+}
+
+function showDetail(id) {
+  const mat = QM.materials.find(m => m.id === id);
+  if (!mat) return;
+  const ps = QM.papers.filter(p => p.materials.includes(id)).sort((a,b) => b.year - a.year);
+  const techs = [...new Set(ps.flatMap(p => p.techniques))].map(t => QM.get(t));
+  const phens = [...new Set(ps.flatMap(p => p.phenomena))].map(p => QM.get(p));
+  const auths = [...new Set(ps.flatMap(p => p.authors))].map(a => QM.get(a));
+  const funds = [...new Set(ps.flatMap(p => p.funders))].map(f => QM.get(f));
+  const coMats = [...new Set(ps.flatMap(p => p.materials).filter(m => m !== id))].map(m => QM.get(m));
+
+  let html = `<h2>${mat.name}</h2>
+    <div class="meta-row">
+      <span class="badge mat">${mat.cls}</span>
+      <span class="count-pill">${ps.length} papers</span>
+      <span class="count-pill">${mat.crystal}</span>
+    </div>`;
+
+  if (mat.wiki) {
+    html += `<a href="${mat.wiki}" target="_blank" rel="noopener" class="wiki-link">Wikipedia →</a>`;
+  }
+
+  if (mat.desc) {
+    html += `<div class="mat-about">
+      <p class="mat-desc">${mat.desc}</p>`;
+    if (mat.discovered) {
+      html += `<div class="mat-info-row"><span class="mat-info-label">First reported</span><span class="mat-info-value">${mat.discovered}</span></div>`;
+    }
+    if (mat.importance) {
+      html += `<div class="mat-info-block"><div class="mat-info-heading">Why it matters</div><p>${mat.importance}</p></div>`;
+    }
+    if (mat.applications) {
+      html += `<div class="mat-info-block"><div class="mat-info-heading">Industry potential</div><p>${mat.applications}</p></div>`;
+    }
+    html += `</div>`;
+  }
+
+  if (coMats.length) {
+    html += `<div class="section-title">Connected Materials</div><div class="topic-chips">`;
+    coMats.forEach(m => { html += `<span class="topic-chip mat">${m.name}</span>`; });
+    html += `</div>`;
+  }
+  html += `<div class="section-title">Techniques Used</div><div class="topic-chips">`;
+  techs.forEach(t => { html += `<span class="topic-chip tech">${t.name}</span>`; });
+  html += `</div>`;
+  html += `<div class="section-title">Phenomena Studied</div><div class="topic-chips">`;
+  phens.forEach(p => { html += `<span class="topic-chip phenom">${p.name}</span>`; });
+  html += `</div>`;
+  html += `<div class="section-title">Researchers</div><div class="topic-chips">`;
+  auths.forEach(a => { html += `<span class="topic-chip author">${a.name} (${a.inst})</span>`; });
+  html += `</div>`;
+  html += `<div class="section-title">Funding Sources</div><div class="topic-chips">`;
+  funds.forEach(f => { html += `<span class="topic-chip funder">${f.name}</span>`; });
+  html += `</div>`;
+
+  html += `<div class="section-title">Papers (${ps.length})</div>`;
+  ps.forEach(p => {
+    html += `<div class="paper-card">
+      <span class="paper-title">${p.title}</span>
+      <span class="paper-year">${p.year}</span>
+      ${p.journal ? `<div class="paper-journal">${p.journal}</div>` : ""}
+      <div class="paper-meta">${p.authors.map(a => QM.get(a).name).join(", ")}</div>
+    </div>`;
+  });
+
+  document.getElementById("detail").innerHTML = html;
+  document.getElementById("detail").style.display = "block";
+  document.getElementById("placeholder").style.display = "none";
+  document.querySelector(".legend").style.display = "none";
+}
+
+function hideDetail() {
+  document.getElementById("detail").style.display = "none";
+  document.getElementById("placeholder").style.display = "block";
+  document.querySelector(".legend").style.display = "block";
+}
+
+document.getElementById("yearSlider").addEventListener("input", function() {
+  document.getElementById("yearLabel").textContent = this.value;
+  const data = buildGraph(+this.value);
+  network.setData(data);
+});
+
+document.getElementById("search").addEventListener("input", function() {
+  const q = this.value.toLowerCase();
+  allNodes.forEach(n => {
+    if (!q) { allNodes.update({ id: n.id, hidden: false }); return; }
+    const match = n.label.toLowerCase().includes(q) || n._data.cls.toLowerCase().includes(q);
+    allNodes.update({ id: n.id, hidden: !match });
+  });
+});
+
+let playing = false, playTimer;
+document.getElementById("playBtn").addEventListener("click", function() {
+  if (playing) { clearInterval(playTimer); this.textContent = "▶"; playing = false; return; }
+  const slider = document.getElementById("yearSlider");
+  slider.value = 2020;
+  slider.dispatchEvent(new Event("input"));
+  this.textContent = "⏸"; playing = true;
+  playTimer = setInterval(() => {
+    let v = +slider.value + 1;
+    if (v > 2026) { clearInterval(playTimer); document.getElementById("playBtn").textContent = "▶"; playing = false; return; }
+    slider.value = v;
+    slider.dispatchEvent(new Event("input"));
+  }, 800);
+});
+
+init();
+</script>
+</body>
+</html>

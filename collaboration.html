@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Collaboration Network — Quantum Materials Explorer</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="auth.js"></script>
+
+<nav class="site-nav">
+  <a href="index.html" class="brand">Quantum <span>Materials Explorer</span></a>
+  <a href="index.html">Materials Hypergraph</a>
+  <a href="collaboration.html" class="active">Collaboration</a>
+  <a href="techniques.html">Techniques × Materials</a>
+  <a href="phenomena.html">Phenomena Map</a>
+</nav>
+
+<header>
+  <div>
+    <h1>Collaboration Network</h1>
+    <div class="subtitle">Researchers as nodes, co-authorship as edges. Size ∝ paper count. Color = institution cluster.</div>
+  </div>
+  <div class="control-group">
+    <label>Through:</label>
+    <input type="range" id="yearSlider" min="2020" max="2026" value="2026">
+    <span id="yearLabel" style="font-weight:700;min-width:35px">2026</span>
+    <button class="year-play-btn" id="playBtn">▶</button>
+  </div>
+  <div class="control-group">
+    <input type="text" id="search" placeholder="Search researchers…">
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="layout">
+  <div id="network"></div>
+  <aside id="sidebar">
+    <div class="placeholder" id="placeholder">Click any researcher node to see their collaborators, materials studied, and publication list.</div>
+    <div id="detail" style="display:none"></div>
+
+    <div class="legend">
+      <div class="section-title">Legend</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#c0392b"></div> Harvard</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#2563eb"></div> Stanford</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#e67e22"></div> Princeton</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#0891b2"></div> MIT / Columbia / U Chicago</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#059669"></div> UC Berkeley / UIUC / ORNL / Florida State</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#7c3aed"></div> UCSB / UCLA / Penn State / Johns Hopkins</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#dc2626"></div> Caltech / Cornell / UT Austin</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#d97706"></div> U Michigan</div>
+      <div style="margin-top:10px">
+        <div class="legend-item"><b>Node size</b> ∝ number of papers</div>
+        <div class="legend-item"><b>Edge width</b> ∝ co-authored papers</div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script src="data.js?v=4"></script>
+<script>
+const container = document.getElementById("network");
+let network, allNodes;
+
+function buildGraph(maxYear) {
+  const fp = QM.papers.filter(p => p.year <= maxYear);
+  const authCounts = {};
+  fp.forEach(p => p.authors.forEach(a => { authCounts[a] = (authCounts[a]||0)+1; }));
+
+  const activeAuthors = new Set(Object.keys(authCounts));
+  const nodes = QM.researchers.filter(r => activeAuthors.has(r.id)).map(r => ({
+    id: r.id, label: r.name,
+    color: { background: r.color, border: r.color, highlight: { background: r.color, border: "#1f2937" }},
+    size: 10 + authCounts[r.id] * 4,
+    font: { size: 11, color: "#1f2937" },
+    title: r.name + " (" + r.inst + ")\n" + authCounts[r.id] + " papers",
+    _data: r
+  }));
+
+  const edgeCounts = {};
+  fp.forEach(p => {
+    for (let i = 0; i < p.authors.length; i++)
+      for (let j = i+1; j < p.authors.length; j++) {
+        const key = [p.authors[i], p.authors[j]].sort().join("--");
+        edgeCounts[key] = (edgeCounts[key]||0)+1;
+      }
+  });
+  const edges = Object.entries(edgeCounts).map(([k,w]) => {
+    const [a,b] = k.split("--");
+    return { from: a, to: b, width: 1 + w * 2.5,
+      color: { color: "rgba(0,0,0,.12)", highlight: "#2563eb" },
+      smooth: { type: "continuous" }};
+  });
+
+  document.getElementById("stats").innerHTML =
+    `<b>${nodes.length}</b> researchers · <b>${edges.length}</b> co-authorships<br>${fp.length}/${QM.papers.length} papers`;
+  return { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
+}
+
+function init() {
+  const data = buildGraph(2026);
+  allNodes = data.nodes;
+  network = new vis.Network(container, data, {
+    physics: { barnesHut: { gravitationalConstant: -4000, springLength: 200, springConstant: 0.02 }, stabilization: { iterations: 200 }},
+    interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
+    nodes: { shape: "dot", borderWidth: 2 },
+    edges: { smooth: { type: "continuous" }}
+  });
+  network.on("click", function(e) {
+    if (e.nodes.length) showDetail(e.nodes[0]);
+    else hideDetail();
+  });
+}
+
+function showDetail(id) {
+  const r = QM.researchers.find(x => x.id === id);
+  if (!r) return;
+  const ps = QM.papers.filter(p => p.authors.includes(id)).sort((a,b) => b.year - a.year);
+  const coauthors = [...new Set(ps.flatMap(p => p.authors).filter(a => a !== id))].map(a => QM.get(a));
+  const mats = [...new Set(ps.flatMap(p => p.materials))].map(m => QM.get(m));
+  const techs = [...new Set(ps.flatMap(p => p.techniques))].map(t => QM.get(t));
+  const phens = [...new Set(ps.flatMap(p => p.phenomena))].map(p => QM.get(p));
+
+  let html = `<h2>${r.name}</h2>
+    <div class="meta-row">
+      <span class="badge author">${r.inst}</span>
+      <span class="count-pill">${ps.length} papers</span>
+      <span class="count-pill">${coauthors.length} collaborators</span>
+    </div>`;
+
+  html += `<div class="section-title">Collaborators</div><div class="topic-chips">`;
+  coauthors.forEach(a => { html += `<span class="topic-chip author">${a.name}</span>`; });
+  html += `</div>`;
+
+  html += `<div class="section-title">Materials Studied</div><div class="topic-chips">`;
+  mats.forEach(m => { html += `<span class="topic-chip mat">${m.name}</span>`; });
+  html += `</div>`;
+
+  html += `<div class="section-title">Techniques Used</div><div class="topic-chips">`;
+  techs.forEach(t => { html += `<span class="topic-chip tech">${t.name}</span>`; });
+  html += `</div>`;
+
+  html += `<div class="section-title">Phenomena Studied</div><div class="topic-chips">`;
+  phens.forEach(p => { html += `<span class="topic-chip phenom">${p.name}</span>`; });
+  html += `</div>`;
+
+  html += `<div class="section-title">Papers (${ps.length})</div>`;
+  ps.forEach(p => {
+    html += `<div class="paper-card">
+      <span class="paper-title">${p.title}</span>
+      <span class="paper-year">${p.year}</span>
+      ${p.journal ? `<div class="paper-journal">${p.journal}</div>` : ""}
+      <div class="paper-meta">${p.authors.map(a => QM.get(a).name).join(", ")}</div>
+    </div>`;
+  });
+
+  document.getElementById("detail").innerHTML = html;
+  document.getElementById("detail").style.display = "block";
+  document.getElementById("placeholder").style.display = "none";
+  document.querySelector(".legend").style.display = "none";
+}
+
+function hideDetail() {
+  document.getElementById("detail").style.display = "none";
+  document.getElementById("placeholder").style.display = "block";
+  document.querySelector(".legend").style.display = "block";
+}
+
+document.getElementById("yearSlider").addEventListener("input", function() {
+  document.getElementById("yearLabel").textContent = this.value;
+  network.setData(buildGraph(+this.value));
+});
+
+document.getElementById("search").addEventListener("input", function() {
+  const q = this.value.toLowerCase();
+  allNodes.forEach(n => {
+    if (!q) { allNodes.update({ id: n.id, hidden: false }); return; }
+    const match = n.label.toLowerCase().includes(q) || n._data.inst.toLowerCase().includes(q);
+    allNodes.update({ id: n.id, hidden: !match });
+  });
+});
+
+let playing = false, playTimer;
+document.getElementById("playBtn").addEventListener("click", function() {
+  if (playing) { clearInterval(playTimer); this.textContent = "▶"; playing = false; return; }
+  const slider = document.getElementById("yearSlider");
+  slider.value = 2020; slider.dispatchEvent(new Event("input"));
+  this.textContent = "⏸"; playing = true;
+  playTimer = setInterval(() => {
+    let v = +slider.value + 1;
+    if (v > 2026) { clearInterval(playTimer); document.getElementById("playBtn").textContent = "▶"; playing = false; return; }
+    slider.value = v; slider.dispatchEvent(new Event("input"));
+  }, 800);
+});
+
+init();
+</script>
+</body>
+</html>

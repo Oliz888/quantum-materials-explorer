@@ -71,7 +71,7 @@ function buildGraph(maxYear) {
   const activeMats = new Set(Object.keys(matCounts));
   const nodes = QM.materials.filter(m => activeMats.has(m.id)).map(m => ({
     id: m.id, label: m.name, color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
-    size: 10 + Math.sqrt(matCounts[m.id]) * 6, font: { size: 80, color: "#1f2937", strokeWidth: 3, strokeColor: "#ffffff" },
+    size: 10 + Math.sqrt(matCounts[m.id]) * 6, font: { size: 14, color: "#1f2937", strokeWidth: 2, strokeColor: "#ffffff" },
     title: m.name + " (" + m.cls + ")\n" + matCounts[m.id] + " papers",
     _data: m
   }));

@@ -74,7 +74,7 @@ function buildGraph(maxYear) {
     id: r.id, label: r.name,
     color: { background: r.color, border: r.color, highlight: { background: r.color, border: "#1f2937" }},
     size: 10 + Math.sqrt(authCounts[r.id]) * 5,
-    font: { size: 80, color: "#1f2937", strokeWidth: 3, strokeColor: "#ffffff" },
+    font: { size: 14, color: "#1f2937", strokeWidth: 2, strokeColor: "#ffffff" },
     title: r.name + " (" + r.inst + ")\n" + authCounts[r.id] + " papers",
     _data: r
   }));

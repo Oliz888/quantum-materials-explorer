@@ -71,7 +71,7 @@ function buildGraph(maxYear) {
   const activeMats = new Set(Object.keys(matCounts));
   const nodes = QM.materials.filter(m => activeMats.has(m.id)).map(m => ({
     id: m.id, label: m.name, color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
-    size: 10 + Math.sqrt(matCounts[m.id]) * 6, font: { size: 12, color: "#1f2937" },
+    size: 10 + Math.sqrt(matCounts[m.id]) * 6, font: { size: 80, color: "#1f2937", strokeWidth: 3, strokeColor: "#ffffff" },
     title: m.name + " (" + m.cls + ")\n" + matCounts[m.id] + " papers",
     _data: m
   }));
@@ -101,7 +101,7 @@ function init() {
   network = new vis.Network(container, data, {
     physics: { barnesHut: { gravitationalConstant: -12000, springLength: 300, springConstant: 0.01, damping: 0.3 }, stabilization: { iterations: 300 }},
     interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
-    nodes: { shape: "dot", borderWidth: 2 },
+    nodes: { shape: "dot", borderWidth: 2, font: { min: 4 } },
     edges: { smooth: { type: "continuous" }}
   });
   network.on("click", function(e) {

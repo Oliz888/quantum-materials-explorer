@@ -74,7 +74,7 @@ function buildGraph(maxYear) {
     id: ph.id, label: ph.name,
     color: { background: ph.color, border: ph.color, highlight: { background: ph.color, border: "#1f2937" }},
     size: Math.min(6 + Math.log2(phenCounts[ph.id]+1) * 3, 22),
-    font: { size: 12, color: "#1f2937", multi: "html" },
+    font: { size: 80, color: "#1f2937", strokeWidth: 3, strokeColor: "#ffffff" },
     title: ph.name + " (" + ph.cat + ")\n" + phenCounts[ph.id] + " papers",
     shape: "dot", _data: ph
   }));
@@ -106,7 +106,7 @@ function init() {
   network = new vis.Network(container, data, {
     physics: { barnesHut: { gravitationalConstant: -20000, springLength: 300, springConstant: 0.01, damping: 0.3, avoidOverlap: 1 }, stabilization: { iterations: 400 }},
     interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
-    nodes: { shape: "dot", borderWidth: 2 },
+    nodes: { shape: "dot", borderWidth: 2, font: { min: 4 } },
     edges: { smooth: { type: "continuous" }}
   });
   network.once("stabilizationIterationsDone", function() {

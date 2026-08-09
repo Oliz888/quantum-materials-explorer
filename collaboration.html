@@ -74,7 +74,7 @@ function buildGraph(maxYear) {
     id: r.id, label: r.name,
     color: { background: r.color, border: r.color, highlight: { background: r.color, border: "#1f2937" }},
     size: 10 + Math.sqrt(authCounts[r.id]) * 5,
-    font: { size: 11, color: "#1f2937" },
+    font: { size: 80, color: "#1f2937", strokeWidth: 3, strokeColor: "#ffffff" },
     title: r.name + " (" + r.inst + ")\n" + authCounts[r.id] + " papers",
     _data: r
   }));
@@ -105,8 +105,11 @@ function init() {
   network = new vis.Network(container, data, {
     physics: { barnesHut: { gravitationalConstant: -15000, springLength: 350, springConstant: 0.008, damping: 0.3 }, stabilization: { iterations: 300 }},
     interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
-    nodes: { shape: "dot", borderWidth: 2 },
+    nodes: { shape: "dot", borderWidth: 2, font: { min: 4 } },
     edges: { smooth: { type: "continuous" }}
+  });
+  network.once("stabilizationIterationsDone", function() {
+    network.fit({ animation: { duration: 500, easingFunction: "easeInOutQuad" }});
   });
   network.on("click", function(e) {
     if (e.nodes.length) showDetail(e.nodes[0]);

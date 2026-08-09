@@ -87,7 +87,7 @@ function buildGraph(filter) {
     return {
       id: t.id, label: t.name, group: "tech",
       color: { background: t.color, border: t.color, highlight: { background: t.color, border: "#1f2937" }},
-      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 12, color: "#1f2937", bold: true },
+      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 80, color: "#1f2937", bold: true, strokeWidth: 3, strokeColor: "#ffffff" },
       shape: "diamond", _data: t, _type: "tech"
     };
   });
@@ -97,7 +97,7 @@ function buildGraph(filter) {
     return {
       id: m.id, label: m.name, group: "mat",
       color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
-      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 11, color: "#1f2937" },
+      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 80, color: "#1f2937", strokeWidth: 3, strokeColor: "#ffffff" },
       shape: "dot", _data: m, _type: "mat"
     };
   });
@@ -122,6 +122,7 @@ function init() {
   network = new vis.Network(container, data, {
     physics: { barnesHut: { gravitationalConstant: -25000, springLength: 400, springConstant: 0.006, damping: 0.3 }, stabilization: { iterations: 400 }},
     interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
+    nodes: { font: { min: 4 } },
     edges: { smooth: { type: "curvedCW", roundness: 0.1 }}
   });
   network.once("stabilizationIterationsDone", function() {

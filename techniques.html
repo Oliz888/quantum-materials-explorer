@@ -97,7 +97,7 @@ function buildGraph(filter) {
     return {
       id: m.id, label: m.name, group: "mat",
       color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
-      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 14, color: "#1f2937", strokeWidth: 2, strokeColor: "#ffffff" },
+      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 36, color: "#1f2937", strokeWidth: 2, strokeColor: "#ffffff" },
       shape: "dot", _data: m, _type: "mat"
     };
   });

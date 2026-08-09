@@ -59,7 +59,7 @@
   </aside>
 </div>
 
-<script src="data.js?v=4"></script>
+<script src="data.js?v=6"></script>
 <script>
 const container = document.getElementById("network");
 let network, allNodes;
@@ -73,7 +73,7 @@ function buildGraph(maxYear) {
   const nodes = QM.researchers.filter(r => activeAuthors.has(r.id)).map(r => ({
     id: r.id, label: r.name,
     color: { background: r.color, border: r.color, highlight: { background: r.color, border: "#1f2937" }},
-    size: 10 + authCounts[r.id] * 4,
+    size: 10 + Math.sqrt(authCounts[r.id]) * 5,
     font: { size: 11, color: "#1f2937" },
     title: r.name + " (" + r.inst + ")\n" + authCounts[r.id] + " papers",
     _data: r
@@ -103,7 +103,7 @@ function init() {
   const data = buildGraph(2026);
   allNodes = data.nodes;
   network = new vis.Network(container, data, {
-    physics: { barnesHut: { gravitationalConstant: -4000, springLength: 200, springConstant: 0.02 }, stabilization: { iterations: 200 }},
+    physics: { barnesHut: { gravitationalConstant: -15000, springLength: 350, springConstant: 0.008, damping: 0.3 }, stabilization: { iterations: 300 }},
     interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
     nodes: { shape: "dot", borderWidth: 2 },
     edges: { smooth: { type: "continuous" }}

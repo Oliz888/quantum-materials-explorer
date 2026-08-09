@@ -58,7 +58,7 @@
   </aside>
 </div>
 
-<script src="data.js?v=4"></script>
+<script src="data.js?v=6"></script>
 <script>
 const container = document.getElementById("network");
 let network, allNodes, allEdges;
@@ -71,7 +71,7 @@ function buildGraph(maxYear) {
   const activeMats = new Set(Object.keys(matCounts));
   const nodes = QM.materials.filter(m => activeMats.has(m.id)).map(m => ({
     id: m.id, label: m.name, color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
-    size: 12 + matCounts[m.id] * 4, font: { size: 12, color: "#1f2937" },
+    size: 10 + Math.sqrt(matCounts[m.id]) * 6, font: { size: 12, color: "#1f2937" },
     title: m.name + " (" + m.cls + ")\n" + matCounts[m.id] + " papers",
     _data: m
   }));
@@ -99,7 +99,7 @@ function init() {
   const data = buildGraph(2026);
   allNodes = data.nodes; allEdges = data.edges;
   network = new vis.Network(container, data, {
-    physics: { barnesHut: { gravitationalConstant: -3000, springLength: 180, springConstant: 0.02 }, stabilization: { iterations: 200 }},
+    physics: { barnesHut: { gravitationalConstant: -12000, springLength: 300, springConstant: 0.01, damping: 0.3 }, stabilization: { iterations: 300 }},
     interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
     nodes: { shape: "dot", borderWidth: 2 },
     edges: { smooth: { type: "continuous" }}

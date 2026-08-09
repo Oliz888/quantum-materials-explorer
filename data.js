@@ -194,53 +194,53 @@ const researchers = [
 ];
 
 const techniques = [
-  { id:"t1", name:"Quantum Sensors" },
-  { id:"t2", name:"Optical Spectroscopy" },
-  { id:"t3", name:"Landau Level Spectroscopy" },
-  { id:"t4", name:"Shot Noise Measurement" },
-  { id:"t5", name:"Transport" },
-  { id:"t6", name:"Mid-IR Cavity / Cavity QED" },
-  { id:"t7", name:"STM / Imaging" },
-  { id:"t8", name:"Zeeman Effect" },
-  { id:"t9", name:"Pressure Experiments" },
-  { id:"t10", name:"DFT / Band Theory" },
-  { id:"t11", name:"MBE / Thin Film Growth" },
-  { id:"t12", name:"Strain Engineering" },
-  { id:"t13", name:"Bulk Crystal Growth" },
-  { id:"t14", name:"Neutron Scattering" },
-  { id:"t15", name:"Raman Spectroscopy" },
-  { id:"t16", name:"Machine Learning" },
-  { id:"t17", name:"ARPES" },
+  { id:"t1", name:"Quantum Sensors", cat:"Experiment", color:"#059669" },
+  { id:"t2", name:"Optical Spectroscopy", cat:"Experiment", color:"#059669" },
+  { id:"t3", name:"Landau Level Spectroscopy", cat:"Experiment", color:"#059669" },
+  { id:"t4", name:"Shot Noise Measurement", cat:"Experiment", color:"#059669" },
+  { id:"t5", name:"Transport", cat:"Experiment", color:"#059669" },
+  { id:"t6", name:"Mid-IR Cavity / Cavity QED", cat:"Experiment", color:"#0891b2" },
+  { id:"t7", name:"STM / Imaging", cat:"Experiment", color:"#059669" },
+  { id:"t8", name:"Zeeman Effect", cat:"Experiment", color:"#059669" },
+  { id:"t9", name:"Pressure Experiments", cat:"Experiment", color:"#059669" },
+  { id:"t10", name:"DFT / Band Theory", cat:"Theory", color:"#7c3aed" },
+  { id:"t11", name:"MBE / Thin Film Growth", cat:"Synthesis", color:"#d97706" },
+  { id:"t12", name:"Strain Engineering", cat:"Synthesis", color:"#d97706" },
+  { id:"t13", name:"Bulk Crystal Growth", cat:"Synthesis", color:"#d97706" },
+  { id:"t14", name:"Neutron Scattering", cat:"Experiment", color:"#059669" },
+  { id:"t15", name:"Raman Spectroscopy", cat:"Experiment", color:"#059669" },
+  { id:"t16", name:"Machine Learning", cat:"Theory", color:"#7c3aed" },
+  { id:"t17", name:"ARPES", cat:"Experiment", color:"#059669" },
 ];
 
 const phenomena = [
-  { id:"p1", name:"Nickelate Superconductivity" },
-  { id:"p2", name:"Iron-Based Superconductivity" },
-  { id:"p3", name:"Moiré Flat Bands" },
-  { id:"p4", name:"Mott Insulator" },
-  { id:"p5", name:"Topological Surface States" },
-  { id:"p6", name:"Floquet Engineering" },
-  { id:"p7", name:"Fractional Quantum Hall" },
-  { id:"p8", name:"Anyon Superfluidity" },
-  { id:"p9", name:"Wigner Crystal" },
-  { id:"p10", name:"Meissner Effect" },
-  { id:"p11", name:"Charge-4e Pairing" },
-  { id:"p12", name:"Parafermionic Vortices" },
-  { id:"p13", name:"Kondo Effect" },
-  { id:"p14", name:"Anomalous Hall Effect" },
-  { id:"p15", name:"Altermagnetism" },
-  { id:"p16", name:"Spin-Phonon Coupling" },
-  { id:"p17", name:"Electron-Phonon Coupling" },
-  { id:"p18", name:"Spin-Orbital Waves" },
-  { id:"p19", name:"Topological Polaritons" },
-  { id:"p20", name:"Axion Quasiparticles" },
-  { id:"p21", name:"Spiral Spin Liquid" },
-  { id:"p22", name:"Nodal Loop Semimetal" },
-  { id:"p23", name:"Symmetry Breaking" },
-  { id:"p24", name:"Quantum Transport" },
-  { id:"p25", name:"Pairing Symmetry" },
-  { id:"p26", name:"Interacting Fermions" },
-  { id:"p27", name:"Chern Insulator" },
+  { id:"ph1", name:"Nickelate Superconductivity", cat:"Superconductivity", color:"#c0392b" },
+  { id:"ph2", name:"Iron-Based Superconductivity", cat:"Superconductivity", color:"#c0392b" },
+  { id:"ph3", name:"Moiré Flat Bands", cat:"Band Structure", color:"#e67e22" },
+  { id:"ph4", name:"Mott Insulator", cat:"Correlated Electrons", color:"#8e44ad" },
+  { id:"ph5", name:"Topological Surface States", cat:"Topology", color:"#2980b9" },
+  { id:"ph6", name:"Floquet Engineering", cat:"Non-Equilibrium", color:"#16a085" },
+  { id:"ph7", name:"Fractional Quantum Hall", cat:"Topology", color:"#2980b9" },
+  { id:"ph8", name:"Anyon Superfluidity", cat:"Topology", color:"#2980b9" },
+  { id:"ph9", name:"Wigner Crystal", cat:"Correlated Electrons", color:"#8e44ad" },
+  { id:"ph10", name:"Meissner Effect", cat:"Superconductivity", color:"#c0392b" },
+  { id:"ph11", name:"Charge-4e Pairing", cat:"Superconductivity", color:"#c0392b" },
+  { id:"ph12", name:"Parafermionic Vortices", cat:"Topology", color:"#2980b9" },
+  { id:"ph13", name:"Kondo Effect", cat:"Correlated Electrons", color:"#8e44ad" },
+  { id:"ph14", name:"Anomalous Hall Effect", cat:"Transport", color:"#d35400" },
+  { id:"ph15", name:"Altermagnetism", cat:"Magnetism", color:"#27ae60" },
+  { id:"ph16", name:"Spin-Phonon Coupling", cat:"Magnetism", color:"#27ae60" },
+  { id:"ph17", name:"Electron-Phonon Coupling", cat:"Correlated Electrons", color:"#8e44ad" },
+  { id:"ph18", name:"Spin-Orbital Waves", cat:"Magnetism", color:"#27ae60" },
+  { id:"ph19", name:"Topological Polaritons", cat:"Topology", color:"#2980b9" },
+  { id:"ph20", name:"Axion Quasiparticles", cat:"Topology", color:"#2980b9" },
+  { id:"ph21", name:"Spiral Spin Liquid", cat:"Magnetism", color:"#27ae60" },
+  { id:"ph22", name:"Nodal Loop Semimetal", cat:"Band Structure", color:"#e67e22" },
+  { id:"ph23", name:"Symmetry Breaking", cat:"Correlated Electrons", color:"#8e44ad" },
+  { id:"ph24", name:"Quantum Transport", cat:"Transport", color:"#d35400" },
+  { id:"ph25", name:"Pairing Symmetry", cat:"Superconductivity", color:"#c0392b" },
+  { id:"ph26", name:"Interacting Fermions", cat:"Correlated Electrons", color:"#8e44ad" },
+  { id:"ph27", name:"Chern Insulator", cat:"Topology", color:"#2980b9" },
 ];
 
 const funders = [
@@ -3526,12 +3526,13 @@ function coEdges(papers, maxYear) {
   return Object.entries(edges).map(([k,w]) => { const [a,b] = k.split("--"); return {from:a, to:b, weight:w}; });
 }
 function materialCoEdges(papers, matId, maxYear) { return coEdges(papers, maxYear).filter(e => e.from === matId || e.to === matId); }
-function techMatEdges(papers, maxYear) {
+function techMatEdges(ps, maxYear) {
+  const src = ps || papers; const yr = maxYear || 9999;
   const edges = {};
-  papers.filter(p => p.year <= maxYear).forEach(p => {
+  src.filter(p => p.year <= yr).forEach(p => {
     p.techniques.forEach(t => { p.materials.forEach(m => { const k = t+"--"+m; edges[k] = (edges[k]||0)+1; }); });
   });
-  return Object.entries(edges).map(([k,w]) => { const [t,m] = k.split("--"); return {tech:t, mat:m, weight:w}; });
+  return Object.entries(edges).map(([k,w]) => { const [t,m] = k.split("--"); return {from:t, to:m, weight:w}; });
 }
 function authorCoEdges(papers, maxYear) {
   const edges = {};

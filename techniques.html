@@ -70,7 +70,7 @@
   </aside>
 </div>
 
-<script src="data.js?v=4"></script>
+<script src="data.js?v=6"></script>
 <script>
 const container = document.getElementById("network");
 let network, currentFilter = "all";
@@ -87,7 +87,7 @@ function buildGraph(filter) {
     return {
       id: t.id, label: t.name, group: "tech",
       color: { background: t.color, border: t.color, highlight: { background: t.color, border: "#1f2937" }},
-      size: 14 + pc * 3, font: { size: 12, color: "#1f2937", bold: true },
+      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 12, color: "#1f2937", bold: true },
       shape: "diamond", _data: t, _type: "tech"
     };
   });
@@ -97,7 +97,7 @@ function buildGraph(filter) {
     return {
       id: m.id, label: m.name, group: "mat",
       color: { background: m.color, border: m.color, highlight: { background: m.color, border: "#1f2937" }},
-      size: 12 + pc * 3, font: { size: 11, color: "#1f2937" },
+      size: Math.min(10 + Math.sqrt(pc) * 4, 40), font: { size: 11, color: "#1f2937" },
       shape: "dot", _data: m, _type: "mat"
     };
   });
@@ -120,9 +120,12 @@ function buildGraph(filter) {
 function init() {
   const data = buildGraph("all");
   network = new vis.Network(container, data, {
-    physics: { barnesHut: { gravitationalConstant: -5000, springLength: 220, springConstant: 0.015 }, stabilization: { iterations: 250 }},
+    physics: { barnesHut: { gravitationalConstant: -25000, springLength: 400, springConstant: 0.006, damping: 0.3 }, stabilization: { iterations: 400 }},
     interaction: { hover: true, tooltipDelay: 150, navigationButtons: true },
     edges: { smooth: { type: "curvedCW", roundness: 0.1 }}
+  });
+  network.once("stabilizationIterationsDone", function() {
+    network.fit({ animation: { duration: 500, easingFunction: "easeInOutQuad" }});
   });
   network.on("click", function(e) {
     if (e.nodes.length) showDetail(e.nodes[0]);

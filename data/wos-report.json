@@ -1,0 +1,40 @@
+{
+  "inputFiles": [
+    {
+      "file": "savedrecs - 1.xls",
+      "rows": 1000,
+      "sha256": "86140574aee0e2ae52e569f12fab61a0c798c5ceba372a372fcc76c657abd6c4"
+    },
+    {
+      "file": "savedrecs - 2 .xls",
+      "rows": 697,
+      "sha256": "61a9b3be1f33fb12900a54ea77698782ebfe4b493b5b720e01908a5e2e151233"
+    },
+    {
+      "file": "savedrecs.xls",
+      "rows": 1000,
+      "sha256": "fa2508ebf1c1191f68c9011167209c783e4aff31d561f42bc96338bfe6368732"
+    }
+  ],
+  "inputRows": 2697,
+  "uniqueRecords": 2697,
+  "duplicatesRemoved": 0,
+  "conflicts": [],
+  "rejectedRecords": [],
+  "papers": 2697,
+  "researcherNameGroups": 9073,
+  "yearRange": [
+    2014,
+    2026
+  ],
+  "papersWithMentions": {
+    "materials": 1216,
+    "techniques": 1252,
+    "phenomena": 2052
+  },
+  "missingDOI": 6,
+  "missingAbstract": 8,
+  "rulesSha256": "9cc93916c047dec9add3774ec717c8b369bd1d7a2495183587badebbb8943daf",
+  "method": "Explicit regex mentions in normalized title, author keywords, and abstract; no Keywords Plus, semantic inference, or external model calls.",
+  "authorMethod": "NFKC + whitespace normalization + casefold of exported full name, or abbreviated name if absent. Name groups are not disambiguated people."
+}

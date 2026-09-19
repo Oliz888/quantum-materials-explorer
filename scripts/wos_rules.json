@@ -1,0 +1,890 @@
+{
+  "materials": [
+    {
+      "id": "wos-m-1",
+      "name": "Graphene",
+      "cls": "Carbon",
+      "color": "#c0392b",
+      "pattern": "\\bgraphene\\b"
+    },
+    {
+      "id": "wos-m-2",
+      "name": "Graphite",
+      "cls": "Carbon",
+      "color": "#c0392b",
+      "pattern": "\\bgraphite\\b"
+    },
+    {
+      "id": "wos-m-3",
+      "name": "Cuprates",
+      "cls": "Cuprate",
+      "color": "#e67e22",
+      "pattern": "\\bcuprates?\\b|\\bcopper[- ]oxide(?:s)?\\b"
+    },
+    {
+      "id": "wos-m-4",
+      "name": "Nickelates",
+      "cls": "Nickelate",
+      "color": "#8e44ad",
+      "pattern": "\\bnickelates?\\b"
+    },
+    {
+      "id": "wos-m-5",
+      "name": "Iron-based materials",
+      "cls": "Iron-based",
+      "color": "#2980b9",
+      "pattern": "\\biron[- ](?:based|pnictide|chalcogenide)\\b"
+    },
+    {
+      "id": "wos-m-6",
+      "name": "Transition metal dichalcogenides",
+      "cls": "Van der Waals",
+      "color": "#059669",
+      "pattern": "\\btransition[- ]metal dichalcogenides?\\b|\\bTMDs\\b|\\bTMDCs?\\b"
+    },
+    {
+      "id": "wos-m-7",
+      "name": "Van der Waals materials",
+      "cls": "Van der Waals",
+      "color": "#059669",
+      "pattern": "\\bvan der Waals (?:materials?|heterostructures?|crystals?|magnets?)\\b"
+    },
+    {
+      "id": "wos-m-8",
+      "name": "Kagome materials",
+      "cls": "Lattice family",
+      "color": "#0891b2",
+      "pattern": "\\bkagome\\b"
+    },
+    {
+      "id": "wos-m-9",
+      "name": "Pyrochlores",
+      "cls": "Lattice family",
+      "color": "#0891b2",
+      "pattern": "\\bpyrochlores?\\b"
+    },
+    {
+      "id": "wos-m-10",
+      "name": "Perovskites",
+      "cls": "Lattice family",
+      "color": "#0891b2",
+      "pattern": "\\bperovskites?\\b"
+    },
+    {
+      "id": "wos-m-11",
+      "name": "Heusler compounds",
+      "cls": "Intermetallic",
+      "color": "#7c3aed",
+      "pattern": "\\bHeusler\\b"
+    },
+    {
+      "id": "wos-m-12",
+      "name": "Heavy fermion materials",
+      "cls": "Heavy fermion",
+      "color": "#a16207",
+      "pattern": "\\bheavy[- ]fermion\\b"
+    },
+    {
+      "id": "wos-m-13",
+      "name": "La3Ni2O7",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])La3Ni2O7(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-14",
+      "name": "La4Ni3O10",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])La4Ni3O10(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-15",
+      "name": "NdNiO2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])NdNiO2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-16",
+      "name": "LaNiO2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])LaNiO2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-17",
+      "name": "FeSe",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])FeSe(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-18",
+      "name": "FeTe",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])FeTe(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-19",
+      "name": "UTe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])UTe2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-20",
+      "name": "URu2Si2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])URu2Si2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-21",
+      "name": "UPt3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])UPt3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-22",
+      "name": "CeCoIn5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])CeCoIn5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-23",
+      "name": "CeRhIn5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])CeRhIn5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-24",
+      "name": "YbRh2Si2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])YbRh2Si2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-25",
+      "name": "SmB6",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])SmB6(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-26",
+      "name": "Ta2NiSe5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Ta2NiSe5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-27",
+      "name": "TaS2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])TaS2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-28",
+      "name": "TaSe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])TaSe2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-29",
+      "name": "NbSe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])NbSe2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-30",
+      "name": "NbS2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])NbS2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-31",
+      "name": "MoS2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])MoS2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-32",
+      "name": "MoSe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])MoSe2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-33",
+      "name": "MoTe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])MoTe2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-34",
+      "name": "WS2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])WS2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-35",
+      "name": "WSe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])WSe2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-36",
+      "name": "WTe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])WTe2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-37",
+      "name": "Bi2Se3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Bi2Se3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-38",
+      "name": "Bi2Te3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Bi2Te3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-39",
+      "name": "Sb2Te3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Sb2Te3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-40",
+      "name": "MnBi2Te4",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])MnBi2Te4(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-41",
+      "name": "MnTe",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])MnTe(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-42",
+      "name": "MnF2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])MnF2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-43",
+      "name": "RuO2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])RuO2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-44",
+      "name": "RuCl3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])RuCl3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-45",
+      "name": "CrI3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])CrI3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-46",
+      "name": "CrGeTe3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])CrGeTe3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-47",
+      "name": "CsV3Sb5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])CsV3Sb5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-48",
+      "name": "KV3Sb5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])KV3Sb5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-49",
+      "name": "RbV3Sb5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])RbV3Sb5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-50",
+      "name": "Co3Sn2S2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Co3Sn2S2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-51",
+      "name": "Fe3Sn2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Fe3Sn2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-52",
+      "name": "TbMn6Sn6",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])TbMn6Sn6(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-53",
+      "name": "ZrTe5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])ZrTe5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-54",
+      "name": "HfTe5",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])HfTe5(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-55",
+      "name": "TaAs",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])TaAs(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-56",
+      "name": "NbAs",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])NbAs(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-57",
+      "name": "Cd3As2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Cd3As2(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-58",
+      "name": "Na3Bi",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Na3Bi(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-59",
+      "name": "Sr2RuO4",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Sr2RuO4(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-60",
+      "name": "SrTiO3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])SrTiO3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-61",
+      "name": "KTaO3",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])KTaO3(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-62",
+      "name": "YBa2Cu3O7",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])YBa2Cu3O7(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-63",
+      "name": "Bi2Sr2CaCu2O8",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Bi2Sr2CaCu2O8(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-64",
+      "name": "La2CuO4",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])La2CuO4(?![A-Za-z0-9])"
+    },
+    {
+      "id": "wos-m-65",
+      "name": "Fe3GeTe2",
+      "cls": "Compound",
+      "color": "#be185d",
+      "pattern": "(?<![A-Za-z0-9])Fe3GeTe2(?![A-Za-z0-9])"
+    }
+  ],
+  "techniques": [
+    {
+      "id": "wos-t-1",
+      "name": "ARPES",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "\\bARPES\\b|angle[- ]resolved photoemission"
+    },
+    {
+      "id": "wos-t-2",
+      "name": "Scanning tunneling microscopy / spectroscopy",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "\\bSTM\\b|\\bSTS\\b|scanning tunneling (?:microscop|spectroscop)"
+    },
+    {
+      "id": "wos-t-3",
+      "name": "Electron microscopy",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "electron microscop|\\bSTEM\\b|\\bTEM\\b"
+    },
+    {
+      "id": "wos-t-4",
+      "name": "Raman spectroscopy",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "\\bRaman\\b"
+    },
+    {
+      "id": "wos-t-5",
+      "name": "Optical spectroscopy",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "optical (?:spectroscop|conductivity)|infrared spectroscop|terahertz spectroscop"
+    },
+    {
+      "id": "wos-t-6",
+      "name": "Neutron scattering",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "neutron (?:scatter|diffract)"
+    },
+    {
+      "id": "wos-t-7",
+      "name": "X-ray scattering / diffraction",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "[xX][- ]ray (?:scatter|diffract)|\\bRIXS\\b|\\bRSXS\\b|\\bXRD\\b"
+    },
+    {
+      "id": "wos-t-8",
+      "name": "NMR",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "\\bNMR\\b|nuclear magnetic resonance"
+    },
+    {
+      "id": "wos-t-9",
+      "name": "Muon spin spectroscopy",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "muon spin"
+    },
+    {
+      "id": "wos-t-10",
+      "name": "Transport measurements",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "transport measurements?|magnetotransport|magnetoresistance|electrical resistivity|Hall measurements?"
+    },
+    {
+      "id": "wos-t-11",
+      "name": "Magnetometry",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "magnetometr|magnetization measurements?|magnetic susceptibility|\\bSQUID\\b"
+    },
+    {
+      "id": "wos-t-12",
+      "name": "Calorimetry",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "calorimetr|specific[- ]heat|heat capacity"
+    },
+    {
+      "id": "wos-t-13",
+      "name": "Pressure experiments",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "diamond[- ]anvil|hydrostatic pressure|high[- ]pressure measurements?"
+    },
+    {
+      "id": "wos-t-14",
+      "name": "Pump–probe spectroscopy",
+      "cat": "Characterization",
+      "color": "#c0392b",
+      "pattern": "pump[-– ]probe"
+    },
+    {
+      "id": "wos-t-15",
+      "name": "Molecular beam epitaxy",
+      "cat": "Synthesis",
+      "color": "#e67e22",
+      "pattern": "molecular[- ]beam epitax|\\bMBE\\b"
+    },
+    {
+      "id": "wos-t-16",
+      "name": "Chemical vapor deposition",
+      "cat": "Synthesis",
+      "color": "#e67e22",
+      "pattern": "chemical vapou?r deposition|\\bCVD\\b"
+    },
+    {
+      "id": "wos-t-17",
+      "name": "Pulsed laser deposition",
+      "cat": "Synthesis",
+      "color": "#e67e22",
+      "pattern": "pulsed[- ]laser deposition|\\bPLD\\b"
+    },
+    {
+      "id": "wos-t-18",
+      "name": "Crystal growth",
+      "cat": "Synthesis",
+      "color": "#e67e22",
+      "pattern": "crystal growth|flux growth|floating[- ]zone|Bridgman|chemical vapou?r transport"
+    },
+    {
+      "id": "wos-t-19",
+      "name": "Exfoliation",
+      "cat": "Synthesis",
+      "color": "#e67e22",
+      "pattern": "\\bexfoliat"
+    },
+    {
+      "id": "wos-t-20",
+      "name": "Density functional theory",
+      "cat": "Computational",
+      "color": "#8e44ad",
+      "pattern": "density[- ]functional|\\bDFT\\b|first[- ]principles"
+    },
+    {
+      "id": "wos-t-21",
+      "name": "Dynamical mean-field theory",
+      "cat": "Computational",
+      "color": "#8e44ad",
+      "pattern": "dynamical mean[- ]field|\\bDMFT\\b"
+    },
+    {
+      "id": "wos-t-22",
+      "name": "Density matrix renormalization group",
+      "cat": "Computational",
+      "color": "#8e44ad",
+      "pattern": "density[- ]matrix renormalization|\\bDMRG\\b"
+    },
+    {
+      "id": "wos-t-23",
+      "name": "Monte Carlo",
+      "cat": "Computational",
+      "color": "#8e44ad",
+      "pattern": "Monte Carlo"
+    },
+    {
+      "id": "wos-t-24",
+      "name": "Exact diagonalization",
+      "cat": "Computational",
+      "color": "#8e44ad",
+      "pattern": "exact diagonalization"
+    },
+    {
+      "id": "wos-t-25",
+      "name": "Machine learning",
+      "cat": "Computational",
+      "color": "#8e44ad",
+      "pattern": "machine learning|neural networks?|deep learning"
+    }
+  ],
+  "phenomena": [
+    {
+      "id": "wos-ph-1",
+      "name": "Superconductivity",
+      "cat": "Superconductivity",
+      "color": "#c0392b",
+      "pattern": "\\bsuperconduct"
+    },
+    {
+      "id": "wos-ph-2",
+      "name": "Charge density waves",
+      "cat": "Charge order",
+      "color": "#e67e22",
+      "pattern": "charge[- ]density[- ]waves?|\\bCDWs?\\b"
+    },
+    {
+      "id": "wos-ph-3",
+      "name": "Spin density waves",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "spin[- ]density[- ]waves?|\\bSDWs?\\b"
+    },
+    {
+      "id": "wos-ph-4",
+      "name": "Pair density waves",
+      "cat": "Superconductivity",
+      "color": "#c0392b",
+      "pattern": "pair[- ]density[- ]waves?|\\bPDWs?\\b"
+    },
+    {
+      "id": "wos-ph-5",
+      "name": "Mott physics",
+      "cat": "Correlations",
+      "color": "#2980b9",
+      "pattern": "\\bMott\\b"
+    },
+    {
+      "id": "wos-ph-6",
+      "name": "Kondo effect",
+      "cat": "Correlations",
+      "color": "#2980b9",
+      "pattern": "\\bKondo\\b"
+    },
+    {
+      "id": "wos-ph-7",
+      "name": "Quantum spin liquids",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\bspin[- ]liquids?\\b"
+    },
+    {
+      "id": "wos-ph-8",
+      "name": "Spin ice",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\bspin[- ]ice\\b"
+    },
+    {
+      "id": "wos-ph-9",
+      "name": "Antiferromagnetism",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\bantiferromagnet"
+    },
+    {
+      "id": "wos-ph-10",
+      "name": "Ferromagnetism",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\bferromagnet"
+    },
+    {
+      "id": "wos-ph-11",
+      "name": "Altermagnetism",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\baltermagnet"
+    },
+    {
+      "id": "wos-ph-12",
+      "name": "Magnetic frustration",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\bfrustrat(?:ed|ion)\\b"
+    },
+    {
+      "id": "wos-ph-13",
+      "name": "Skyrmions",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\bskyrmion"
+    },
+    {
+      "id": "wos-ph-14",
+      "name": "Topological insulators",
+      "cat": "Topology",
+      "color": "#059669",
+      "pattern": "topological insulators?"
+    },
+    {
+      "id": "wos-ph-15",
+      "name": "Topological superconductivity",
+      "cat": "Topology",
+      "color": "#059669",
+      "pattern": "topological superconduct"
+    },
+    {
+      "id": "wos-ph-16",
+      "name": "Weyl physics",
+      "cat": "Topology",
+      "color": "#059669",
+      "pattern": "\\bWeyl\\b"
+    },
+    {
+      "id": "wos-ph-17",
+      "name": "Dirac physics",
+      "cat": "Topology",
+      "color": "#059669",
+      "pattern": "\\bDirac\\b"
+    },
+    {
+      "id": "wos-ph-18",
+      "name": "Majorana modes",
+      "cat": "Topology",
+      "color": "#059669",
+      "pattern": "\\bMajorana\\b"
+    },
+    {
+      "id": "wos-ph-19",
+      "name": "Quantum Hall effect",
+      "cat": "Topology",
+      "color": "#059669",
+      "pattern": "quantum Hall"
+    },
+    {
+      "id": "wos-ph-20",
+      "name": "Anomalous Hall effect",
+      "cat": "Transport",
+      "color": "#0891b2",
+      "pattern": "anomalous Hall"
+    },
+    {
+      "id": "wos-ph-21",
+      "name": "Chern phases",
+      "cat": "Topology",
+      "color": "#059669",
+      "pattern": "\\bChern\\b"
+    },
+    {
+      "id": "wos-ph-22",
+      "name": "Flat bands",
+      "cat": "Band structure",
+      "color": "#7c3aed",
+      "pattern": "flat[- ]bands?"
+    },
+    {
+      "id": "wos-ph-23",
+      "name": "Moiré physics",
+      "cat": "Band structure",
+      "color": "#7c3aed",
+      "pattern": "\\bmoir[eé]\\b"
+    },
+    {
+      "id": "wos-ph-24",
+      "name": "Nematicity",
+      "cat": "Symmetry",
+      "color": "#a16207",
+      "pattern": "\\bnematic"
+    },
+    {
+      "id": "wos-ph-25",
+      "name": "Symmetry breaking",
+      "cat": "Symmetry",
+      "color": "#a16207",
+      "pattern": "symmetry[- ]breaking|broken symmetr"
+    },
+    {
+      "id": "wos-ph-26",
+      "name": "Quantum criticality",
+      "cat": "Correlations",
+      "color": "#2980b9",
+      "pattern": "quantum critical"
+    },
+    {
+      "id": "wos-ph-27",
+      "name": "Non-Fermi liquids",
+      "cat": "Correlations",
+      "color": "#2980b9",
+      "pattern": "non[- ]Fermi[- ]liquid|strange metal"
+    },
+    {
+      "id": "wos-ph-28",
+      "name": "Electron–phonon coupling",
+      "cat": "Coupling",
+      "color": "#be185d",
+      "pattern": "electron[- ]phonon"
+    },
+    {
+      "id": "wos-ph-29",
+      "name": "Spin–orbit coupling",
+      "cat": "Coupling",
+      "color": "#be185d",
+      "pattern": "spin[- ]orbit"
+    },
+    {
+      "id": "wos-ph-30",
+      "name": "Excitons",
+      "cat": "Light–matter",
+      "color": "#0369a1",
+      "pattern": "\\bexcitons?\\b|\\bexcitonic\\b"
+    },
+    {
+      "id": "wos-ph-31",
+      "name": "Polaritons",
+      "cat": "Light–matter",
+      "color": "#0369a1",
+      "pattern": "\\bpolariton"
+    },
+    {
+      "id": "wos-ph-32",
+      "name": "Floquet physics",
+      "cat": "Light–matter",
+      "color": "#0369a1",
+      "pattern": "\\bFloquet\\b"
+    },
+    {
+      "id": "wos-ph-33",
+      "name": "Anderson localization",
+      "cat": "Disorder",
+      "color": "#c0392b",
+      "pattern": "Anderson locali[sz]ation"
+    },
+    {
+      "id": "wos-ph-34",
+      "name": "Metal–insulator transition",
+      "cat": "Correlations",
+      "color": "#2980b9",
+      "pattern": "metal[-– ]insulator transition"
+    },
+    {
+      "id": "wos-ph-35",
+      "name": "Multiferroicity",
+      "cat": "Magnetism",
+      "color": "#8e44ad",
+      "pattern": "\\bmultiferro"
+    },
+    {
+      "id": "wos-ph-36",
+      "name": "Ferroelectricity",
+      "cat": "Polar order",
+      "color": "#e67e22",
+      "pattern": "\\bferroelectric"
+    }
+  ]
+}

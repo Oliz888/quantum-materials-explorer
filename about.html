@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-auth="locked">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — Quantum Materials Explorer</title>
+<style>html[data-auth="locked"] body > :not(#auth-gate):not(noscript) { display:none !important; }</style>
+<link rel="stylesheet" href="style.css?v=8">
+<script src="auth.js?v=2" defer></script>
+<script src="bootstrap.js?v=1" defer></script>
+</head>
+<body data-view="about" class="about-page">
+<noscript><p>Enable JavaScript to enter the password and view this page.</p></noscript>
+<nav class="site-nav" aria-label="Main navigation">
+  <a href="index.html" class="brand">Quantum <span>Materials Explorer</span></a>
+  <a href="index.html">Materials Co-occurrence</a>
+  <a href="collaboration.html">Collaboration</a>
+  <a href="techniques.html">Techniques × Materials</a>
+  <a href="phenomena.html">Phenomena Map</a>
+  <a href="about.html" class="active" aria-current="page">About</a>
+  <button type="button" class="lock-site" data-lock-site>Lock site</button>
+</nav>
+<section class="source-bar" aria-label="Data source">
+  <div class="control-group"><label for="dataSource">Data source</label><select id="dataSource"><option value="symposium">EPiQS Postdoctoral Symposium</option><option value="wos">Web of Science</option></select></div>
+</section>
+<main class="about-content" tabindex="-1">
+  <div class="about-intro">
+    <p class="eyebrow">Purpose &amp; methods</p>
+    <h1>About the explorer</h1>
+    <p>Explore how materials, researchers, techniques and physical phenomena connect across a collection of publications. Follow a connection back to its papers to assess what it means.</p>
+  </div>
+  <section aria-labelledby="source-heading">
+    <h2 id="source-heading">The selected collection</h2>
+    <div id="about-symposium" class="source-summary">
+      <h3>EPiQS Postdoctoral Symposium</h3>
+      <p><strong>812 papers · 2020–2026 · 45 cataloged researchers</strong></p>
+      <p>The original symposium-derived collection links presenters and selected researchers to publication records. Its source file describes supporting records from Web of Science and arXiv. It is not a census of all publications or all authors in quantum-materials research.</p>
+      <p>The original tags and material descriptions are preserved. They have not undergone a complete semantic or scientific audit; some assignments need review. The collaboration view uses the authors recorded in this collection, which can omit co-authors from the original publication.</p>
+      <p>Material tags cover 374 papers (46.1%); technique tags cover 241 (29.7%); phenomenon tags cover 597 (73.5%).</p>
+    </div>
+    <div id="about-wos" class="source-summary" hidden>
+      <h3>Web of Science</h3>
+      <p><strong>2,697 papers · 2014–2026 · 9,073 author name groups</strong></p>
+      <p>This collection combines three supplied WoS exports. Unicode, whitespace, identifiers and publication years were normalized. Records were checked for duplicate WoS identifiers or DOIs; no duplicates or invalid title/year records were removed from this import.</p>
+      <p>Material, technique and phenomenon tags come from a dictionary of explicit phrases in titles, author keywords and abstracts. Paper cards show the matching text and original export row. Mentions can describe background or comparisons; a tag does not establish that a method was applied or a property demonstrated. Unlisted terms can be missed.</p>
+      <p>Material tags cover 1,216 papers (45.1%); technique tags cover 1,252 (46.4%); phenomenon tags cover 2,052 (76.1%). All 2,697 records remain available through <strong>Browse papers</strong>, including those with no recognized tags. Six records lack a DOI and eight lack an abstract.</p>
+      <p>Author names are grouped by normalized spelling, without full identity disambiguation. Initials and full names can split one person; identical names can conflate different people. Institutional labels come from explicit author–address mappings. The export’s original search query and topical inclusion criteria have not been reconstructed, and no relevance screen was applied.</p>
+    </div>
+    <p>The source selector keeps the two collections separate. Their coverage, selection rules and tagging methods differ; raw counts should not be treated as directly comparable measures of the field.</p>
+  </section>
+  <section aria-labelledby="network-heading">
+    <h2 id="network-heading">What the networks represent</h2>
+    <div class="about-table-wrap"><table>
+      <thead><tr><th scope="col">View</th><th scope="col">A connection means</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Materials Co-occurrence</th><td>Two material or material-family tags occur in the same publication record.</td></tr>
+        <tr><th scope="row">Collaboration</th><td>Two recorded author IDs appear together in a publication.</td></tr>
+        <tr><th scope="row">Techniques × Materials</th><td>A technique tag and material tag share a publication. This is document-level co-occurrence, not a verified technique–material application.</td></tr>
+        <tr><th scope="row">Phenomena Map</th><td>Two phenomenon tags share at least three papers within the chosen time window.</td></tr>
+      </tbody>
+    </table></div>
+    <h3>Why “co-occurrence network”?</h3>
+    <p>A paper containing materials A, B and C contributes the three pairwise links A–B, A–C and B–C. A hypergraph would retain the single group {A, B, C} as a hyperedge. The current view shows a weighted pairwise projection; the underlying publication records retain the group membership.</p>
+    <p>Three separate two-material papers can produce the same triangle as one three-material paper. A triangle in this display therefore cannot establish a three-way research relationship. See <a href="https://www.nature.com/articles/s42005-021-00637-w" target="_blank" rel="noopener">Young, Petri &amp; Peixoto, “Hypergraph reconstruction from network data” (2021)</a>.</p>
+    <p>Link weights count shared papers. Node sizes increase with paper count, using a capped square-root scale. The force-directed layout is for navigation: proximity is not a measured similarity, and movement during the timeline is not itself evidence of scientific change.</p>
+  </section>
+  <section aria-labelledby="use-heading">
+    <h2 id="use-heading">Reading the display</h2>
+    <ul>
+      <li><strong>Through year</strong> includes all records up to that year. It is cumulative, not a count of new papers in that year. The technique view uses all years.</li>
+      <li><strong>Search</strong> filters visible nodes. <strong>Browse papers</strong> searches titles, DOIs and authors in the selected source and time window.</li>
+      <li>The WoS collaboration view shows the top 100 name groups by default, with options for 250 or 500. Search covers the whole name catalog before applying the limit. The displayed subgraph omits connections to hidden names.</li>
+      <li>Materials include compounds and broader families. These are different levels of description; a family–compound link may partly reflect classification rather than a new relationship.</li>
+      <li>Publication dates index records in these collections. They do not necessarily identify when a material was discovered or a finding first established.</li>
+    </ul>
+  </section>
+  <section aria-labelledby="limits-heading">
+    <h2 id="limits-heading">Scope and access</h2>
+    <p>This is an exploratory literature interface. Validate paper tags, author identities and scientific descriptions before using the graphs to support research conclusions. Sparse tagging is not evidence that a topic was absent.</p>
+    <p>The password controls entry to the interface. A successful login is remembered in the current tab for eight hours, with expiry checked when a page opens; use <strong>Lock site</strong> to end it sooner. GitHub Pages serves public static files, so this browser gate does not make the underlying files or repository confidential.</p>
+    <p>Methods and import instructions are available in the <a href="https://github.com/Oliz888/quantum-materials-explorer/blob/main/README.md" target="_blank" rel="noopener">project README</a>. Data snapshot and methods reviewed: 19 September 2026.</p>
+  </section>
+</main>
+</body>
+</html>

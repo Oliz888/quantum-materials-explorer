@@ -10,7 +10,7 @@
   let lookup = new Map(), currentGraph;
   const sourceSelect = $('dataSource');
   function stop() { clearInterval(state.timer); state.timer=null; if($('playBtn')) $('playBtn').textContent='▶'; }
-  function notice(text) { $('sourceNote').textContent=text; }
+  function notice(text) { $('sourceNote').textContent=text; $('sourceNote').hidden=!text; }
   function selectedOptions() {return {year:state.year,query:state.query,category:state.category,limit:state.source==='wos'?state.limit:0};}
 
   async function selectSource(source) {
@@ -40,7 +40,7 @@
       sourceSelect.value=source;
       try {localStorage.setItem('qm_source',source);} catch (_) {}
       const url=new URL(location.href);url.searchParams.set('source',source);history.replaceState(null,'',url);
-      document.querySelectorAll('.site-nav a').forEach(a=>{const url=new URL(a.href);url.searchParams.set('source',source);a.href=url;});
+      document.querySelectorAll('.site-nav a, .source-methods').forEach(a=>{const url=new URL(a.href);url.searchParams.set('source',source);a.href=url;});
       render();
     } catch(error) {
       if(state.network) {state.network.destroy();state.network=null;}
@@ -56,11 +56,7 @@
     if(!state.dataset) return;
     const g=currentGraph=QMGraph.graph(state.dataset,view,selectedOptions());
     const wos=state.source==='wos';
-    let note=wos
-      ? 'Three WoS exports, merged within this source only. Materials, techniques and phenomena are automated text mentions; matches are shown with each paper.'
-      : 'Original EPiQS Postdoctoral Symposium dataset. Kept separate from the Web of Science exports.';
-    if(wos && view==='collaboration') note='Author names from the three WoS exports, grouped by normalized full name; identities are not fully disambiguated. Search covers all name groups. Blue nodes are author names, not institution clusters.';
-    notice(note);
+    notice('');
     const noun={materials:'materials / families',collaboration:wos?'author name groups':'researchers',techniques:'techniques + materials',phenomena:'phenomena'}[view];
     $('stats').textContent=`${g.entities.length.toLocaleString()} / ${g.activeTotal.toLocaleString()} ${noun} · ${g.edges.length.toLocaleString()} links`;
     $('coverage').textContent=`${g.papers.length.toLocaleString()} / ${state.dataset.papers.length.toLocaleString()} papers through ${state.year} · ${g.represented.toLocaleString()} with ${view==='collaboration'?'author names':view==='techniques'?'both technique and material tags':'tags for this view'}${view==='phenomena'?' · links require ≥3 shared papers':''}${view==='collaboration'&&wos?` · showing up to ${state.limit} names, ranked by paper count`:''}`;

@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-auth="locked">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Collaboration — Quantum Materials Explorer</title>
-<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-<link rel="stylesheet" href="style.css?v=7">
+<style>html[data-auth="locked"] body > :not(#auth-gate):not(noscript) { display:none !important; }</style>
+<script src="auth.js?v=2" defer></script>
+<script src="bootstrap.js?v=1" defer></script>
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body data-view="collaboration">
-<script src="auth.js"></script>
+<noscript><p>Enable JavaScript to enter the password and use the explorer.</p></noscript>
 <nav class="site-nav" aria-label="Main navigation">
   <a href="index.html" class="brand">Quantum <span>Materials Explorer</span></a>
-  <a href="index.html">Materials Hypergraph</a>
+  <a href="index.html">Materials Co-occurrence</a>
   <a href="collaboration.html" class="active" aria-current="page">Collaboration</a>
   <a href="techniques.html">Techniques × Materials</a>
   <a href="phenomena.html">Phenomena Map</a>
+  <a href="about.html">About</a>
+  <button type="button" class="lock-site" data-lock-site>Lock site</button>
 </nav>
 <section class="source-bar" aria-label="Data source">
   <div class="control-group"><label for="dataSource">Data source</label><select id="dataSource"><option value="symposium">EPiQS Postdoctoral Symposium</option><option value="wos">Web of Science</option></select></div>
+  <a class="source-methods" href="about.html">About the data</a>
   <p id="sourceNote" role="status">Loading dataset…</p>
 </section>
 <header>
@@ -30,12 +35,9 @@
   <div id="authorLimitGroup" class="control-group" hidden><label for="authorLimit">Show top</label><select id="authorLimit"><option value="100">100 names</option><option value="250">250 names</option><option value="500">500 names</option></select></div>
   <p id="coverage" class="coverage" aria-live="polite"></p>
 </section>
-<main class="layout">
+<main class="layout" tabindex="-1">
   <div class="graph-wrap"><div id="network" aria-label="Interactive network"></div><div id="emptyGraph" hidden>No matching nodes. Try another search, year, or category. You can still browse this source’s papers.</div></div>
   <aside id="sidebar" aria-label="Details and papers"></aside>
 </main>
-<script src="data.js?v=6"></script>
-<script src="graph-core.js?v=1"></script>
-<script src="explorer.js?v=1"></script>
 </body>
 </html>

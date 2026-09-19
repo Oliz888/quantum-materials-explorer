@@ -1,6 +1,6 @@
 # Quantum Materials Explorer
 
-An interactive static website for exploring materials, researchers, techniques, and physical phenomena. Every page has a **Data source** selector. Exactly one source is displayed at a time; the two publication collections and entity catalogs are never combined.
+An interactive static website for exploring materials, researchers, techniques, and physical phenomena. Every explorer page and the About page have a **Data source** selector. Exactly one source is displayed at a time; the two publication collections and entity catalogs are never combined.
 
 - Existing public website: https://oliz888.github.io/quantum-materials-explorer/
 - Git repository: https://github.com/Oliz888/quantum-materials-explorer
@@ -34,7 +34,7 @@ The graph library loads from `https://unpkg.com/vis-network/standalone/umd/vis-n
 
 | Page | Graph |
 | --- | --- |
-| `index.html` | Materials linked when their tags occur in the same paper. WoS includes both compounds and broader material families. |
+| `index.html` | Materials Co-occurrence Network: materials linked when their tags occur in the same paper. WoS includes both compounds and broader material families. |
 | `collaboration.html` | Co-authorship among the researcher/name IDs recorded in the selected dataset. |
 | `techniques.html` | Technique–material bipartite graph, with Characterization, Synthesis, and Computational filters. |
 | `phenomena.html` | Phenomena linked when they occur together in at least three papers. |
@@ -45,7 +45,7 @@ Three pages have a cumulative year cutoff and animation. The technique page uses
 
 WoS collaboration defaults to the top 100 author name groups by publication count; choose 250 or 500 to expand it. Search applies across all 9,073 name groups before this display limit. Edges are the induced graph among the displayed names, so hidden names and their edges are omitted from the view, not removed from the dataset.
 
-Graphs are pairwise projections, including the page labeled “Hypergraph.” Node size increases nonlinearly with paper count. Edge width increases with shared-paper count. Force-layout position is not a measured scientific distance. Connections indicate record co-occurrence, not independently established causal or scientific relationships.
+Graphs are pairwise projections; the materials page is titled “Materials Co-occurrence Network.” Node size increases nonlinearly with paper count. Edge width increases with shared-paper count. Force-layout position is not a measured scientific distance. Connections indicate record co-occurrence, not independently established causal or scientific relationships.
 
 ## WoS preprocessing
 
@@ -115,14 +115,16 @@ Inspect `data/wos-report.json` after rebuilding. Review changed matches and unma
 
 | File | Responsibility |
 | --- | --- |
-| Four `.html` files | Accessible page structure, navigation, labels, and controls. |
+| Four explorer `.html` files | Accessible page structure, navigation, labels, and controls. |
+| `about.html`, `about.js` | Source-aware purpose, methods, coverage, graph definitions, and limitations. |
+| `bootstrap.js` | Loads page scripts and datasets only after the password gate is unlocked. |
 | `style.css` | Shared layout, graph controls, source selector, and paper cards; responsive layout. |
 | `data.js` | Original 812-paper symposium dataset and its legacy helpers. Unmodified by this import. |
 | `data/wos.json` | Independent processed WoS dataset, fetched only when selected. |
 | `data/wos-report.json` | Input hashes, deduplication/rejection counts, coverage, and method. |
 | `graph-core.js` | Pure graph construction, filtering, counts, and entity-to-paper queries. |
 | `explorer.js` | Source loading, persistence, controls, vis-network rendering, and paper/detail panels. |
-| `auth.js` | Existing password overlay, unchanged. |
+| `auth.js` | Password entry, versioned tab session, and Lock site action. |
 | `scripts/preprocess_wos.py` | Reproducible local `.xls` import. |
 | `scripts/wos_rules.json` | Auditable extraction dictionary and patterns. |
 | `tests/` | Preprocessing and graph regression checks. |
@@ -134,7 +136,7 @@ The parent directory's `fetch_papers.py`, `papers_output.json`, and `papers_summ
 ## Verification
 
 ```bash
-node --test tests/graph.test.js
+node --test tests/*.test.js
 .venv/bin/python -m unittest discover -s tests -p 'test_*.py'
 ```
 
@@ -144,8 +146,10 @@ Browser checks cover source switching, persistence across navigation, the earlie
 
 ## Password and publication
 
-The password is not included in this README. The unchanged `auth.js` compares a SHA-256 hash and stores successful entry in `sessionStorage`. This is a browser display gate, not server-side access control: static assets remain directly retrievable. Do not place confidential data in the published assets.
+The password is not included in this README and has not been changed. `auth.js` compares its SHA-256 hash and stores an eight-hour session in `sessionStorage` under `qm_auth_v2`. The old `qm_auth` flag is retired, so previously unlocked tabs must sign in again. All five pages start hidden behind the gate; `bootstrap.js` waits for successful entry before loading explorer scripts or datasets. Valid sessions are reused across navigation in the same tab; expiry is checked at the next page load. **Lock site** clears the session and reloads the page.
+
+This is a browser display gate, not server-side access control or encryption. Static assets and the public repository remain directly retrievable, including earlier published versions. Do not treat this interface password as confidentiality for data. Actual access control requires a hosting or data-serving layer that authenticates each protected request.
 
 The existing GitHub Pages configuration was read during this update: it serves the root of the `main` branch. To publish a reviewed update, commit the static pages, shared scripts, styles, and `data/` assets and merge/push to `main`. No build step is needed. Keep raw workbooks and the full normalized audit outside the web repository. Review the Pages build and verify the deployed source selector after publishing.
 
-This update was developed and tested on branch `codex/wos-source-selector`. The raw Excel files and full normalized audit remain local; only the processed website subset belongs in the published site.
+The initial WoS integration was developed on `codex/wos-source-selector`; the About page and access-gate update were developed on `codex/about-and-password`. The raw Excel files and full normalized audit remain local; only the processed website subset belongs in the published site.

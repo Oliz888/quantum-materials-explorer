@@ -265,3 +265,42 @@ aside { overflow-wrap:anywhere; }
   .graph-wrap { height:52vh; min-height:300px; }
   aside { padding:20px 16px; overflow:visible; }
 }
+
+/* Password screen and About page. */
+#auth-gate { position:fixed; inset:0; z-index:99999; background:#0b1120; display:grid; place-items:center; padding:24px; overflow:auto; }
+.auth-card { width:min(100%,430px); background:#172338; color:#e2e8f0; padding:36px; border:1px solid #334155; border-radius:16px; box-shadow:0 24px 60px #0005; }
+.auth-eyebrow { color:#93c5fd; font-size:13px; font-weight:700; letter-spacing:.15em; }
+.auth-card h1 { color:#f1f5f9; font-size:26px; line-height:1.2; margin:12px 0; }
+.auth-card p { color:#b6c4d8; font-size:15px; line-height:1.5; }
+.auth-card label { display:block; margin:25px 0 8px; font-size:14px; font-weight:600; }
+.auth-card input { width:100%; padding:12px; background:#0b1120; color:white; border:1px solid #64748b; border-radius:6px; font-size:16px; }
+#auth-err { min-height:24px; color:#fca5a5; margin:10px 0; font-size:14px; }
+.auth-card button { width:100%; background:#2563eb; color:white; padding:12px; border:0; font-weight:700; }
+.site-nav .lock-site { color:#dbeafe; border-color:#475569; background:transparent; margin:5px 0 5px auto; font-size:12px; white-space:nowrap; }
+.site-nav .lock-site:hover { background:#24334b; }
+.source-methods { margin-left:auto; color:#1e40af; font-size:13px; }
+.about-page { height:auto; min-height:100%; overflow:auto; }
+.about-content { width:min(100%,1000px); margin:0 auto; padding:42px 30px 64px; font-size:16px; line-height:1.7; }
+.about-intro { max-width:750px; margin-bottom:35px; }
+.about-intro h1 { font-size:36px; line-height:1.2; margin:8px 0 18px; }
+.eyebrow { color:#1e40af; text-transform:uppercase; font-size:13px; font-weight:700; letter-spacing:.1em; margin:0; }
+.about-content section { margin:34px 0; }
+.about-content h2 { font-size:23px; line-height:1.3; margin-bottom:18px; }
+.about-content h3 { font-size:18px; margin:20px 0 10px; }
+.about-content p { margin:12px 0; }
+.about-content a { color:#1d4ed8; }
+.source-summary { background:white; border:1px solid #dbe3ee; border-left:4px solid #2563eb; border-radius:8px; padding:12px 24px 20px; }
+.about-table-wrap { overflow-x:auto; }
+.about-content table { width:100%; border-collapse:collapse; font-size:15px; }
+.about-content th,.about-content td { border-bottom:1px solid #dbe3ee; padding:13px 15px; text-align:left; vertical-align:top; }
+.about-content thead { background:#eaf0f9; }
+.about-content tbody th { min-width:170px; }
+.about-content li { margin:10px 0; }
+.load-error { padding:16px; background:#fff0f0; color:#991b1b; }
+@media(max-width:640px) {
+  .auth-card { padding:25px; }
+  .about-content { padding:28px 16px 45px; }
+  .about-intro h1 { font-size:29px; }
+  .source-summary { padding:12px 16px; }
+  .site-nav .lock-site { margin-left:8px; }
+}

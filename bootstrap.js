@@ -10,8 +10,9 @@
   }
   try {
     if(document.body.dataset.view==='physics-map') {
-      await load('physics-map-data.js?v=1');
-      await load('physics-map.js?v=1');
+      await load('physics-map-readings.js?v=1');
+      await load('physics-map-data.js?v=2');
+      await load('physics-map.js?v=2');
       return;
     }
     if(document.body.dataset.view==='about') { await load('about.js?v=1'); return; }

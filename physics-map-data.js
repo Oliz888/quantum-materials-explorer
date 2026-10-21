@@ -102,12 +102,21 @@ N('solid-chemistry','固体化学与材料设计','Solid-state chemistry & mater
 N('crystal-growth','合成与晶体生长','Synthesis & crystal growth','approach','制备、纯度、缺陷和生长条件决定哪些材料可以被重复研究；新样品也能带来新现象。','Preparation, purity, defects and growth conditions determine which materials can be studied reproducibly; new samples can reveal new phenomena.','长期方法传统；没有统一成立年份','A longstanding approach with no single founding date',[],['qd1993'],['cava','dots'],['solid-chemistry','nano-synthesis']);
 N('bonding','成键与结构设计','Bonding & structure design','approach','改变原子和连接方式，就是改变电子运动和相互作用的环境。','Changing atoms and their connections changes the environment for electron motion and interactions.','长期化学传统；2017年为跨领域框架示例','A longstanding chemical tradition; 2017 illustrates a connecting framework',['topological-chemistry'],['tqc2017'],['cava','tqc'],['solid-chemistry']);
 N('nano-synthesis','胶体与纳米合成','Colloidal & nanoscale synthesis','approach','控制颗粒尺寸、形状和表面，让量子效应可以被系统研究，也支持器件应用。','Controls particle size, shape and surfaces, enabling systematic study of quantum effects and device applications.','1980年代量子点研究；1993年代表性合成进展','1980s quantum-dot research; a representative synthesis advance in 1993',['quantum-dots'],['qd1981','qd1993'],['dots','cava'],['solid-chemistry','confinement']);
-function get(id){return nodes[id]||nodes.physics;}
+const content = typeof module==='object'&&module.exports ? require('./physics-map-readings.js') : globalThis.QMAtlasReadings;
+content.enrich({N,nodes,events});
+function get(id){return nodes[id]||nodes.landscape;}
 function children(id){return get(id).children.map(k=>nodes[k]);}
-function pathTo(id){if(!nodes[id])return ['physics'];if(id==='physics')return ['physics'];if(id==='quantum-materials')return ['physics','condensed',id];if(id==='solid-chemistry')return ['physics','condensed','quantum-materials',id];const queue=[['physics']],seen=new Set();while(queue.length){const p=queue.shift(),n=p.at(-1);if(n===id)return p;if(seen.has(n))continue;seen.add(n);const next=[...nodes[n].children];if(n==='condensed')next.push('quantum-materials');for(const c of next)if(!p.includes(c))queue.push([...p,c]);}return ['physics',id];}
-function validPath(path){return Array.isArray(path)&&path[0]==='physics'&&path.every((id,i)=>nodes[id]&&(!i||nodes[path[i-1]].children.includes(id)||nodes[path[i-1]].related.includes(id)))&&!path.some((id,i)=>path.indexOf(id)!==i);}
-function descendants(id){const seen=new Set(),todo=[id];while(todo.length){const k=todo.pop();if(seen.has(k)||!nodes[k])continue;seen.add(k);todo.push(...nodes[k].children);if(k==='condensed')todo.push('quantum-materials');}return [...seen];}
-function timeline(id='physics',through=2025){const ids=new Set(descendants(id).flatMap(k=>nodes[k].events));return [...ids].map(k=>events[k]).filter(e=>e.year<=through).sort((a,b)=>a.year-b.year||a.id.localeCompare(b.id));}
-function search(query){const q=query.trim().toLowerCase();if(!q)return [];return Object.values(nodes).filter(n=>(n.name.zh+' '+n.name.en+' '+n.summary.zh+' '+n.summary.en).toLowerCase().includes(q));}
-return {nodes,events,sources,get,children,pathTo,validPath,descendants,timeline,search};
+function pathTo(id){
+ if(!nodes[id])return ['landscape'];
+ const preferred={'solid-chemistry':['landscape','chemistry','solid-chemistry'],'nano-synthesis':['landscape','chemistry','nano-synthesis'],'electronic-design':['landscape','chemistry','electronic-design']};
+ if(preferred[id])return preferred[id];
+ const queue=[['landscape']],seen=new Set();
+ while(queue.length){const p=queue.shift(),n=p.at(-1);if(n===id)return p;if(seen.has(n))continue;seen.add(n);for(const c of nodes[n].children)if(!p.includes(c))queue.push([...p,c]);}
+ return ['landscape'];
+}
+function validPath(path){return Array.isArray(path)&&['landscape','physics'].includes(path[0])&&path.every((id,i)=>nodes[id]&&(!i||nodes[path[i-1]].children.includes(id)||nodes[path[i-1]].related.includes(id)))&&!path.some((id,i)=>path.indexOf(id)!==i);}
+function descendants(id){const seen=new Set(),todo=[id];while(todo.length){const k=todo.pop();if(seen.has(k)||!nodes[k])continue;seen.add(k);todo.push(...nodes[k].children);}return [...seen];}
+function timeline(id='landscape',through=2025,lens='all'){const ids=new Set(descendants(id).flatMap(k=>nodes[k].events));return [...ids].map(k=>events[k]).filter(e=>e.year<=through&&(lens==='all'||e.lenses.includes(lens))).sort((a,b)=>a.year-b.year||a.id.localeCompare(b.id));}
+function search(query){const q=query.trim().toLowerCase();if(!q)return [];return Object.values(nodes).filter(n=>(n.name.zh+' '+n.name.en+' '+n.summary.zh+' '+n.summary.en+' '+n.questions.map(v=>v.zh+' '+v.en).join(' ')).toLowerCase().includes(q));}
+return {nodes,events,sources,get,children,pathTo,validPath,descendants,timeline,search,readings:content.readings,formation:content.formation};
 });

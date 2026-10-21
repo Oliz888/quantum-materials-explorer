@@ -38,7 +38,7 @@ The graph library loads from `https://unpkg.com/vis-network/standalone/umd/vis-n
 | `collaboration.html` | Co-authorship among the researcher/name IDs recorded in the selected dataset. |
 | `techniques.html` | Technique–material bipartite graph, with Characterization, Synthesis, and Computational filters. |
 | `phenomena.html` | Phenomena linked when they occur together in at least three papers. |
-| `physics-map.html` | Curated bilingual research map: physics → condensed matter → quantum-materials topics, with historical milestones. |
+| `physics-map.html` | Research traditions, topics, questions and history: independent physics, chemistry, materials-science and quantum-information entries. |
 
 Three pages have a cumulative year cutoff and animation. The technique page uses all years in the selected source. Search filters graph nodes. Click a node to see its details and associated papers. Detail panels respect the year cutoff.
 
@@ -48,15 +48,25 @@ WoS collaboration defaults to the top 100 author name groups by publication coun
 
 Graphs are pairwise projections; the materials page is titled “Materials Co-occurrence Network.” Node size increases nonlinearly with paper count. Edge width increases with shared-paper count. Force-layout position is not a measured scientific distance. Connections indicate record co-occurrence, not independently established causal or scientific relationships.
 
-## Physics Map
+## Field Map
 
-The new **Physics Map** tab is a conceptual reading guide, independent of either publication dataset. Click nodes to explore deeper, use breadcrumbs or Back to retrace a route, or search in Chinese or English. Other physics domains have overview entries only. Shared topics can be reached from more than one direction; cross-links do not assert disciplinary descent.
+The new **Field Map** tab is a conceptual reading guide, independent of either publication dataset. Click nodes to explore deeper, use breadcrumbs or Back to retrace a route, or search in Chinese or English. Other physics domains have overview entries only, except atomic/optical routes relevant to the readings. English mode displays English labels only; the Chinese interface remains available separately. Nodes omit repetitive navigation hints. Shared topics can be reached from more than one direction; cross-links do not assert disciplinary descent.
 
 Hover or keyboard-focus a node to see its development period and milestones. Its detail panel includes source links. The timeline covers selected events through 2021, with the displayed cutoff extending to the readings' 2025 publication year; it does not claim an exhaustive current history. Use the range control to filter events, select a card for context and its source, or click a timeline marker to open the associated topic. Approximate development periods are distinguished from dated discoveries, proposals, synthesis advances and institutional milestones.
 
 Broad domains are selected from [APS PhySH](https://physh.org/disciplines). The expanded routes synthesize [Nature Physics (2016)](https://doi.org/10.1038/nphys3668), [Cava, de Leon & Xie (2021)](https://doi.org/10.1021/acs.chemrev.0c01322), and [Goyal et al. (2025)](https://doi.org/10.1186/s40712-024-00202-7), supplemented by linked original papers and institutional histories. This is an interpretive map, not a formal exhaustive classification. Field, mechanism, material, state, and research-approach labels distinguish different kinds of nodes.
 
-The URL preserves the route, language, timeline cutoff and scope; browser Back/Forward restore them. The publication source selector only controls which dataset opens when returning to publication pages. The map uses local assets, no graph CDN, and the existing password gate.
+The URL preserves the route, language, timeline cutoff, activity lens and scope; browser Back/Forward restore them. The publication source selector only controls which dataset opens when returning to publication pages. The map uses local assets, no graph CDN, and the existing password gate.
+
+### Reading coverage and field formation
+
+The map now has 98 nodes. Physics, chemistry, materials science and quantum information are independent entry points under `landscape`; old URLs starting at `physics` still work. Expanded topics carry research questions, labeled as editorial synthesis, and original-paper page or table references. The coverage panel links the principal sections and categories of all three readings directly to nodes:
+
+- **Nature Physics, p. 105:** symmetry/order, correlations, topology and emergent excitations, and engineered platforms (atoms, ions, defects, circuit QED and heterostructures).
+- **Cava et al., pp. 2777–2779:** its three themes of experimental discovery, prediction/interpretation, and information/energy applications; including the eleven reviewed subject areas, crystal chemistry, orbitals, doping, electrides and colloidal dots.
+- **Goyal et al., pp. 1–32:** the four property themes, all Table 1 categories with corrected node types, the principal application sections, theory/measurement examples, and Table 3 methods grouped into six families. Soft/organic materials retain their more limited coverage status. The broad fabrication inventory does not imply equal field relevance for every method.
+
+The formation view distinguishes expansion of a name and problem scope from material discovery and cross-field exchange. It does not infer a single disciplinary founder, or a merged discipline, from these readings. Timeline lenses separate discovery/theory, material design/preparation, and naming/community. Activities can overlap; the selected events are not matched histories establishing disciplinary priority. The map preserves the distinction between established phenomena, candidate platforms, methods, materials and prospective applications.
 
 ## WoS preprocessing
 
@@ -129,7 +139,8 @@ Inspect `data/wos-report.json` after rebuilding. Review changed matches and unma
 | Four explorer `.html` files | Accessible page structure, navigation, labels, and controls. |
 | `about.html`, `about.js` | Source-aware purpose, methods, coverage, graph definitions, and limitations. |
 | `physics-map.html`, `physics-map.css`, `physics-map.js` | Responsive conceptual map, drill-down navigation, search, bilingual details and linked timeline. |
-| `physics-map-data.js` | Curated topic graph, bilingual explanations, dated milestones and source references. |
+| `physics-map-data.js` | Topic graph, historical milestones, graph traversal and filtering. |
+| `physics-map-readings.js` | Source-grounded topic additions, research questions, reading coverage with page locators and field-formation perspectives. |
 | `bootstrap.js` | Loads page scripts and datasets only after the password gate is unlocked. |
 | `style.css` | Shared layout, graph controls, source selector, and paper cards; responsive layout. |
 | `data.js` | Original 812-paper symposium dataset and its legacy helpers. Unmodified by this import. |

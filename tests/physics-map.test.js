@@ -8,7 +8,8 @@ test('every route, milestone and citation resolves; all nodes are reachable', ()
     for (const id of n.events) assert.ok(A.events[id], `${n.id}: ${id}`);
     for (const id of n.sources) assert.ok(A.sources[id], `${n.id}: ${id}`);
     assert.ok(A.validPath(A.pathTo(n.id)), `Canonical path to ${n.id}`);
-    assert.ok(A.descendants('physics').includes(n.id), `Reachable ${n.id}`);
+    assert.ok(A.descendants('landscape').includes(n.id), `Reachable ${n.id}`);
+    for(const evidence of n.evidence) { assert.ok(A.sources[evidence.source]); assert.ok(evidence.locator); }
   }
   for (const e of Object.values(A.events)) {
     assert.ok(A.nodes[e.node]); assert.ok(A.sources[e.source]);
@@ -44,7 +45,44 @@ test('timelines deduplicate cross-listed events, sort dates and filter the reque
   assert.deepEqual(A.timeline('quantum-dots', 1990).map(e => e.id), ['qd1981']);
   assert.equal(A.timeline('quantum-wires').length, 0);
   assert.equal(A.timeline('particles').length, 0);
-  assert.ok(A.timeline('condensed').some(e => e.id === 'cifar2002'));
+  assert.ok(A.timeline('landscape').some(e => e.id === 'cifar2002'));
+});
+
+test('chemistry is an independent entry, with chemical questions and cross-field routes',()=>{
+  assert.deepEqual(A.pathTo('chemistry'),['landscape','chemistry']);
+  assert.ok(!A.get('physics').children.includes('chemistry'));
+  assert.ok(A.validPath(['landscape','chemistry','solid-chemistry','crystal-chemistry','hexagonal-perovskites']));
+  assert.ok(A.validPath(['landscape','quantum-materials','solid-chemistry','crystal-chemistry','hexagonal-perovskites']));
+  assert.ok(A.get('chemistry').questions.length>=2);
+  assert.ok(A.get('electronic-design').children.includes('orbitals'));
+  assert.ok(A.get('electronic-design').children.includes('doping'));
+});
+
+test('reading coverage links resolve and retain source locations and interpretive limits',()=>{
+  assert.deepEqual(A.readings.map(r=>r.id),['nature','cava','goyal']);
+  for(const reading of A.readings){
+    assert.ok(reading.limit.en && reading.limit.zh);
+    for(const group of reading.groups){
+      assert.ok(group.locator);
+      for(const id of group.nodes){
+        assert.ok(A.nodes[id],`${reading.id}: ${id}`);
+        assert.ok(A.get(id).evidence.some(e=>e.source===reading.id));
+      }
+    }
+  }
+  const cavaTopics=new Set(A.readings.find(r=>r.id==='cava').groups.flatMap(g=>g.nodes));
+  for(const id of ['topology-chemistry','photoemission','skyrmions','spin-liquids','hexagonal-perovskites','bonding','orbitals','doping','quantum-algorithms','electrides','quantum-dots'])assert.ok(cavaTopics.has(id));
+  const goyalTopics=new Set(A.readings.find(r=>r.id==='goyal').groups.flatMap(g=>g.nodes));
+  for(const id of ['symmetry','topological-superconductivity','majorana','defects','superfluidity','metamaterials','weyl','synthesis-methods'])assert.ok(goyalTopics.has(id));
+  for(const node of Object.values(A.nodes).filter(n=>!n.placeholder))assert.ok(node.questions.length&&node.questionStatus==='reader-synthesis');
+});
+
+test('historical lenses preserve shared activities and do not imply disciplinary ownership',()=>{
+  assert.ok(A.timeline('landscape',2025,'community').every(e=>e.kind==='institution'));
+  assert.ok(A.timeline('landscape',2025,'materials').some(e=>e.id==='qd1993'));
+  assert.ok(A.timeline('landscape',2025,'materials').some(e=>e.id==='cuprate1986'));
+  assert.ok(A.timeline('landscape',2025,'phenomena').some(e=>e.id==='cuprate1986'));
+  assert.ok(!A.timeline('landscape',1990,'materials').some(e=>e.id==='qd1993'));
 });
 
 test('bilingual search and conceptual types preserve the distinctions in the readings', () => {

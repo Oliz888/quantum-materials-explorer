@@ -45,21 +45,23 @@ test('blocked storage still permits explicit login in the current page',async()=
   await h.form.listeners.submit({preventDefault(){}});await h.context.window.QMAuth.ready;
   assert.equal(h.context.document.documentElement.dataset.auth,'unlocked');
 });
-test('bootstrap makes no dataset requests while locked; About does not load datasets',async()=>{
-  for(const view of ['materials','about']){
+test('bootstrap waits for unlock; About and Physics Map do not load publication datasets',async()=>{
+  for(const view of ['materials','about','physics-map']){
     let resolve;const ready=new Promise(r=>resolve=r);const loaded=[];
     const document={body:{dataset:{view}},createElement(){return {};},head:{appendChild(s){loaded.push(s.src);s.onload();}}};
     const task=vm.runInNewContext(fs.readFileSync(path.join(root,'bootstrap.js'),'utf8'),{window:{QMAuth:{ready}},document,console});
     await Promise.resolve();assert.equal(loaded.length,0);resolve();await task;
     if(view==='about')assert.deepEqual(loaded,['about.js?v=1']);
+    else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-data.js?v=1','physics-map.js?v=1']);
     else {assert.ok(loaded.some(x=>x.startsWith('data.js')));assert.ok(loaded.at(-1).startsWith('explorer.js'));}
   }
 });
 test('all routes start locked, share navigation and have no eager dataset scripts',()=>{
-  for(const file of ['index.html','collaboration.html','techniques.html','phenomena.html','about.html']){
+  for(const file of ['index.html','collaboration.html','techniques.html','phenomena.html','about.html','physics-map.html']){
     const html=fs.readFileSync(path.join(root,file),'utf8');
     assert.match(html,/<html[^>]+data-auth="locked"/);assert.match(html,/auth\.js\?v=2/);
     assert.match(html,/href="about\.html"/);assert.match(html,/data-lock-site/);
+    assert.match(html,/href="physics-map\.html"/);
     assert.doesNotMatch(html,/<script src="(?:data\.js|explorer\.js|graph-core\.js)/);
     assert.doesNotMatch(html,/Materials (?:Discovery )?Hypergraph/);
   }

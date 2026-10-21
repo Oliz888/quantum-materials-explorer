@@ -38,6 +38,7 @@ The graph library loads from `https://unpkg.com/vis-network/standalone/umd/vis-n
 | `collaboration.html` | Co-authorship among the researcher/name IDs recorded in the selected dataset. |
 | `techniques.html` | Technique–material bipartite graph, with Characterization, Synthesis, and Computational filters. |
 | `phenomena.html` | Phenomena linked when they occur together in at least three papers. |
+| `physics-map.html` | Curated bilingual research map: physics → condensed matter → quantum-materials topics, with historical milestones. |
 
 Three pages have a cumulative year cutoff and animation. The technique page uses all years in the selected source. Search filters graph nodes. Click a node to see its details and associated papers. Detail panels respect the year cutoff.
 
@@ -46,6 +47,16 @@ Three pages have a cumulative year cutoff and animation. The technique page uses
 WoS collaboration defaults to the top 100 author name groups by publication count; choose 250 or 500 to expand it. Search applies across all 9,073 name groups before this display limit. Edges are the induced graph among the displayed names, so hidden names and their edges are omitted from the view, not removed from the dataset.
 
 Graphs are pairwise projections; the materials page is titled “Materials Co-occurrence Network.” Node size increases nonlinearly with paper count. Edge width increases with shared-paper count. Force-layout position is not a measured scientific distance. Connections indicate record co-occurrence, not independently established causal or scientific relationships.
+
+## Physics Map
+
+The new **Physics Map** tab is a conceptual reading guide, independent of either publication dataset. Click nodes to explore deeper, use breadcrumbs or Back to retrace a route, or search in Chinese or English. Other physics domains have overview entries only. Shared topics can be reached from more than one direction; cross-links do not assert disciplinary descent.
+
+Hover or keyboard-focus a node to see its development period and milestones. Its detail panel includes source links. The timeline covers selected events through 2021, with the displayed cutoff extending to the readings' 2025 publication year; it does not claim an exhaustive current history. Use the range control to filter events, select a card for context and its source, or click a timeline marker to open the associated topic. Approximate development periods are distinguished from dated discoveries, proposals, synthesis advances and institutional milestones.
+
+Broad domains are selected from [APS PhySH](https://physh.org/disciplines). The expanded routes synthesize [Nature Physics (2016)](https://doi.org/10.1038/nphys3668), [Cava, de Leon & Xie (2021)](https://doi.org/10.1021/acs.chemrev.0c01322), and [Goyal et al. (2025)](https://doi.org/10.1186/s40712-024-00202-7), supplemented by linked original papers and institutional histories. This is an interpretive map, not a formal exhaustive classification. Field, mechanism, material, state, and research-approach labels distinguish different kinds of nodes.
+
+The URL preserves the route, language, timeline cutoff and scope; browser Back/Forward restore them. The publication source selector only controls which dataset opens when returning to publication pages. The map uses local assets, no graph CDN, and the existing password gate.
 
 ## WoS preprocessing
 
@@ -117,6 +128,8 @@ Inspect `data/wos-report.json` after rebuilding. Review changed matches and unma
 | --- | --- |
 | Four explorer `.html` files | Accessible page structure, navigation, labels, and controls. |
 | `about.html`, `about.js` | Source-aware purpose, methods, coverage, graph definitions, and limitations. |
+| `physics-map.html`, `physics-map.css`, `physics-map.js` | Responsive conceptual map, drill-down navigation, search, bilingual details and linked timeline. |
+| `physics-map-data.js` | Curated topic graph, bilingual explanations, dated milestones and source references. |
 | `bootstrap.js` | Loads page scripts and datasets only after the password gate is unlocked. |
 | `style.css` | Shared layout, graph controls, source selector, and paper cards; responsive layout. |
 | `data.js` | Original 812-paper symposium dataset and its legacy helpers. Unmodified by this import. |

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" data-auth="locked">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Physics Map — Quantum Materials Explorer</title>
+<meta name="description" content="Explore physics, condensed matter and quantum materials through a sourced, interactive map and historical timeline.">
+<style>html[data-auth="locked"] body > :not(#auth-gate):not(noscript) { display:none !important; }</style>
+<link rel="stylesheet" href="style.css?v=8"><link rel="stylesheet" href="physics-map.css?v=1">
+<script src="auth.js?v=2" defer></script><script src="bootstrap.js?v=2" defer></script>
+</head>
+<body data-view="physics-map" class="atlas-page">
+<noscript><p>Enable JavaScript to use the interactive map.</p></noscript>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html" class="brand">Quantum <span>Materials Explorer</span></a>
+<a href="index.html">Materials Co-occurrence</a><a href="collaboration.html">Collaboration</a><a href="techniques.html">Techniques × Materials</a><a href="phenomena.html">Phenomena Map</a><a href="physics-map.html" class="active" aria-current="page">Physics Map</a><a href="about.html">About</a><button type="button" class="lock-site" data-lock-site>Lock site</button>
+</nav>
+<main class="atlas-shell" id="atlasMain">
+<div class="atlas-hero"><div><p class="atlas-eyebrow">A RESEARCH ATLAS</p><h1 data-i18n="title">从物理学走进量子材料</h1><p data-i18n="subtitle">点击进入下一层，沿时间轴认识关键发现与研究联系。</p></div><div class="hero-actions"><button type="button" id="jumpQuantum" data-i18n="jump">直达量子材料</button><button type="button" id="language" aria-label="Switch language">English</button></div></div>
+<div class="atlas-controls"><nav id="breadcrumbs" aria-label="Research path"></nav><div class="atlas-search"><label for="atlasSearch" class="sr-only" data-i18n="searchLabel">搜索所有方向</label><input type="search" id="atlasSearch" placeholder="搜索方向 / Search topics" autocomplete="off"><div id="searchResults" hidden aria-label="Search results"></div></div></div>
+<div class="atlas-grid"><section class="atlas-explore" aria-label="Interactive research map"><div class="map-heading"><div><p id="levelLabel" class="atlas-eyebrow"></p><h2 id="levelTitle" tabindex="-1"></h2></div><button type="button" id="backLevel" data-i18n="back">返回上一层</button></div><p id="levelDescription"></p><div class="map-legend"><span class="legend-area" data-i18n="legendArea">研究领域 / 方向</span><span class="legend-mechanism" data-i18n="legendMechanism">机制 / 现象 / 理论</span><span class="legend-material" data-i18n="legendMaterial">材料 / 结构</span><span class="legend-bridge" data-i18n="legendBridge">跨领域主题 / 方法</span></div><div id="mapCanvas" aria-label="Click a topic to explore it"><svg id="mapEdges" viewBox="0 0 1000 570" preserveAspectRatio="none" aria-hidden="true"></svg><div id="mapNodes"></div></div><p id="mapHint" class="map-hint"></p><div id="relatedTopics" class="related-topics"></div></section><aside id="nodeDetails" class="atlas-details" aria-label="Topic details"></aside></div>
+<section class="atlas-timeline" aria-labelledby="timelineTitle"><div class="timeline-heading"><div><p class="atlas-eyebrow">HISTORICAL MILESTONES</p><h2 id="timelineTitle" data-i18n="timeline">沿时间看研究发展</h2></div><div class="timeline-controls"><label for="timelineScope" class="sr-only" data-i18n="scope">时间轴范围</label><select id="timelineScope"><option value="current" data-i18n="currentScope">当前方向与下一层</option><option value="all" data-i18n="allScope">所有已收录路线</option></select><label for="atlasYear" data-i18n="through">截至</label><input id="atlasYear" type="range" min="1911" max="2025" value="2025"><output id="atlasYearLabel" for="atlasYear">2025</output><button type="button" id="resetYear" data-i18n="allYears">全部年份</button></div></div><p class="timeline-note" data-i18n="dateNote">方向通常逐渐形成。节点说明给出大致时期；下方年份是具体历史事件，不是所有领域的“诞生年”。</p><div id="timelinePlot" aria-label="Historical timeline"></div><p id="timelineStatus" role="status"></p><div id="timelineEvents" class="event-grid"></div></section>
+<section class="atlas-reading"><h2 data-i18n="readingTitle">这张地图怎么读</h2><p data-i18n="readingText">连线表示阅读路线和研究联系，不是严格的学科家谱。量子材料是跨方向的共同主题；量子限域是机制，量子点是结构。其他物理学板块在此版本中只列入口。</p><details><summary data-i18n="sourcesTitle">分类与主要阅读来源</summary><div id="readingSources"></div><p data-i18n="sourceMethod">大板块选自 APS PhySH；凝聚态内部的路线按三篇阅读整理，并非照搬一套正式分类。每个历史事件均附原始论文或机构来源。范围未覆盖所有物理学。</p></details></section>
+<footer class="atlas-footer"><div class="control-group"><label for="dataSource" data-i18n="dataset">返回论文图谱时使用</label><select id="dataSource"><option value="symposium">EPiQS Postdoctoral Symposium</option><option value="wos">Web of Science</option></select></div><p data-i18n="datasetNote">本页是文献整理的概念地图，内容不随论文数据集切换。</p></footer>
+</main><div id="nodeTooltip" role="tooltip" hidden></div><div id="atlasAnnounce" class="sr-only" aria-live="polite"></div>
+</body></html>

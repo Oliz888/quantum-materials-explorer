@@ -38,7 +38,8 @@ The graph library loads from `https://unpkg.com/vis-network/standalone/umd/vis-n
 | `collaboration.html` | Co-authorship among the researcher/name IDs recorded in the selected dataset. |
 | `techniques.html` | Technique–material bipartite graph, with Characterization, Synthesis, and Computational filters. |
 | `phenomena.html` | Phenomena linked when they occur together in at least three papers. |
-| `physics-map.html` | Overlapping field atlas with PhySH, Goyal and npj lenses, shared topics, chemistry connections and history. |
+| `physics-map.html` | V1: restored layered map with physics, chemistry, materials science and quantum-information entry points. |
+| `physics-map-v2.html` | V2: interacting research traditions on the main map, plus PhySH, Goyal and npj classification views. |
 
 Three pages have a cumulative year cutoff and animation. The technique page uses all years in the selected source. Search filters graph nodes. Click a node to see its details and associated papers. Detail panels respect the year cutoff.
 
@@ -50,7 +51,11 @@ Graphs are pairwise projections; the materials page is titled “Materials Co-oc
 
 ## Field Atlas / Field Map
 
-`physics-map.html` is an overlapping reading atlas, independent of the publication datasets. Three switchable lenses use the same topic IDs:
+`physics-map.html` restores the layered map from revision `e040616`, including its navigation, cross-links, reading coverage and timeline. `physics-map-v2.html` is the separate, overlapping atlas. Both pages link to each other, preserve language/source preferences and use the same access gate.
+
+V2 opens with **Field connections**: Physics (including condensed matter), Chemistry (solid-state, crystal and electronic-structure traditions), and Materials science & engineering connect directly to quantum materials. Bidirectional arrows represent reciprocal research exchange, not an established genealogy, disciplinary priority, or a quantitative contribution. Shared examples change the questions shown in all three regions. The links are a reading-based synthesis of Nature, Cava and Goyal; they are explicitly distinguished from the three source-specific classification lenses below.
+
+Three switchable classification lenses use the same topic IDs:
 
 - **PhySH:** four official facets from APS PhySH 2.8.0 (Research Areas, Physical Systems, Properties, Techniques). The selected 45 topic-to-concept matches carry concept URLs, DOIs, inherited facet memberships, disciplines, and exact/related match qualifications. Professional Topics is omitted. Properties is deliberately sparse; ordinary-language properties are not automatically placed in that facet. Vocabulary is CC0; the version and source hash are retained in `physics-map-physh.js`.
 - **Goyal:** four central property themes (confinement, correlations, topology, symmetry), plus material systems, applications, and preparation. Topology and symmetry share a subsection in the original. Seven visual regions are our organization of sections and Tables 1 and 3, not seven exclusive classes.
@@ -58,11 +63,11 @@ Graphs are pairwise projections; the materials page is titled “Materials Co-oc
 
 The extended catalog contains 117 nodes, including background entries. Regions show representative topics and their category counts; the searchable index contains all mapped topics, and searching or enabling related context reaches the wider reading catalog. Selecting a topic highlights all its placements, links repeated occurrences, and shows research questions, source locations and mappings in other lenses. Region geometry is schematic, not a quantitative Venn diagram or disciplinary genealogy. Category filters do not turn shared topics into exclusive classes.
 
-The physics–chemistry connection layer retains three source-grounded cases: quantum dots, cuprates, and topological materials. Questions and assignments are editorial synthesis, identified separately from source claims. The source panel retains the principal themes and page/table references from Nature Physics (2016), Cava et al. (2021), and Goyal et al. (2025).
+The physics–chemistry–materials-science connection layer retains three source-grounded cases: quantum dots, cuprates, and topological materials. Questions and assignments are editorial synthesis, identified separately from source claims. The source panel retains the principal themes and page/table references from Nature Physics (2016), Cava et al. (2021), and Goyal et al. (2025).
 
 The timeline retains 25 selected events, through 2021, with a cutoff extending to the readings' 2025 publication year. Its three activity rows distinguish discovery/theory, material design/preparation and names/communities. An event can appear in multiple rows but the status count deduplicates it. Filter by selected topic, category, year and activity; click an event to read its source. The layout references Tokura et al. (2017), Figure 1, but does not reproduce its projected future as established history. Selected milestones cannot establish disciplinary priority.
 
-English mode contains English labels only; Chinese mode remains available. The URL preserves lens, selected topic, category, language, query, context, bridge highlight and timeline settings. Browser Back/Forward restores state. Old `path=physics,...` links select the final topic in the new overview. The publication source selector only changes the return dataset for other pages. The atlas uses local assets and the existing access gate.
+English mode contains English labels only; Chinese mode remains available. The URL preserves lens, selected topic, category, language, query, context, bridge highlight and timeline settings. Browser Back/Forward restores state. Old `path=physics,...` links continue to open the layered V1; V2 also accepts a path and selects its final topic. The publication source selector only changes the return dataset for other pages. The atlas uses local assets and the existing access gate.
 
 Desktop regions and a sticky inspector reflow to compact overlapping regions with a closable detail panel on mobile. Tooltip content is available on focus; tabs support arrow-key navigation. Automated checks validate lens membership provenance, shared identities, explicit-vs-related npj mappings, context preservation, extended references and timeline filters.
 
@@ -136,7 +141,7 @@ Inspect `data/wos-report.json` after rebuilding. Review changed matches and unma
 | --- | --- |
 | Four explorer `.html` files | Accessible page structure, navigation, labels, and controls. |
 | `about.html`, `about.js` | Source-aware purpose, methods, coverage, graph definitions, and limitations. |
-| `physics-map.html`, `physics-map.css`, `physics-map.js` | Responsive overlapping atlas, lens switching, search, bilingual details and historical activity rows. |
+| `physics-map.html`, `physics-map.css`, `physics-map.js` / `physics-map-v2.js` | Responsive overlapping atlas, lens switching, search, bilingual details and historical activity rows. |
 | `physics-map-data.js` | Topic graph, historical milestones, graph traversal and filtering. |
 | `physics-map-views.js` | Source-specific memberships, additional scope topics, cross-field examples and history filtering. |
 | `physics-map-physh.js` | Selected official versioned vocabulary, concept identifiers and explicit correspondence qualifications (CC0). |

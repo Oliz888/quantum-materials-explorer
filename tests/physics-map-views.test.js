@@ -1,8 +1,8 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
 const V=require('../physics-map-views.js'),A=V.A;
-test('three lenses preserve shared topic identities and source-qualified memberships',()=>{
- assert.deepEqual(Object.keys(V.views),['physh','goyal','npj']);
+test('formation overview and three lenses preserve shared topic identities and source-qualified memberships',()=>{
+ assert.deepEqual(Object.keys(V.views),['origins','physh','goyal','npj']);
  for(const view of Object.values(V.views))for(const group of view.groups){
   assert.ok(group.locator);assert.ok(group.members.length);assert.equal(new Set(group.members).size,group.members.length);
   for(const id of group.members){assert.ok(A.nodes[id],id);const m=V.mapping(id,view.id,group.id);assert.ok(m.status&&m.url);assert.equal(new URL(m.url).protocol,'https:');}
@@ -48,4 +48,16 @@ test('timeline deduplicates shared events and respects topic, category, year and
  assert.ok(filtered.some(e=>e.id==='cuprate1986'));assert.ok(filtered.every(e=>e.year<=1986));
  assert.equal(filtered.length,new Set(filtered.map(e=>e.id)).size);
  assert.equal(V.eventsFor('npj','energy','energy','category',2025,'all').length,0);
+});
+
+test('formation overview connects all three traditions without claiming an official taxonomy',()=>{
+ assert.equal(V.views.origins.kind,'interpretive');
+ assert.deepEqual(V.views.origins.groups.map(g=>g.id),['physics','chemistry','materials-science']);
+ for(const id of ['quantum-materials','quantum-dots','cuprates','topological-chemistry']){
+  assert.equal(V.memberships(id,'origins').length,3,id);
+  for(const g of V.memberships(id,'origins'))assert.equal(V.mapping(id,'origins',g.id).status,'connection');
+ }
+ for(const b of V.bridges)for(const question of ['physics','chemistry','materials'])assert.ok(b[question].en&&b[question].zh);
+ assert.equal(V.memberships('crystal-growth','origins').length,3);
+ assert.ok(V.eventsFor('origins','chemistry','quantum-dots','category',2025,'all').some(e=>e.id==='qd1993'));
 });

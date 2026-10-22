@@ -46,18 +46,19 @@ test('blocked storage still permits explicit login in the current page',async()=
   assert.equal(h.context.document.documentElement.dataset.auth,'unlocked');
 });
 test('bootstrap waits for unlock; About and Physics Map do not load publication datasets',async()=>{
-  for(const view of ['materials','about','physics-map']){
+  for(const view of ['materials','about','physics-map','physics-map-v2']){
     let resolve;const ready=new Promise(r=>resolve=r);const loaded=[];
     const document={body:{dataset:{view}},createElement(){return {};},head:{appendChild(s){loaded.push(s.src);s.onload();}}};
     const task=vm.runInNewContext(fs.readFileSync(path.join(root,'bootstrap.js'),'utf8'),{window:{QMAuth:{ready}},document,console});
     await Promise.resolve();assert.equal(loaded.length,0);resolve();await task;
     if(view==='about')assert.deepEqual(loaded,['about.js?v=1']);
-    else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map-physh.js?v=1','physics-map-views.js?v=1','physics-map.js?v=3']);
+    else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map.js?v=4']);
+    else if(view==='physics-map-v2')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map-physh.js?v=1','physics-map-views.js?v=2','physics-map-v2.js?v=1']);
     else {assert.ok(loaded.some(x=>x.startsWith('data.js')));assert.ok(loaded.at(-1).startsWith('explorer.js'));}
   }
 });
 test('all routes start locked, share navigation and have no eager dataset scripts',()=>{
-  for(const file of ['index.html','collaboration.html','techniques.html','phenomena.html','about.html','physics-map.html']){
+  for(const file of ['index.html','collaboration.html','techniques.html','phenomena.html','about.html','physics-map.html','physics-map-v2.html']){
     const html=fs.readFileSync(path.join(root,file),'utf8');
     assert.match(html,/<html[^>]+data-auth="locked"/);assert.match(html,/auth\.js\?v=2/);
     assert.match(html,/href="about\.html"/);assert.match(html,/data-lock-site/);

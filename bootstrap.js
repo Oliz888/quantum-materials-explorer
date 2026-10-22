@@ -9,12 +9,14 @@
     });
   }
   try {
-    if(document.body.dataset.view==='physics-map') {
+    if(['physics-map','physics-map-v2'].includes(document.body.dataset.view)) {
       await load('physics-map-readings.js?v=1');
       await load('physics-map-data.js?v=2');
-      await load('physics-map-physh.js?v=1');
-      await load('physics-map-views.js?v=1');
-      await load('physics-map.js?v=3');
+      if(document.body.dataset.view==='physics-map-v2') {
+        await load('physics-map-physh.js?v=1');
+        await load('physics-map-views.js?v=2');
+        await load('physics-map-v2.js?v=1');
+      } else await load('physics-map.js?v=4');
       return;
     }
     if(document.body.dataset.view==='about') { await load('about.js?v=1'); return; }

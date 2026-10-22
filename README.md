@@ -38,7 +38,7 @@ The graph library loads from `https://unpkg.com/vis-network/standalone/umd/vis-n
 | `collaboration.html` | Co-authorship among the researcher/name IDs recorded in the selected dataset. |
 | `techniques.html` | Technique–material bipartite graph, with Characterization, Synthesis, and Computational filters. |
 | `phenomena.html` | Phenomena linked when they occur together in at least three papers. |
-| `physics-map.html` | Research traditions, topics, questions and history: independent physics, chemistry, materials-science and quantum-information entries. |
+| `physics-map.html` | Overlapping field atlas with PhySH, Goyal and npj lenses, shared topics, chemistry connections and history. |
 
 Three pages have a cumulative year cutoff and animation. The technique page uses all years in the selected source. Search filters graph nodes. Click a node to see its details and associated papers. Detail panels respect the year cutoff.
 
@@ -48,25 +48,23 @@ WoS collaboration defaults to the top 100 author name groups by publication coun
 
 Graphs are pairwise projections; the materials page is titled “Materials Co-occurrence Network.” Node size increases nonlinearly with paper count. Edge width increases with shared-paper count. Force-layout position is not a measured scientific distance. Connections indicate record co-occurrence, not independently established causal or scientific relationships.
 
-## Field Map
+## Field Atlas / Field Map
 
-The new **Field Map** tab is a conceptual reading guide, independent of either publication dataset. Click nodes to explore deeper, use breadcrumbs or Back to retrace a route, or search in Chinese or English. Other physics domains have overview entries only, except atomic/optical routes relevant to the readings. English mode displays English labels only; the Chinese interface remains available separately. Nodes omit repetitive navigation hints. Shared topics can be reached from more than one direction; cross-links do not assert disciplinary descent.
+`physics-map.html` is an overlapping reading atlas, independent of the publication datasets. Three switchable lenses use the same topic IDs:
 
-Hover or keyboard-focus a node to see its development period and milestones. Its detail panel includes source links. The timeline covers selected events through 2021, with the displayed cutoff extending to the readings' 2025 publication year; it does not claim an exhaustive current history. Use the range control to filter events, select a card for context and its source, or click a timeline marker to open the associated topic. Approximate development periods are distinguished from dated discoveries, proposals, synthesis advances and institutional milestones.
+- **PhySH:** four official facets from APS PhySH 2.8.0 (Research Areas, Physical Systems, Properties, Techniques). The selected 45 topic-to-concept matches carry concept URLs, DOIs, inherited facet memberships, disciplines, and exact/related match qualifications. Professional Topics is omitted. Properties is deliberately sparse; ordinary-language properties are not automatically placed in that facet. Vocabulary is CC0; the version and source hash are retained in `physics-map-physh.js`.
+- **Goyal:** four central property themes (confinement, correlations, topology, symmetry), plus material systems, applications, and preparation. Topology and symmetry share a subsection in the original. Seven visual regions are our organization of sections and Tables 1 and 3, not seven exclusive classes.
+- **npj Quantum Materials:** six groups follow the journal's Aims & Scope. Explicitly named topics are separated from curated related mappings. Topics not itemized remain searchable as context; this does not assert exclusion by the journal.
 
-Broad domains are selected from [APS PhySH](https://physh.org/disciplines). The expanded routes synthesize [Nature Physics (2016)](https://doi.org/10.1038/nphys3668), [Cava, de Leon & Xie (2021)](https://doi.org/10.1021/acs.chemrev.0c01322), and [Goyal et al. (2025)](https://doi.org/10.1186/s40712-024-00202-7), supplemented by linked original papers and institutional histories. This is an interpretive map, not a formal exhaustive classification. Field, mechanism, material, state, and research-approach labels distinguish different kinds of nodes.
+The extended catalog contains 117 nodes, including background entries. Regions show representative topics and their category counts; the searchable index contains all mapped topics, and searching or enabling related context reaches the wider reading catalog. Selecting a topic highlights all its placements, links repeated occurrences, and shows research questions, source locations and mappings in other lenses. Region geometry is schematic, not a quantitative Venn diagram or disciplinary genealogy. Category filters do not turn shared topics into exclusive classes.
 
-The URL preserves the route, language, timeline cutoff, activity lens and scope; browser Back/Forward restore them. The publication source selector only controls which dataset opens when returning to publication pages. The map uses local assets, no graph CDN, and the existing password gate.
+The physics–chemistry connection layer retains three source-grounded cases: quantum dots, cuprates, and topological materials. Questions and assignments are editorial synthesis, identified separately from source claims. The source panel retains the principal themes and page/table references from Nature Physics (2016), Cava et al. (2021), and Goyal et al. (2025).
 
-### Reading coverage and field formation
+The timeline retains 25 selected events, through 2021, with a cutoff extending to the readings' 2025 publication year. Its three activity rows distinguish discovery/theory, material design/preparation and names/communities. An event can appear in multiple rows but the status count deduplicates it. Filter by selected topic, category, year and activity; click an event to read its source. The layout references Tokura et al. (2017), Figure 1, but does not reproduce its projected future as established history. Selected milestones cannot establish disciplinary priority.
 
-The map now has 98 nodes. Physics, chemistry, materials science and quantum information are independent entry points under `landscape`; old URLs starting at `physics` still work. Expanded topics carry research questions, labeled as editorial synthesis, and original-paper page or table references. The coverage panel links the principal sections and categories of all three readings directly to nodes:
+English mode contains English labels only; Chinese mode remains available. The URL preserves lens, selected topic, category, language, query, context, bridge highlight and timeline settings. Browser Back/Forward restores state. Old `path=physics,...` links select the final topic in the new overview. The publication source selector only changes the return dataset for other pages. The atlas uses local assets and the existing access gate.
 
-- **Nature Physics, p. 105:** symmetry/order, correlations, topology and emergent excitations, and engineered platforms (atoms, ions, defects, circuit QED and heterostructures).
-- **Cava et al., pp. 2777–2779:** its three themes of experimental discovery, prediction/interpretation, and information/energy applications; including the eleven reviewed subject areas, crystal chemistry, orbitals, doping, electrides and colloidal dots.
-- **Goyal et al., pp. 1–32:** the four property themes, all Table 1 categories with corrected node types, the principal application sections, theory/measurement examples, and Table 3 methods grouped into six families. Soft/organic materials retain their more limited coverage status. The broad fabrication inventory does not imply equal field relevance for every method.
-
-The formation view distinguishes expansion of a name and problem scope from material discovery and cross-field exchange. It does not infer a single disciplinary founder, or a merged discipline, from these readings. Timeline lenses separate discovery/theory, material design/preparation, and naming/community. Activities can overlap; the selected events are not matched histories establishing disciplinary priority. The map preserves the distinction between established phenomena, candidate platforms, methods, materials and prospective applications.
+Desktop regions and a sticky inspector reflow to compact overlapping regions with a closable detail panel on mobile. Tooltip content is available on focus; tabs support arrow-key navigation. Automated checks validate lens membership provenance, shared identities, explicit-vs-related npj mappings, context preservation, extended references and timeline filters.
 
 ## WoS preprocessing
 
@@ -138,8 +136,10 @@ Inspect `data/wos-report.json` after rebuilding. Review changed matches and unma
 | --- | --- |
 | Four explorer `.html` files | Accessible page structure, navigation, labels, and controls. |
 | `about.html`, `about.js` | Source-aware purpose, methods, coverage, graph definitions, and limitations. |
-| `physics-map.html`, `physics-map.css`, `physics-map.js` | Responsive conceptual map, drill-down navigation, search, bilingual details and linked timeline. |
+| `physics-map.html`, `physics-map.css`, `physics-map.js` | Responsive overlapping atlas, lens switching, search, bilingual details and historical activity rows. |
 | `physics-map-data.js` | Topic graph, historical milestones, graph traversal and filtering. |
+| `physics-map-views.js` | Source-specific memberships, additional scope topics, cross-field examples and history filtering. |
+| `physics-map-physh.js` | Selected official versioned vocabulary, concept identifiers and explicit correspondence qualifications (CC0). |
 | `physics-map-readings.js` | Source-grounded topic additions, research questions, reading coverage with page locators and field-formation perspectives. |
 | `bootstrap.js` | Loads page scripts and datasets only after the password gate is unlocked. |
 | `style.css` | Shared layout, graph controls, source selector, and paper cards; responsive layout. |
@@ -170,7 +170,7 @@ Browser checks cover source switching, persistence across navigation, the earlie
 
 ## Password and publication
 
-The password is not included in this README and has not been changed. `auth.js` compares its SHA-256 hash and stores an eight-hour session in `sessionStorage` under `qm_auth_v2`. The old `qm_auth` flag is retired, so previously unlocked tabs must sign in again. All five pages start hidden behind the gate; `bootstrap.js` waits for successful entry before loading explorer scripts or datasets. Valid sessions are reused across navigation in the same tab; expiry is checked at the next page load. **Lock site** clears the session and reloads the page.
+The password is not included in this README and has not been changed. `auth.js` compares its SHA-256 hash and stores an eight-hour session in `sessionStorage` under `qm_auth_v2`. The old `qm_auth` flag is retired, so previously unlocked tabs must sign in again. All six pages start hidden behind the gate; `bootstrap.js` waits for successful entry before loading explorer scripts or datasets. Valid sessions are reused across navigation in the same tab; expiry is checked at the next page load. **Lock site** clears the session and reloads the page.
 
 This is a browser display gate, not server-side access control or encryption. Static assets and the public repository remain directly retrievable, including earlier published versions. Do not treat this interface password as confidentiality for data. Actual access control requires a hosting or data-serving layer that authenticates each protected request.
 

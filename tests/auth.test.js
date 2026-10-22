@@ -52,7 +52,7 @@ test('bootstrap waits for unlock; About and Physics Map do not load publication 
     const task=vm.runInNewContext(fs.readFileSync(path.join(root,'bootstrap.js'),'utf8'),{window:{QMAuth:{ready}},document,console});
     await Promise.resolve();assert.equal(loaded.length,0);resolve();await task;
     if(view==='about')assert.deepEqual(loaded,['about.js?v=1']);
-    else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map.js?v=2']);
+    else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map-physh.js?v=1','physics-map-views.js?v=1','physics-map.js?v=3']);
     else {assert.ok(loaded.some(x=>x.startsWith('data.js')));assert.ok(loaded.at(-1).startsWith('explorer.js'));}
   }
 });

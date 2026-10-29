@@ -19,6 +19,12 @@
       } else await load('physics-map.js?v=4');
       return;
     }
+    if(document.body.dataset.view==='institutional-atlas') {
+      await load('institutional-atlas/data/bundle.js?v=1');
+      await load('institutional-atlas/atlas-core.js?v=1');
+      await load('institutional-atlas/atlas.js?v=1');
+      return;
+    }
     if(document.body.dataset.view==='institutions') {
       await load('directory-core.js?v=2');
       await load('directory.js?v=2');

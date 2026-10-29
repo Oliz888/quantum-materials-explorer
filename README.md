@@ -206,3 +206,13 @@ Each `milestones` item has its own year, event label, type and source URL. The c
 `directory-core.js` handles cross-listing, filters, relationship aggregation, milestones and CSV export. `directory.js` renders after the existing access gate resolves, independently of publication data. Search (`q`), group (`group`) and publication context (`source`) remain in URLs. Entity fragments open their evidence details. CSV exports retain milestones, geographic sources and official references.
 
 When updating, verify official evidence, preserve status distinctions and unknown dates, update check metadata, and run `node --test tests/*.test.js`. A live institutional page alone does not verify continued award funding.
+
+## Institutional Atlas V2
+
+Both Programs versions remain available. `programs.html`, `labs.html` and `federal.html` retain the V1 directory, relationship map, host map and milestones. Their version switch links to `institutional-atlas.html`, the V2 geographic atlas, with a reciprocal V1 link. The top-level Programs entry continues to open the original directory.
+
+V2 preserves the reviewed local prototype: 40 distinct university/lab hosts, 49 state/DC labels, 93 unique directory entries, 89 sourced events, adjustable education/research/funding weights and a selected sample of 19 NSF prime awards. Its isolated source and dated data snapshot live under `institutional-atlas/`; no publication datasets or V1 data were replaced. `data/bundle.js` packages the adjacent JSON files for the browser. If those JSON files change, regenerate that bundle before publishing. The award CSV contains the same 19 source-linked records.
+
+Funding defaults to eight quantum-materials-focused awards; the optional broader scope includes mixed MRSEC and QIS awards. Amounts are cumulative NSF obligations assigned once to each official prime recipient, not campus-wide funding totals or funds allocated to each collaborator. Unknown funding remains not assessed. The weight-based score reflects evidence coverage in this selected directory, not institutional quality. The date slider filters milestone events, not cumulative funding snapshots.
+
+The hosted V2 page uses the same access gate and deferred bootstrap as the rest of the site. Internal navigation preserves the selected publication source. The earlier standalone offline preview remains outside this repository. Tests cover reciprocal version links, locked/deferred loading, weights, funding deduplication and attribution, filters, state geography and timeline invariants.

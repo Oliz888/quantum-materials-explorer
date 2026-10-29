@@ -1,0 +1,745 @@
+{
+  "version": 1,
+  "retrievalDate": "2026-10-29",
+  "currency": "USD",
+  "title": "Selected NSF award records for an experimental institutional map",
+  "methodology": {
+    "source": "NSF Awards API",
+    "sourceDocumentation": "https://resources.research.gov/common/webapi/awardapisearch-v1.htm",
+    "selection": "Purposive evidence sample: quantum-materials foundries/CIQM and training awards represented in the directory; selected MRSECs with quantum-materials research; all eight 2026 NSF QLCI awards. This is not a systematic or exhaustive quantum-materials funding search.",
+    "universe": "19 unique NSF prime-award records at 14 recipient universities, with record starts spanning 2013–2026. No DOE/DOD/private funding totals are included.",
+    "aggregation": "Deduplicate by NSF award ID. Sum only fundsObligatedAmt for selected scope types and dates. Assign each full prime award only once, to its named recipient university. Do not multiply by partner count or add an award again via linked center entries. A university total means selected records only.",
+    "defaultScope": [
+      "quantum-materials"
+    ],
+    "scopeDefinitions": {
+      "quantum-materials": "Award abstract explicitly centers research/training on quantum materials; includes full award administration and education, not pure research spend.",
+      "mixed-materials": "Whole materials-center award includes quantum-materials and other research; quantum-only budget is unknown.",
+      "broader-qis": "Whole quantum information science institute award; contains materials connections but not restricted to quantum materials."
+    },
+    "limitations": [
+      "Amounts are cumulative obligations as retrieved, not cash spent, annual budgets, direct awards to every collaborator, or total funding received by a university.",
+      "Funding amounts across different start dates and award durations are not a controlled performance comparison. Show dates and allow scope/date filtering.",
+      "Missing award records mean not assessed in this selected sample, not zero support.",
+      "The original announced or estimated amount can differ from cumulative obligations after amendments; do not merge these fields.",
+      "Some listed award end dates are past and some are estimated future dates. Do not describe all sums as current active funding.",
+      "MRSEC and QLCI institution matches do not establish funding for a university degree/minor/certificate; entryMatchType distinguishes university-level links.",
+      "The sample is appropriate for evidence-backed highlights, not a ranking of university research quality or a comprehensive national funding leaderboard.",
+      "NSF award web pages depend on client rendering and may show an empty shell in text-only readers; the official API URL supplies the verified record."
+    ],
+    "recommendedUiLabel": "Selected NSF obligations (USD; prime recipient; as of 29 Oct 2026)",
+    "recommendedMissingLabel": "No award assessed in this sample",
+    "retrieval": "Fetched each official record by award ID and retained monetary/date fields; scope tags were assigned by reading the official abstract.",
+    "excludedExample": {
+      "awardId": "2614298",
+      "reason": "The 2026 Harvard MRSEC abstract focuses on soft materials, hydrogels and vesicles, with no explicit quantum-materials research theme; excluded despite Harvard hosting other quantum activity."
+    }
+  },
+  "hostAdditions": [
+    {
+      "id": "ucsb",
+      "name": "University of California, Santa Barbara",
+      "reason": "The existing UCSB Quantum Foundry entry has an empty hostIds array. Use this new canonical university ID for the award recipient and existing center.",
+      "stateCode": "CA"
+    }
+  ],
+  "awards": [
+    {
+      "awardId": "1231319",
+      "agency": "NSF",
+      "recipientInstitution": "Harvard University",
+      "hostIds": [
+        "harvard"
+      ],
+      "recipientHostId": "harvard",
+      "relatedEntryIds": [
+        "ciqm"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "Center for Integrated Quantum Materials",
+      "shortTitle": "Center for Integrated Quantum Materials",
+      "amountUSD": 44434392,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 19971962,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2013-10-01",
+      "endDate": "2027-03-31",
+      "latestAmendmentDate": "2026-04-02",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/1231319.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1231319",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Graphene, topological insulators, and diamond nitrogen-vacancy centers are the center’s stated research focus. This is the Harvard prime award for a partnership; do not allocate its full amount to MIT or Howard.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "CAMBRIDGE",
+      "recipientStateCode": "MA",
+      "fiscalYearObligationsAsReported": [
+        "FY 2013 = $3,832,809.00",
+        "FY 2014 = $3,874,786.00",
+        "FY 2015 = $4,332,016.00",
+        "FY 2016 = $4,087,474.00",
+        "FY 2017 = $4,396,876.00",
+        "FY 2018 = $5,371,901.00",
+        "FY 2019 = $5,097,466.00",
+        "FY 2020 = $5,271,212.00",
+        "FY 2021 = $4,434,922.00",
+        "FY 2022 = $3,734,931.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "1906325",
+      "agency": "NSF",
+      "recipientInstitution": "University of California-Santa Barbara",
+      "hostIds": [
+        "ucsb"
+      ],
+      "recipientHostId": "ucsb",
+      "relatedEntryIds": [
+        "ucsb-foundry"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "Enabling Quantum Leap: Q-AMASE-i: Quantum Foundry at UCSB",
+      "shortTitle": "UCSB Quantum Foundry",
+      "amountUSD": 31223020,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 24975564,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2019-09-15",
+      "endDate": "2027-08-31",
+      "latestAmendmentDate": "2025-08-05",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/1906325.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1906325",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Materials and interfaces hosting protected coherent quantum states, including topological superconductors and local quantum states. Amount includes award amendments; it is larger than the original announced award.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "SANTA BARBARA",
+      "recipientStateCode": "CA",
+      "fiscalYearObligationsAsReported": [
+        "FY 2019 = $6,952,844.00",
+        "FY 2020 = $5,857,696.00",
+        "FY 2021 = $2,976,626.00",
+        "FY 2022 = $3,063,267.00",
+        "FY 2023 = $6,372,588.00",
+        "FY 2025 = $5,999,998.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "1906383",
+      "agency": "NSF",
+      "recipientInstitution": "Montana State University",
+      "hostIds": [
+        "montana"
+      ],
+      "recipientHostId": "montana",
+      "relatedEntryIds": [
+        "monark"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "Enabling Quantum Leap: Q-AMASE-i: MonArk Quantum Foundry: Rapidly Incubating Translational Advances in QISE with a 2D-Quantum Materials Pipeline (2D-QMaP)",
+      "shortTitle": "MonArk Quantum Foundry",
+      "amountUSD": 22222678,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 19990000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2021-09-15",
+      "endDate": "2027-08-31",
+      "latestAmendmentDate": "2026-04-01",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/1906383.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1906383",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Two-dimensional quantum materials and device synthesis/characterization. This record names Montana State as recipient; the joint Arkansas host must not receive this whole amount again. The API start date is the award-record start, not the foundry founding date.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "BOZEMAN",
+      "recipientStateCode": "MT",
+      "fiscalYearObligationsAsReported": [
+        "FY 2021 = $11,300,000.00",
+        "FY 2022 = $5,432,678.00",
+        "FY 2023 = $5,490,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2244310",
+      "agency": "NSF",
+      "recipientInstitution": "Yale University",
+      "hostIds": [
+        "yale"
+      ],
+      "recipientHostId": "yale",
+      "relatedEntryIds": [
+        "yale-qmse"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "NRT-QL: Interdisciplinary Graduate Program in Quantum Materials Science and Engineering",
+      "shortTitle": "Yale quantum materials traineeship",
+      "amountUSD": 3000000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 3000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2023-07-15",
+      "endDate": "2028-06-30",
+      "latestAmendmentDate": "2023-07-06",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2244310.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2244310",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Graduate traineeship focused on quantum materials, including topological nanowires. It funds training and research, not only material synthesis.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "NEW HAVEN",
+      "recipientStateCode": "CT",
+      "fiscalYearObligationsAsReported": [
+        "FY 2023 = $3,000,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2244274",
+      "agency": "NSF",
+      "recipientInstitution": "University of Arkansas",
+      "hostIds": [
+        "arkansas"
+      ],
+      "recipientHostId": "arkansas",
+      "relatedEntryIds": [
+        "monark"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "NRT-QISE: Bridging the Gap Between 2D Quantum Materials and Engineering in STEM Education",
+      "shortTitle": "Arkansas 2D quantum materials traineeship",
+      "amountUSD": 3000000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 3000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2023-08-15",
+      "endDate": "2028-07-31",
+      "latestAmendmentDate": "2025-09-02",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2244274.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2244274",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Separate graduate traineeship in two-dimensional quantum materials and devices, linked in the abstract to MonArk. A distinct award from the MonArk foundry prime grant.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "FAYETTEVILLE",
+      "recipientStateCode": "AR",
+      "fiscalYearObligationsAsReported": [
+        "FY 2023 = $1,225,000.00",
+        "FY 2024 = $683,681.00",
+        "FY 2025 = $1,091,319.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2011738",
+      "agency": "NSF",
+      "recipientInstitution": "Columbia University",
+      "hostIds": [
+        "columbia"
+      ],
+      "recipientHostId": "columbia",
+      "relatedEntryIds": [
+        "columbia-quantum-materials"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "Columbia University MRSEC on Precision-Assembled Quantum Materials",
+      "shortTitle": "Columbia PAQM MRSEC",
+      "amountUSD": 17700000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 18000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2020-09-01",
+      "endDate": "2026-08-31",
+      "latestAmendmentDate": "2025-08-20",
+      "activeAwardFlag": false,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2011738.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2011738",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Both research groups study assembled quantum materials, including van der Waals heterostructures and superatomic materials. The award period ended in 2026; retained as historical support.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "NEW YORK",
+      "recipientStateCode": "NY",
+      "fiscalYearObligationsAsReported": [
+        "FY 2020 = $3,600,000.00",
+        "FY 2021 = $2,500,000.00",
+        "FY 2022 = $2,900,000.00",
+        "FY 2023 = $3,000,000.00",
+        "FY 2024 = $2,850,000.00",
+        "FY 2025 = $2,850,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2614607",
+      "agency": "NSF",
+      "recipientInstitution": "Columbia University",
+      "hostIds": [
+        "columbia"
+      ],
+      "recipientHostId": "columbia",
+      "relatedEntryIds": [
+        "columbia-quantum-materials"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "Center: MRSEC for Advanced Electronic Materials (AEM)",
+      "shortTitle": "Columbia Advanced Electronic Materials MRSEC",
+      "amountUSD": 3000000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 18000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2032-08-31",
+      "latestAmendmentDate": "2026-09-28",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2614607.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2614607",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Successor Columbia MRSEC award for coherent charge-neutral information flow and nonequilibrium quantum metamaterials. Distinct award ID from 2011738; do not add its intended total to obligations.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "NEW YORK",
+      "recipientStateCode": "NY",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $3,000,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2308979",
+      "agency": "NSF",
+      "recipientInstitution": "University of Washington",
+      "hostIds": [
+        "washington"
+      ],
+      "recipientHostId": "washington",
+      "relatedEntryIds": [
+        "uw-qise-certificate"
+      ],
+      "entryMatchType": "same-recipient-institution",
+      "awardTitle": "MRSEC: UW Molecular Engineering Materials Center",
+      "shortTitle": "UW Molecular Engineering Materials Center",
+      "amountUSD": 11700000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 18000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2023-09-01",
+      "endDate": "2029-08-31",
+      "latestAmendmentDate": "2026-08-13",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2308979.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2308979",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Both research groups address quantum materials: spin-photonic nanostructures and elastic quantum matter. University-level match; this is not funding for the graduate certificate itself.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "SEATTLE",
+      "recipientStateCode": "WA",
+      "fiscalYearObligationsAsReported": [
+        "FY 2023 = $3,000,000.00",
+        "FY 2024 = $2,850,000.00",
+        "FY 2025 = $2,850,000.00",
+        "FY 2026 = $3,000,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2309037",
+      "agency": "NSF",
+      "recipientInstitution": "University of Illinois at Urbana-Champaign",
+      "hostIds": [
+        "illinois"
+      ],
+      "recipientHostId": "illinois",
+      "relatedEntryIds": [
+        "illinois-qis-minor"
+      ],
+      "entryMatchType": "same-recipient-institution",
+      "awardTitle": "Illinois Materials Research Science and Engineering Center (I-MRSEC)",
+      "shortTitle": "Illinois MRSEC",
+      "amountUSD": 11949317,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 18000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2023-09-01",
+      "endDate": "2029-08-31",
+      "latestAmendmentDate": "2026-08-11",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2309037.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2309037",
+      "scopeType": "mixed-materials",
+      "scopeNote": "One group studies strain-controlled 2D/thin-film electronic materials, including superconductivity/topology; another studies photo-ionics and batteries. Whole-center award, with no disclosed quantum-only share. Not funding for the minor itself.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "URBANA",
+      "recipientStateCode": "IL",
+      "fiscalYearObligationsAsReported": [
+        "FY 2023 = $3,000,000.00",
+        "FY 2024 = $3,099,317.00",
+        "FY 2025 = $2,850,000.00",
+        "FY 2026 = $3,000,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2309000",
+      "agency": "NSF",
+      "recipientInstitution": "University of Wisconsin-Madison",
+      "hostIds": [
+        "wisconsin"
+      ],
+      "recipientHostId": "wisconsin",
+      "relatedEntryIds": [
+        "wisconsin-solid-state-pathway"
+      ],
+      "entryMatchType": "same-recipient-institution",
+      "awardTitle": "Wisconsin MRSEC",
+      "shortTitle": "Wisconsin MRSEC",
+      "amountUSD": 11819999,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 18000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2023-09-01",
+      "endDate": "2029-08-31",
+      "latestAmendmentDate": "2026-08-10",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2309000.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2309000",
+      "scopeType": "mixed-materials",
+      "scopeNote": "Research covers both glasses/liquids and magnetic crystalline membranes. Whole-center award; the quantum-materials fraction is not disclosed. Not funding for the MS pathway itself.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "MADISON",
+      "recipientStateCode": "WI",
+      "fiscalYearObligationsAsReported": [
+        "FY 2023 = $3,000,000.00",
+        "FY 2024 = $2,939,999.00",
+        "FY 2025 = $2,850,000.00",
+        "FY 2026 = $3,030,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2614599",
+      "agency": "NSF",
+      "recipientInstitution": "Princeton University",
+      "hostIds": [
+        "princeton"
+      ],
+      "recipientHostId": "princeton",
+      "relatedEntryIds": [
+        "princeton-qse-minor"
+      ],
+      "entryMatchType": "same-recipient-institution",
+      "awardTitle": "Center: Princeton Center for Complex Materials",
+      "shortTitle": "Princeton Center for Complex Materials",
+      "amountUSD": 2000000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 18000000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2032-08-31",
+      "latestAmendmentDate": "2026-07-29",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2614599.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2614599",
+      "scopeType": "mixed-materials",
+      "scopeNote": "One group discovers and controls correlated/topological quantum materials; another studies biomolecular condensates. Whole-center award; the quantum-only share is unknown. Not funding for the minor itself.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "PRINCETON",
+      "recipientStateCode": "NJ",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $2,000,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2553576",
+      "agency": "NSF",
+      "recipientInstitution": "University of Chicago",
+      "hostIds": [
+        "chicago"
+      ],
+      "recipientHostId": "chicago",
+      "relatedEntryIds": [
+        "qubbe"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: Quantum Sensing for Biophysics and Bioengineering (QUBBE)",
+      "shortTitle": "QuBBE",
+      "amountUSD": 7500000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 37500000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-08-24",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2553576.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2553576",
+      "scopeType": "broader-qis",
+      "scopeNote": "Quantum sensing for biology and bioengineering, including spin-based and nanodiamond probes. Broader QIS award; quantum-materials-only spending is not separated.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "CHICAGO",
+      "recipientStateCode": "IL",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $7,500,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2553619",
+      "agency": "NSF",
+      "recipientInstitution": "Harvard University",
+      "hostIds": [
+        "harvard"
+      ],
+      "recipientHostId": "harvard",
+      "relatedEntryIds": [
+        "ftqsaa"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: Fault Tolerant Quantum Systems, Architectures and Applications (FTQSAA)",
+      "shortTitle": "FTQSAA",
+      "amountUSD": 7500000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 37500000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-08-24",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2553619.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2553619",
+      "scopeType": "broader-qis",
+      "scopeNote": "Fault-tolerant quantum hardware, software and algorithms, including materials. Whole institute, not a quantum-materials-only award. Harvard is the prime recipient; do not duplicate for MIT.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "CAMBRIDGE",
+      "recipientStateCode": "MA",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $7,500,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2553574",
+      "agency": "NSF",
+      "recipientInstitution": "University of Maryland, College Park",
+      "hostIds": [
+        "maryland"
+      ],
+      "recipientHostId": "maryland",
+      "relatedEntryIds": [
+        "rqs"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: Institute for Robust Quantum Simulation (RQS)",
+      "shortTitle": "RQS",
+      "amountUSD": 7500000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 37500000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-08-24",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2553574.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2553574",
+      "scopeType": "broader-qis",
+      "scopeNote": "Quantum simulation, algorithms and hardware across ion-trap, atom and superconducting platforms. Whole institute; quantum-materials spending is not isolated.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "COLLEGE PARK",
+      "recipientStateCode": "MD",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $7,500,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2553633",
+      "agency": "NSF",
+      "recipientInstitution": "Princeton University",
+      "hostIds": [
+        "princeton"
+      ],
+      "recipientHostId": "princeton",
+      "relatedEntryIds": [
+        "marquis"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: Manufacturable and Resilient Superconducting Quantum Information Systems (MARQUIS)",
+      "shortTitle": "MARQUIS",
+      "amountUSD": 6560000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 27918000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-08-24",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2553633.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2553633",
+      "scopeType": "broader-qis",
+      "scopeNote": "Superconducting quantum devices and new Josephson-junction materials/fabrication. Strong materials connection, but this is a whole QIS institute award rather than a measured quantum-materials-only budget.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "PRINCETON",
+      "recipientStateCode": "NJ",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $6,560,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2553595",
+      "agency": "NSF",
+      "recipientInstitution": "University of California-Berkeley",
+      "hostIds": [
+        "berkeley"
+      ],
+      "recipientHostId": "berkeley",
+      "relatedEntryIds": [
+        "ciqc"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: Challenge Institute for Quantum Computation (CIQC)",
+      "shortTitle": "CIQC",
+      "amountUSD": 7420617,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 37500000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-10-07",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2553595.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2553595",
+      "scopeType": "broader-qis",
+      "scopeNote": "Quantum algorithms, engineering and applications across neutral atoms, ions and solid-state platforms; materials are one part of the scope.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "BERKELEY",
+      "recipientStateCode": "CA",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $7,420,617.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2552714",
+      "agency": "NSF",
+      "recipientInstitution": "University of Colorado at Boulder",
+      "hostIds": [
+        "colorado"
+      ],
+      "recipientHostId": "colorado",
+      "relatedEntryIds": [
+        "qsense"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: Quantum Systems through Entangled Science and Engineering (Q-SENSE)",
+      "shortTitle": "Q-SEnSE",
+      "amountUSD": 7500000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 37500000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-08-24",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2552714.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2552714",
+      "scopeType": "broader-qis",
+      "scopeNote": "Quantum sensing includes solid-state systems, atoms, molecules, clocks and interferometry; materials-specific spending is not separated.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "BOULDER",
+      "recipientStateCode": "CO",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $7,500,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2553578",
+      "agency": "NSF",
+      "recipientInstitution": "University of Illinois at Urbana-Champaign",
+      "hostIds": [
+        "illinois"
+      ],
+      "recipientHostId": "illinois",
+      "relatedEntryIds": [
+        "hqan"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: Hybrid Quantum Architectures and Networks (HQAN)",
+      "shortTitle": "HQAN",
+      "amountUSD": 7500000,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 37500000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-08-24",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2553578.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2553578",
+      "scopeType": "broader-qis",
+      "scopeNote": "Distributed quantum computing, transduction, hybrid networks and new materials/devices. Whole institute award; no quantum-materials-only allocation.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "URBANA",
+      "recipientStateCode": "IL",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $7,500,000.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    },
+    {
+      "awardId": "2552449",
+      "agency": "NSF",
+      "recipientInstitution": "Yale University",
+      "hostIds": [
+        "yale"
+      ],
+      "recipientHostId": "yale",
+      "relatedEntryIds": [
+        "practiqal"
+      ],
+      "entryMatchType": "award-program-or-center",
+      "awardTitle": "QLCI: The Physics and Engineering of Practical Quantum Error Correction (PRACTIQAL)",
+      "shortTitle": "PRACTIQAL",
+      "amountUSD": 8964126,
+      "amountMeaning": "Cumulative funds obligated to date reported by the NSF Awards API (fundsObligatedAmt), including amendments. Not expenditure, not annual funding, and not the intended award ceiling.",
+      "amountType": "cumulative-obligation",
+      "estimatedTotalUSD": 37500000,
+      "estimatedTotalMeaning": "NSF estimatedTotalAmt; retained separately for context and excluded from totals/scoring.",
+      "startDate": "2026-09-01",
+      "endDate": "2031-08-31",
+      "latestAmendmentDate": "2026-09-23",
+      "activeAwardFlag": true,
+      "officialUrl": "https://api.nsf.gov/services/v1/awards/2552449.json",
+      "awardPageUrl": "https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2552449",
+      "scopeType": "broader-qis",
+      "scopeNote": "Error correction across hardware, architecture and software. Whole institute award; materials-specific funds are unknown.",
+      "retrievalDate": "2026-10-29",
+      "recipientCity": "NEW HAVEN",
+      "recipientStateCode": "CT",
+      "fiscalYearObligationsAsReported": [
+        "FY 2026 = $8,964,126.00"
+      ],
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.programs-versions{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 12px;margin:0 0 18px;border:1px solid #dce5f0;border-radius:8px;background:#fff;font-family:-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:1.5}
+.programs-versions>span{font-weight:700;color:#61728a;margin-right:7px}
+.programs-versions a{padding:7px 11px;border:1px solid transparent;border-radius:5px;text-decoration:none;color:#416082}
+.programs-versions a:hover{color:#174b94;background:#f1f6fd}
+.programs-versions a[aria-current=page]{color:#174b94;border-color:#bed2ed;background:#edf4ff;font-weight:700}
+.programs-versions a:focus-visible{outline:3px solid #60a5fa;outline-offset:2px}
+@media(max-width:600px){.programs-versions{gap:5px;padding:9px}.programs-versions>span{flex-basis:100%}.programs-versions a{padding:7px 8px;font-size:11px}}
+@media print{.programs-versions{display:none}}

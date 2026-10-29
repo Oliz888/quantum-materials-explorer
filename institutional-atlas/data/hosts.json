@@ -1,0 +1,3308 @@
+{
+  "version": 1,
+  "checkedDate": "2026-10-29",
+  "basis": "Consolidation of the current sourced institutions.json directory; no new institution-level factual coverage claimed.",
+  "sourceDataPath": "data/institutions.json",
+  "statistics": {
+    "distinctHosts": 40,
+    "mappedEntries": 57,
+    "unplacedEntries": 36,
+    "universityHosts": 25
+  },
+  "hosts": [
+    {
+      "hostId": "yale",
+      "displayName": "Yale University",
+      "shortLabel": "Yale",
+      "kind": "university",
+      "city": "New Haven",
+      "state": "Connecticut",
+      "stateCode": "CT",
+      "id": "yale",
+      "country": "United States",
+      "hostEntryIds": [
+        "yale-qmse",
+        "practiqal"
+      ],
+      "labEntryIds": [
+        "practiqal"
+      ],
+      "educationEvidence": [
+        {
+          "entryId": "yale-qmse",
+          "name": "Graduate Certificate in Quantum Materials Science and Engineering",
+          "credentialType": "graduate certificate",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": true,
+          "scope": "quantum-materials-specific",
+          "scopeNote": "Explicitly joins applied physics, chemistry, computer science, mechanical engineering, materials science and physics.",
+          "sourceUrls": [
+            "https://catalog.yale.edu/gsas/non-degree-granting-programs-councils-research-institutes/quantum-materials-science-engineering/",
+            "https://qmse.yale.edu/news"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Yale University — New Haven, Connecticut",
+          "lat": 41.31,
+          "lon": -72.93,
+          "sourceUrl": "https://www.yale.edu/contact",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "New Haven",
+          "state": "Connecticut",
+          "stateCode": "CT",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://catalog.yale.edu/gsas/non-degree-granting-programs-councils-research-institutes/quantum-materials-science-engineering/",
+        "https://qmse.yale.edu/news",
+        "https://www.yale.edu/contact",
+        "https://practiqal.yale.edu/",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 41.31,
+      "lon": -72.93,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": true,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "chicago",
+      "displayName": "University of Chicago",
+      "shortLabel": "UChicago",
+      "kind": "university",
+      "city": "Chicago",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "id": "chicago",
+      "country": "United States",
+      "hostEntryIds": [
+        "uchicago-cqi",
+        "uchicago-qse-phd",
+        "qubbe"
+      ],
+      "labEntryIds": [
+        "uchicago-cqi",
+        "qubbe"
+      ],
+      "educationEvidence": [
+        {
+          "entryId": "uchicago-qse-phd",
+          "name": "PhD in Quantum Science and Engineering",
+          "credentialType": "doctoral degree",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Includes quantum materials research and access to University of Chicago and Argonne research facilities.",
+          "sourceUrls": [
+            "https://pme.uchicago.edu/academics/phd-programs/phd-quantum-science-engineering"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [
+        "uchicago-cqi"
+      ],
+      "locations": [
+        {
+          "label": "University of Chicago — Chicago, Illinois",
+          "lat": 41.88,
+          "lon": -87.63,
+          "sourceUrl": "https://directory.uchicago.edu/organizations/35?type=divisions",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Chicago",
+          "state": "Illinois",
+          "stateCode": "IL",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://quantum.uchicago.edu/",
+        "https://quantum.pme.uchicago.edu/research-areas/quantum-materials",
+        "https://quantum.uchicago.edu/programs-pathways",
+        "https://directory.uchicago.edu/organizations/35?type=divisions",
+        "https://pme.uchicago.edu/academics/phd-programs/phd-quantum-science-engineering",
+        "https://qubbe.uchicago.edu/",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://news.uchicago.edu/story/nsf-announces-25-million-institute-chicago-quantum-biology-research"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Research-center listings also shown as university routes are not counted as degree/certificate evidence."
+      ],
+      "lat": 41.88,
+      "lon": -87.63,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "mines",
+      "displayName": "Colorado School of Mines",
+      "shortLabel": "Colorado School of Mines",
+      "kind": "university",
+      "city": "Golden",
+      "state": "Colorado",
+      "stateCode": "CO",
+      "id": "mines",
+      "country": "United States",
+      "hostEntryIds": [
+        "mines-quantum-graduate",
+        "mines-quantum-bs"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [
+        {
+          "entryId": "mines-quantum-graduate",
+          "name": "Quantum Engineering Graduate Programs",
+          "credentialType": "master’s degrees and graduate certificates",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Combines physics, materials science, chemistry, electrical engineering, computing and mathematics for quantum technologies.",
+          "sourceUrls": [
+            "https://catalog.mines.edu/graduate/programs/interdisciplinaryprograms/quantumengineering/",
+            "https://www.mines.edu/news/all-news/2026/peter-aaen-named-dean-of-energy-and-materials-programs.html"
+          ]
+        },
+        {
+          "entryId": "mines-quantum-bs",
+          "name": "BS in Quantum Systems Engineering",
+          "credentialType": "bachelor’s degree",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Provides quantum hardware and laboratory training; its scope is broader than quantum materials discovery.",
+          "sourceUrls": [
+            "https://www.mines.edu/news/all-news/2026/mines-launches-nations-first-quantum-systems-engineering-degree.html"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Colorado School of Mines — Golden, Colorado",
+          "lat": 39.76,
+          "lon": -105.22,
+          "sourceUrl": "https://www.mines.edu/contact/",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Golden",
+          "state": "Colorado",
+          "stateCode": "CO",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://catalog.mines.edu/graduate/programs/interdisciplinaryprograms/quantumengineering/",
+        "https://www.mines.edu/news/all-news/2026/peter-aaen-named-dean-of-energy-and-materials-programs.html",
+        "https://www.mines.edu/contact/",
+        "https://www.mines.edu/news/all-news/2026/mines-launches-nations-first-quantum-systems-engineering-degree.html"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 39.76,
+      "lon": -105.22,
+      "precision": "city",
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 2,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "colorado",
+      "displayName": "University of Colorado Boulder",
+      "shortLabel": "CU Boulder",
+      "kind": "university",
+      "city": "Boulder",
+      "state": "Colorado",
+      "stateCode": "CO",
+      "id": "colorado",
+      "country": "United States",
+      "hostEntryIds": [
+        "cu-boulder-qe-ms",
+        "cu-boulder-cubit",
+        "jila",
+        "qsense"
+      ],
+      "labEntryIds": [
+        "cu-boulder-cubit",
+        "jila",
+        "qsense"
+      ],
+      "educationEvidence": [
+        {
+          "entryId": "cu-boulder-qe-ms",
+          "name": "Quantum Engineering Subplan, Professional MS in Electrical and Computer Engineering",
+          "credentialType": "master’s specialization",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Links device engineering and solid-state physics to quantum hardware; the awarded degree is Electrical and Computer Engineering.",
+          "sourceUrls": [
+            "https://www.colorado.edu/ecee/academics/graduate-programs/professional-masters/quantum-engineering"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [
+        "cu-boulder-cubit"
+      ],
+      "locations": [
+        {
+          "label": "University of Colorado Boulder / JILA — Boulder, Colorado",
+          "lat": 40.02,
+          "lon": -105.27,
+          "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Boulder",
+          "state": "Colorado",
+          "stateCode": "CO",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.colorado.edu/ecee/academics/graduate-programs/professional-masters/quantum-engineering",
+        "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+        "https://www.colorado.edu/initiative/cubit",
+        "https://www.colorado.edu/researchinnovation/2019/01/17/cubit-quantum-initiative-launch-fueled-seed-funding-faculty-expertise",
+        "https://www.colorado.edu/initiative/cubit/education-workforce-training",
+        "https://www.colorado.edu/jila/about-jila/jilas-history",
+        "https://www.nist.gov/pml/quantum-physics",
+        "https://www.colorado.edu/research/qsense/",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://www.colorado.edu/today/2020/07/21/new-25-million-center-advance-quantum-science-and-engineering"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Research-center listings also shown as university routes are not counted as degree/certificate evidence."
+      ],
+      "lat": 40.02,
+      "lon": -105.27,
+      "precision": "city",
+      "listedLabCenterCount": 3,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "northeastern",
+      "displayName": "Northeastern University",
+      "shortLabel": "Northeastern",
+      "kind": "university",
+      "city": "Boston",
+      "state": "Massachusetts",
+      "stateCode": "MA",
+      "id": "northeastern",
+      "country": "United States",
+      "hostEntryIds": [
+        "northeastern-qmsi"
+      ],
+      "labEntryIds": [
+        "northeastern-qmsi"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "northeastern-qmsi"
+      ],
+      "locations": [
+        {
+          "label": "Northeastern University — Boston, Massachusetts",
+          "lat": 42.36,
+          "lon": -71.06,
+          "sourceUrl": "https://swastik.sites.northeastern.edu/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Boston",
+          "state": "Massachusetts",
+          "stateCode": "MA",
+          "country": "United States"
+        },
+        {
+          "label": "Northeastern Innovation Campus quantum laboratories — Burlington, Massachusetts",
+          "lat": 42.5,
+          "lon": -71.2,
+          "sourceUrl": "https://www.burlington.northeastern.edu/facilities/buildings-labs/",
+          "precision": "city",
+          "role": "Facility",
+          "city": "Burlington",
+          "state": "Massachusetts",
+          "stateCode": "MA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://research.northeastern.edu/institutes-and-centers/",
+        "https://swastik.sites.northeastern.edu/",
+        "https://quantum.northeastern.edu/",
+        "https://www.burlington.northeastern.edu/facilities/buildings-labs/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Research-center listings also shown as university routes are not counted as degree/certificate evidence."
+      ],
+      "lat": 42.36,
+      "lon": -71.06,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "columbia",
+      "displayName": "Columbia University",
+      "shortLabel": "Columbia",
+      "kind": "university",
+      "city": "New York",
+      "state": "New York",
+      "stateCode": "NY",
+      "id": "columbia",
+      "country": "United States",
+      "hostEntryIds": [
+        "columbia-quantum-materials",
+        "pro-qm",
+        "columbia-quantum-tracks"
+      ],
+      "labEntryIds": [
+        "columbia-quantum-materials",
+        "pro-qm"
+      ],
+      "educationEvidence": [
+        {
+          "entryId": "columbia-quantum-tracks",
+          "name": "MS in Quantum Science and Technology — Engineering and Physics Tracks",
+          "credentialType": "master’s degree with curricular tracks",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Electives connect condensed matter, electronic and magnetic properties, atomistic simulation, photonics and nanofabrication.",
+          "sourceUrls": [
+            "https://quantum.engineering.columbia.edu/content/curriculum",
+            "https://quantum.columbia.edu/news/columbias-quantum-masters-kicks-off"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [
+        "columbia-quantum-materials"
+      ],
+      "locations": [
+        {
+          "label": "Columbia University — New York, New York",
+          "lat": 40.71,
+          "lon": -74.01,
+          "sourceUrl": "https://visit.columbia.edu/orgsoa",
+          "precision": "city",
+          "role": "Program host",
+          "city": "New York",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://quantum.columbia.edu/research/quantum-materials-nanoscience",
+        "https://visit.columbia.edu/orgsoa",
+        "https://science.osti.gov/bes/efrc/Centers/ProQM",
+        "https://quantum.engineering.columbia.edu/content/curriculum",
+        "https://quantum.columbia.edu/news/columbias-quantum-masters-kicks-off"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Research-center listings also shown as university routes are not counted as degree/certificate evidence."
+      ],
+      "lat": 40.71,
+      "lon": -74.01,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "purdue",
+      "displayName": "Purdue University",
+      "shortLabel": "Purdue",
+      "kind": "university",
+      "city": "West Lafayette",
+      "state": "Indiana",
+      "stateCode": "IN",
+      "id": "purdue",
+      "country": "United States",
+      "hostEntryIds": [
+        "microsoft-purdue-quantum",
+        "qupidc",
+        "purdue-quantum-minor"
+      ],
+      "labEntryIds": [
+        "microsoft-purdue-quantum",
+        "qupidc"
+      ],
+      "educationEvidence": [
+        {
+          "entryId": "purdue-quantum-minor",
+          "name": "Quantum Science Minor",
+          "credentialType": "undergraduate minor",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "An entry into quantum principles and devices; it is broader than a dedicated quantum-materials curriculum.",
+          "sourceUrls": [
+            "https://www.physics.purdue.edu/academic-programs/undergraduate/minors.html"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Purdue University — West Lafayette, Indiana",
+          "lat": 40.43,
+          "lon": -86.91,
+          "sourceUrl": "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft,-purdue-collaborate-to-advance-quantum-computing-.html",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "West Lafayette",
+          "state": "Indiana",
+          "stateCode": "IN",
+          "country": "United States"
+        },
+        {
+          "label": "West Lafayette, Indiana",
+          "lat": 40.426,
+          "lon": -86.908,
+          "sourceUrl": "https://www.physics.purdue.edu/academic-programs/undergraduate/minors.html",
+          "precision": "city",
+          "role": "Program host",
+          "city": "West Lafayette",
+          "state": "Indiana",
+          "stateCode": "IN",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft%2C-purdue-collaborate-to-advance-quantum-computing-.html",
+        "https://physics.purdue.edu/interactions/2025/research/microsoft-quantum.php",
+        "https://engineering.purdue.edu/Engr/Academics/Quantum-Degrees/index_html",
+        "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft,-purdue-collaborate-to-advance-quantum-computing-.html",
+        "https://science.osti.gov/bes/efrc/Centers/QuPIDC",
+        "https://www.physics.purdue.edu/academic-programs/undergraduate/minors.html"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Microsoft/Purdue is a university–industry collaboration at the Purdue location, not a map pin for Microsoft headquarters."
+      ],
+      "lat": 40.43,
+      "lon": -86.91,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "maryland",
+      "displayName": "University of Maryland",
+      "shortLabel": "U. Maryland",
+      "kind": "university",
+      "city": "College Park",
+      "state": "Maryland",
+      "stateCode": "MD",
+      "id": "maryland",
+      "country": "United States",
+      "hostEntryIds": [
+        "jqi",
+        "quics",
+        "rqs"
+      ],
+      "labEntryIds": [
+        "jqi",
+        "quics",
+        "rqs"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of Maryland / Joint Quantum Institute — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://www.jqi.umd.edu/about/directions",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "College Park",
+          "state": "Maryland",
+          "stateCode": "MD",
+          "country": "United States"
+        },
+        {
+          "label": "University of Maryland / QuICS — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://quics.umd.edu/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "College Park",
+          "state": "Maryland",
+          "stateCode": "MD",
+          "country": "United States"
+        },
+        {
+          "label": "University of Maryland / RQS — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://rqs.umd.edu/about/contact-us",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "College Park",
+          "state": "Maryland",
+          "stateCode": "MD",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://cmns.umd.edu/research/solving-grand-challenges/building-future-quantum",
+        "https://www.nist.gov/news-events/news/2014/10/umd-and-nist-announce-creation-joint-center-quantum-information-and",
+        "https://www.jqi.umd.edu/about/directions",
+        "https://quics.umd.edu/about/news/quics-celebrates-10-years-research-and-scholarship",
+        "https://quics.umd.edu/",
+        "https://rqs.umd.edu/",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://cmns.umd.edu/news-events/news/nsf-award-new-initiatives-quantum-simulation",
+        "https://rqs.umd.edu/about/contact-us"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "LPS campus proximity is represented through a separate host association, not added to the UMD center count."
+      ],
+      "lat": 38.99,
+      "lon": -76.94,
+      "precision": "city",
+      "listedLabCenterCount": 3,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "lps",
+      "displayName": "Laboratory for Physical Sciences",
+      "shortLabel": "LPS",
+      "kind": "government_research_lab",
+      "city": "College Park",
+      "state": "Maryland",
+      "stateCode": "MD",
+      "id": "lps",
+      "country": "United States",
+      "hostEntryIds": [
+        "lps-lqc"
+      ],
+      "labEntryIds": [
+        "lps-lqc"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Laboratory for Physical Sciences — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://www.lps.umd.edu/contact-us/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "College Park",
+          "state": "Maryland",
+          "stateCode": "MD",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.quantum.gov/QIS-CENTERS/",
+        "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/2570949/nsa-launches-lps-qubit-collaboratory/",
+        "https://www.lps.umd.edu/lps-qubit-collaboratory/",
+        "https://www.lps.umd.edu/contact-us/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "LPS is kept as a separate research host on the University of Maryland campus. Campus location does not imply it is a UMD academic credential or a university-owned center."
+      ],
+      "lat": 38.99,
+      "lon": -76.94,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "afrl",
+      "displayName": "Air Force Research Laboratory, Rome Research Site",
+      "shortLabel": "AFRL Rome",
+      "kind": "government_research_lab",
+      "city": "Rome",
+      "state": "New York",
+      "stateCode": "NY",
+      "id": "afrl",
+      "country": "United States",
+      "hostEntryIds": [
+        "afrl-qis-center"
+      ],
+      "labEntryIds": [
+        "afrl-qis-center"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "AFRL Information Directorate / Rome Research Site — Rome, New York",
+          "lat": 43.21,
+          "lon": -75.46,
+          "sourceUrl": "https://www.afrl.af.mil/News/Article-Display/Article/2486531/afrl-information-directorate-estimates-fy-2020-total-annual-economic-impact-at/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Rome",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.quantum.gov/QIS-CENTERS/",
+        "https://www.afrl.af.mil/News/Article-Display/Article/2724770/air-force-research-laboratory-designated-as-quantum-information-science-researc/",
+        "https://www.afrl.af.mil/News/Article-Display/Article/2486531/afrl-information-directorate-estimates-fy-2020-total-annual-economic-impact-at/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 43.21,
+      "lon": -75.46,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "nrl",
+      "displayName": "U.S. Naval Research Laboratory",
+      "shortLabel": "Naval Research Lab",
+      "kind": "government_research_lab",
+      "city": "Washington",
+      "state": "District of Columbia",
+      "stateCode": "DC",
+      "id": "nrl",
+      "country": "United States",
+      "hostEntryIds": [
+        "nrl-qis-center"
+      ],
+      "labEntryIds": [
+        "nrl-qis-center"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "U.S. Naval Research Laboratory — Washington, District of Columbia",
+          "lat": 38.91,
+          "lon": -77.04,
+          "sourceUrl": "https://www.nrl.navy.mil/Contact-Us/Visitor-Information/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Washington",
+          "state": "District of Columbia",
+          "stateCode": "DC",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.quantum.gov/QIS-CENTERS/",
+        "https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Quantum-Research/",
+        "https://www.nrl.navy.mil/Media/News/Article/2415822/two-quantum-research-conferences-to-focus-on-navy-federal-collaboration/",
+        "https://www.nrl.navy.mil/Contact-Us/Visitor-Information/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 38.91,
+      "lon": -77.04,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "arl",
+      "displayName": "DEVCOM Army Research Laboratory, Adelphi",
+      "shortLabel": "Army Research Lab",
+      "kind": "government_research_lab",
+      "city": "Adelphi",
+      "state": "Maryland",
+      "stateCode": "MD",
+      "id": "arl",
+      "country": "United States",
+      "hostEntryIds": [
+        "arl-qis-center"
+      ],
+      "labEntryIds": [
+        "arl-qis-center"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Army Research Laboratory / Adelphi Laboratory Center — Adelphi, Maryland",
+          "lat": 39.0,
+          "lon": -76.97,
+          "sourceUrl": "https://www.army.mil/article/268072",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Adelphi",
+          "state": "Maryland",
+          "stateCode": "MD",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.quantum.gov/QIS-CENTERS/",
+        "https://www.army.mil/article/268072"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 39.0,
+      "lon": -76.97,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "nasa-ames",
+      "displayName": "NASA Ames Research Center",
+      "shortLabel": "NASA Ames",
+      "kind": "government_research_lab",
+      "city": "Mountain View / Moffett Field",
+      "state": "California",
+      "stateCode": "CA",
+      "id": "nasa-ames",
+      "country": "United States",
+      "hostEntryIds": [
+        "nasa-quail"
+      ],
+      "labEntryIds": [
+        "nasa-quail"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "NASA Ames Research Center — Moffett Field / Mountain View area, California",
+          "lat": 37.41,
+          "lon": -122.06,
+          "sourceUrl": "https://www.nasa.gov/ames/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Mountain View / Moffett Field",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/nasa-quail/",
+        "https://www.nasa.gov/ames/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 37.41,
+      "lon": -122.06,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "nasa-glenn",
+      "displayName": "NASA Glenn Research Center",
+      "shortLabel": "NASA Glenn",
+      "kind": "government_research_lab",
+      "city": "Cleveland",
+      "state": "Ohio",
+      "stateCode": "OH",
+      "id": "nasa-glenn",
+      "country": "United States",
+      "hostEntryIds": [
+        "nasa-glenn-qis"
+      ],
+      "labEntryIds": [
+        "nasa-glenn-qis"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "NASA Glenn Research Center — Cleveland, Ohio",
+          "lat": 41.5,
+          "lon": -81.69,
+          "sourceUrl": "https://www.nasa.gov/centers-and-facilities/glenn/map-and-directions/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Cleveland",
+          "state": "Ohio",
+          "stateCode": "OH",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.nasa.gov/glenn/research/quantum-information-systems-for-networking-and-sensing/",
+        "https://www.nasa.gov/centers-and-facilities/glenn/map-and-directions/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 41.5,
+      "lon": -81.69,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "lbnl",
+      "displayName": "Lawrence Berkeley National Laboratory",
+      "shortLabel": "Berkeley Lab",
+      "kind": "national_lab",
+      "city": "Berkeley",
+      "state": "California",
+      "stateCode": "CA",
+      "id": "lbnl",
+      "country": "United States",
+      "hostEntryIds": [
+        "lbnl-atap-quantum-materials",
+        "molecular-foundry",
+        "qsa"
+      ],
+      "labEntryIds": [
+        "lbnl-atap-quantum-materials",
+        "molecular-foundry",
+        "qsa"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Lawrence Berkeley National Laboratory — Berkeley, California",
+          "lat": 37.87,
+          "lon": -122.27,
+          "sourceUrl": "https://www.lbl.gov/contact/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Berkeley",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://atap.lbl.gov/research/scientific-programs-and-centers/quantum-materials/",
+        "https://www.lbl.gov/research/quantum/",
+        "https://www.lbl.gov/contact/",
+        "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/TMF",
+        "https://quantumsystemsaccelerator.org/",
+        "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+        "https://www.quantum.gov/qis-centers/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 37.87,
+      "lon": -122.27,
+      "precision": "city",
+      "listedLabCenterCount": 3,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "brookhaven",
+      "displayName": "Brookhaven National Laboratory",
+      "shortLabel": "Brookhaven Lab",
+      "kind": "national_lab",
+      "city": "Upton",
+      "state": "New York",
+      "stateCode": "NY",
+      "id": "brookhaven",
+      "country": "United States",
+      "hostEntryIds": [
+        "cfn",
+        "c2qa"
+      ],
+      "labEntryIds": [
+        "cfn",
+        "c2qa"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Brookhaven National Laboratory — Upton, New York",
+          "lat": 40.87,
+          "lon": -72.89,
+          "sourceUrl": "https://www.bnl.gov/guv/map.php",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Upton",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CFN",
+        "https://www.bnl.gov/guv/map.php",
+        "https://www.bnl.gov/quantumcenter/",
+        "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+        "https://www.quantum.gov/qis-centers/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 40.87,
+      "lon": -72.89,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "sandia",
+      "displayName": "Sandia National Laboratories",
+      "shortLabel": "Sandia Lab",
+      "kind": "national_lab",
+      "city": "Albuquerque",
+      "state": "New Mexico",
+      "stateCode": "NM",
+      "id": "sandia",
+      "country": "United States",
+      "hostEntryIds": [
+        "cint"
+      ],
+      "labEntryIds": [
+        "cint"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "CINT Core Facility / Sandia National Laboratories — Albuquerque, New Mexico",
+          "lat": 35.08,
+          "lon": -106.65,
+          "sourceUrl": "https://cint.lanl.gov/user-resources/visiting-cint.shtml",
+          "precision": "city",
+          "role": "Facility",
+          "city": "Albuquerque",
+          "state": "New Mexico",
+          "stateCode": "NM",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CINT",
+        "https://cint.lanl.gov/user-resources/visiting-cint.shtml"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 35.08,
+      "lon": -106.65,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "los-alamos",
+      "displayName": "Los Alamos National Laboratory",
+      "shortLabel": "Los Alamos Lab",
+      "kind": "national_lab",
+      "city": "Los Alamos",
+      "state": "New Mexico",
+      "stateCode": "NM",
+      "id": "los-alamos",
+      "country": "United States",
+      "hostEntryIds": [
+        "cint"
+      ],
+      "labEntryIds": [
+        "cint"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "CINT Gateway Facility / Los Alamos National Laboratory — Los Alamos, New Mexico",
+          "lat": 35.88,
+          "lon": -106.3,
+          "sourceUrl": "https://cint.lanl.gov/user-resources/visiting-cint.shtml",
+          "precision": "city",
+          "role": "Facility",
+          "city": "Los Alamos",
+          "state": "New Mexico",
+          "stateCode": "NM",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CINT",
+        "https://cint.lanl.gov/user-resources/visiting-cint.shtml"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 35.88,
+      "lon": -106.3,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "argonne",
+      "displayName": "Argonne National Laboratory",
+      "shortLabel": "Argonne Lab",
+      "kind": "national_lab",
+      "city": "Lemont",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "id": "argonne",
+      "country": "United States",
+      "hostEntryIds": [
+        "cnm",
+        "q-next"
+      ],
+      "labEntryIds": [
+        "cnm",
+        "q-next"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Argonne National Laboratory — Lemont, Illinois",
+          "lat": 41.67,
+          "lon": -88.0,
+          "sourceUrl": "https://students.cels.anl.gov/orientation/arriving/arriving/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Lemont",
+          "state": "Illinois",
+          "stateCode": "IL",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CNM",
+        "https://students.cels.anl.gov/orientation/arriving/arriving/",
+        "https://www.q-next.org/",
+        "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+        "https://www.quantum.gov/qis-centers/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 41.67,
+      "lon": -88.0,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "oak-ridge",
+      "displayName": "Oak Ridge National Laboratory",
+      "shortLabel": "Oak Ridge Lab",
+      "kind": "national_lab",
+      "city": "Oak Ridge",
+      "state": "Tennessee",
+      "stateCode": "TN",
+      "id": "oak-ridge",
+      "country": "United States",
+      "hostEntryIds": [
+        "cnms",
+        "qsc"
+      ],
+      "labEntryIds": [
+        "cnms",
+        "qsc"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Oak Ridge National Laboratory — Oak Ridge, Tennessee",
+          "lat": 36.01,
+          "lon": -84.27,
+          "sourceUrl": "https://www.ornl.gov/contact-us/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Oak Ridge",
+          "state": "Tennessee",
+          "stateCode": "TN",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CNMS",
+        "https://www.ornl.gov/contact-us/",
+        "https://qscience.org/",
+        "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+        "https://www.quantum.gov/qis-centers/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 36.01,
+      "lon": -84.27,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "ames",
+      "displayName": "Ames National Laboratory",
+      "shortLabel": "Ames Lab",
+      "kind": "national_lab",
+      "city": "Ames",
+      "state": "Iowa",
+      "stateCode": "IA",
+      "id": "ames",
+      "country": "United States",
+      "hostEntryIds": [
+        "cats"
+      ],
+      "labEntryIds": [
+        "cats"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Ames National Laboratory — Ames, Iowa",
+          "lat": 42.03,
+          "lon": -93.62,
+          "sourceUrl": "https://www.ameslab.gov/education-programs/visit-ames-laboratory",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Ames",
+          "state": "Iowa",
+          "stateCode": "IA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/efrc/Centers/CATS",
+        "https://www.ameslab.gov/education-programs/visit-ames-laboratory"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 42.03,
+      "lon": -93.62,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "northwestern",
+      "displayName": "Northwestern University",
+      "shortLabel": "Northwestern",
+      "kind": "university",
+      "city": "Evanston",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "id": "northwestern",
+      "country": "United States",
+      "hostEntryIds": [
+        "cmqt"
+      ],
+      "labEntryIds": [
+        "cmqt"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Northwestern University — Evanston, Illinois",
+          "lat": 42.05,
+          "lon": -87.69,
+          "sourceUrl": "https://quantum.northwestern.edu/cmqt/about/contact.html",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Evanston",
+          "state": "Illinois",
+          "stateCode": "IL",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/efrc/Centers/CMQT",
+        "https://quantum.northwestern.edu/cmqt/about/contact.html"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 42.05,
+      "lon": -87.69,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "florida",
+      "displayName": "University of Florida",
+      "shortLabel": "U. Florida",
+      "kind": "university",
+      "city": "Gainesville",
+      "state": "Florida",
+      "stateCode": "FL",
+      "id": "florida",
+      "country": "United States",
+      "hostEntryIds": [
+        "m2qm"
+      ],
+      "labEntryIds": [
+        "m2qm"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of Florida — Gainesville, Florida",
+          "lat": 29.65,
+          "lon": -82.32,
+          "sourceUrl": "https://explore.jobs.ufl.edu/en-us/job/524153/post-doctoral-associate-in-the-center-for-molecular-magnetic-quantum-materials-m2qm",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Gainesville",
+          "state": "Florida",
+          "stateCode": "FL",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/efrc/Centers/M2QM",
+        "https://explore.jobs.ufl.edu/en-us/job/524153/post-doctoral-associate-in-the-center-for-molecular-magnetic-quantum-materials-m2qm"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 29.65,
+      "lon": -82.32,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "ucsd",
+      "displayName": "University of California San Diego",
+      "shortLabel": "UC San Diego",
+      "kind": "university",
+      "city": "La Jolla / San Diego",
+      "state": "California",
+      "stateCode": "CA",
+      "id": "ucsd",
+      "country": "United States",
+      "hostEntryIds": [
+        "q-meen-c"
+      ],
+      "labEntryIds": [
+        "q-meen-c"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of California San Diego — La Jolla / San Diego, California",
+          "lat": 32.83,
+          "lon": -117.27,
+          "sourceUrl": "https://ischuller.ucsd.edu/group-mobile/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "La Jolla / San Diego",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/efrc/Centers/QMEENC",
+        "https://ischuller.ucsd.edu/group-mobile/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 32.83,
+      "lon": -117.27,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "illinois",
+      "displayName": "University of Illinois Urbana-Champaign",
+      "shortLabel": "UIUC",
+      "kind": "university",
+      "city": "Urbana",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "id": "illinois",
+      "country": "United States",
+      "hostEntryIds": [
+        "qsqm",
+        "hqan",
+        "illinois-qis-minor"
+      ],
+      "labEntryIds": [
+        "qsqm",
+        "hqan"
+      ],
+      "educationEvidence": [
+        {
+          "entryId": "illinois-qis-minor",
+          "name": "Quantum Information Science Minor",
+          "credentialType": "undergraduate minor",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Suggested engineering coursework includes quantum optics, devices and materials laboratory sections.",
+          "sourceUrls": [
+            "https://iquist.illinois.edu/education/minor"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of Illinois Urbana-Champaign — Urbana, Illinois",
+          "lat": 40.11,
+          "lon": -88.21,
+          "sourceUrl": "https://hqan.illinois.edu/",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Urbana",
+          "state": "Illinois",
+          "stateCode": "IL",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/efrc/Centers/QSQM",
+        "https://hqan.illinois.edu/",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://iquist.illinois.edu/education/minor"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 40.11,
+      "lon": -88.21,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "slac",
+      "displayName": "SLAC National Accelerator Laboratory",
+      "shortLabel": "SLAC",
+      "kind": "national_lab",
+      "city": "Menlo Park",
+      "state": "California",
+      "stateCode": "CA",
+      "id": "slac",
+      "country": "United States",
+      "hostEntryIds": [
+        "ceemag"
+      ],
+      "labEntryIds": [
+        "ceemag"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "SLAC National Accelerator Laboratory — Menlo Park, California",
+          "lat": 37.45,
+          "lon": -122.18,
+          "sourceUrl": "https://www6.slac.stanford.edu/about/contact-us",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Menlo Park",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://science.osti.gov/bes/efrc/Centers/CEEMag",
+        "https://www6.slac.stanford.edu/about/contact-us"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 37.45,
+      "lon": -122.18,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "harvard",
+      "displayName": "Harvard University",
+      "shortLabel": "Harvard",
+      "kind": "university",
+      "city": "Cambridge",
+      "state": "Massachusetts",
+      "stateCode": "MA",
+      "id": "harvard",
+      "country": "United States",
+      "hostEntryIds": [
+        "ftqsaa",
+        "ciqm"
+      ],
+      "labEntryIds": [
+        "ftqsaa",
+        "ciqm"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "ciqm"
+      ],
+      "locations": [
+        {
+          "label": "Harvard University — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.physics.harvard.edu/contact",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Cambridge",
+          "state": "Massachusetts",
+          "stateCode": "MA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://vast.cs.ucla.edu/news/2026-08/vast-lab-part-newly-formed-nsf-quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://www.physics.harvard.edu/contact",
+        "https://ciqm.harvard.edu/",
+        "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
+        "https://ciqm.harvard.edu/overview1.html"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Research-center listings also shown as university routes are not counted as degree/certificate evidence.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 42.37,
+      "lon": -71.11,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "mit",
+      "displayName": "Massachusetts Institute of Technology",
+      "shortLabel": "MIT",
+      "kind": "university",
+      "city": "Cambridge",
+      "state": "Massachusetts",
+      "stateCode": "MA",
+      "id": "mit",
+      "country": "United States",
+      "hostEntryIds": [
+        "ftqsaa",
+        "ciqm"
+      ],
+      "labEntryIds": [
+        "ftqsaa",
+        "ciqm"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "ciqm"
+      ],
+      "locations": [
+        {
+          "label": "Massachusetts Institute of Technology — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.mit.edu/contact/",
+          "precision": "city",
+          "role": "Joint host",
+          "city": "Cambridge",
+          "state": "Massachusetts",
+          "stateCode": "MA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://vast.cs.ucla.edu/news/2026-08/vast-lab-part-newly-formed-nsf-quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://www.mit.edu/contact/",
+        "https://ciqm.harvard.edu/",
+        "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
+        "https://ciqm.harvard.edu/overview1.html"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Research-center listings also shown as university routes are not counted as degree/certificate evidence.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 42.37,
+      "lon": -71.11,
+      "precision": "city",
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "ucla",
+      "displayName": "University of California Los Angeles",
+      "shortLabel": "UCLA",
+      "kind": "university",
+      "city": "Los Angeles",
+      "state": "California",
+      "stateCode": "CA",
+      "id": "ucla",
+      "country": "United States",
+      "hostEntryIds": [
+        "ftqsaa"
+      ],
+      "labEntryIds": [
+        "ftqsaa"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of California Los Angeles — Los Angeles, California",
+          "lat": 34.05,
+          "lon": -118.24,
+          "sourceUrl": "https://newsroom.ucla.edu/ucla-fast-facts",
+          "precision": "city",
+          "role": "Joint host",
+          "city": "Los Angeles",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://vast.cs.ucla.edu/news/2026-08/vast-lab-part-newly-formed-nsf-quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://newsroom.ucla.edu/ucla-fast-facts"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 34.05,
+      "lon": -118.24,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "princeton",
+      "displayName": "Princeton University",
+      "shortLabel": "Princeton",
+      "kind": "university",
+      "city": "Princeton",
+      "state": "New Jersey",
+      "stateCode": "NJ",
+      "id": "princeton",
+      "country": "United States",
+      "hostEntryIds": [
+        "marquis",
+        "princeton-qse-minor"
+      ],
+      "labEntryIds": [
+        "marquis"
+      ],
+      "educationEvidence": [
+        {
+          "entryId": "princeton-qse-minor",
+          "name": "Quantum Science and Engineering Minor",
+          "credentialType": "undergraduate minor",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Electives include solid-state physics, quantum electronics and experimental quantum-computing methods.",
+          "sourceUrls": [
+            "https://quantum.princeton.edu/education/qse-minor-program"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Princeton University — Princeton, New Jersey",
+          "lat": 40.36,
+          "lon": -74.67,
+          "sourceUrl": "https://president.princeton.edu/about-office",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Princeton",
+          "state": "New Jersey",
+          "stateCode": "NJ",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://engineering.dartmouth.edu/news/dartmouth-to-participate-in-nsf-funded-institute-to-meet-quantum-computing-challenges",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://president.princeton.edu/about-office",
+        "https://quantum.princeton.edu/education/qse-minor-program"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 40.36,
+      "lon": -74.67,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "berkeley",
+      "displayName": "University of California Berkeley",
+      "shortLabel": "UC Berkeley",
+      "kind": "university",
+      "city": "Berkeley",
+      "state": "California",
+      "stateCode": "CA",
+      "id": "berkeley",
+      "country": "United States",
+      "hostEntryIds": [
+        "ciqc"
+      ],
+      "labEntryIds": [
+        "ciqc"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of California Berkeley — Berkeley, California",
+          "lat": 37.87,
+          "lon": -122.27,
+          "sourceUrl": "https://ciqc.berkeley.edu/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Berkeley",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://ciqc.berkeley.edu/",
+        "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+        "https://ciqc.berkeley.edu/about/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 37.87,
+      "lon": -122.27,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "howard",
+      "displayName": "Howard University",
+      "shortLabel": "Howard",
+      "kind": "university",
+      "city": "Washington",
+      "state": "District of Columbia",
+      "stateCode": "DC",
+      "id": "howard",
+      "country": "United States",
+      "hostEntryIds": [
+        "ciqm"
+      ],
+      "labEntryIds": [
+        "ciqm"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "ciqm"
+      ],
+      "locations": [
+        {
+          "label": "Howard University — Washington, District of Columbia",
+          "lat": 38.91,
+          "lon": -77.04,
+          "sourceUrl": "https://howard.edu/contact",
+          "precision": "city",
+          "role": "Joint host",
+          "city": "Washington",
+          "state": "District of Columbia",
+          "stateCode": "DC",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://ciqm.harvard.edu/",
+        "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
+        "https://ciqm.harvard.edu/overview1.html",
+        "https://howard.edu/contact"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Research-center listings also shown as university routes are not counted as degree/certificate evidence.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 38.91,
+      "lon": -77.04,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "ucsb",
+      "displayName": "University of California Santa Barbara",
+      "shortLabel": "UC Santa Barbara",
+      "kind": "university",
+      "city": "Santa Barbara area",
+      "state": "California",
+      "stateCode": "CA",
+      "id": "ucsb",
+      "country": "United States",
+      "hostEntryIds": [
+        "ucsb-foundry"
+      ],
+      "labEntryIds": [
+        "ucsb-foundry"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of California Santa Barbara — Santa Barbara area, California",
+          "lat": 34.42,
+          "lon": -119.7,
+          "sourceUrl": "https://www.ucsb.edu/contact",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Santa Barbara area",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://quantumfoundry.ucsb.edu/",
+        "https://www.ucsb.edu/contact"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 34.42,
+      "lon": -119.7,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "montana",
+      "displayName": "Montana State University",
+      "shortLabel": "Montana State",
+      "kind": "university",
+      "city": "Bozeman",
+      "state": "Montana",
+      "stateCode": "MT",
+      "id": "montana",
+      "country": "United States",
+      "hostEntryIds": [
+        "monark"
+      ],
+      "labEntryIds": [
+        "monark"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Montana State University — Bozeman, Montana",
+          "lat": 45.68,
+          "lon": -111.04,
+          "sourceUrl": "https://www.monarkfoundry.org/",
+          "precision": "city",
+          "role": "Joint host",
+          "city": "Bozeman",
+          "state": "Montana",
+          "stateCode": "MT",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.monarkfoundry.org/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 45.68,
+      "lon": -111.04,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "arkansas",
+      "displayName": "University of Arkansas",
+      "shortLabel": "U. Arkansas",
+      "kind": "university",
+      "city": "Fayetteville",
+      "state": "Arkansas",
+      "stateCode": "AR",
+      "id": "arkansas",
+      "country": "United States",
+      "hostEntryIds": [
+        "monark"
+      ],
+      "labEntryIds": [
+        "monark"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of Arkansas — Fayetteville, Arkansas",
+          "lat": 36.06,
+          "lon": -94.16,
+          "sourceUrl": "https://www.monarkfoundry.org/",
+          "precision": "city",
+          "role": "Joint host",
+          "city": "Fayetteville",
+          "state": "Arkansas",
+          "stateCode": "AR",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.monarkfoundry.org/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates.",
+        "Some centers have multiple hosts. Participation counts do not allocate or duplicate award dollars across these institutions."
+      ],
+      "lat": 36.06,
+      "lon": -94.16,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "fermilab",
+      "displayName": "Fermi National Accelerator Laboratory",
+      "shortLabel": "Fermilab",
+      "kind": "national_lab",
+      "city": "Batavia",
+      "state": "Illinois",
+      "stateCode": "IL",
+      "id": "fermilab",
+      "country": "United States",
+      "hostEntryIds": [
+        "sqms"
+      ],
+      "labEntryIds": [
+        "sqms"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Fermi National Accelerator Laboratory — Batavia, Illinois",
+          "lat": 41.85,
+          "lon": -88.31,
+          "sourceUrl": "https://www.fnal.gov/pub/contact/index.html",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Batavia",
+          "state": "Illinois",
+          "stateCode": "IL",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://sqms.fnal.gov/",
+        "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+        "https://www.quantum.gov/qis-centers/",
+        "https://www.fnal.gov/pub/contact/index.html"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 41.85,
+      "lon": -88.31,
+      "precision": "city",
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "not documented in this directory",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "washington",
+      "displayName": "University of Washington",
+      "shortLabel": "U. Washington",
+      "kind": "university",
+      "city": "Seattle",
+      "state": "Washington",
+      "stateCode": "WA",
+      "id": "washington",
+      "country": "United States",
+      "hostEntryIds": [
+        "uw-qise-certificate"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [
+        {
+          "entryId": "uw-qise-certificate",
+          "name": "Graduate Certificate in Quantum Information Science and Engineering",
+          "credentialType": "graduate certificate",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "Physics, chemistry, materials science, engineering and computing contribute complementary knowledge to quantum technology projects.",
+          "sourceUrls": [
+            "https://grad.uw.edu/programs/interdisciplinary-programs/quantum-information-science-and-engineering/",
+            "https://www.ee.washington.edu/spotlight/kai-mei-fu-qise-certificate/",
+            "https://www.quantumx.washington.edu/quantumx-welcomes-2024-cohort/"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Seattle, Washington",
+          "lat": 47.606,
+          "lon": -122.332,
+          "sourceUrl": "https://grad.uw.edu/programs/interdisciplinary-programs/quantum-information-science-and-engineering/",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Seattle",
+          "state": "Washington",
+          "stateCode": "WA",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://grad.uw.edu/programs/interdisciplinary-programs/quantum-information-science-and-engineering/",
+        "https://www.ee.washington.edu/spotlight/kai-mei-fu-qise-certificate/",
+        "https://www.quantumx.washington.edu/quantumx-welcomes-2024-cohort/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 47.606,
+      "lon": -122.332,
+      "precision": "city",
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "oregon",
+      "displayName": "University of Oregon",
+      "shortLabel": "U. Oregon",
+      "kind": "university",
+      "city": "Eugene",
+      "state": "Oregon",
+      "stateCode": "OR",
+      "id": "oregon",
+      "country": "United States",
+      "hostEntryIds": [
+        "oregon-quantum-nano"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [
+        {
+          "entryId": "oregon-quantum-nano",
+          "name": "Quantum and Nanotechnology Graduate Specialization",
+          "credentialType": "graduate specialization",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "quantum-and-nanotechnology",
+          "scopeNote": "Nanofabrication, low-noise measurement, cryogenics and photonics connect materials preparation with quantum-device experiments.",
+          "sourceUrls": [
+            "https://catalog.uoregon.edu/arts-sciences/natural-sciences/physics/gradspec/",
+            "https://registrar.uoregon.edu/faculty-staff/curriculum/programs-study"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of Oregon — Eugene, Oregon",
+          "lat": 44.05,
+          "lon": -123.09,
+          "sourceUrl": "https://catalog.uoregon.edu/arts-sciences/natural-sciences/physics/gradspec/",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Eugene",
+          "state": "Oregon",
+          "stateCode": "OR",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://catalog.uoregon.edu/arts-sciences/natural-sciences/physics/gradspec/",
+        "https://registrar.uoregon.edu/faculty-staff/curriculum/programs-study"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 44.05,
+      "lon": -123.09,
+      "precision": "city",
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "wisconsin",
+      "displayName": "University of Wisconsin–Madison",
+      "shortLabel": "UW–Madison",
+      "kind": "university",
+      "city": "Madison",
+      "state": "Wisconsin",
+      "stateCode": "WI",
+      "id": "wisconsin",
+      "country": "United States",
+      "hostEntryIds": [
+        "wisconsin-solid-state-pathway"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [
+        {
+          "entryId": "wisconsin-solid-state-pathway",
+          "name": "MS Quantum Computing — Hardware Pathway, Solid State Option",
+          "credentialType": "curricular pathway within a master’s degree",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS-with-solid-state-pathway",
+          "scopeNote": "Solid-state physics, measurement electronics and integrated-circuit fabrication link quantum computing to materials and devices.",
+          "sourceUrls": [
+            "https://guide.wisc.edu/graduate/physics/quantum-computing-ms/"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "University of Wisconsin–Madison — Madison, Wisconsin",
+          "lat": 43.07,
+          "lon": -89.4,
+          "sourceUrl": "https://www.physics.wisc.edu/department/contact/",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Madison",
+          "state": "Wisconsin",
+          "stateCode": "WI",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://guide.wisc.edu/graduate/physics/quantum-computing-ms/",
+        "https://www.physics.wisc.edu/department/contact/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 43.07,
+      "lon": -89.4,
+      "precision": "city",
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    },
+    {
+      "hostId": "fsu",
+      "displayName": "Florida State University",
+      "shortLabel": "Florida State",
+      "kind": "university",
+      "city": "Tallahassee",
+      "state": "Florida",
+      "stateCode": "FL",
+      "id": "fsu",
+      "country": "United States",
+      "hostEntryIds": [
+        "fsu-qist-certificate"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [
+        {
+          "entryId": "fsu-qist-certificate",
+          "name": "Graduate Certificate in Quantum Information Science and Technology",
+          "credentialType": "graduate certificate",
+          "formalEducationalPathway": true,
+          "quantumMaterialsSpecific": false,
+          "scope": "broader-QIS",
+          "scopeNote": "The program explicitly connects physics, chemistry, materials science and engineering, including topological materials and sensing.",
+          "sourceUrls": [
+            "https://www.chem.fsu.edu/qist/"
+          ]
+        }
+      ],
+      "researchRouteEntryIds": [],
+      "locations": [
+        {
+          "label": "Tallahassee, Florida",
+          "lat": 30.438,
+          "lon": -84.281,
+          "sourceUrl": "https://www.chem.fsu.edu/qist/",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Tallahassee",
+          "state": "Florida",
+          "stateCode": "FL",
+          "country": "United States"
+        }
+      ],
+      "sourceUrls": [
+        "https://www.chem.fsu.edu/qist/"
+      ],
+      "coverageNotes": [
+        "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
+        "Coordinates are inherited approximate host-city points, not campus or laboratory building coordinates."
+      ],
+      "lat": 30.438,
+      "lon": -84.281,
+      "precision": "city",
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 1,
+      "hasFormalEducationalPathway": true,
+      "hasQuantumMaterialsSpecificEducation": false,
+      "evidenceCompleteness": {
+        "geography": "sourced city location",
+        "education": "observed",
+        "funding": "awaiting distinct-award evidence; missing is not zero"
+      }
+    }
+  ],
+  "entryHostLinks": [
+    {
+      "entryId": "yale-qmse",
+      "hostId": "yale",
+      "role": "Program host",
+      "sourceUrl": "https://www.yale.edu/contact",
+      "jointHost": false
+    },
+    {
+      "entryId": "uchicago-cqi",
+      "hostId": "chicago",
+      "role": "Lead host",
+      "sourceUrl": "https://directory.uchicago.edu/organizations/35?type=divisions",
+      "jointHost": false
+    },
+    {
+      "entryId": "uchicago-qse-phd",
+      "hostId": "chicago",
+      "role": "Program host",
+      "sourceUrl": "https://directory.uchicago.edu/organizations/35?type=divisions",
+      "jointHost": false
+    },
+    {
+      "entryId": "mines-quantum-graduate",
+      "hostId": "mines",
+      "role": "Program host",
+      "sourceUrl": "https://www.mines.edu/contact/",
+      "jointHost": false
+    },
+    {
+      "entryId": "mines-quantum-bs",
+      "hostId": "mines",
+      "role": "Program host",
+      "sourceUrl": "https://www.mines.edu/contact/",
+      "jointHost": false
+    },
+    {
+      "entryId": "cu-boulder-qe-ms",
+      "hostId": "colorado",
+      "role": "Program host",
+      "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+      "jointHost": false
+    },
+    {
+      "entryId": "cu-boulder-cubit",
+      "hostId": "colorado",
+      "role": "Lead host",
+      "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+      "jointHost": false
+    },
+    {
+      "entryId": "northeastern-qmsi",
+      "hostId": "northeastern",
+      "role": "Lead host",
+      "sourceUrl": "https://swastik.sites.northeastern.edu/",
+      "jointHost": false
+    },
+    {
+      "entryId": "northeastern-qmsi",
+      "hostId": "northeastern",
+      "role": "Facility",
+      "sourceUrl": "https://www.burlington.northeastern.edu/facilities/buildings-labs/",
+      "jointHost": false
+    },
+    {
+      "entryId": "columbia-quantum-materials",
+      "hostId": "columbia",
+      "role": "Lead host",
+      "sourceUrl": "https://visit.columbia.edu/orgsoa",
+      "jointHost": false
+    },
+    {
+      "entryId": "lbnl-atap-quantum-materials",
+      "hostId": "lbnl",
+      "role": "Lead host",
+      "sourceUrl": "https://www.lbl.gov/contact/",
+      "jointHost": false
+    },
+    {
+      "entryId": "microsoft-purdue-quantum",
+      "hostId": "purdue",
+      "role": "Lead host",
+      "sourceUrl": "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft,-purdue-collaborate-to-advance-quantum-computing-.html",
+      "jointHost": false
+    },
+    {
+      "entryId": "lps-lqc",
+      "hostId": "lps",
+      "role": "Lead host",
+      "sourceUrl": "https://www.lps.umd.edu/contact-us/",
+      "jointHost": false
+    },
+    {
+      "entryId": "afrl-qis-center",
+      "hostId": "afrl",
+      "role": "Lead host",
+      "sourceUrl": "https://www.afrl.af.mil/News/Article-Display/Article/2486531/afrl-information-directorate-estimates-fy-2020-total-annual-economic-impact-at/",
+      "jointHost": false
+    },
+    {
+      "entryId": "nrl-qis-center",
+      "hostId": "nrl",
+      "role": "Lead host",
+      "sourceUrl": "https://www.nrl.navy.mil/Contact-Us/Visitor-Information/",
+      "jointHost": false
+    },
+    {
+      "entryId": "arl-qis-center",
+      "hostId": "arl",
+      "role": "Lead host",
+      "sourceUrl": "https://www.army.mil/article/268072",
+      "jointHost": false
+    },
+    {
+      "entryId": "nasa-quail",
+      "hostId": "nasa-ames",
+      "role": "Lead host",
+      "sourceUrl": "https://www.nasa.gov/ames/",
+      "jointHost": false
+    },
+    {
+      "entryId": "nasa-glenn-qis",
+      "hostId": "nasa-glenn",
+      "role": "Lead host",
+      "sourceUrl": "https://www.nasa.gov/centers-and-facilities/glenn/map-and-directions/",
+      "jointHost": false
+    },
+    {
+      "entryId": "jila",
+      "hostId": "colorado",
+      "role": "Joint host",
+      "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+      "jointHost": false
+    },
+    {
+      "entryId": "jqi",
+      "hostId": "maryland",
+      "role": "Lead host",
+      "sourceUrl": "https://www.jqi.umd.edu/about/directions",
+      "jointHost": false
+    },
+    {
+      "entryId": "quics",
+      "hostId": "maryland",
+      "role": "Lead host",
+      "sourceUrl": "https://quics.umd.edu/",
+      "jointHost": false
+    },
+    {
+      "entryId": "cfn",
+      "hostId": "brookhaven",
+      "role": "Facility",
+      "sourceUrl": "https://www.bnl.gov/guv/map.php",
+      "jointHost": false
+    },
+    {
+      "entryId": "cint",
+      "hostId": "sandia",
+      "role": "Facility",
+      "sourceUrl": "https://cint.lanl.gov/user-resources/visiting-cint.shtml",
+      "jointHost": true
+    },
+    {
+      "entryId": "cint",
+      "hostId": "los-alamos",
+      "role": "Facility",
+      "sourceUrl": "https://cint.lanl.gov/user-resources/visiting-cint.shtml",
+      "jointHost": true
+    },
+    {
+      "entryId": "cnm",
+      "hostId": "argonne",
+      "role": "Facility",
+      "sourceUrl": "https://students.cels.anl.gov/orientation/arriving/arriving/",
+      "jointHost": false
+    },
+    {
+      "entryId": "cnms",
+      "hostId": "oak-ridge",
+      "role": "Facility",
+      "sourceUrl": "https://www.ornl.gov/contact-us/",
+      "jointHost": false
+    },
+    {
+      "entryId": "molecular-foundry",
+      "hostId": "lbnl",
+      "role": "Facility",
+      "sourceUrl": "https://www.lbl.gov/contact/",
+      "jointHost": false
+    },
+    {
+      "entryId": "cats",
+      "hostId": "ames",
+      "role": "Lead host",
+      "sourceUrl": "https://www.ameslab.gov/education-programs/visit-ames-laboratory",
+      "jointHost": false
+    },
+    {
+      "entryId": "cmqt",
+      "hostId": "northwestern",
+      "role": "Lead host",
+      "sourceUrl": "https://quantum.northwestern.edu/cmqt/about/contact.html",
+      "jointHost": false
+    },
+    {
+      "entryId": "m2qm",
+      "hostId": "florida",
+      "role": "Lead host",
+      "sourceUrl": "https://explore.jobs.ufl.edu/en-us/job/524153/post-doctoral-associate-in-the-center-for-molecular-magnetic-quantum-materials-m2qm",
+      "jointHost": false
+    },
+    {
+      "entryId": "pro-qm",
+      "hostId": "columbia",
+      "role": "Lead host",
+      "sourceUrl": "https://visit.columbia.edu/orgsoa",
+      "jointHost": false
+    },
+    {
+      "entryId": "q-meen-c",
+      "hostId": "ucsd",
+      "role": "Lead host",
+      "sourceUrl": "https://ischuller.ucsd.edu/group-mobile/",
+      "jointHost": false
+    },
+    {
+      "entryId": "qsqm",
+      "hostId": "illinois",
+      "role": "Lead host",
+      "sourceUrl": "https://hqan.illinois.edu/",
+      "jointHost": false
+    },
+    {
+      "entryId": "qupidc",
+      "hostId": "purdue",
+      "role": "Lead host",
+      "sourceUrl": "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft,-purdue-collaborate-to-advance-quantum-computing-.html",
+      "jointHost": false
+    },
+    {
+      "entryId": "ceemag",
+      "hostId": "slac",
+      "role": "Lead host",
+      "sourceUrl": "https://www6.slac.stanford.edu/about/contact-us",
+      "jointHost": false
+    },
+    {
+      "entryId": "ftqsaa",
+      "hostId": "harvard",
+      "role": "Lead host",
+      "sourceUrl": "https://www.physics.harvard.edu/contact",
+      "jointHost": true
+    },
+    {
+      "entryId": "ftqsaa",
+      "hostId": "mit",
+      "role": "Joint host",
+      "sourceUrl": "https://www.mit.edu/contact/",
+      "jointHost": true
+    },
+    {
+      "entryId": "ftqsaa",
+      "hostId": "ucla",
+      "role": "Joint host",
+      "sourceUrl": "https://newsroom.ucla.edu/ucla-fast-facts",
+      "jointHost": true
+    },
+    {
+      "entryId": "hqan",
+      "hostId": "illinois",
+      "role": "Lead host",
+      "sourceUrl": "https://hqan.illinois.edu/",
+      "jointHost": false
+    },
+    {
+      "entryId": "marquis",
+      "hostId": "princeton",
+      "role": "Lead host",
+      "sourceUrl": "https://president.princeton.edu/about-office",
+      "jointHost": false
+    },
+    {
+      "entryId": "practiqal",
+      "hostId": "yale",
+      "role": "Lead host",
+      "sourceUrl": "https://www.yale.edu/contact",
+      "jointHost": false
+    },
+    {
+      "entryId": "ciqc",
+      "hostId": "berkeley",
+      "role": "Lead host",
+      "sourceUrl": "https://ciqc.berkeley.edu/",
+      "jointHost": false
+    },
+    {
+      "entryId": "qubbe",
+      "hostId": "chicago",
+      "role": "Lead host",
+      "sourceUrl": "https://directory.uchicago.edu/organizations/35?type=divisions",
+      "jointHost": false
+    },
+    {
+      "entryId": "qsense",
+      "hostId": "colorado",
+      "role": "Lead host",
+      "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+      "jointHost": false
+    },
+    {
+      "entryId": "rqs",
+      "hostId": "maryland",
+      "role": "Lead host",
+      "sourceUrl": "https://rqs.umd.edu/about/contact-us",
+      "jointHost": false
+    },
+    {
+      "entryId": "ciqm",
+      "hostId": "harvard",
+      "role": "Lead host",
+      "sourceUrl": "https://www.physics.harvard.edu/contact",
+      "jointHost": true
+    },
+    {
+      "entryId": "ciqm",
+      "hostId": "mit",
+      "role": "Joint host",
+      "sourceUrl": "https://www.mit.edu/contact/",
+      "jointHost": true
+    },
+    {
+      "entryId": "ciqm",
+      "hostId": "howard",
+      "role": "Joint host",
+      "sourceUrl": "https://howard.edu/contact",
+      "jointHost": true
+    },
+    {
+      "entryId": "ucsb-foundry",
+      "hostId": "ucsb",
+      "role": "Lead host",
+      "sourceUrl": "https://www.ucsb.edu/contact",
+      "jointHost": false
+    },
+    {
+      "entryId": "monark",
+      "hostId": "montana",
+      "role": "Joint host",
+      "sourceUrl": "https://www.monarkfoundry.org/",
+      "jointHost": true
+    },
+    {
+      "entryId": "monark",
+      "hostId": "arkansas",
+      "role": "Joint host",
+      "sourceUrl": "https://www.monarkfoundry.org/",
+      "jointHost": true
+    },
+    {
+      "entryId": "c2qa",
+      "hostId": "brookhaven",
+      "role": "Lead host",
+      "sourceUrl": "https://www.bnl.gov/guv/map.php",
+      "jointHost": false
+    },
+    {
+      "entryId": "sqms",
+      "hostId": "fermilab",
+      "role": "Lead host",
+      "sourceUrl": "https://www.fnal.gov/pub/contact/index.html",
+      "jointHost": false
+    },
+    {
+      "entryId": "q-next",
+      "hostId": "argonne",
+      "role": "Lead host",
+      "sourceUrl": "https://students.cels.anl.gov/orientation/arriving/arriving/",
+      "jointHost": false
+    },
+    {
+      "entryId": "qsa",
+      "hostId": "lbnl",
+      "role": "Lead host",
+      "sourceUrl": "https://www.lbl.gov/contact/",
+      "jointHost": false
+    },
+    {
+      "entryId": "qsc",
+      "hostId": "oak-ridge",
+      "role": "Lead host",
+      "sourceUrl": "https://www.ornl.gov/contact-us/",
+      "jointHost": false
+    },
+    {
+      "entryId": "uw-qise-certificate",
+      "hostId": "washington",
+      "role": "Program host",
+      "sourceUrl": "https://grad.uw.edu/programs/interdisciplinary-programs/quantum-information-science-and-engineering/",
+      "jointHost": false
+    },
+    {
+      "entryId": "oregon-quantum-nano",
+      "hostId": "oregon",
+      "role": "Program host",
+      "sourceUrl": "https://catalog.uoregon.edu/arts-sciences/natural-sciences/physics/gradspec/",
+      "jointHost": false
+    },
+    {
+      "entryId": "wisconsin-solid-state-pathway",
+      "hostId": "wisconsin",
+      "role": "Program host",
+      "sourceUrl": "https://www.physics.wisc.edu/department/contact/",
+      "jointHost": false
+    },
+    {
+      "entryId": "illinois-qis-minor",
+      "hostId": "illinois",
+      "role": "Program host",
+      "sourceUrl": "https://hqan.illinois.edu/",
+      "jointHost": false
+    },
+    {
+      "entryId": "princeton-qse-minor",
+      "hostId": "princeton",
+      "role": "Program host",
+      "sourceUrl": "https://president.princeton.edu/about-office",
+      "jointHost": false
+    },
+    {
+      "entryId": "purdue-quantum-minor",
+      "hostId": "purdue",
+      "role": "Program host",
+      "sourceUrl": "https://www.physics.purdue.edu/academic-programs/undergraduate/minors.html",
+      "jointHost": false
+    },
+    {
+      "entryId": "columbia-quantum-tracks",
+      "hostId": "columbia",
+      "role": "Program host",
+      "sourceUrl": "https://visit.columbia.edu/orgsoa",
+      "jointHost": false
+    },
+    {
+      "entryId": "fsu-qist-certificate",
+      "hostId": "fsu",
+      "role": "Program host",
+      "sourceUrl": "https://www.chem.fsu.edu/qist/",
+      "jointHost": false
+    }
+  ],
+  "unplacedEntries": [
+    {
+      "entryId": "cifar-qm",
+      "name": "CIFAR Quantum Materials",
+      "page": "programs",
+      "reason": "International, distributed fellowship and collaboration network. CIFAR headquarters is not used as a proxy for the locations of Quantum Materials research."
+    },
+    {
+      "entryId": "moore-epiqs",
+      "name": "Emergent Phenomena in Quantum Systems Initiative",
+      "page": "programs",
+      "reason": "Distributed investigator and materials-synthesis network. The foundation headquarters is not a research-site proxy; individual awardees and host institutions would need separate mapping."
+    },
+    {
+      "entryId": "dod-muri",
+      "name": "Multidisciplinary University Research Initiatives",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "afosr-qis",
+      "name": "AFOSR Quantum Information Sciences",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "onr-qis",
+      "name": "ONR Quantum Information Science",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "darpa-qbi",
+      "name": "Quantum Benchmarking Initiative",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "darpa-us2qc",
+      "name": "Underexplored Systems for Utility-Scale Quantum Computing",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "darpa-harq",
+      "name": "Heterogeneous Architectures for Quantum",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "darpa-roqs",
+      "name": "Robust Quantum Sensors",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "darpa-onisq",
+      "name": "Optimization with Noisy Intermediate-Scale Quantum Devices",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "darpa-impaqt",
+      "name": "Imagining Practical Applications for a Quantum Tomorrow",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "iarpa-elq",
+      "name": "Entangled Logical Qubits",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "iarpa-logiq",
+      "name": "Logical Qubits",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "iarpa-qeo",
+      "name": "Quantum Enhanced Optimization",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nasa-cal",
+      "name": "Cold Atom Laboratory",
+      "page": "labs",
+      "reason": "The Cold Atom Laboratory experiment operates aboard the International Space Station, so it has no fixed terrestrial research-site marker. Ground operations at JPL are distinct from the location of the experiment."
+    },
+    {
+      "entryId": "nist-quantum-science",
+      "name": "NIST Quantum Science Research",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "qed-c",
+      "name": "Quantum Economic Development Consortium",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "qmec",
+      "name": "Quantum Manufacturing Engineering Center",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "elevate-quantum",
+      "name": "Elevate Quantum Tech Hub",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "bloch-quantum-hub",
+      "name": "The Bloch Quantum Tech Hub",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "doe-bes-mse",
+      "name": "BES Materials Sciences and Engineering Division",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "doe-efrc",
+      "name": "Energy Frontier Research Centers",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "doe-nsrc",
+      "name": "Nanoscale Science Research Centers",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nqi",
+      "name": "National Quantum Initiative",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-qlci",
+      "name": "Quantum Leap Challenge Institutes",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-mrsec",
+      "name": "Materials Research Science and Engineering Centers",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-nqvl",
+      "name": "National Quantum Virtual Laboratory — Quantum Testbeds",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-nqni",
+      "name": "National Quantum and Nanotechnology Infrastructure",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-expandqise",
+      "name": "Expanding Capacity in Quantum Information Science and Engineering",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-cqis",
+      "name": "Connections in Quantum Information Science",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-cmp",
+      "name": "Condensed Matter Physics",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-dmref",
+      "name": "Designing Materials to Revolutionize and Engineer our Future",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-mip",
+      "name": "Materials Innovation Platforms",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "nsf-foundries",
+      "name": "Quantum materials discovery foundries",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "doe-qis",
+      "name": "National Quantum Information Science Research Centers",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "ndaa-qis",
+      "name": "NDAA-designated Quantum Information Science Research Centers",
+      "page": "federal",
+      "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    }
+  ],
+  "campusAssociations": [
+    {
+      "hostId": "lps",
+      "relatedUniversityHostId": "maryland",
+      "relationship": "Located on UMD campus; separate research host",
+      "sourceUrl": "https://www.lps.umd.edu/contact-us/"
+    }
+  ],
+  "candidateHighlights": [
+    {
+      "hostId": "colorado",
+      "reasons": [
+        "1 listed formal educational pathway(s)",
+        "3 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "columbia",
+      "reasons": [
+        "1 listed formal educational pathway(s)",
+        "2 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "purdue",
+      "reasons": [
+        "1 listed formal educational pathway(s)",
+        "2 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "chicago",
+      "reasons": [
+        "1 listed formal educational pathway(s)",
+        "2 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "illinois",
+      "reasons": [
+        "1 listed formal educational pathway(s)",
+        "2 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "princeton",
+      "reasons": [
+        "1 listed formal educational pathway(s)",
+        "1 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "yale",
+      "reasons": [
+        "1 listed formal educational pathway(s)",
+        "1 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "mines",
+      "reasons": [
+        "2 listed formal educational pathway(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "fsu",
+      "reasons": [
+        "1 listed formal educational pathway(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "oregon",
+      "reasons": [
+        "1 listed formal educational pathway(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "washington",
+      "reasons": [
+        "1 listed formal educational pathway(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "wisconsin",
+      "reasons": [
+        "1 listed formal educational pathway(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "maryland",
+      "reasons": [
+        "3 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "harvard",
+      "reasons": [
+        "2 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    },
+    {
+      "hostId": "mit",
+      "reasons": [
+        "2 listed lab/center(s)"
+      ],
+      "label": "Higher evidence coverage in this selected directory; not a quality ranking"
+    }
+  ],
+  "weightingRecommendation": {
+    "label": "Documented institutional footprint",
+    "components": [
+      {
+        "id": "education",
+        "suggestedWeight": 35,
+        "rule": "Binary documented formal educational pathway; multiple degrees/certificates at the same host do not multiply the score. Display quantum-materials-specific vs broader QIS separately."
+      },
+      {
+        "id": "listedCenters",
+        "suggestedWeight": 35,
+        "rule": "Count distinct listed labs/centers, saturating at 4. Mark this as selected-directory coverage; do not count cross-listed Programs records twice."
+      },
+      {
+        "id": "verifiedFunding",
+        "suggestedWeight": 30,
+        "rule": "Optional separate funding lens. Use deduplicated NSF award obligations or another precisely labeled consistent amount type, assigned to the named lead recipient only. Display period and scope. Do not compare selected center commitments to an institution’s total funding."
+      }
+    ],
+    "defaultRecommendation": "Prefer transparent evidence badges and separate education / centers / verified-funding lenses. If a combined score is shown, keep weights visible and adjustable; expose all numerator records. Keep unknown funding visually unknown, not $0.",
+    "importantLimit": "The directory was intentionally selected, so any score measures evidence captured here, not the strongest universities worldwide."
+  }
+}

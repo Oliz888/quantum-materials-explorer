@@ -51,7 +51,7 @@ test('bootstrap waits for unlock; About and Physics Map do not load publication 
     const document={body:{dataset:{view}},createElement(){return {};},head:{appendChild(s){loaded.push(s.src);s.onload();}}};
     const task=vm.runInNewContext(fs.readFileSync(path.join(root,'bootstrap.js'),'utf8'),{window:{QMAuth:{ready}},document,console});
     await Promise.resolve();assert.equal(loaded.length,0);resolve();await task;
-    if(view==='institutions')assert.deepEqual(loaded,['directory-core.js?v=1','directory.js?v=1']);
+    if(view==='institutions')assert.deepEqual(loaded,['directory-core.js?v=2','directory.js?v=2']);
     else if(view==='about')assert.deepEqual(loaded,['about.js?v=1']);
     else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map.js?v=4']);
     else if(view==='physics-map-v2')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map-physh.js?v=1','physics-map-views.js?v=2','physics-map-v2.js?v=1']);
@@ -64,7 +64,9 @@ test('all routes start locked, share navigation and have no eager dataset script
     assert.match(html,/<html[^>]+data-auth="locked"/);assert.match(html,/auth\.js\?v=2/);
     assert.match(html,/href="about\.html"/);assert.match(html,/data-lock-site/);
     assert.match(html,/href="physics-map\.html"/);
-    for(const page of ['programs','labs','federal'])assert.ok(html.includes(`href="${page}.html"`));
+    const nav=html.match(/<nav class="site-nav"[\s\S]*?<\/nav>/)[0];
+    assert.ok(nav.includes('href="programs.html"'));
+    assert.doesNotMatch(nav,/href="(?:labs|federal)\.html"/);
     assert.doesNotMatch(html,/<script src="(?:data\.js|explorer\.js|graph-core\.js)/);
     assert.doesNotMatch(html,/Materials (?:Discovery )?Hypergraph/);
   }

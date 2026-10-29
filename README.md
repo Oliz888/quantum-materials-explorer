@@ -185,14 +185,24 @@ The initial WoS integration was developed on `codex/wos-source-selector`; the Ab
 
 ## Institutional directory (October 2026)
 
-The three separate directory pages are linked from every main navigation bar:
+The shared navigation contains one **Programs** entry. Its three subpages are:
 
-- `programs.html`: selected degree programs, certificates and research networks.
+- `programs.html`: university degrees, minors, specializations, certificates, curricula, research centers/themes and selected research networks.
 - `labs.html`: institutes, research centers, facilities and industry partnerships.
 - `federal.html`: major U.S. funding families, coordination and infrastructure initiatives.
 
-`data/institutions.json` contains 85 source-linked entries checked on 29 October 2026. Each entity has one home page, a host/lead, a separate funding/support field, research focus, materials connection, status notes and official sources. `parentId` links a lab to its program. Four complete named rosters are represented: eight NSF QLCIs (the August 2026 roster), five DOE National QIS Research Centers, five DOE NSRCs and four NDAA QIS centers. Other institutions and EFRCs are selected examples; the directory is not a complete global inventory or a live list of open funding calls.
+Each page follows **relationship overview / host map → milestone timeline → detailed entries**. The blue, white and gray theme follows the publication homepage, including Field Atlas V2. Diagram colors still distinguish relationships and research categories.
 
-`directory-core.js` implements filtering, entry links and CSV export. `directory.js` renders the three pages after the existing access gate resolves; it does not load or merge the publication datasets. Search (`q`), group (`group`) and publication context (`source`) are retained in URLs. Entity fragments open their source/status notes. The CSV contains the filtered page entries and their source URLs.
+`data/institutions.json` contains 93 distinct source-linked entries checked on 29 October 2026. The university view shows 20 entries, including five existing centers cross-listed from Labs; the other views contain 45 Labs and 33 Federal entries. `page` is the home page; `pages`, `viewGroups` and `roleLabels` permit multiple views without duplicate identities. Every entry keeps its actual organizational type.
 
-When updating the directory, verify the official roster or source, retain historical/announced status distinctions, update `checkedDate`, and run `node --test tests/*.test.js`. A live institutional page alone does not verify continued award funding. The NSF and DOE center networks, NSF Science and Technology Centers, EFRCs, university degrees and philanthropic networks are distinct organizational forms.
+Four complete named rosters remain represented: eight NSF QLCIs (August 2026 roster), five DOE National QIS Research Centers, five DOE NSRCs and four NDAA QIS centers. Other institutions and EFRCs are selected examples; this is not an exhaustive global inventory or a live list of open calls.
+
+`parentId` records program–center links. `hostIds` identifies the universities named in the host/lead evidence; a shared host is not a claim of collaboration. The overview aggregates these links by directory group and separately marks cross-listing. Clicking a group opens that view and filters its entries. Hover/focus descriptions identify the groups and selected milestones.
+
+Each `milestones` item has its own year, event label, type and source URL. The common time scale supports comparison across pages. Date and activity controls filter events only, preserving institutions with unknown dates. Announcement, renewal, class-period and actual launch dates must not be conflated.
+
+`locations` records source-backed host cities with approximate coordinates and `precision: city`. The 57 mapped entries have 64 host records; nearby cities cluster in the display. Federal portfolios are not plotted at agency headquarters: that map derives locations from their linked centers. Distributed networks and the ISS facility are explicitly left without terrestrial research pins. `data/north-america-map.json` contains a simplified public-domain Natural Earth outline with attribution and source metadata.
+
+`directory-core.js` handles cross-listing, filters, relationship aggregation, milestones and CSV export. `directory.js` renders after the existing access gate resolves, independently of publication data. Search (`q`), group (`group`) and publication context (`source`) remain in URLs. Entity fragments open their evidence details. CSV exports retain milestones, geographic sources and official references.
+
+When updating, verify official evidence, preserve status distinctions and unknown dates, update check metadata, and run `node --test tests/*.test.js`. A live institutional page alone does not verify continued award funding.

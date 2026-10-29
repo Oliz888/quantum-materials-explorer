@@ -20,8 +20,8 @@
       return;
     }
     if(document.body.dataset.view==='institutions') {
-      await load('directory-core.js?v=1');
-      await load('directory.js?v=1');
+      await load('directory-core.js?v=2');
+      await load('directory.js?v=2');
       return;
     }
     if(document.body.dataset.view==='about') { await load('about.js?v=1'); return; }

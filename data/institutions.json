@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "checkedDate": "2026-10-29",
-  "scope": "U.S.-focused directory of major funding families and research institutions, with selected international and philanthropic connections. Four specified official center rosters are fully represented. Other academic, industry and EFRC entries are selected examples, not an exhaustive global directory.",
+  "scope": "U.S.-focused directory of funding initiatives, research institutions and university learning/research routes, with selected international and philanthropic connections. Four specified official center rosters are fully represented. University routes include degrees, certificates, minors, specializations, curricula and research centers/themes. These are selected examples, not an exhaustive global catalog. Cross-listed entries retain one identity.",
   "rosters": [
     {
       "id": "qlci",
@@ -124,7 +124,34 @@
       "checkedDate": "2026-10-29",
       "page": "programs",
       "group": "University programs",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 2023,
+          "title": "Yale QMSE research traineeship begins",
+          "type": "education",
+          "sourceUrl": "https://qmse.yale.edu/news",
+          "note": "Date marks the NSF-supported training initiative, not the first certificate awarded.",
+          "id": "yale-qmse-event-1"
+        }
+      ],
+      "hostIds": [
+        "yale"
+      ],
+      "locations": [
+        {
+          "label": "Yale University — New Haven, Connecticut",
+          "lat": 41.31,
+          "lon": -72.93,
+          "sourceUrl": "https://www.yale.edu/contact",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "uchicago-cqi",
@@ -158,13 +185,44 @@
           "url": "https://quantum.pme.uchicago.edu/research-areas/quantum-materials",
           "evidenceDate": "2026-10-29",
           "note": "Undated current page checked 2026-10-29. Lists quantum materials research and participating faculty."
+        },
+        {
+          "title": "University research institute and study pathways",
+          "url": "https://quantum.uchicago.edu/programs-pathways",
+          "evidenceDate": "2026-10-29",
+          "note": "University source for the research or education route shown in the Programs view."
         }
       ],
-      "notes": "CQI and the Chicago Quantum Exchange are distinct organizations within the broader Chicago quantum ecosystem.",
+      "notes": "CQI and the Chicago Quantum Exchange are distinct organizations within the broader Chicago quantum ecosystem. Also listed under university pathways, retaining its research institute or theme identity.",
       "checkedDate": "2026-10-29",
       "page": "labs",
       "group": "University institutes & research themes",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs",
+        "programs"
+      ],
+      "milestones": [],
+      "viewGroups": {
+        "programs": "University centers & research routes"
+      },
+      "roleLabels": {
+        "programs": "University research institute and study pathways"
+      },
+      "hostIds": [
+        "chicago"
+      ],
+      "locations": [
+        {
+          "label": "University of Chicago — Chicago, Illinois",
+          "lat": 41.88,
+          "lon": -87.63,
+          "sourceUrl": "https://directory.uchicago.edu/organizations/35?type=divisions",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "uchicago-qse-phd",
@@ -198,7 +256,25 @@
       "checkedDate": "2026-10-29",
       "page": "programs",
       "group": "University programs",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "programs"
+      ],
+      "milestones": [],
+      "hostIds": [
+        "chicago"
+      ],
+      "locations": [
+        {
+          "label": "University of Chicago — Chicago, Illinois",
+          "lat": 41.88,
+          "lon": -87.63,
+          "sourceUrl": "https://directory.uchicago.edu/organizations/35?type=divisions",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "mines-quantum-graduate",
@@ -237,7 +313,33 @@
       "checkedDate": "2026-10-29",
       "page": "programs",
       "group": "University programs",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "Mines launches its quantum engineering master’s program",
+          "type": "education",
+          "sourceUrl": "https://www.mines.edu/news/all-news/2026/peter-aaen-named-dean-of-energy-and-materials-programs.html",
+          "id": "mines-quantum-graduate-event-1"
+        }
+      ],
+      "hostIds": [
+        "mines"
+      ],
+      "locations": [
+        {
+          "label": "Colorado School of Mines — Golden, Colorado",
+          "lat": 39.76,
+          "lon": -105.22,
+          "sourceUrl": "https://www.mines.edu/contact/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "mines-quantum-bs",
@@ -270,7 +372,34 @@
       "checkedDate": "2026-10-29",
       "page": "programs",
       "group": "University programs",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 2026,
+          "title": "Mines launches Quantum Systems Engineering BS",
+          "type": "education",
+          "sourceUrl": "https://www.mines.edu/news/all-news/2026/mines-launches-nations-first-quantum-systems-engineering-degree.html",
+          "note": "Fall 2026 launch.",
+          "id": "mines-quantum-bs-event-1"
+        }
+      ],
+      "hostIds": [
+        "mines"
+      ],
+      "locations": [
+        {
+          "label": "Colorado School of Mines — Golden, Colorado",
+          "lat": 39.76,
+          "lon": -105.22,
+          "sourceUrl": "https://www.mines.edu/contact/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "cu-boulder-qe-ms",
@@ -303,7 +432,25 @@
       "checkedDate": "2026-10-29",
       "page": "programs",
       "group": "University programs",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "programs"
+      ],
+      "milestones": [],
+      "hostIds": [
+        "colorado"
+      ],
+      "locations": [
+        {
+          "label": "University of Colorado Boulder — Boulder, Colorado",
+          "lat": 40.02,
+          "lon": -105.27,
+          "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "cu-boulder-cubit",
@@ -337,13 +484,52 @@
           "url": "https://www.colorado.edu/researchinnovation/2019/01/17/cubit-quantum-initiative-launch-fueled-seed-funding-faculty-expertise",
           "evidenceDate": "2019-01-17",
           "note": "Documents January 2019 establishment, initial support, NIST collaboration and four research pillars."
+        },
+        {
+          "title": "University quantum initiative and education hub",
+          "url": "https://www.colorado.edu/initiative/cubit/education-workforce-training",
+          "evidenceDate": "2026-10-29",
+          "note": "University source for the research or education route shown in the Programs view."
         }
       ],
-      "notes": "A university-led initiative with federal partners, not a separate federal agency program.",
+      "notes": "A university-led initiative with federal partners, not a separate federal agency program. Also listed under university pathways, retaining its research institute or theme identity.",
       "checkedDate": "2026-10-29",
       "page": "labs",
       "group": "University institutes & research themes",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs",
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 2019,
+          "title": "CUbit Quantum Initiative launches",
+          "type": "formation",
+          "sourceUrl": "https://www.colorado.edu/researchinnovation/2019/01/17/cubit-quantum-initiative-launch-fueled-seed-funding-faculty-expertise",
+          "id": "cu-boulder-cubit-event-1"
+        }
+      ],
+      "viewGroups": {
+        "programs": "University centers & research routes"
+      },
+      "roleLabels": {
+        "programs": "University quantum initiative and education hub"
+      },
+      "hostIds": [
+        "colorado"
+      ],
+      "locations": [
+        {
+          "label": "University of Colorado Boulder — Boulder, Colorado",
+          "lat": 40.02,
+          "lon": -105.27,
+          "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "northeastern-qmsi",
@@ -383,13 +569,60 @@
           "url": "https://quantum.northeastern.edu/",
           "evidenceDate": "2026-10-29",
           "note": "Undated current page checked 2026-10-29. Indexed institute home page shows 2026 activities; direct fetch returned 502 during this check."
+        },
+        {
+          "title": "University research institute",
+          "url": "https://research.northeastern.edu/institutes-and-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "University source for the research or education route shown in the Programs view."
         }
       ],
-      "notes": "The current university name is Quantum Materials and Sensing Institute. University sources support its establishment and activities.",
+      "notes": "The current university name is Quantum Materials and Sensing Institute. University sources support its establishment and activities. Also listed under university pathways, retaining its research institute or theme identity.",
       "checkedDate": "2026-10-29",
       "page": "labs",
       "group": "University institutes & research themes",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs",
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 2024,
+          "title": "Northeastern establishes QMSI",
+          "type": "formation",
+          "sourceUrl": "https://swastik.sites.northeastern.edu/",
+          "id": "northeastern-qmsi-event-1"
+        }
+      ],
+      "viewGroups": {
+        "programs": "University centers & research routes"
+      },
+      "roleLabels": {
+        "programs": "University research institute"
+      },
+      "hostIds": [
+        "northeastern"
+      ],
+      "locations": [
+        {
+          "label": "Northeastern University — Boston, Massachusetts",
+          "lat": 42.36,
+          "lon": -71.06,
+          "sourceUrl": "https://swastik.sites.northeastern.edu/",
+          "precision": "city",
+          "role": "Lead host"
+        },
+        {
+          "label": "Northeastern Innovation Campus quantum laboratories — Burlington, Massachusetts",
+          "lat": 42.5,
+          "lon": -71.2,
+          "sourceUrl": "https://www.burlington.northeastern.edu/facilities/buildings-labs/",
+          "precision": "city",
+          "role": "Facility"
+        }
+      ],
+      "locationNote": "The institute spans Northeastern research groups and campuses. Boston marks the university host; Burlington marks documented quantum research facilities. Neither point is an exact laboratory location."
     },
     {
       "id": "columbia-quantum-materials",
@@ -417,13 +650,44 @@
           "url": "https://quantum.columbia.edu/research/quantum-materials-nanoscience",
           "evidenceDate": "2026-10-29",
           "note": "Undated current page checked 2026-10-29. Defines the research theme, atom-thin material focus and interdisciplinary faculty."
+        },
+        {
+          "title": "University research theme",
+          "url": "https://quantum.columbia.edu/research/quantum-materials-nanoscience",
+          "evidenceDate": "2026-10-29",
+          "note": "University source for the research or education route shown in the Programs view."
         }
       ],
-      "notes": "A research theme, not a separate degree or single funding award. Columbia's MRSEC and DOE EFRC are separately identifiable centers.",
+      "notes": "A research theme, not a separate degree or single funding award. Columbia's MRSEC and DOE EFRC are separately identifiable centers. Also listed under university pathways, retaining its research institute or theme identity.",
       "checkedDate": "2026-10-29",
       "page": "labs",
       "group": "University institutes & research themes",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs",
+        "programs"
+      ],
+      "milestones": [],
+      "viewGroups": {
+        "programs": "University centers & research routes"
+      },
+      "roleLabels": {
+        "programs": "University research theme"
+      },
+      "hostIds": [
+        "columbia"
+      ],
+      "locations": [
+        {
+          "label": "Columbia University — New York, New York",
+          "lat": 40.71,
+          "lon": -74.01,
+          "sourceUrl": "https://visit.columbia.edu/orgsoa",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "lbnl-atap-quantum-materials",
@@ -463,7 +727,23 @@
       "checkedDate": "2026-10-29",
       "page": "labs",
       "group": "National laboratory research",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Lawrence Berkeley National Laboratory — Berkeley, California",
+          "lat": 37.87,
+          "lon": -122.27,
+          "sourceUrl": "https://www.lbl.gov/contact/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "cifar-qm",
@@ -509,7 +789,30 @@
       "checkedDate": "2026-10-29",
       "page": "programs",
       "group": "Philanthropy & international networks",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 1987,
+          "title": "CIFAR begins its Superconductivity program",
+          "type": "formation",
+          "sourceUrl": "https://cifar.ca/wp-content/uploads/2020/11/CIFAR_IR_19-20_EN_DIGITAL.pdf",
+          "id": "cifar-qm-event-1"
+        },
+        {
+          "year": 2002,
+          "title": "CIFAR program becomes Quantum Materials",
+          "type": "formation",
+          "sourceUrl": "https://cifar.ca/wp-content/uploads/2020/11/CIFAR_IR_19-20_EN_DIGITAL.pdf",
+          "note": "Name change, not a new program founded from scratch.",
+          "id": "cifar-qm-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "International, distributed fellowship and collaboration network. CIFAR headquarters is not used as a proxy for the locations of Quantum Materials research."
     },
     {
       "id": "microsoft-purdue-quantum",
@@ -555,7 +858,34 @@
       "checkedDate": "2026-10-29",
       "page": "labs",
       "group": "Industry–university partnerships",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2017,
+          "title": "Microsoft and Purdue expand their research partnership",
+          "type": "formation",
+          "sourceUrl": "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft%2C-purdue-collaborate-to-advance-quantum-computing-.html",
+          "note": "Enhanced agreement; earlier collaboration existed.",
+          "id": "microsoft-purdue-quantum-event-1"
+        }
+      ],
+      "hostIds": [
+        "purdue"
+      ],
+      "locations": [
+        {
+          "label": "Purdue University — West Lafayette, Indiana",
+          "lat": 40.43,
+          "lon": -86.91,
+          "sourceUrl": "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft,-purdue-collaborate-to-advance-quantum-computing-.html",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "moore-epiqs",
@@ -596,7 +926,30 @@
       "checkedDate": "2026-10-29",
       "page": "programs",
       "group": "Philanthropy & international networks",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 2013,
+          "title": "Moore Foundation launches EPiQS",
+          "type": "formation",
+          "sourceUrl": "https://www.moore.org/initiative-strategy-detail?initiativeId=emergent-phenomena-in-quantum-systems",
+          "id": "moore-epiqs-event-1"
+        },
+        {
+          "year": 2025,
+          "title": "EPiQS receives a ten-year extension",
+          "type": "funding",
+          "sourceUrl": "https://www.moore.org/initiative-strategy-detail?initiativeId=emergent-phenomena-in-quantum-systems",
+          "note": "Extension approved in 2025; scheduled future calls are not treated as completed awards.",
+          "id": "moore-epiqs-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "Distributed investigator and materials-synthesis network. The foundation headquarters is not a research-site proxy; individual awardees and host institutions would need separate mapping."
     },
     {
       "id": "dod-muri",
@@ -633,7 +986,14 @@
       "page": "federal",
       "group": "Defense",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "afosr-qis",
@@ -664,7 +1024,14 @@
       "page": "federal",
       "group": "Defense",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "onr-qis",
@@ -696,7 +1063,14 @@
       "page": "federal",
       "group": "Defense",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "lps-lqc",
@@ -738,9 +1112,42 @@
       ],
       "notes": "The year marks the April 2021 formal launch; center designation was announced in November 2020. LPS hosts the collaboratory on the University of Maryland campus.",
       "page": "labs",
-      "group": "Defense & space laboratories",
+      "group": "Defense laboratories",
       "parentId": "ndaa-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "LPS receives defense QIS center designation",
+          "type": "policy",
+          "sourceUrl": "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/2570949/nsa-launches-lps-qubit-collaboratory/",
+          "id": "lps-lqc-event-1"
+        },
+        {
+          "year": 2021,
+          "title": "LPS Qubit Collaboratory formally launches",
+          "type": "formation",
+          "sourceUrl": "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/2570949/nsa-launches-lps-qubit-collaboratory/",
+          "id": "lps-lqc-event-2"
+        }
+      ],
+      "hostIds": [
+        "maryland"
+      ],
+      "locations": [
+        {
+          "label": "Laboratory for Physical Sciences — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://www.lps.umd.edu/contact-us/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "afrl-qis-center",
@@ -775,9 +1182,34 @@
       ],
       "notes": "Relevance: enabling and adjacent. Center designation and research authority should not be counted as a separate annual grant competition.",
       "page": "labs",
-      "group": "Defense & space laboratories",
+      "group": "Defense laboratories",
       "parentId": "ndaa-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2021,
+          "title": "AFRL receives QIS research center designation",
+          "type": "policy",
+          "sourceUrl": "https://www.afrl.af.mil/News/Article-Display/Article/2724770/air-force-research-laboratory-designated-as-quantum-information-science-researc/",
+          "note": "April 2021 designation, reported in August.",
+          "id": "afrl-qis-center-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "AFRL Information Directorate / Rome Research Site — Rome, New York",
+          "lat": 43.21,
+          "lon": -75.46,
+          "sourceUrl": "https://www.afrl.af.mil/News/Article-Display/Article/2486531/afrl-information-directorate-estimates-fy-2020-total-annual-economic-impact-at/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "nrl-qis-center",
@@ -818,9 +1250,34 @@
       ],
       "notes": "Relevance: enabling and adjacent. NIST is a collaborator in network research, not the parent agency or sole sponsor of this Navy center.",
       "page": "labs",
-      "group": "Defense & space laboratories",
+      "group": "Defense laboratories",
       "parentId": "ndaa-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "NRL receives QIS research center designation",
+          "type": "policy",
+          "sourceUrl": "https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Quantum-Research/",
+          "note": "Designation of an existing laboratory; earlier quantum research predates this event.",
+          "id": "nrl-qis-center-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "U.S. Naval Research Laboratory — Washington, District of Columbia",
+          "lat": 38.91,
+          "lon": -77.04,
+          "sourceUrl": "https://www.nrl.navy.mil/Contact-Us/Visitor-Information/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "arl-qis-center",
@@ -855,9 +1312,33 @@
       ],
       "notes": "Relevance: enabling and adjacent. The Army Research Office is ARL's extramural research arm; 2023 is the designation date, not the beginning of Army quantum research.",
       "page": "labs",
-      "group": "Defense & space laboratories",
+      "group": "Defense laboratories",
       "parentId": "ndaa-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2023,
+          "title": "Army designates ARL as a QIS research center",
+          "type": "policy",
+          "sourceUrl": "https://www.army.mil/article/268072",
+          "id": "arl-qis-center-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Army Research Laboratory / Adelphi Laboratory Center — Adelphi, Maryland",
+          "lat": 39.0,
+          "lon": -76.97,
+          "sourceUrl": "https://www.army.mil/article/268072",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city point for the documented Adelphi host laboratory. ARL also collaborates with university research sites; this is not the complete collaboration footprint."
     },
     {
       "id": "darpa-qbi",
@@ -888,7 +1369,22 @@
       "page": "federal",
       "group": "DARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2024,
+          "title": "DARPA launches Quantum Benchmarking Initiative",
+          "type": "funding",
+          "sourceUrl": "https://www.darpa.mil/research/programs/quantum-benchmarking-initiative",
+          "id": "darpa-qbi-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "darpa-us2qc",
@@ -931,7 +1427,22 @@
       "page": "federal",
       "group": "DARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2022,
+          "title": "DARPA announces US2QC",
+          "type": "funding",
+          "sourceUrl": "https://www.darpa.mil/news/2022/fault-tolerant-quantum-computers",
+          "id": "darpa-us2qc-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "darpa-harq",
@@ -968,7 +1479,23 @@
       "page": "federal",
       "group": "DARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2025,
+          "title": "DARPA issues HARQ solicitation",
+          "type": "funding",
+          "sourceUrl": "https://www.darpa.mil/sites/default/files/attachment/2025-09/darpa-harq-program-question-answer.pdf",
+          "note": "Solicitation date, not an independently verified first-award date.",
+          "id": "darpa-harq-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "darpa-roqs",
@@ -1005,7 +1532,22 @@
       "page": "federal",
       "group": "DARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2025,
+          "title": "DARPA launches RoQS Phase 1",
+          "type": "funding",
+          "sourceUrl": "https://www.darpa.mil/news/2025/roqs-launches-first-phase",
+          "id": "darpa-roqs-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "darpa-onisq",
@@ -1042,7 +1584,22 @@
       "page": "federal",
       "group": "DARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2019,
+          "title": "DARPA announces ONISQ",
+          "type": "funding",
+          "sourceUrl": "https://www.darpa.mil/news/features/quantum-sensing-computing",
+          "id": "darpa-onisq-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "darpa-impaqt",
@@ -1079,7 +1636,14 @@
       "page": "federal",
       "group": "DARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "iarpa-elq",
@@ -1116,7 +1680,23 @@
       "page": "federal",
       "group": "IARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2023,
+          "title": "ELQ four-year program scheduled to begin",
+          "type": "funding",
+          "sourceUrl": "https://www.iarpa.gov/research-programs/elq",
+          "note": "Official page specifies a scheduled spring 2023 start; this is not a current award-status verification.",
+          "id": "iarpa-elq-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "iarpa-logiq",
@@ -1153,7 +1733,22 @@
       "page": "federal",
       "group": "IARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2016,
+          "title": "LogiQ begins in IARPA’s program chronology",
+          "type": "funding",
+          "sourceUrl": "https://www.iarpa.gov/research-programs/elq",
+          "id": "iarpa-logiq-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "iarpa-qeo",
@@ -1190,7 +1785,30 @@
       "page": "federal",
       "group": "IARPA",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2017,
+          "title": "QEO begins in IARPA’s program chronology",
+          "type": "funding",
+          "sourceUrl": "https://www.iarpa.gov/research-programs/elq",
+          "id": "iarpa-qeo-event-1"
+        },
+        {
+          "year": 2021,
+          "title": "QEO period ends in IARPA’s chronology",
+          "type": "funding",
+          "sourceUrl": "https://www.iarpa.gov/research-programs/elq",
+          "note": "The official chronology gives 2017–2021; no claim about later successor projects.",
+          "id": "iarpa-qeo-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nasa-quail",
@@ -1219,9 +1837,33 @@
       ],
       "notes": "Relevance: direct for simulation, enabling for hardware. Current official name is Quantum Application and Information Laboratory; older pages call it Quantum Artificial Intelligence Laboratory. DOE-center membership is collaboration, not a separate DOE center.",
       "page": "labs",
-      "group": "Defense & space laboratories",
+      "group": "NASA research groups & facilities",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2012,
+          "title": "NASA establishes QuAIL",
+          "type": "formation",
+          "sourceUrl": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/nasa-quail/",
+          "id": "nasa-quail-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "NASA Ames Research Center — Moffett Field / Mountain View area, California",
+          "lat": 37.41,
+          "lon": -122.06,
+          "sourceUrl": "https://www.nasa.gov/ames/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "nasa-cal",
@@ -1256,9 +1898,31 @@
       ],
       "notes": "An experimental facility for quantum gases. The year marks arrival and operations on the International Space Station.",
       "page": "labs",
-      "group": "Defense & space laboratories",
+      "group": "NASA research groups & facilities",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2018,
+          "title": "Cold Atom Laboratory arrives at the ISS",
+          "type": "infrastructure",
+          "sourceUrl": "https://www.nasa.gov/missions/station/iss-research/cold-atom-laboratory/nasas-quantum-lab-aboard-space-station-gets-chilly-upgrade/",
+          "id": "nasa-cal-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "NASA reports an operating CAL upgrade",
+          "type": "infrastructure",
+          "sourceUrl": "https://www.nasa.gov/missions/station/iss-research/cold-atom-laboratory/nasas-quantum-lab-aboard-space-station-gets-chilly-upgrade/",
+          "id": "nasa-cal-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "The Cold Atom Laboratory experiment operates aboard the International Space Station, so it has no fixed terrestrial research-site marker. Ground operations at JPL are distinct from the location of the experiment."
     },
     {
       "id": "nasa-glenn-qis",
@@ -1287,9 +1951,25 @@
       ],
       "notes": "Relevance: enabling. This is a NASA center research effort, not a nationwide funding solicitation; maturity and deployment claims should be evaluated per device.",
       "page": "labs",
-      "group": "Defense & space laboratories",
+      "group": "NASA research groups & facilities",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "labs"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "NASA Glenn Research Center — Cleveland, Ohio",
+          "lat": 41.5,
+          "lon": -81.69,
+          "sourceUrl": "https://www.nasa.gov/centers-and-facilities/glenn/map-and-directions/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "nist-quantum-science",
@@ -1327,7 +2007,14 @@
       "page": "federal",
       "group": "NIST & Commerce",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "jila",
@@ -1365,7 +2052,34 @@
       "page": "labs",
       "group": "NIST joint institutes",
       "parentId": "nist-quantum-science",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 1962,
+          "title": "CU Boulder and NBS establish JILA",
+          "type": "formation",
+          "sourceUrl": "https://www.colorado.edu/jila/about-jila/jilas-history",
+          "note": "NBS is now NIST.",
+          "id": "jila-event-1"
+        }
+      ],
+      "hostIds": [
+        "colorado"
+      ],
+      "locations": [
+        {
+          "label": "JILA: CU Boulder and NIST — Boulder, Colorado",
+          "lat": 40.02,
+          "lon": -105.27,
+          "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+          "precision": "city",
+          "role": "Joint host"
+        }
+      ],
+      "locationNote": "Joint CU Boulder–NIST institute on the Boulder campus. One city marker represents its shared host location; it does not place all NIST quantum research here."
     },
     {
       "id": "jqi",
@@ -1402,7 +2116,33 @@
       "page": "labs",
       "group": "NIST joint institutes",
       "parentId": "nist-quantum-science",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2006,
+          "title": "UMD and NIST establish JQI",
+          "type": "formation",
+          "sourceUrl": "https://www.nist.gov/news-events/news/2014/10/umd-and-nist-announce-creation-joint-center-quantum-information-and",
+          "id": "jqi-event-1"
+        }
+      ],
+      "hostIds": [
+        "maryland"
+      ],
+      "locations": [
+        {
+          "label": "University of Maryland / Joint Quantum Institute — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://www.jqi.umd.edu/about/directions",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "City-level marker for the UMD campus host. JQI is a UMD–NIST partnership; researchers also work at NIST. This marker is not a complete account of all partner research sites."
     },
     {
       "id": "quics",
@@ -1440,7 +2180,33 @@
       "page": "labs",
       "group": "NIST joint institutes",
       "parentId": "nist-quantum-science",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2014,
+          "title": "UMD and NIST announce QuICS",
+          "type": "formation",
+          "sourceUrl": "https://www.nist.gov/news-events/news/2014/10/umd-and-nist-announce-creation-joint-center-quantum-information-and",
+          "id": "quics-event-1"
+        }
+      ],
+      "hostIds": [
+        "maryland"
+      ],
+      "locations": [
+        {
+          "label": "University of Maryland / QuICS — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://quics.umd.edu/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "UMD–NIST joint center located at UMD. Approximate city-level point for its campus host, not all affiliated NIST research sites."
     },
     {
       "id": "qed-c",
@@ -1484,7 +2250,23 @@
       "page": "federal",
       "group": "NIST & Commerce",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2018,
+          "title": "Quantum Economic Development Consortium organizes",
+          "type": "formation",
+          "sourceUrl": "https://www.nist.gov/director/vcat/june-2019-minutes",
+          "note": "Initial organization and first meeting; distinct from the 2020 steering committee announcement.",
+          "id": "qed-c-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "qmec",
@@ -1516,7 +2298,23 @@
       "page": "federal",
       "group": "NIST & Commerce",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2026,
+          "title": "NIST announces Quantum Manufacturing Engineering Center",
+          "type": "infrastructure",
+          "sourceUrl": "https://www.nist.gov/news-events/news/2026/06/nist-launches-center-drive-manufacture-quantum-technologies",
+          "note": "Announcement to establish the center; full operation and disbursement are not established by this source.",
+          "id": "qmec-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "elevate-quantum",
@@ -1554,7 +2352,29 @@
       "page": "federal",
       "group": "NIST & Commerce",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2023,
+          "title": "Elevate Quantum receives Tech Hub designation",
+          "type": "policy",
+          "sourceUrl": "https://www.eda.gov/sites/default/files/2023-10/EDA_TECH_HUBS_Phase_1_Fact_Sheet.pdf",
+          "id": "elevate-quantum-event-1"
+        },
+        {
+          "year": 2024,
+          "title": "EDA announces Elevate Quantum implementation funding",
+          "type": "funding",
+          "sourceUrl": "https://www.eda.gov/news/press-release/2024/07/02/Elevate-Quantum-Tech-Hub",
+          "id": "elevate-quantum-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "bloch-quantum-hub",
@@ -1592,7 +2412,30 @@
       "page": "federal",
       "group": "NIST & Commerce",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2023,
+          "title": "Bloch receives Tech Hub designation",
+          "type": "policy",
+          "sourceUrl": "https://www.eda.gov/sites/default/files/2023-10/EDA_TECH_HUBS_Phase_1_Fact_Sheet.pdf",
+          "id": "bloch-quantum-hub-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "EDA announces intended Bloch implementation award",
+          "type": "funding",
+          "sourceUrl": "https://www.eda.gov/news/press-release/2026/07/20/us-department-commerce-intends-invest-169-million-tech-hubs-funding",
+          "note": "Intended award; not confirmation that funding has been fully disbursed.",
+          "id": "bloch-quantum-hub-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "doe-bes-mse",
@@ -1624,7 +2467,14 @@
       "page": "federal",
       "group": "DOE",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "doe-efrc",
@@ -1662,7 +2512,30 @@
       "page": "federal",
       "group": "DOE",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2009,
+          "title": "DOE establishes the EFRC program",
+          "type": "formation",
+          "sourceUrl": "https://science.osti.gov/bes/efrc",
+          "id": "doe-efrc-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "DOE announces a new EFRC funding opportunity",
+          "type": "funding",
+          "sourceUrl": "https://www.energy.gov/science/articles/energy-department-announces-352-million-energy-frontier-research-centers",
+          "note": "Funding opportunity, not a completed award roster.",
+          "id": "doe-efrc-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "doe-nsrc",
@@ -1700,7 +2573,14 @@
       "page": "federal",
       "group": "DOE",
       "checkedDate": "2026-10-29",
-      "parentId": null
+      "parentId": null,
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "cfn",
@@ -1731,7 +2611,32 @@
       "page": "labs",
       "parentId": "doe-nsrc",
       "group": "DOE nanoscale user facilities",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2008,
+          "title": "CFN begins user-facility operations",
+          "type": "infrastructure",
+          "sourceUrl": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CFN",
+          "note": "Year is DOE’s reported start of operations, not the start of construction or planning.",
+          "id": "cfn-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Brookhaven National Laboratory — Upton, New York",
+          "lat": 40.87,
+          "lon": -72.89,
+          "sourceUrl": "https://www.bnl.gov/guv/map.php",
+          "precision": "city",
+          "role": "Facility"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "cint",
@@ -1762,7 +2667,40 @@
       "page": "labs",
       "parentId": "doe-nsrc",
       "group": "DOE nanoscale user facilities",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2006,
+          "title": "CINT begins user-facility operations",
+          "type": "infrastructure",
+          "sourceUrl": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CINT",
+          "note": "Year is DOE’s reported start of operations, not the start of construction or planning.",
+          "id": "cint-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "CINT Core Facility / Sandia National Laboratories — Albuquerque, New Mexico",
+          "lat": 35.08,
+          "lon": -106.65,
+          "sourceUrl": "https://cint.lanl.gov/user-resources/visiting-cint.shtml",
+          "precision": "city",
+          "role": "Facility"
+        },
+        {
+          "label": "CINT Gateway Facility / Los Alamos National Laboratory — Los Alamos, New Mexico",
+          "lat": 35.88,
+          "lon": -106.3,
+          "sourceUrl": "https://cint.lanl.gov/user-resources/visiting-cint.shtml",
+          "precision": "city",
+          "role": "Facility"
+        }
+      ],
+      "locationNote": "CINT operates at two documented facilities: Sandia in Albuquerque and Los Alamos. Markers use city-level approximations, not exact facility coordinates."
     },
     {
       "id": "cnm",
@@ -1793,7 +2731,32 @@
       "page": "labs",
       "parentId": "doe-nsrc",
       "group": "DOE nanoscale user facilities",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2007,
+          "title": "CNM begins user-facility operations",
+          "type": "infrastructure",
+          "sourceUrl": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CNM",
+          "note": "Year is DOE’s reported start of operations, not the start of construction or planning.",
+          "id": "cnm-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Argonne National Laboratory — Lemont, Illinois",
+          "lat": 41.67,
+          "lon": -88.0,
+          "sourceUrl": "https://students.cels.anl.gov/orientation/arriving/arriving/",
+          "precision": "city",
+          "role": "Facility"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "cnms",
@@ -1825,7 +2788,32 @@
       "page": "labs",
       "parentId": "doe-nsrc",
       "group": "DOE nanoscale user facilities",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2006,
+          "title": "CNMS begins user-facility operations",
+          "type": "infrastructure",
+          "sourceUrl": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CNMS",
+          "note": "Year is DOE’s reported start of operations, not the start of construction or planning.",
+          "id": "cnms-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Oak Ridge National Laboratory — Oak Ridge, Tennessee",
+          "lat": 36.01,
+          "lon": -84.27,
+          "sourceUrl": "https://www.ornl.gov/contact-us/",
+          "precision": "city",
+          "role": "Facility"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "molecular-foundry",
@@ -1857,7 +2845,32 @@
       "page": "labs",
       "parentId": "doe-nsrc",
       "group": "DOE nanoscale user facilities",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2006,
+          "title": "TMF begins user-facility operations",
+          "type": "infrastructure",
+          "sourceUrl": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/TMF",
+          "note": "Year is DOE’s reported start of operations, not the start of construction or planning.",
+          "id": "molecular-foundry-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Lawrence Berkeley National Laboratory — Berkeley, California",
+          "lat": 37.87,
+          "lon": -122.27,
+          "sourceUrl": "https://www.lbl.gov/contact/",
+          "precision": "city",
+          "role": "Facility"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "cats",
@@ -1888,7 +2901,32 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2018,
+          "title": "CATS enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/CATS",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "cats-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Ames National Laboratory — Ames, Iowa",
+          "lat": 42.03,
+          "lon": -93.62,
+          "sourceUrl": "https://www.ameslab.gov/education-programs/visit-ames-laboratory",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "cmqt",
@@ -1919,7 +2957,32 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "CMQT enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/CMQT",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "cmqt-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Northwestern University — Evanston, Illinois",
+          "lat": 42.05,
+          "lon": -87.69,
+          "sourceUrl": "https://quantum.northwestern.edu/cmqt/about/contact.html",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "m2qm",
@@ -1950,7 +3013,32 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2018,
+          "title": "M2QM enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/M2QM",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "m2qm-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "University of Florida — Gainesville, Florida",
+          "lat": 29.65,
+          "lon": -82.32,
+          "sourceUrl": "https://explore.jobs.ufl.edu/en-us/job/524153/post-doctoral-associate-in-the-center-for-molecular-magnetic-quantum-materials-m2qm",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "pro-qm",
@@ -1981,7 +3069,34 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2018,
+          "title": "Pro-QM enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/ProQM",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "pro-qm-event-1"
+        }
+      ],
+      "hostIds": [
+        "columbia"
+      ],
+      "locations": [
+        {
+          "label": "Columbia University — New York, New York",
+          "lat": 40.71,
+          "lon": -74.01,
+          "sourceUrl": "https://visit.columbia.edu/orgsoa",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "q-meen-c",
@@ -2012,7 +3127,32 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2018,
+          "title": "Q-MEEN-C enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/QMEENC",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "q-meen-c-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "University of California San Diego — La Jolla / San Diego, California",
+          "lat": 32.83,
+          "lon": -117.27,
+          "sourceUrl": "https://ischuller.ucsd.edu/group-mobile/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "qsqm",
@@ -2043,7 +3183,34 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "QSQM enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/QSQM",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "qsqm-event-1"
+        }
+      ],
+      "hostIds": [
+        "illinois"
+      ],
+      "locations": [
+        {
+          "label": "University of Illinois Urbana-Champaign — Urbana, Illinois",
+          "lat": 40.11,
+          "lon": -88.21,
+          "sourceUrl": "https://hqan.illinois.edu/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "qupidc",
@@ -2074,7 +3241,34 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2024,
+          "title": "QuPIDC enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/QuPIDC",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "qupidc-event-1"
+        }
+      ],
+      "hostIds": [
+        "purdue"
+      ],
+      "locations": [
+        {
+          "label": "Purdue University — West Lafayette, Indiana",
+          "lat": 40.43,
+          "lon": -86.91,
+          "sourceUrl": "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft,-purdue-collaborate-to-advance-quantum-computing-.html",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "ceemag",
@@ -2105,7 +3299,32 @@
       "page": "labs",
       "parentId": "doe-efrc",
       "group": "DOE Energy Frontier Research Centers",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2024,
+          "title": "CEEMag enters the documented DOE EFRC class",
+          "type": "funding",
+          "sourceUrl": "https://science.osti.gov/bes/efrc/Centers/CEEMag",
+          "note": "The year is the start of the class shown in DOE’s center profile. It is not an independently verified institutional founding date.",
+          "id": "ceemag-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "SLAC National Accelerator Laboratory — Menlo Park, California",
+          "lat": 37.45,
+          "lon": -122.18,
+          "sourceUrl": "https://www6.slac.stanford.edu/about/contact-us",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "nqi",
@@ -2141,7 +3360,22 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2018,
+          "title": "National Quantum Initiative Act becomes law",
+          "type": "policy",
+          "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "id": "nqi-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-qlci",
@@ -2177,7 +3411,29 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "NSF creates the QLCI program",
+          "type": "formation",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "nsf-qlci-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "NSF announces three new and five renewed QLCIs",
+          "type": "funding",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "nsf-qlci-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "ftqsaa",
@@ -2218,7 +3474,50 @@
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2026,
+          "title": "FTQSAA institute announced",
+          "type": "formation",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "ftqsaa-event-1"
+        }
+      ],
+      "hostIds": [
+        "harvard",
+        "mit"
+      ],
+      "locations": [
+        {
+          "label": "Harvard University — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.physics.harvard.edu/contact",
+          "precision": "city",
+          "role": "Lead host"
+        },
+        {
+          "label": "Massachusetts Institute of Technology — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.mit.edu/contact/",
+          "precision": "city",
+          "role": "Joint host"
+        },
+        {
+          "label": "University of California Los Angeles — Los Angeles, California",
+          "lat": 34.05,
+          "lon": -118.24,
+          "sourceUrl": "https://newsroom.ucla.edu/ucla-fast-facts",
+          "precision": "city",
+          "role": "Joint host"
+        }
+      ],
+      "locationNote": "Harvard is the lead, with MIT and UCLA identified as co-leads. City-level markers show these hosts; Harvard and MIT share the Cambridge city point. Other collaborators are not exhaustively mapped."
     },
     {
       "id": "hqan",
@@ -2259,7 +3558,40 @@
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "HQAN initial institute award",
+          "type": "funding",
+          "sourceUrl": "https://hqan.illinois.edu/",
+          "id": "hqan-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "HQAN renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "hqan-event-2"
+        }
+      ],
+      "hostIds": [
+        "illinois"
+      ],
+      "locations": [
+        {
+          "label": "University of Illinois Urbana-Champaign — Urbana, Illinois",
+          "lat": 40.11,
+          "lon": -88.21,
+          "sourceUrl": "https://hqan.illinois.edu/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "marquis",
@@ -2301,7 +3633,33 @@
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2026,
+          "title": "MARQUIS institute announced",
+          "type": "formation",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "marquis-event-1"
+        }
+      ],
+      "hostIds": [
+        "princeton"
+      ],
+      "locations": [
+        {
+          "label": "Princeton University — Princeton, New Jersey",
+          "lat": 40.36,
+          "lon": -74.67,
+          "sourceUrl": "https://president.princeton.edu/about-office",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "practiqal",
@@ -2343,7 +3701,33 @@
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2026,
+          "title": "PRACTIQAL institute announced",
+          "type": "formation",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "practiqal-event-1"
+        }
+      ],
+      "hostIds": [
+        "yale"
+      ],
+      "locations": [
+        {
+          "label": "Yale University — New Haven, Connecticut",
+          "lat": 41.31,
+          "lon": -72.93,
+          "sourceUrl": "https://www.yale.edu/contact",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "ciqc",
@@ -2382,10 +3766,49 @@
           "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "CIQC initial institute award",
+          "url": "https://ciqc.berkeley.edu/about/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "CIQC initial institute award",
+          "type": "funding",
+          "sourceUrl": "https://ciqc.berkeley.edu/about/",
+          "id": "ciqc-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "CIQC renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "ciqc-event-2"
+        }
+      ],
+      "hostIds": [
+        "berkeley"
+      ],
+      "locations": [
+        {
+          "label": "University of California Berkeley — Berkeley, California",
+          "lat": 37.87,
+          "lon": -122.27,
+          "sourceUrl": "https://ciqc.berkeley.edu/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "qubbe",
@@ -2424,10 +3847,49 @@
           "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "QuBBE initial institute award",
+          "url": "https://news.uchicago.edu/story/nsf-announces-25-million-institute-chicago-quantum-biology-research",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2021,
+          "title": "QuBBE initial institute award",
+          "type": "funding",
+          "sourceUrl": "https://news.uchicago.edu/story/nsf-announces-25-million-institute-chicago-quantum-biology-research",
+          "id": "qubbe-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "QuBBE renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "qubbe-event-2"
+        }
+      ],
+      "hostIds": [
+        "chicago"
+      ],
+      "locations": [
+        {
+          "label": "University of Chicago — Chicago, Illinois",
+          "lat": 41.88,
+          "lon": -87.63,
+          "sourceUrl": "https://directory.uchicago.edu/organizations/35?type=divisions",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "qsense",
@@ -2467,10 +3929,49 @@
           "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "Q-SEnSE initial institute award",
+          "url": "https://www.colorado.edu/today/2020/07/21/new-25-million-center-advance-quantum-science-and-engineering",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "Q-SEnSE initial institute award",
+          "type": "funding",
+          "sourceUrl": "https://www.colorado.edu/today/2020/07/21/new-25-million-center-advance-quantum-science-and-engineering",
+          "id": "qsense-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "Q-SEnSE renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "qsense-event-2"
+        }
+      ],
+      "hostIds": [
+        "colorado"
+      ],
+      "locations": [
+        {
+          "label": "University of Colorado Boulder / JILA — Boulder, Colorado",
+          "lat": 40.02,
+          "lon": -105.27,
+          "sourceUrl": "https://catalog.colorado.edu/about-cu-boulder/campus-map/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "rqs",
@@ -2509,10 +4010,49 @@
           "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "RQS initial institute award",
+          "url": "https://cmns.umd.edu/news-events/news/nsf-award-new-initiatives-quantum-simulation",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "nsf-qlci",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2021,
+          "title": "RQS initial institute award",
+          "type": "funding",
+          "sourceUrl": "https://cmns.umd.edu/news-events/news/nsf-award-new-initiatives-quantum-simulation",
+          "id": "rqs-event-1"
+        },
+        {
+          "year": 2026,
+          "title": "RQS renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "id": "rqs-event-2"
+        }
+      ],
+      "hostIds": [
+        "maryland"
+      ],
+      "locations": [
+        {
+          "label": "University of Maryland / RQS — College Park, Maryland",
+          "lat": 38.99,
+          "lon": -76.94,
+          "sourceUrl": "https://rqs.umd.edu/about/contact-us",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "nsf-mrsec",
@@ -2548,7 +4088,22 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 1994,
+          "title": "NSF establishes the MRSEC program",
+          "type": "formation",
+          "sourceUrl": "https://nsf-gov-resources.nsf.gov/about/budget/fy2001/ideas.htm",
+          "id": "nsf-mrsec-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "ciqm",
@@ -2563,7 +4118,7 @@
       "materials": "Brings graphene, topological systems and diamond-based platforms into materials and device research.",
       "startYear": 2013,
       "status": "Current official listing",
-      "notes": "An NSF Science and Technology Center, not a QLCI. Founded before the NQI; current website activity does not establish the end date of its federal award.",
+      "notes": "An NSF Science and Technology Center, not a QLCI. Founded before the NQI; current website activity does not establish the end date of its federal award. Also listed under university pathways, retaining its research institute or theme identity.",
       "topics": [
         "topology",
         "graphene",
@@ -2582,10 +4137,67 @@
           "url": "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "Research center with education and course resources",
+          "url": "https://ciqm.harvard.edu/overview1.html",
+          "evidenceDate": "2026-10-29",
+          "note": "University source for the research or education route shown in the Programs view."
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs",
+        "programs"
+      ],
+      "milestones": [
+        {
+          "year": 2013,
+          "title": "NSF-funded CIQM announced",
+          "type": "formation",
+          "sourceUrl": "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
+          "id": "ciqm-event-1"
+        }
+      ],
+      "viewGroups": {
+        "programs": "University centers & research routes"
+      },
+      "roleLabels": {
+        "programs": "Research center with education and course resources"
+      },
+      "hostIds": [
+        "harvard",
+        "mit",
+        "howard"
+      ],
+      "locations": [
+        {
+          "label": "Harvard University — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.physics.harvard.edu/contact",
+          "precision": "city",
+          "role": "Lead host"
+        },
+        {
+          "label": "Massachusetts Institute of Technology — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.mit.edu/contact/",
+          "precision": "city",
+          "role": "Joint host"
+        },
+        {
+          "label": "Howard University — Washington, District of Columbia",
+          "lat": 38.91,
+          "lon": -77.04,
+          "sourceUrl": "https://howard.edu/contact",
+          "precision": "city",
+          "role": "Joint host"
+        }
+      ],
+      "locationNote": "The Harvard–MIT–Howard collaboration is represented by its three university hosts at city precision. Harvard and MIT share one city coordinate. These points do not imply that every investigator works at one building."
     },
     {
       "id": "nsf-nqvl",
@@ -2615,7 +4227,14 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-nqni",
@@ -2652,7 +4271,23 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2026,
+          "title": "NSF announces NQNI infrastructure initiative",
+          "type": "infrastructure",
+          "sourceUrl": "https://www.nsf.gov/news/nsf-launches-100m-national-quantum-nanotechnology-research",
+          "note": "Announcement of a planned network; not a completed facility roster.",
+          "id": "nsf-nqni-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-expandqise",
@@ -2688,7 +4323,22 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2024,
+          "title": "NSF announces ExpandQISE awards",
+          "type": "funding",
+          "sourceUrl": "https://www.nsf.gov/news/quantum-science-engineering-expands-across-nation-39m-nsf",
+          "id": "nsf-expandqise-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-cqis",
@@ -2719,7 +4369,14 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-cmp",
@@ -2749,7 +4406,14 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-dmref",
@@ -2780,7 +4444,14 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-mip",
@@ -2822,11 +4493,26 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2015,
+          "title": "NSF establishes Materials Innovation Platforms",
+          "type": "infrastructure",
+          "sourceUrl": "https://www.nsf.gov/funding/opportunities/mip-materials-innovation-platforms/505133/nsf19-526/solicitation",
+          "id": "nsf-mip-event-1"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "nsf-foundries",
-      "name": "Quantum foundries / Quantum Accelerators for Materials Science and Engineering",
+      "name": "Quantum materials discovery foundries",
       "acronym": "Q-AMASE-i",
       "page": "federal",
       "group": "NSF",
@@ -2837,7 +4523,7 @@
       "materials": "Makes materials discovery and synthesis part of quantum hardware development.",
       "startYear": null,
       "status": "Current official listing",
-      "notes": "UCSB Quantum Foundry and MonArk are documented examples. This entry is not a claim of an open funding call or a complete award history.",
+      "notes": "Q-AMASE-i supports convergent discovery foundries for quantum materials science, engineering and information. UCSB Quantum Foundry and MonArk are documented examples. This is not a list of open funding calls or a complete award history.",
       "topics": [
         "materials synthesis",
         "foundries",
@@ -2858,7 +4544,14 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "ucsb-foundry",
@@ -2889,7 +4582,23 @@
         }
       ],
       "parentId": "nsf-foundries",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "University of California Santa Barbara — Santa Barbara area, California",
+          "lat": 34.42,
+          "lon": -119.7,
+          "sourceUrl": "https://www.ucsb.edu/contact",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate Santa Barbara-area point based on the university postal city; the campus is near Goleta. It is not a precise Quantum Foundry building coordinate."
     },
     {
       "id": "monark",
@@ -2919,7 +4628,42 @@
         }
       ],
       "parentId": "nsf-foundries",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2021,
+          "title": "MonArk Quantum Foundry announced",
+          "type": "infrastructure",
+          "sourceUrl": "https://www.monarkfoundry.org/",
+          "id": "monark-event-1"
+        }
+      ],
+      "hostIds": [
+        "montana",
+        "arkansas"
+      ],
+      "locations": [
+        {
+          "label": "Montana State University — Bozeman, Montana",
+          "lat": 45.68,
+          "lon": -111.04,
+          "sourceUrl": "https://www.monarkfoundry.org/",
+          "precision": "city",
+          "role": "Joint host"
+        },
+        {
+          "label": "University of Arkansas — Fayetteville, Arkansas",
+          "lat": 36.06,
+          "lon": -94.16,
+          "sourceUrl": "https://www.monarkfoundry.org/",
+          "precision": "city",
+          "role": "Joint host"
+        }
+      ],
+      "locationNote": "Jointly led by Montana State University and the University of Arkansas. Both documented host cities are shown at city precision."
     },
     {
       "id": "doe-qis",
@@ -2947,10 +4691,38 @@
           "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "DOE establishes five National QIS Research Centers",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "DOE establishes five National QIS Research Centers",
+          "type": "formation",
+          "sourceUrl": "https://www.quantum.gov/qis-centers/",
+          "id": "doe-qis-event-1"
+        },
+        {
+          "year": 2025,
+          "title": "DOE announces renewal of all five QIS centers",
+          "type": "funding",
+          "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "id": "doe-qis-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
     },
     {
       "id": "c2qa",
@@ -2983,10 +4755,47 @@
           "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "C2QA initial center award",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "doe-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "C2QA initial center award",
+          "type": "funding",
+          "sourceUrl": "https://www.quantum.gov/qis-centers/",
+          "id": "c2qa-event-1"
+        },
+        {
+          "year": 2025,
+          "title": "C2QA renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "id": "c2qa-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Brookhaven National Laboratory — Upton, New York",
+          "lat": 40.87,
+          "lon": -72.89,
+          "sourceUrl": "https://www.bnl.gov/guv/map.php",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "sqms",
@@ -3019,10 +4828,47 @@
           "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "SQMS initial center award",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "doe-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "SQMS initial center award",
+          "type": "funding",
+          "sourceUrl": "https://www.quantum.gov/qis-centers/",
+          "id": "sqms-event-1"
+        },
+        {
+          "year": 2025,
+          "title": "SQMS renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "id": "sqms-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Fermi National Accelerator Laboratory — Batavia, Illinois",
+          "lat": 41.85,
+          "lon": -88.31,
+          "sourceUrl": "https://www.fnal.gov/pub/contact/index.html",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "q-next",
@@ -3055,10 +4901,47 @@
           "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "Q-NEXT initial center award",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "doe-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "Q-NEXT initial center award",
+          "type": "funding",
+          "sourceUrl": "https://www.quantum.gov/qis-centers/",
+          "id": "q-next-event-1"
+        },
+        {
+          "year": 2025,
+          "title": "Q-NEXT renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "id": "q-next-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Argonne National Laboratory — Lemont, Illinois",
+          "lat": 41.67,
+          "lon": -88.0,
+          "sourceUrl": "https://students.cels.anl.gov/orientation/arriving/arriving/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "qsa",
@@ -3092,10 +4975,47 @@
           "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "QSA initial center award",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "doe-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "QSA initial center award",
+          "type": "funding",
+          "sourceUrl": "https://www.quantum.gov/qis-centers/",
+          "id": "qsa-event-1"
+        },
+        {
+          "year": 2025,
+          "title": "QSA renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "id": "qsa-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Lawrence Berkeley National Laboratory — Berkeley, California",
+          "lat": 37.87,
+          "lon": -122.27,
+          "sourceUrl": "https://www.lbl.gov/contact/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "City-level marker for the Berkeley Lab lead host. QSA is a multi-institutional collaboration, including Sandia; this point is not its full research footprint, and no Sandia site is inferred from headquarters alone."
     },
     {
       "id": "qsc",
@@ -3128,10 +5048,47 @@
           "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
           "evidenceDate": "2026-10-29",
           "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "QSC initial center award",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source for the dated milestone."
         }
       ],
       "parentId": "doe-qis",
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "labs"
+      ],
+      "milestones": [
+        {
+          "year": 2020,
+          "title": "QSC initial center award",
+          "type": "funding",
+          "sourceUrl": "https://www.quantum.gov/qis-centers/",
+          "id": "qsc-event-1"
+        },
+        {
+          "year": 2025,
+          "title": "QSC renewal announced",
+          "type": "funding",
+          "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "id": "qsc-event-2"
+        }
+      ],
+      "hostIds": [],
+      "locations": [
+        {
+          "label": "Oak Ridge National Laboratory — Oak Ridge, Tennessee",
+          "lat": 36.01,
+          "lon": -84.27,
+          "sourceUrl": "https://www.ornl.gov/contact-us/",
+          "precision": "city",
+          "role": "Lead host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
     },
     {
       "id": "ndaa-qis",
@@ -3161,7 +5118,476 @@
         }
       ],
       "parentId": null,
-      "checkedDate": "2026-10-29"
+      "checkedDate": "2026-10-29",
+      "pages": [
+        "federal"
+      ],
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "id": "uw-qise-certificate",
+      "name": "Graduate Certificate in Quantum Information Science and Engineering",
+      "acronym": "UW QISE",
+      "kind": "Interdisciplinary graduate certificate",
+      "lead": "University of Washington / QuantumX",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Students add interdisciplinary quantum coursework and a team practicum to their existing graduate degrees.",
+      "materials": "Physics, chemistry, materials science, engineering and computing contribute complementary knowledge to quantum technology projects.",
+      "topics": [
+        "graduate certificate",
+        "chemistry",
+        "materials science",
+        "quantum engineering",
+        "team projects"
+      ],
+      "sources": [
+        {
+          "title": "UW Graduate School: QISE certificate",
+          "url": "https://grad.uw.edu/programs/interdisciplinary-programs/quantum-information-science-and-engineering/",
+          "evidenceDate": "2026-10-29",
+          "note": "Read official program description; participating disciplines and cross-field team projects are explicit."
+        },
+        {
+          "title": "UW: certificate established in fall 2022",
+          "url": "https://www.ee.washington.edu/spotlight/kai-mei-fu-qise-certificate/",
+          "evidenceDate": "2022-11-21",
+          "note": "Dated 21 November 2022; explicitly identifies establishment in fall quarter 2022."
+        },
+        {
+          "title": "QuantumX: 2024 AQET cohort and certificate continuation",
+          "url": "https://www.quantumx.washington.edu/quantumx-welcomes-2024-cohort/",
+          "evidenceDate": "2024-12-05",
+          "note": "Dated 5 December 2024; distinguishes the 2020 NRT from the certificate and says the certificate continues beyond NRT funding."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "The certificate complements an existing master’s or doctoral program. The 2022 milestone marks its reported establishment; the related AQET NSF traineeship began in 2020 and is a distinct funding mechanism.",
+      "startYear": 2022,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [
+        {
+          "year": 2022,
+          "title": "UW establishes the interdisciplinary QISE certificate",
+          "type": "education",
+          "sourceUrl": "https://www.ee.washington.edu/spotlight/kai-mei-fu-qise-certificate/",
+          "id": "uw-qise-certificate-event-1"
+        }
+      ],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "locations": [
+        {
+          "label": "Seattle, Washington",
+          "lat": 47.606,
+          "lon": -122.332,
+          "sourceUrl": "https://grad.uw.edu/programs/interdisciplinary-programs/quantum-information-science-and-engineering/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "hostIds": [
+        "washington"
+      ],
+      "locationNote": "Approximate city point, not a building or laboratory coordinate. Source identifies the university location."
+    },
+    {
+      "id": "oregon-quantum-nano",
+      "name": "Quantum and Nanotechnology Graduate Specialization",
+      "acronym": "Oregon Quantum & Nano",
+      "kind": "Graduate specialization within Applied Physics MS",
+      "lead": "University of Oregon",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Combines quantum-device coursework, laboratory training and an industry internship within the Applied Physics master’s program.",
+      "materials": "Nanofabrication, low-noise measurement, cryogenics and photonics connect materials preparation with quantum-device experiments.",
+      "topics": [
+        "specialization",
+        "nanofabrication",
+        "cryogenics",
+        "quantum devices",
+        "industry internship"
+      ],
+      "sources": [
+        {
+          "title": "Oregon catalog: Quantum and Nanotechnology specialization",
+          "url": "https://catalog.uoregon.edu/arts-sciences/natural-sciences/physics/gradspec/",
+          "evidenceDate": "2026-10-29",
+          "note": "Read required-course list and explicit placement within Applied Physics MS."
+        },
+        {
+          "title": "Oregon Registrar: active programs of study",
+          "url": "https://registrar.uoregon.edu/faculty-staff/curriculum/programs-study",
+          "evidenceDate": "2026-10-29",
+          "note": "Registrar identifies program code QUNA as a graduate specialization active in fall 2025."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "A specialization within a broader degree. The registrar’s effective date is fall 2025; this does not date the start of all quantum research at Oregon.",
+      "startYear": 2025,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [
+        {
+          "year": 2025,
+          "title": "Oregon activates the Quantum and Nanotechnology specialization",
+          "type": "education",
+          "sourceUrl": "https://registrar.uoregon.edu/faculty-staff/curriculum/programs-study",
+          "id": "oregon-quantum-nano-event-1"
+        }
+      ],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "hostIds": [
+        "oregon"
+      ],
+      "locations": [
+        {
+          "label": "University of Oregon — Eugene, Oregon",
+          "lat": 44.05,
+          "lon": -123.09,
+          "sourceUrl": "https://catalog.uoregon.edu/arts-sciences/natural-sciences/physics/gradspec/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
+    },
+    {
+      "id": "wisconsin-solid-state-pathway",
+      "name": "MS Quantum Computing — Hardware Pathway, Solid State Option",
+      "acronym": "UW–Madison hardware pathway",
+      "kind": "Internal curricular pathway within a master’s degree",
+      "lead": "University of Wisconsin–Madison, Department of Physics",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Students can focus their quantum-computing master’s curriculum on solid-state hardware and experimental skills.",
+      "materials": "Solid-state physics, measurement electronics and integrated-circuit fabrication link quantum computing to materials and devices.",
+      "topics": [
+        "curriculum",
+        "hardware pathway",
+        "solid-state physics",
+        "fabrication",
+        "quantum computing"
+      ],
+      "sources": [
+        {
+          "title": "UW–Madison Guide: Quantum Computing MS pathways",
+          "url": "https://guide.wisc.edu/graduate/physics/quantum-computing-ms/",
+          "evidenceDate": "2026-10-29",
+          "note": "Read Hardware Pathway, Solid State Option, and catalog footnote explaining that pathway names do not appear on the transcript."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "This is an internal curricular route, not a separate degree or transcript credential. The official catalog also offers software and atomic/molecular/optical hardware routes. No start year for this specific pathway is established here.",
+      "startYear": null,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "hostIds": [
+        "wisconsin"
+      ],
+      "locations": [
+        {
+          "label": "University of Wisconsin–Madison — Madison, Wisconsin",
+          "lat": 43.07,
+          "lon": -89.4,
+          "sourceUrl": "https://www.physics.wisc.edu/department/contact/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
+    },
+    {
+      "id": "illinois-qis-minor",
+      "name": "Quantum Information Science Minor",
+      "acronym": "Illinois QIS minor",
+      "kind": "Undergraduate minor",
+      "lead": "University of Illinois Urbana-Champaign / IQUIST",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Students combine quantum courses across physics, computing, mathematics, electrical engineering and materials science.",
+      "materials": "Suggested engineering coursework includes quantum optics, devices and materials laboratory sections.",
+      "topics": [
+        "undergraduate minor",
+        "curriculum",
+        "materials laboratory",
+        "quantum devices",
+        "quantum information"
+      ],
+      "sources": [
+        {
+          "title": "IQUIST: Quantum Information Science Minor",
+          "url": "https://iquist.illinois.edu/education/minor",
+          "evidenceDate": "2026-10-29",
+          "note": "Read requirements, suggested tracks and explicit availability from fall 2026."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "The minor permits several course combinations. Suggested engineering, physics and theory/computation tracks are guidance rather than separate degrees.",
+      "startYear": 2026,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [
+        {
+          "year": 2026,
+          "title": "Illinois opens its undergraduate QIS minor for declaration",
+          "type": "education",
+          "sourceUrl": "https://iquist.illinois.edu/education/minor",
+          "id": "illinois-qis-minor-event-1"
+        }
+      ],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "hostIds": [
+        "illinois"
+      ],
+      "locations": [
+        {
+          "label": "University of Illinois Urbana-Champaign — Urbana, Illinois",
+          "lat": 40.11,
+          "lon": -88.21,
+          "sourceUrl": "https://hqan.illinois.edu/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
+    },
+    {
+      "id": "princeton-qse-minor",
+      "name": "Quantum Science and Engineering Minor",
+      "acronym": "Princeton QSE minor",
+      "kind": "Undergraduate minor",
+      "lead": "Princeton University / Princeton Quantum Initiative",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Combines quantum coursework with independent research for students from different majors.",
+      "materials": "Electives include solid-state physics, quantum electronics and experimental quantum-computing methods.",
+      "topics": [
+        "undergraduate minor",
+        "independent research",
+        "solid-state physics",
+        "quantum engineering"
+      ],
+      "sources": [
+        {
+          "title": "Princeton Quantum Initiative: QSE Minor",
+          "url": "https://quantum.princeton.edu/education/qse-minor-program",
+          "evidenceDate": "2026-10-29",
+          "note": "Read four-course requirement, independent-work requirement and solid-state/experimental electives."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "A minor available alongside a primary major. The cited current program page does not establish its first offering year.",
+      "startYear": null,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "hostIds": [
+        "princeton"
+      ],
+      "locations": [
+        {
+          "label": "Princeton University — Princeton, New Jersey",
+          "lat": 40.36,
+          "lon": -74.67,
+          "sourceUrl": "https://president.princeton.edu/about-office",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
+    },
+    {
+      "id": "purdue-quantum-minor",
+      "name": "Quantum Science Minor",
+      "acronym": "Purdue QSCI",
+      "kind": "Undergraduate minor",
+      "lead": "Purdue University, Department of Physics and Astronomy",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Adds a quantum foundation and hands-on laboratory experience to a student’s primary major.",
+      "materials": "An entry into quantum principles and devices; it is broader than a dedicated quantum-materials curriculum.",
+      "topics": [
+        "undergraduate minor",
+        "quantum fundamentals",
+        "laboratory training",
+        "quantum computing"
+      ],
+      "sources": [
+        {
+          "title": "Purdue Physics and Astronomy: Quantum Science Minor",
+          "url": "https://www.physics.purdue.edu/academic-programs/undergraduate/minors.html",
+          "evidenceDate": "2025-06-26",
+          "note": "Read Quantum Science Minor section; page updated 26 June 2025. Department address identifies West Lafayette."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "Current page documents a 19-credit minor. The page-update date is not used as the minor’s founding date.",
+      "startYear": null,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "locations": [
+        {
+          "label": "West Lafayette, Indiana",
+          "lat": 40.426,
+          "lon": -86.908,
+          "sourceUrl": "https://www.physics.purdue.edu/academic-programs/undergraduate/minors.html",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "hostIds": [
+        "purdue"
+      ],
+      "locationNote": "Approximate city point, not a building or laboratory coordinate. Source identifies the university location."
+    },
+    {
+      "id": "columbia-quantum-tracks",
+      "name": "MS in Quantum Science and Technology — Engineering and Physics Tracks",
+      "acronym": "Columbia Quantum MS tracks",
+      "kind": "Master’s degree with two curricular tracks",
+      "lead": "Columbia University, Engineering and Physics",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Students choose engineering or physics tracks within a shared quantum-science master’s curriculum.",
+      "materials": "Electives connect condensed matter, electronic and magnetic properties, atomistic simulation, photonics and nanofabrication.",
+      "topics": [
+        "curriculum",
+        "physics track",
+        "engineering track",
+        "quantum materials",
+        "nanofabrication"
+      ],
+      "sources": [
+        {
+          "title": "Columbia Quantum MS: curriculum and tracks",
+          "url": "https://quantum.engineering.columbia.edu/content/curriculum",
+          "evidenceDate": "2026-10-29",
+          "note": "Read current engineering and physics track requirements and named materials-related electives."
+        },
+        {
+          "title": "Columbia: inaugural quantum master’s class",
+          "url": "https://quantum.columbia.edu/news/columbias-quantum-masters-kicks-off",
+          "evidenceDate": "2024-09-12",
+          "note": "Dated 12 September 2024; confirms first cohort and distinguishes approval in 2022."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "These are tracks within one degree. The first cohort began in fall 2024; approval in 2022 is a separate event. Related university research theme: columbia-quantum-materials.",
+      "startYear": 2024,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [
+        {
+          "year": 2024,
+          "title": "Columbia welcomes its first quantum master’s cohort",
+          "type": "education",
+          "sourceUrl": "https://quantum.columbia.edu/news/columbias-quantum-masters-kicks-off",
+          "id": "columbia-quantum-tracks-event-1"
+        }
+      ],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "hostIds": [
+        "columbia"
+      ],
+      "locations": [
+        {
+          "label": "Columbia University — New York, New York",
+          "lat": 40.71,
+          "lon": -74.01,
+          "sourceUrl": "https://visit.columbia.edu/orgsoa",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "locationNote": "Approximate city-level point for the named host, not a laboratory/building coordinate or the full footprint of its collaborations."
+    },
+    {
+      "id": "fsu-qist-certificate",
+      "name": "Graduate Certificate in Quantum Information Science and Technology",
+      "acronym": "FSU QIST",
+      "kind": "Interdisciplinary graduate certificate",
+      "lead": "Florida State University / FSU Quantum Initiative",
+      "funder": "University academic offering; no single external program funder identified in the cited sources.",
+      "focus": "Graduate students and professionals combine quantum-computing coursework, electives and research seminars.",
+      "materials": "The program explicitly connects physics, chemistry, materials science and engineering, including topological materials and sensing.",
+      "topics": [
+        "graduate certificate",
+        "chemistry",
+        "topological materials",
+        "quantum sensing",
+        "seminars"
+      ],
+      "sources": [
+        {
+          "title": "FSU: Graduate Certificate in QIST",
+          "url": "https://www.chem.fsu.edu/qist/",
+          "evidenceDate": "2026-10-29",
+          "note": "Read official certificate description, requirements and Fall 2027 application information; footer identifies Tallahassee."
+        }
+      ],
+      "status": "Listed on current official university pages",
+      "notes": "A certificate route alongside or following prior STEM study. The current page establishes the offering but not its first cohort year.",
+      "startYear": null,
+      "group": "University programs",
+      "country": "United States",
+      "checkedDate": "2026-10-29",
+      "milestones": [],
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "parentId": null,
+      "locations": [
+        {
+          "label": "Tallahassee, Florida",
+          "lat": 30.438,
+          "lon": -84.281,
+          "sourceUrl": "https://www.chem.fsu.edu/qist/",
+          "precision": "city",
+          "role": "Program host"
+        }
+      ],
+      "hostIds": [
+        "fsu"
+      ],
+      "locationNote": "Approximate city point, not a building or laboratory coordinate. Source identifies the university location."
     }
   ]
 }

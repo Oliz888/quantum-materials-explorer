@@ -19,6 +19,11 @@
       } else await load('physics-map.js?v=4');
       return;
     }
+    if(document.body.dataset.view==='institutions') {
+      await load('directory-core.js?v=1');
+      await load('directory.js?v=1');
+      return;
+    }
     if(document.body.dataset.view==='about') { await load('about.js?v=1'); return; }
     // A CDN failure still permits paper browsing and a visible graph error.
     await load('https://unpkg.com/vis-network/standalone/umd/vis-network.min.js').catch(error=>console.warn(error));

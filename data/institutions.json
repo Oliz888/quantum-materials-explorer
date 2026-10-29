@@ -1,0 +1,3167 @@
+{
+  "version": 1,
+  "checkedDate": "2026-10-29",
+  "scope": "U.S.-focused directory of major funding families and research institutions, with selected international and philanthropic connections. Four specified official center rosters are fully represented. Other academic, industry and EFRC entries are selected examples, not an exhaustive global directory.",
+  "rosters": [
+    {
+      "id": "qlci",
+      "name": "NSF Quantum Leap Challenge Institutes",
+      "count": 8,
+      "parentId": "nsf-qlci",
+      "ids": [
+        "ftqsaa",
+        "hqan",
+        "marquis",
+        "practiqal",
+        "ciqc",
+        "qubbe",
+        "qsense",
+        "rqs"
+      ],
+      "source": {
+        "title": "NSF official roster",
+        "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+        "evidenceDate": "2026-10-29",
+        "note": "Official source checked 29 October 2026."
+      },
+      "note": "Current NSF roster, including three new institutes announced in August 2026."
+    },
+    {
+      "id": "doe-qis",
+      "name": "DOE National QIS Research Centers",
+      "count": 5,
+      "parentId": "doe-qis",
+      "ids": [
+        "c2qa",
+        "sqms",
+        "q-next",
+        "qsa",
+        "qsc"
+      ],
+      "source": {
+        "title": "DOE five-center renewal",
+        "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+        "evidenceDate": "2026-10-29",
+        "note": "Official source checked 29 October 2026."
+      },
+      "note": "Five centers established in 2020 and renewed in 2025."
+    },
+    {
+      "id": "nsrc",
+      "name": "DOE Nanoscale Science Research Centers",
+      "count": 5,
+      "parentId": "doe-nsrc",
+      "ids": [
+        "cfn",
+        "cint",
+        "cnm",
+        "cnms",
+        "molecular-foundry"
+      ],
+      "source": {
+        "title": "DOE Nanoscale Science Research Centers",
+        "url": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers",
+        "evidenceDate": "2026-10-29",
+        "note": "Official primary source; accessed 2026-10-29."
+      },
+      "note": "Five shared user facilities; their remit extends beyond quantum materials."
+    },
+    {
+      "id": "ndaa",
+      "name": "NDAA QIS Research Centers",
+      "count": 4,
+      "parentId": "ndaa-qis",
+      "ids": [
+        "lps-lqc",
+        "afrl-qis-center",
+        "nrl-qis-center",
+        "arl-qis-center"
+      ],
+      "source": {
+        "title": "Federal QIS center roster",
+        "url": "https://www.quantum.gov/qis-centers/",
+        "evidenceDate": "2026-10-29",
+        "note": "Official source checked 29 October 2026."
+      },
+      "note": "Four designated defense centers in the federal roster."
+    }
+  ],
+  "entries": [
+    {
+      "id": "yale-qmse",
+      "name": "Graduate Certificate in Quantum Materials Science and Engineering",
+      "acronym": "QMSE",
+      "kind": "Graduate certificate and NSF research traineeship",
+      "lead": "Yale University",
+      "location": "New Haven, Connecticut",
+      "country": "United States",
+      "funder": "NSF Research Traineeship (NRT), award DGE 2244310",
+      "startYear": 2023,
+      "status": "Listed in current Yale graduate catalog; NRT began July 2023",
+      "focus": "Connects quantum materials research, data science, disciplinary coursework and professional training for graduate students.",
+      "materials": "Explicitly joins applied physics, chemistry, computer science, mechanical engineering, materials science and physics.",
+      "topics": [
+        "quantum materials",
+        "data science",
+        "chemistry",
+        "graduate education"
+      ],
+      "sources": [
+        {
+          "title": "Yale graduate catalog: Quantum Materials Science and Engineering",
+          "url": "https://catalog.yale.edu/gsas/non-degree-granting-programs-councils-research-institutes/quantum-materials-science-engineering/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Catalog identifies the certificate, participating departments, and requirements."
+        },
+        {
+          "title": "Yale QMSE news",
+          "url": "https://qmse.yale.edu/news",
+          "evidenceDate": "2023-09-05",
+          "note": "July 1, 2023 item identifies NSF NRT award DGE 2244310; September 2023 items announce QMSE."
+        }
+      ],
+      "notes": "The current catalog includes both PhD and master's certificate requirements. Start year refers to the NRT-supported training initiative, not a verified first certificate-conferral date.",
+      "checkedDate": "2026-10-29",
+      "page": "programs",
+      "group": "University programs",
+      "parentId": null
+    },
+    {
+      "id": "uchicago-cqi",
+      "name": "Chicago Quantum Institute",
+      "acronym": "CQI",
+      "kind": "University research institute",
+      "lead": "University of Chicago, Pritzker School of Molecular Engineering",
+      "location": "Chicago, Illinois",
+      "country": "United States",
+      "funder": "University institute; projects have multiple sponsors",
+      "startYear": null,
+      "status": "Listed on current University of Chicago website",
+      "focus": "Connects quantum research across molecular engineering, physics, chemistry and computing, with national-laboratory and industry partnerships.",
+      "materials": "Quantum materials research includes superconductors, topological systems, semiconductor and molecular qubits, fabrication and characterization.",
+      "topics": [
+        "quantum materials",
+        "chemistry",
+        "quantum computing",
+        "sensing",
+        "research institute"
+      ],
+      "sources": [
+        {
+          "title": "Chicago Quantum Institute",
+          "url": "https://quantum.uchicago.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. University site identifies the institute within Pritzker School of Molecular Engineering and its disciplinary connections."
+        },
+        {
+          "title": "CQI: Quantum Materials",
+          "url": "https://quantum.pme.uchicago.edu/research-areas/quantum-materials",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Lists quantum materials research and participating faculty."
+        }
+      ],
+      "notes": "CQI and the Chicago Quantum Exchange are distinct organizations within the broader Chicago quantum ecosystem.",
+      "checkedDate": "2026-10-29",
+      "page": "labs",
+      "group": "University institutes & research themes",
+      "parentId": null
+    },
+    {
+      "id": "uchicago-qse-phd",
+      "name": "PhD in Quantum Science and Engineering",
+      "acronym": "QSE PhD",
+      "kind": "Doctoral degree program",
+      "lead": "University of Chicago, Pritzker School of Molecular Engineering",
+      "location": "Chicago, Illinois",
+      "country": "United States",
+      "funder": "University education program; individual research funding varies",
+      "startYear": null,
+      "status": "Listed on current official academic program page",
+      "focus": "Doctoral training in fundamental and applied quantum science, spanning computing, communication, sensing and quantum materials.",
+      "materials": "Includes quantum materials research and access to University of Chicago and Argonne research facilities.",
+      "topics": [
+        "doctoral education",
+        "quantum materials",
+        "quantum computing",
+        "communication",
+        "sensing"
+      ],
+      "sources": [
+        {
+          "title": "UChicago: PhD in Quantum Science and Engineering",
+          "url": "https://pme.uchicago.edu/academics/phd-programs/phd-quantum-science-engineering",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Program page explicitly includes quantum materials and research at UChicago and Argonne."
+        }
+      ],
+      "notes": "A university degree program within the Pritzker School of Molecular Engineering.",
+      "checkedDate": "2026-10-29",
+      "page": "programs",
+      "group": "University programs",
+      "parentId": null
+    },
+    {
+      "id": "mines-quantum-graduate",
+      "name": "Quantum Engineering Graduate Programs",
+      "acronym": "QE",
+      "kind": "MS degrees and graduate certificates",
+      "lead": "Colorado School of Mines",
+      "location": "Golden, Colorado",
+      "country": "United States",
+      "funder": "University education program; individual research projects have multiple sponsors",
+      "startYear": 2020,
+      "status": "Current graduate catalog lists thesis MS, non-thesis MS and certificates",
+      "focus": "Trains students in quantum hardware or software through an interdisciplinary engineering curriculum.",
+      "materials": "Combines physics, materials science, chemistry, electrical engineering, computing and mathematics for quantum technologies.",
+      "topics": [
+        "graduate education",
+        "hardware",
+        "software",
+        "quantum engineering"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines graduate catalog: Quantum Engineering",
+          "url": "https://catalog.mines.edu/graduate/programs/interdisciplinaryprograms/quantumengineering/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Lists graduate certificate and thesis/non-thesis MS with hardware and software tracks."
+        },
+        {
+          "title": "Peter Aaen named Dean of Energy and Materials Programs",
+          "url": "https://www.mines.edu/news/all-news/2026/peter-aaen-named-dean-of-energy-and-materials-programs.html",
+          "evidenceDate": "2026",
+          "note": "Official 2026 university article says the quantum engineering master's degree launched in 2020."
+        }
+      ],
+      "notes": "The graduate program began in 2020. Mines launched its separate undergraduate degree in 2026.",
+      "checkedDate": "2026-10-29",
+      "page": "programs",
+      "group": "University programs",
+      "parentId": null
+    },
+    {
+      "id": "mines-quantum-bs",
+      "name": "BS in Quantum Systems Engineering",
+      "acronym": "QSE BS",
+      "kind": "Undergraduate degree program",
+      "lead": "Colorado School of Mines",
+      "location": "Golden, Colorado",
+      "country": "United States",
+      "funder": "University education program",
+      "startYear": 2026,
+      "status": "Launched in Fall 2026",
+      "focus": "Prepares undergraduates to design, integrate and operate quantum-enabled systems using hardware, software and systems engineering.",
+      "materials": "Provides quantum hardware and laboratory training; its scope is broader than quantum materials discovery.",
+      "topics": [
+        "undergraduate education",
+        "quantum engineering",
+        "workforce",
+        "hardware"
+      ],
+      "sources": [
+        {
+          "title": "Mines launches Quantum Systems Engineering degree",
+          "url": "https://www.mines.edu/news/all-news/2026/mines-launches-nations-first-quantum-systems-engineering-degree.html",
+          "evidenceDate": "2026-09-01",
+          "note": "Official launch announcement specifies Fall 2026 and the integrated systems curriculum."
+        }
+      ],
+      "notes": "The undergraduate degree launched in fall 2026, as confirmed by the university announcement.",
+      "checkedDate": "2026-10-29",
+      "page": "programs",
+      "group": "University programs",
+      "parentId": null
+    },
+    {
+      "id": "cu-boulder-qe-ms",
+      "name": "Quantum Engineering Subplan, Professional MS in Electrical and Computer Engineering",
+      "acronym": "QE subplan",
+      "kind": "Professional master's specialization",
+      "lead": "University of Colorado Boulder, Electrical, Computer and Energy Engineering",
+      "location": "Boulder, Colorado",
+      "country": "United States",
+      "funder": "University education program",
+      "startYear": null,
+      "status": "Listed on current official program page",
+      "focus": "Offers in-person training in quantum foundations, hardware, information, sensing, electronics and photonics.",
+      "materials": "Links device engineering and solid-state physics to quantum hardware; the awarded degree is Electrical and Computer Engineering.",
+      "topics": [
+        "graduate education",
+        "hardware",
+        "sensing",
+        "photonics"
+      ],
+      "sources": [
+        {
+          "title": "CU Boulder: Quantum Engineering Subplan",
+          "url": "https://www.colorado.edu/ecee/academics/graduate-programs/professional-masters/quantum-engineering",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Specifies the degree title, 30-credit curriculum, and in-person delivery."
+        }
+      ],
+      "notes": "Quantum Engineering is an MS subplan. CUbit is a separate university research initiative.",
+      "checkedDate": "2026-10-29",
+      "page": "programs",
+      "group": "University programs",
+      "parentId": null
+    },
+    {
+      "id": "cu-boulder-cubit",
+      "name": "CUbit Quantum Initiative",
+      "acronym": "CUbit",
+      "kind": "Cross-campus research and partnership initiative",
+      "lead": "University of Colorado Boulder",
+      "location": "Boulder, Colorado",
+      "country": "United States",
+      "funder": "CU Boulder; collaborations with NIST/JILA and industry",
+      "startYear": 2019,
+      "status": "Current university initiative; launched January 17, 2019",
+      "focus": "Coordinates quantum research, education and commercialization across the university and regional partners.",
+      "materials": "Quantum matter and dynamics connects with sensing, networking, computation and simulation.",
+      "topics": [
+        "quantum matter",
+        "sensing",
+        "networking",
+        "simulation",
+        "research coordination"
+      ],
+      "sources": [
+        {
+          "title": "CUbit Quantum Initiative",
+          "url": "https://www.colorado.edu/initiative/cubit",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Current site identifies its coordination role and university, JILA/NIST and materials-research partners."
+        },
+        {
+          "title": "CUbit launch announcement",
+          "url": "https://www.colorado.edu/researchinnovation/2019/01/17/cubit-quantum-initiative-launch-fueled-seed-funding-faculty-expertise",
+          "evidenceDate": "2019-01-17",
+          "note": "Documents January 2019 establishment, initial support, NIST collaboration and four research pillars."
+        }
+      ],
+      "notes": "A university-led initiative with federal partners, not a separate federal agency program.",
+      "checkedDate": "2026-10-29",
+      "page": "labs",
+      "group": "University institutes & research themes",
+      "parentId": null
+    },
+    {
+      "id": "northeastern-qmsi",
+      "name": "Quantum Materials and Sensing Institute",
+      "acronym": "QMSI",
+      "kind": "University research institute",
+      "lead": "Northeastern University",
+      "location": "Boston and Burlington, Massachusetts",
+      "country": "United States",
+      "funder": "Northeastern Presidential Institute; individual project funding varies",
+      "startYear": 2024,
+      "status": "Listed in current Northeastern institute directory",
+      "focus": "Combines materials theory, synthesis, characterization and device research to develop quantum sensing and related technologies.",
+      "materials": "Brings together physics, chemistry, engineering, nanomaterials, optics, magnetism and data science.",
+      "topics": [
+        "quantum materials",
+        "synthesis",
+        "characterization",
+        "sensing",
+        "magnetism"
+      ],
+      "sources": [
+        {
+          "title": "Northeastern: Research Institutes and Centers",
+          "url": "https://research.northeastern.edu/institutes-and-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Official directory lists QMSI and its quantum technology remit."
+        },
+        {
+          "title": "Northeastern quantum research and QMSI",
+          "url": "https://swastik.sites.northeastern.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Deputy director's university page explicitly gives the 2024 establishment date and interdisciplinary research scope."
+        },
+        {
+          "title": "Quantum Materials and Sensing Institute",
+          "url": "https://quantum.northeastern.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Indexed institute home page shows 2026 activities; direct fetch returned 502 during this check."
+        }
+      ],
+      "notes": "The current university name is Quantum Materials and Sensing Institute. University sources support its establishment and activities.",
+      "checkedDate": "2026-10-29",
+      "page": "labs",
+      "group": "University institutes & research themes",
+      "parentId": null
+    },
+    {
+      "id": "columbia-quantum-materials",
+      "name": "Quantum Materials & Nanoscience, Columbia Quantum Initiative",
+      "acronym": "",
+      "kind": "Research theme within a university initiative",
+      "lead": "Columbia University",
+      "location": "New York, New York",
+      "country": "United States",
+      "funder": "University research theme; individual centers and grants have distinct sponsors",
+      "startYear": null,
+      "status": "Current Columbia Quantum Initiative research theme",
+      "focus": "Studies, creates and controls quantum materials, especially atomically thin van der Waals structures.",
+      "materials": "Connects condensed matter physics, chemistry and nanoengineering through synthesis, stacking, twisting, fabrication and optical/electronic probes.",
+      "topics": [
+        "2D materials",
+        "van der Waals materials",
+        "synthesis",
+        "nanoengineering",
+        "chemistry"
+      ],
+      "sources": [
+        {
+          "title": "Columbia Quantum Initiative: Quantum Materials & Nanoscience",
+          "url": "https://quantum.columbia.edu/research/quantum-materials-nanoscience",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Defines the research theme, atom-thin material focus and interdisciplinary faculty."
+        }
+      ],
+      "notes": "A research theme, not a separate degree or single funding award. Columbia's MRSEC and DOE EFRC are separately identifiable centers.",
+      "checkedDate": "2026-10-29",
+      "page": "labs",
+      "group": "University institutes & research themes",
+      "parentId": null
+    },
+    {
+      "id": "lbnl-atap-quantum-materials",
+      "name": "Quantum Materials Program, ATAP Division",
+      "acronym": "",
+      "kind": "National-laboratory research program",
+      "lead": "Lawrence Berkeley National Laboratory, Accelerator Technology & Applied Physics Division",
+      "location": "Berkeley, California",
+      "country": "United States",
+      "funder": "DOE national-laboratory setting; program-wide budget not stated on cited page",
+      "startYear": null,
+      "status": "Listed on current Berkeley Lab research pages",
+      "focus": "Investigates magnetic coherence, non-locality, superconductivity and intertwined orders in strongly correlated materials.",
+      "materials": "Studies how spin, orbital and lattice interactions generate collective phases and quantum phase transitions.",
+      "topics": [
+        "strong correlations",
+        "superconductivity",
+        "magnetism",
+        "phase transitions",
+        "spectroscopy"
+      ],
+      "sources": [
+        {
+          "title": "Berkeley Lab ATAP: Quantum Materials",
+          "url": "https://atap.lbl.gov/research/scientific-programs-and-centers/quantum-materials/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Official program description identifies two thrusts: magnetic non-locality/coherence and correlated superconductivity/intertwined orders."
+        },
+        {
+          "title": "Berkeley Lab Quantum Research",
+          "url": "https://www.lbl.gov/research/quantum/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Current laboratory overview lists the Quantum Materials Program."
+        }
+      ],
+      "notes": "Located in the Accelerator Technology & Applied Physics Division. Berkeley Lab also leads the separate Quantum Systems Accelerator national QIS center.",
+      "checkedDate": "2026-10-29",
+      "page": "labs",
+      "group": "National laboratory research",
+      "parentId": null
+    },
+    {
+      "id": "cifar-qm",
+      "name": "CIFAR Quantum Materials",
+      "acronym": "CIFAR QM",
+      "kind": "International collaborative research and fellowship network",
+      "lead": "CIFAR",
+      "location": "Canada-based; international membership",
+      "country": "Canada / international",
+      "funder": "CIFAR, supported through public, philanthropic and partner funding",
+      "startYear": 1987,
+      "status": "Documented in official CIFAR reports and the 2026–2028 scholar recruitment call",
+      "focus": "Connects theorists, experimentalists and materials scientists studying superconductivity, spin liquids, topological matter and correlated electronic behavior.",
+      "materials": "Integrates materials synthesis, experiments and theory through a sustained international research community.",
+      "topics": [
+        "strong correlations",
+        "superconductivity",
+        "spin liquids",
+        "topology",
+        "international network"
+      ],
+      "sources": [
+        {
+          "title": "CIFAR Impact Report 2019/2020",
+          "url": "https://cifar.ca/wp-content/uploads/2020/11/CIFAR_IR_19-20_EN_DIGITAL.pdf",
+          "evidenceDate": "2020",
+          "note": "Official report identifies founding in 1987, the former Superconductivity name until 2002, and program research themes."
+        },
+        {
+          "title": "SNSF-CIFAR webinar: Global Scholars recruitment",
+          "url": "https://www.snf.ch/media/de/qARyG5FwZ58VDTbT/SNSF-CIFAR%20Webinar-2025%20Oct.pdf",
+          "evidenceDate": "2025-10",
+          "note": "CIFAR recruitment slides hosted by the Swiss National Science Foundation list Quantum Materials for the 2026–2028 cohort."
+        },
+        {
+          "title": "CIFAR Quantum Materials program",
+          "url": "https://cifar.ca/programs/research-programs/quantum-materials/",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Program home URL; direct access returned 403, so description and status rely on the other cited official documents."
+        }
+      ],
+      "notes": "Canadian-based international research network. Founded in 1987 as Superconductivity; renamed Quantum Materials in 2002 according to its 2019/2020 report. The Global Scholars fellowship is a separate mechanism within CIFAR.",
+      "checkedDate": "2026-10-29",
+      "page": "programs",
+      "group": "Philanthropy & international networks",
+      "parentId": null
+    },
+    {
+      "id": "microsoft-purdue-quantum",
+      "name": "Microsoft Quantum Lab West Lafayette / Purdue collaboration",
+      "acronym": "",
+      "kind": "Industry–university research partnership",
+      "lead": "Microsoft Quantum and Purdue University",
+      "location": "West Lafayette, Indiana",
+      "country": "United States",
+      "funder": "Microsoft–Purdue partnership; contract value not specified here",
+      "startYear": 2017,
+      "status": "Continuing partnership documented by Purdue in 2025 and current education pages",
+      "focus": "Combines semiconductor–superconductor materials growth and quantum-device development within Microsoft's quantum-computing research.",
+      "materials": "Atomic-layer materials growth supplies hybrid structures for proposed topological quantum-device architectures.",
+      "topics": [
+        "semiconductors",
+        "superconductors",
+        "topological devices",
+        "molecular beam epitaxy",
+        "industry partnership"
+      ],
+      "sources": [
+        {
+          "title": "Purdue and Microsoft collaboration agreement",
+          "url": "https://www.purdue.edu/newsroom/archive/releases/2017/Q2/microsoft%2C-purdue-collaborate-to-advance-quantum-computing-.html",
+          "evidenceDate": "2017-05-30",
+          "note": "Multi-year agreement announced May 30, 2017; Microsoft researchers embedded with the Purdue group."
+        },
+        {
+          "title": "Purdue materials in Microsoft quantum-device research",
+          "url": "https://physics.purdue.edu/interactions/2025/research/microsoft-quantum.php",
+          "evidenceDate": "2025",
+          "note": "2025 institutional report describes the on-campus Microsoft laboratory and hybrid-material growth."
+        },
+        {
+          "title": "Purdue Quantum Degrees Program",
+          "url": "https://engineering.purdue.edu/Engr/Academics/Quantum-Degrees/index_html",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Current official page identifies Microsoft staff working with Purdue faculty and using Purdue facilities."
+        }
+      ],
+      "notes": "2017 marks the enhanced agreement, not the beginning of all collaboration. This listing confirms the partnership and materials work, not a validated scalable topological quantum computer.",
+      "checkedDate": "2026-10-29",
+      "page": "labs",
+      "group": "Industry–university partnerships",
+      "parentId": null
+    },
+    {
+      "id": "moore-epiqs",
+      "name": "Emergent Phenomena in Quantum Systems Initiative",
+      "acronym": "EPiQS",
+      "kind": "Philanthropic research-funding initiative",
+      "lead": "Gordon and Betty Moore Foundation",
+      "location": "United States; investigators and collaborators across institutions",
+      "country": "United States",
+      "funder": "Gordon and Betty Moore Foundation",
+      "startYear": 2013,
+      "status": "Extended in 2025; investigator competitions scheduled through 2026",
+      "focus": "Supports discovery-driven quantum materials research through people, experimental tools, synthesis, theory and collaboration.",
+      "materials": "Focuses on emergent behavior, correlated electrons, entanglement, engineered quantum matter and non-equilibrium phenomena.",
+      "topics": [
+        "quantum materials",
+        "strong correlations",
+        "synthesis",
+        "theory",
+        "entanglement",
+        "philanthropy"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation EPiQS strategy",
+          "url": "https://www.moore.org/initiative-strategy-detail?initiativeId=emergent-phenomena-in-quantum-systems",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Records start in 2013 and approval in 2025 of a ten-year, $230 million extension."
+        },
+        {
+          "title": "EPiQS 2026 Investigator competition",
+          "url": "https://www.moore.org/initiative-additional-info?initiativeId=emergent-phenomena-in-quantum-systems",
+          "evidenceDate": "2026-10-29",
+          "note": "Undated current page checked 2026-10-29. Current competition page covers synthesis, experiment and theory; fundamental emergence prioritized over near-term devices."
+        }
+      ],
+      "notes": "A private philanthropic initiative, not U.S. federal funding. The November 2026 theory call was still a scheduled future event on the 2026-10-29 verification date.",
+      "checkedDate": "2026-10-29",
+      "page": "programs",
+      "group": "Philanthropy & international networks",
+      "parentId": null
+    },
+    {
+      "id": "dod-muri",
+      "name": "Multidisciplinary University Research Initiatives",
+      "acronym": "MURI",
+      "kind": "Funding program",
+      "lead": "Participating defense research offices: ARO, ONR and AFOSR",
+      "funder": "Department of Defense",
+      "agency": "DoD",
+      "startYear": null,
+      "status": "Current program page",
+      "focus": "University teams investigate annually specified basic-research topics spanning multiple disciplines.",
+      "materials": "Quantum materials and devices can appear among annual topics; the program is broader than quantum science.",
+      "topics": [
+        "basic research",
+        "interdisciplinary research",
+        "quantum materials"
+      ],
+      "sources": [
+        {
+          "title": "ONR: MURI Program",
+          "url": "https://www.onr.navy.mil/education-outreach/sponsored-research/university-research-initiatives/muri",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        },
+        {
+          "title": "FY2026 MURI funding announcement",
+          "url": "https://www.onr.navy.mil/work-with-us/funding-opportunities/fiscal-year-fy-2026-department-defense-multidisciplinary",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        }
+      ],
+      "notes": "Relevance: direct for selected awards, not the entire program. MURI is a funding mechanism, not one quantum institute. Topics and participating teams change each cycle; this entry does not enumerate all awards.",
+      "page": "federal",
+      "group": "Defense",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "afosr-qis",
+      "name": "AFOSR Quantum Information Sciences",
+      "acronym": "AFOSR QIS",
+      "kind": "Basic-research portfolio",
+      "lead": "Air Force Office of Scientific Research, AFRL",
+      "funder": "Department of the Air Force",
+      "agency": "DoD / Air Force",
+      "startYear": null,
+      "status": "Current portfolio page",
+      "focus": "Experimental and theoretical research on nonclassical resources, quantum control, information processing, communication and sensing.",
+      "materials": "Includes environmental coupling, noise and coherence in quantum systems; materials relevance depends on the research project.",
+      "topics": [
+        "quantum control",
+        "quantum information",
+        "coherence"
+      ],
+      "sources": [
+        {
+          "title": "AFOSR: Physical Sciences portfolios",
+          "url": "https://www.afrl.af.mil/About-Us/Fact-Sheets/Fact-Sheet-Display/Article/2282129/afosr-physical-sciences/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        }
+      ],
+      "notes": "Relevance: enabling and adjacent. The official Physical Sciences page contains a named Quantum Information Sciences portfolio; distinguish it from the AFRL center designation.",
+      "page": "federal",
+      "group": "Defense",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "onr-qis",
+      "name": "ONR Quantum Information Science",
+      "acronym": "ONR QIS",
+      "kind": "Basic and applied research portfolio",
+      "lead": "Office of Naval Research",
+      "funder": "Department of the Navy",
+      "agency": "DoD / Navy",
+      "startYear": null,
+      "status": "Current program page",
+      "focus": "Quantum processing, simulation and networks using atomic, photonic, phononic and magnonic systems.",
+      "materials": "Device platforms and correlated states connect materials, wave physics and quantum information research.",
+      "topics": [
+        "quantum devices",
+        "magnonics",
+        "photonics",
+        "quantum networks"
+      ],
+      "sources": [
+        {
+          "title": "ONR: Quantum Information Science",
+          "url": "https://www.onr.navy.mil/organization/departments/code-31/division-312/quantum-information-science",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        }
+      ],
+      "notes": "Relevance: enabling with direct materials-dependent device topics. This is an ONR research portfolio, not a NIST initiative or university degree.",
+      "page": "federal",
+      "group": "Defense",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "lps-lqc",
+      "name": "LPS Qubit Collaboratory",
+      "acronym": "LQC",
+      "kind": "Designated federal QIS research center",
+      "lead": "Laboratory for Physical Sciences, University of Maryland campus",
+      "funder": "NSA Laboratory for Physical Sciences; Army Research Office partnership",
+      "agency": "DoD / NSA",
+      "startYear": 2021,
+      "status": "Listed NDAA QIS center",
+      "focus": "Collaborative qubit research, shared facilities and workforce training connecting government, universities and industry.",
+      "materials": "Qubit fabrication and characterization span solid-state platforms and emerging quantum-device materials.",
+      "topics": [
+        "qubits",
+        "materials fabrication",
+        "quantum computing",
+        "workforce"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum Initiative: QIS Centers",
+          "url": "https://www.quantum.gov/QIS-CENTERS/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official roster lists LQC, AFRL, NRL and ARL as the four NDAA QIS Research Centers. Its NSF list is older than the current NSF roster."
+        },
+        {
+          "title": "NSA launches LPS Qubit Collaboratory",
+          "url": "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/2570949/nsa-launches-lps-qubit-collaboratory/",
+          "evidenceDate": "2021-04-13",
+          "note": "Official launch announcement; LPS was designated a DoD center in November 2020."
+        },
+        {
+          "title": "LPS Qubit Collaboratory overview",
+          "url": "https://www.lps.umd.edu/lps-qubit-collaboratory/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        }
+      ],
+      "notes": "The year marks the April 2021 formal launch; center designation was announced in November 2020. LPS hosts the collaboratory on the University of Maryland campus.",
+      "page": "labs",
+      "group": "Defense & space laboratories",
+      "parentId": "ndaa-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "afrl-qis-center",
+      "name": "AFRL Quantum Information Science Research Center",
+      "acronym": "AFRL QIS Center",
+      "kind": "Designated federal QIS research center",
+      "lead": "Air Force Research Laboratory; Information Directorate in Rome, New York",
+      "funder": "Department of the Air Force",
+      "agency": "DoD / Air Force and Space Force",
+      "startYear": 2021,
+      "status": "Listed NDAA QIS center",
+      "focus": "Coordinates quantum computing, sensing, timing and network research with government, university and industrial partners.",
+      "materials": "Materials-dependent hardware supports the broader mission; the center is not exclusively a quantum-materials program.",
+      "topics": [
+        "quantum computing",
+        "quantum sensing",
+        "quantum networks"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum Initiative: QIS Centers",
+          "url": "https://www.quantum.gov/QIS-CENTERS/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official roster lists LQC, AFRL, NRL and ARL as the four NDAA QIS Research Centers. Its NSF list is older than the current NSF roster."
+        },
+        {
+          "title": "AFRL designated QIS Research Center for Air Force and Space Force",
+          "url": "https://www.afrl.af.mil/News/Article-Display/Article/2724770/air-force-research-laboratory-designated-as-quantum-information-science-researc/",
+          "evidenceDate": "2021-08-09",
+          "note": "Reports the April 23, 2021 designation memorandum."
+        }
+      ],
+      "notes": "Relevance: enabling and adjacent. Center designation and research authority should not be counted as a separate annual grant competition.",
+      "page": "labs",
+      "group": "Defense & space laboratories",
+      "parentId": "ndaa-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nrl-qis-center",
+      "name": "Naval Research Laboratory Quantum Information Science Research Center",
+      "acronym": "NRL QIS Center",
+      "kind": "Designated federal QIS research center",
+      "lead": "U.S. Naval Research Laboratory",
+      "funder": "Department of the Navy; ONR and OSD support",
+      "agency": "DoD / Navy",
+      "startYear": 2020,
+      "status": "Listed NDAA QIS center",
+      "focus": "Research in quantum sensing, navigation, timing, computation and networking.",
+      "materials": "Atomic sensors and quantum-network devices connect to wider quantum-hardware research.",
+      "topics": [
+        "quantum sensing",
+        "quantum networks",
+        "timing"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum Initiative: QIS Centers",
+          "url": "https://www.quantum.gov/QIS-CENTERS/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official roster lists LQC, AFRL, NRL and ARL as the four NDAA QIS Research Centers. Its NSF list is older than the current NSF roster."
+        },
+        {
+          "title": "NRL: Quantum Research",
+          "url": "https://www.nrl.navy.mil/Our-Work/Areas-of-Research/Quantum-Research/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official indexed text establishes March 2020 designation; direct page retrieval returned HTTP 403."
+        },
+        {
+          "title": "NRL quantum research conferences and center role",
+          "url": "https://www.nrl.navy.mil/Media/News/Article/2415822/two-quantum-research-conferences-to-focus-on-navy-federal-collaboration/",
+          "evidenceDate": "2020-11-13",
+          "note": "Official NRL report confirms center role and interagency quantum-network collaboration."
+        }
+      ],
+      "notes": "Relevance: enabling and adjacent. NIST is a collaborator in network research, not the parent agency or sole sponsor of this Navy center.",
+      "page": "labs",
+      "group": "Defense & space laboratories",
+      "parentId": "ndaa-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "arl-qis-center",
+      "name": "Army Research Laboratory Quantum Information Science Research Center",
+      "acronym": "ARL QIS Center",
+      "kind": "Designated federal QIS research center",
+      "lead": "DEVCOM Army Research Laboratory",
+      "funder": "Department of the Army",
+      "agency": "DoD / Army",
+      "startYear": 2023,
+      "status": "Listed NDAA QIS center",
+      "focus": "In-house and extramural research on quantum clocks, sensors, computers and networks.",
+      "materials": "Quantum-device control and sensing are relevant; individual projects determine the solid-state materials connection.",
+      "topics": [
+        "quantum sensing",
+        "quantum control",
+        "quantum networks"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum Initiative: QIS Centers",
+          "url": "https://www.quantum.gov/QIS-CENTERS/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official roster lists LQC, AFRL, NRL and ARL as the four NDAA QIS Research Centers. Its NSF list is older than the current NSF roster."
+        },
+        {
+          "title": "Army designates QIS Research Center",
+          "url": "https://www.army.mil/article/268072",
+          "evidenceDate": "2023-07-05",
+          "note": "Reports June 14, 2023 designation; Army quantum research predates the center designation."
+        }
+      ],
+      "notes": "Relevance: enabling and adjacent. The Army Research Office is ARL's extramural research arm; 2023 is the designation date, not the beginning of Army quantum research.",
+      "page": "labs",
+      "group": "Defense & space laboratories",
+      "parentId": "ndaa-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "darpa-qbi",
+      "name": "Quantum Benchmarking Initiative",
+      "acronym": "QBI",
+      "kind": "Time-limited research and validation program",
+      "lead": "DARPA",
+      "funder": "Department of Defense / DARPA",
+      "agency": "DoD / DARPA",
+      "startYear": 2024,
+      "status": "Active performer roster dated 2026-10-08",
+      "focus": "Independently evaluates whether quantum-computing designs can reach economically useful operation by 2033.",
+      "materials": "Includes superconducting, silicon-spin, photonic, trapped-ion, neutral-atom and topological-hardware approaches.",
+      "topics": [
+        "benchmarking",
+        "quantum hardware",
+        "quantum computing"
+      ],
+      "sources": [
+        {
+          "title": "DARPA: Quantum Benchmarking Initiative",
+          "url": "https://www.darpa.mil/research/programs/quantum-benchmarking-initiative",
+          "evidenceDate": "2026-10-08",
+          "note": "Current official roster date; page says initiative launched in mid-2024. Stage participation is not proof of technical feasibility."
+        }
+      ],
+      "notes": "Relevance: enabling. This is hardware feasibility and independent validation across competing approaches, not a general quantum-materials discovery grant. A program goal or selected performer is not a demonstrated utility-scale computer.",
+      "page": "federal",
+      "group": "DARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "darpa-us2qc",
+      "name": "Underexplored Systems for Utility-Scale Quantum Computing",
+      "acronym": "US2QC",
+      "kind": "Research and independent validation program",
+      "lead": "DARPA",
+      "funder": "Department of Defense / DARPA",
+      "agency": "DoD / DARPA",
+      "startYear": 2022,
+      "status": "Program page retained; related work expanded through QBI",
+      "focus": "Evaluates unconventional routes to utility-scale fault-tolerant quantum computers.",
+      "materials": "Tests materials-dependent qubit components and their integration within proposed computing architectures.",
+      "topics": [
+        "quantum hardware",
+        "fault tolerance",
+        "validation"
+      ],
+      "sources": [
+        {
+          "title": "DARPA: US2QC",
+          "url": "https://www.darpa.mil/research/programs/underexplored-systems-for-utility-scale-quantum-computing",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        },
+        {
+          "title": "DARPA announces US2QC",
+          "url": "https://www.darpa.mil/news/2022/fault-tolerant-quantum-computers",
+          "evidenceDate": "2022-02-22",
+          "note": "Establishes 2022 announcement."
+        },
+        {
+          "title": "QBI proposers day overview",
+          "url": "https://www.darpa.mil/sites/default/files/attachment/2024-12/qbi-proposers-day-2024-program-manager.pdf",
+          "evidenceDate": "2024-12",
+          "note": "Official briefing says QBI expands the existing US2QC program."
+        }
+      ],
+      "notes": "Relevance: enabling. Closely related to QBI; do not double-count overlapping performers as independent research centers. Retained page alone does not establish a new funding round.",
+      "page": "federal",
+      "group": "DARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "darpa-harq",
+      "name": "Heterogeneous Architectures for Quantum",
+      "acronym": "HARQ",
+      "kind": "Research program",
+      "lead": "DARPA",
+      "funder": "Department of Defense / DARPA",
+      "agency": "DoD / DARPA",
+      "startYear": 2025,
+      "status": "Current program page; 2025 solicitation verified",
+      "focus": "Combines different qubit technologies for processing, memory and communication through improved interconnects and compilation.",
+      "materials": "Photonic integration and quantum interconnects link diverse physical qubit platforms.",
+      "topics": [
+        "heterogeneous systems",
+        "quantum interconnects",
+        "photonics"
+      ],
+      "sources": [
+        {
+          "title": "DARPA: HARQ",
+          "url": "https://www.darpa.mil/research/programs/heterogeneous-architectures-for-quantum",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        },
+        {
+          "title": "HARQ solicitation questions and answers",
+          "url": "https://www.darpa.mil/sites/default/files/attachment/2025-09/darpa-harq-program-question-answer.pdf",
+          "evidenceDate": "2025-09-10",
+          "note": "Confirms 2025 solicitation DARPA-PS-25-31; this date is not a verified first-award date."
+        }
+      ],
+      "notes": "Materials and interfaces are central to integrating different qubit platforms. The year marks the verified solicitation; this directory does not enumerate individual awards.",
+      "page": "federal",
+      "group": "DARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "darpa-roqs",
+      "name": "Robust Quantum Sensors",
+      "acronym": "RoQS",
+      "kind": "Research program",
+      "lead": "DARPA",
+      "funder": "Department of Defense / DARPA",
+      "agency": "DoD / DARPA",
+      "startYear": 2025,
+      "status": "Phase 1 launched in August 2025",
+      "focus": "Develops quantum sensors that tolerate motion and environmental interference beyond controlled laboratory conditions.",
+      "materials": "Sensor hardware and environmental-noise control provide an enabling connection to quantum devices.",
+      "topics": [
+        "quantum sensing",
+        "noise",
+        "device integration"
+      ],
+      "sources": [
+        {
+          "title": "DARPA: Robust Quantum Sensors",
+          "url": "https://www.darpa.mil/research/programs/roqs-robust-quantum-sensors",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        },
+        {
+          "title": "DARPA RoQS launches first phase",
+          "url": "https://www.darpa.mil/news/2025/roqs-launches-first-phase",
+          "evidenceDate": "2025-08-27",
+          "note": "Phase 1 launch confirmed; later-stage completion is not established."
+        }
+      ],
+      "notes": "Relevance: enabling. Distinguish the confirmed launch from eventual deployment or operational performance.",
+      "page": "federal",
+      "group": "DARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "darpa-onisq",
+      "name": "Optimization with Noisy Intermediate-Scale Quantum Devices",
+      "acronym": "ONISQ",
+      "kind": "Historical research program",
+      "lead": "DARPA",
+      "funder": "Department of Defense / DARPA",
+      "agency": "DoD / DARPA",
+      "startYear": 2019,
+      "status": "Completed (official program page)",
+      "focus": "Studied hybrid quantum-classical methods for difficult combinatorial optimization problems.",
+      "materials": "Quantum-device coherence and control supported algorithm experiments; materials discovery was not the primary mission.",
+      "topics": [
+        "hybrid computing",
+        "optimization",
+        "quantum control"
+      ],
+      "sources": [
+        {
+          "title": "DARPA: ONISQ",
+          "url": "https://www.darpa.mil/research/programs/optimization-with-noisy-intermediate-scale-quantum-devices",
+          "evidenceDate": "2026-10-29",
+          "note": "Official program page explicitly states that the program is now complete and no longer maintained."
+        },
+        {
+          "title": "DARPA: Quantum sensing and computing",
+          "url": "https://www.darpa.mil/news/features/quantum-sensing-computing",
+          "evidenceDate": "2026-10-29",
+          "note": "Official feature identifies an early-2019 announcement."
+        }
+      ],
+      "notes": "Completed program retained here to show the development of hybrid quantum computing research.",
+      "page": "federal",
+      "group": "DARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "darpa-impaqt",
+      "name": "Imagining Practical Applications for a Quantum Tomorrow",
+      "acronym": "IMPAQT",
+      "kind": "Historical exploratory research program",
+      "lead": "DARPA",
+      "funder": "Department of Defense / DARPA",
+      "agency": "DoD / DARPA",
+      "startYear": null,
+      "status": "Completed (official program page)",
+      "focus": "Explored useful applications for near-term hybrid quantum-classical computing systems.",
+      "materials": "Application assessment is adjacent to materials research; materials relevance depends on the chosen use case.",
+      "topics": [
+        "hybrid computing",
+        "applications",
+        "benchmarking"
+      ],
+      "sources": [
+        {
+          "title": "DARPA: IMPAQT",
+          "url": "https://www.darpa.mil/research/programs/impaqt",
+          "evidenceDate": "2026-10-29",
+          "note": "Official page explicitly states that this program is now complete."
+        },
+        {
+          "title": "DARPA university funding workshop slides",
+          "url": "https://www.darpa.mil/sites/default/files/attachment/2025-01/duf-workshop-slides2.pdf",
+          "evidenceDate": "2025-01",
+          "note": "Official slide spells out the acronym; retained source uses singular Application while the solicitation uses Applications."
+        }
+      ],
+      "notes": "Completed exploratory program retained as historical context.",
+      "page": "federal",
+      "group": "DARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "iarpa-elq",
+      "name": "Entangled Logical Qubits",
+      "acronym": "ELQ",
+      "kind": "Research program",
+      "lead": "Intelligence Advanced Research Projects Activity",
+      "funder": "Office of the Director of National Intelligence / IARPA",
+      "agency": "ODNI / IARPA",
+      "startYear": 2023,
+      "status": "Program page retained; four-year plan starting 2023",
+      "focus": "Demonstrates entanglement between error-corrected logical qubits in modular architectures.",
+      "materials": "Requires low-noise physical qubits, control hardware and interfaces; materials are enabling rather than the sole research objective.",
+      "topics": [
+        "error correction",
+        "logical qubits",
+        "entanglement"
+      ],
+      "sources": [
+        {
+          "title": "IARPA: Entangled Logical Qubits",
+          "url": "https://www.iarpa.gov/research-programs/elq",
+          "evidenceDate": "2026-10-29",
+          "note": "Official page schedules a four-year program beginning spring 2023; 2023 solicitation is closed. It does not establish every current award status."
+        },
+        {
+          "title": "IARPA official homepage",
+          "url": "https://www.iarpa.gov/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official header identifies IARPA under ODNI, not NIST."
+        }
+      ],
+      "notes": "Relevance: enabling. A closed solicitation does not mean a completed research program. Current program funding was not independently re-established beyond the official four-year schedule.",
+      "page": "federal",
+      "group": "IARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "iarpa-logiq",
+      "name": "Logical Qubits",
+      "acronym": "LogiQ",
+      "kind": "Historical research program",
+      "lead": "Intelligence Advanced Research Projects Activity",
+      "funder": "Office of the Director of National Intelligence / IARPA",
+      "agency": "ODNI / IARPA",
+      "startYear": 2016,
+      "status": "Historical program page; current funding unverified",
+      "focus": "Developed error-corrected logical qubits using trapped-ion and superconducting-circuit platforms.",
+      "materials": "Superconducting circuits connect physical device quality with quantum error correction.",
+      "topics": [
+        "error correction",
+        "superconducting qubits",
+        "trapped ions"
+      ],
+      "sources": [
+        {
+          "title": "IARPA: Logical Qubits",
+          "url": "https://www.iarpa.gov/index.php/research-programs/logiq",
+          "evidenceDate": "2026-10-29",
+          "note": "Retained page gives a November 2021 finishing target and closed 2015 solicitation; it is insufficient evidence of current funding."
+        },
+        {
+          "title": "IARPA ELQ: earlier program chronology",
+          "url": "https://www.iarpa.gov/research-programs/elq",
+          "evidenceDate": "2026-10-29",
+          "note": "ELQ page dates LogiQ from 2016; its undated present-tense wording should not be treated as a 2026 status confirmation."
+        }
+      ],
+      "notes": "NIST Boulder participated in testing and evaluation. IARPA administered the program; current funding is unverified.",
+      "page": "federal",
+      "group": "IARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "iarpa-qeo",
+      "name": "Quantum Enhanced Optimization",
+      "acronym": "QEO",
+      "kind": "Historical research program",
+      "lead": "Intelligence Advanced Research Projects Activity",
+      "funder": "Office of the Director of National Intelligence / IARPA",
+      "agency": "ODNI / IARPA",
+      "startYear": 2017,
+      "status": "Historical: 2017–2021 in IARPA chronology",
+      "focus": "Studied quantum enhancement in annealing-based approaches to combinatorial optimization.",
+      "materials": "Novel superconducting qubits and testbeds connected hardware physics to optimization experiments.",
+      "topics": [
+        "quantum annealing",
+        "superconducting qubits",
+        "optimization"
+      ],
+      "sources": [
+        {
+          "title": "IARPA: Quantum Enhanced Optimization",
+          "url": "https://www.iarpa.gov/research-programs/qeo",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        },
+        {
+          "title": "IARPA ELQ: earlier program chronology",
+          "url": "https://www.iarpa.gov/research-programs/elq",
+          "evidenceDate": "2026-10-29",
+          "note": "Official chronology dates QEO to 2017–2021."
+        }
+      ],
+      "notes": "Relevance: enabling. Historical inclusion explains the development path; it is not a current funding opportunity.",
+      "page": "federal",
+      "group": "IARPA",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "nasa-quail",
+      "name": "Quantum Application and Information Laboratory",
+      "acronym": "QuAIL",
+      "kind": "Federal laboratory research group",
+      "lead": "NASA Ames Research Center",
+      "funder": "NASA",
+      "agency": "NASA",
+      "startYear": 2012,
+      "status": "Current laboratory page",
+      "focus": "Assesses quantum algorithms and hardware for NASA computational problems, including chemistry, materials and condensed-matter simulation.",
+      "materials": "Quantum simulation and hardware–algorithm co-design connect directly to materials and chemistry questions.",
+      "topics": [
+        "quantum simulation",
+        "materials computation",
+        "algorithms"
+      ],
+      "sources": [
+        {
+          "title": "NASA: Quantum Application and Information Laboratory",
+          "url": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/nasa-quail/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official current page states formation in 2012 and partnerships with DOE SQMS and C2QA."
+        }
+      ],
+      "notes": "Relevance: direct for simulation, enabling for hardware. Current official name is Quantum Application and Information Laboratory; older pages call it Quantum Artificial Intelligence Laboratory. DOE-center membership is collaboration, not a separate DOE center.",
+      "page": "labs",
+      "group": "Defense & space laboratories",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "nasa-cal",
+      "name": "Cold Atom Laboratory",
+      "acronym": "CAL",
+      "kind": "Space-based research facility",
+      "lead": "NASA Jet Propulsion Laboratory; International Space Station",
+      "funder": "NASA",
+      "agency": "NASA",
+      "startYear": 2018,
+      "status": "Operating facility; June 2026 upgrade reported",
+      "focus": "Studies ultracold quantum gases and atom interferometry in microgravity.",
+      "materials": "Quantum gases offer a related platform for collective quantum behavior and precision sensing.",
+      "topics": [
+        "ultracold atoms",
+        "quantum gases",
+        "quantum sensing"
+      ],
+      "sources": [
+        {
+          "title": "NASA: Cold Atom Laboratory science",
+          "url": "https://science.nasa.gov/mission/cold-atom-laboratory/what-we-do/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        },
+        {
+          "title": "NASA CAL upgrade in orbit",
+          "url": "https://www.nasa.gov/missions/station/iss-research/cold-atom-laboratory/nasas-quantum-lab-aboard-space-station-gets-chilly-upgrade/",
+          "evidenceDate": "2026-06-16",
+          "note": "Confirms 2018 arrival at ISS and switched-on 2026 upgrade."
+        }
+      ],
+      "notes": "An experimental facility for quantum gases. The year marks arrival and operations on the International Space Station.",
+      "page": "labs",
+      "group": "Defense & space laboratories",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "nasa-glenn-qis",
+      "name": "Quantum Information Systems for Networking and Sensing",
+      "acronym": "Glenn QIS",
+      "kind": "Federal laboratory research effort",
+      "lead": "NASA Glenn Research Center",
+      "funder": "NASA",
+      "agency": "NASA",
+      "startYear": null,
+      "status": "Current laboratory page",
+      "focus": "Develops light-based quantum communication, entanglement distribution, sensing and metrology for aerospace environments.",
+      "materials": "Integrated photonics, optical sources, memories and single-photon detectors provide quantum-device connections.",
+      "topics": [
+        "quantum networks",
+        "photonics",
+        "quantum sensing"
+      ],
+      "sources": [
+        {
+          "title": "NASA Glenn: Quantum Information Systems for Networking and Sensing",
+          "url": "https://www.nasa.gov/glenn/research/quantum-information-systems-for-networking-and-sensing/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 2026-10-29; no publication date established."
+        }
+      ],
+      "notes": "Relevance: enabling. This is a NASA center research effort, not a nationwide funding solicitation; maturity and deployment claims should be evaluated per device.",
+      "page": "labs",
+      "group": "Defense & space laboratories",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "nist-quantum-science",
+      "name": "NIST Quantum Science Research",
+      "acronym": "NIST QIS",
+      "kind": "Agency research portfolio",
+      "lead": "National Institute of Standards and Technology",
+      "funder": "U.S. Department of Commerce / NIST",
+      "agency": "NIST",
+      "startYear": null,
+      "status": "Current agency research portfolio",
+      "focus": "Measurement, standards, clocks, sensing, quantum information, and enabling technologies.",
+      "materials": "Materials and devices support reliable quantum measurements and technologies.",
+      "topics": [
+        "metrology",
+        "sensing",
+        "quantum information",
+        "standards"
+      ],
+      "sources": [
+        {
+          "title": "NIST Quantum Science",
+          "url": "https://www.nist.gov/quantum-science",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "NIST Quantum Information Science",
+          "url": "https://www.nist.gov/quantum-information-science",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Broad quantum research portfolio, not a quantum-materials-only funding program. NIST collaborates with NSF, DOE, DoD, DARPA and IARPA; these agencies are not administered by NIST. Q-SEnSE and the Institute for Robust Quantum Simulation are NSF Quantum Leap Challenge Institutes, not NIST-owned centers.",
+      "page": "federal",
+      "group": "NIST & Commerce",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "jila",
+      "name": "JILA",
+      "acronym": "JILA",
+      "kind": "Joint research institute",
+      "lead": "University of Colorado Boulder and NIST",
+      "funder": "CU Boulder and NIST; additional competitively awarded research support",
+      "agency": "NIST",
+      "startYear": 1962,
+      "status": "Current joint institute",
+      "focus": "Atomic, molecular, optical, chemical and quantum physics, precision measurement, and many-body quantum systems.",
+      "materials": "Quantum gases, nanoscale systems and measurement methods connect to materials research.",
+      "topics": [
+        "atomic physics",
+        "quantum information",
+        "chemical physics",
+        "metrology"
+      ],
+      "sources": [
+        {
+          "title": "JILA's History",
+          "url": "https://www.colorado.edu/jila/about-jila/jilas-history",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "NIST Quantum Physics Division",
+          "url": "https://www.nist.gov/pml/quantum-physics",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Established in 1962 by CU Boulder and the National Bureau of Standards, now NIST. Its research spans a broad range of atomic, optical and quantum physics.",
+      "page": "labs",
+      "group": "NIST joint institutes",
+      "parentId": "nist-quantum-science",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "jqi",
+      "name": "Joint Quantum Institute",
+      "acronym": "JQI",
+      "kind": "Joint research institute",
+      "lead": "University of Maryland and NIST",
+      "funder": "UMD and NIST; Laboratory for Physical Sciences support",
+      "agency": "NIST",
+      "startYear": 2006,
+      "status": "Current joint institute",
+      "focus": "Experimental and theoretical quantum science, from atoms and light to many-body systems and quantum information.",
+      "materials": "Quantum platforms and collective phenomena overlap with quantum-materials questions.",
+      "topics": [
+        "quantum information",
+        "many-body physics",
+        "quantum simulation"
+      ],
+      "sources": [
+        {
+          "title": "Building the Future of Quantum",
+          "url": "https://cmns.umd.edu/research/solving-grand-challenges/building-future-quantum",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "UMD and NIST Announce Creation of QuICS",
+          "url": "https://www.nist.gov/news-events/news/2014/10/umd-and-nist-announce-creation-joint-center-quantum-information-and",
+          "evidenceDate": "2014-10-31",
+          "note": "Official announcement also dates JQI to 2006 and identifies UMD, NIST and NSA partnership."
+        }
+      ],
+      "notes": "A joint institute, not a standalone federal grant program. UMD describes the UMD–NIST partnership as supported by the Laboratory for Physical Sciences. Quantum information is broader than quantum materials.",
+      "page": "labs",
+      "group": "NIST joint institutes",
+      "parentId": "nist-quantum-science",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "quics",
+      "name": "Joint Center for Quantum Information and Computer Science",
+      "acronym": "QuICS",
+      "kind": "Joint research center",
+      "lead": "University of Maryland and NIST",
+      "funder": "UMD and NIST; NSA participation/support",
+      "agency": "NIST",
+      "startYear": 2014,
+      "status": "Current joint center; 2025 activity verified",
+      "focus": "Quantum algorithms, complexity, cryptography, error correction, and the foundations of quantum computation.",
+      "materials": "Adjacent to materials research through quantum simulation and computing methods.",
+      "topics": [
+        "quantum computing",
+        "algorithms",
+        "quantum information",
+        "simulation"
+      ],
+      "sources": [
+        {
+          "title": "UMD and NIST Announce Creation of QuICS",
+          "url": "https://www.nist.gov/news-events/news/2014/10/umd-and-nist-announce-creation-joint-center-quantum-information-and",
+          "evidenceDate": "2014-10-31",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "QuICS Celebrates 10 Years of Research and Scholarship",
+          "url": "https://quics.umd.edu/about/news/quics-celebrates-10-years-research-and-scholarship",
+          "evidenceDate": "2025-03-14",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Adjacent quantum information and computer science, not a quantum-materials center. The 2021 five-year funding announcement is not evidence of a new 2026 renewal.",
+      "page": "labs",
+      "group": "NIST joint institutes",
+      "parentId": "nist-quantum-science",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "qed-c",
+      "name": "Quantum Economic Development Consortium",
+      "acronym": "QED-C",
+      "kind": "Industry consortium supported by NIST",
+      "lead": "SRI International; industry-led consortium",
+      "funder": "NIST and consortium participation",
+      "agency": "NIST",
+      "startYear": 2018,
+      "status": "Current consortium",
+      "focus": "Identify supply-chain, standards, workforce and enabling-technology needs for a quantum industry.",
+      "materials": "Connects component and materials suppliers with quantum technology developers.",
+      "topics": [
+        "industry",
+        "standards",
+        "workforce",
+        "manufacturing"
+      ],
+      "sources": [
+        {
+          "title": "QED-C Confirms Steering Committee",
+          "url": "https://www.nist.gov/news-events/news/2020/09/quantum-economic-development-consortium-confirms-steering-committee",
+          "evidenceDate": "2020-09-16",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "NIST VCAT June 2019 Minutes",
+          "url": "https://www.nist.gov/director/vcat/june-2019-minutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official minutes document initial organization and first consortium meeting in 2018."
+        },
+        {
+          "title": "NIST Quantum Science",
+          "url": "https://www.nist.gov/quantum-science",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "NIST initiated the consortium; SRI manages it. Not a university institute or general investigator-grant program. The 2018 date marks initial organization, not the 2020 steering-committee announcement.",
+      "page": "federal",
+      "group": "NIST & Commerce",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "qmec",
+      "name": "Quantum Manufacturing Engineering Center",
+      "acronym": "QMEC",
+      "kind": "Public–private manufacturing center",
+      "lead": "SRI International under an agreement with NIST",
+      "funder": "NIST; planned initial $20 million investment",
+      "agency": "NIST",
+      "startYear": 2026,
+      "status": "Announced / being established in June 2026",
+      "focus": "Develop scalable manufacturing of high-performance quantum components and systems.",
+      "materials": "Materials, component reproducibility and manufacturing help quantum devices scale.",
+      "topics": [
+        "manufacturing",
+        "components",
+        "industry",
+        "quantum technology"
+      ],
+      "sources": [
+        {
+          "title": "NIST Launches Center to Drive Manufacture of Quantum Technologies",
+          "url": "https://www.nist.gov/news-events/news/2026/06/nist-launches-center-drive-manufacture-quantum-technologies",
+          "evidenceDate": "2026-06-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "The official announcement says NIST plans an initial $20 million investment and has an agreement with SRI to establish the center. This is not proof that all funds have been disbursed or the center is fully operational.",
+      "page": "federal",
+      "group": "NIST & Commerce",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "elevate-quantum",
+      "name": "Elevate Quantum Tech Hub",
+      "acronym": "Elevate Quantum",
+      "kind": "Regional technology hub",
+      "lead": "Elevate Quantum Colorado and regional partners",
+      "funder": "U.S. Economic Development Administration; state and partner support",
+      "agency": "EDA",
+      "startYear": 2023,
+      "status": "Designated 2023; implementation funding announced 2024",
+      "focus": "Build a Mountain West quantum ecosystem through fabrication, prototyping, commercialization, and workforce development.",
+      "materials": "Shared laboratories and fabrication infrastructure enable quantum materials and devices.",
+      "topics": [
+        "regional ecosystem",
+        "manufacturing",
+        "workforce",
+        "commercialization"
+      ],
+      "sources": [
+        {
+          "title": "Elevate Quantum Tech Hub",
+          "url": "https://www.eda.gov/news/press-release/2024/07/02/Elevate-Quantum-Tech-Hub",
+          "evidenceDate": "2024-07-02",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "Tech Hubs Phase 1 Fact Sheet",
+          "url": "https://www.eda.gov/sites/default/files/2023-10/EDA_TECH_HUBS_Phase_1_Fact_Sheet.pdf",
+          "evidenceDate": "2023-10-23",
+          "note": "Official designated-hub roster; 2023 is the designation year."
+        }
+      ],
+      "notes": "Federally supported regional consortium, not an academic degree program. EDA announced approximately $41 million in 2024 implementation funding; award finalization and state contributions should not be conflated with that federal announcement.",
+      "page": "federal",
+      "group": "NIST & Commerce",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "bloch-quantum-hub",
+      "name": "The Bloch Quantum Tech Hub",
+      "acronym": "Bloch",
+      "kind": "Regional technology hub",
+      "lead": "Chicago Quantum Exchange and regional partners",
+      "funder": "U.S. Economic Development Administration; regional partners",
+      "agency": "EDA",
+      "startYear": 2023,
+      "status": "Designated 2023; intended $30 million award announced July 2026",
+      "focus": "Scale production of quantum materials, components and subsystems in Illinois, Indiana and Wisconsin.",
+      "materials": "Direct support for quantum-materials and component manufacturing.",
+      "topics": [
+        "regional ecosystem",
+        "materials",
+        "manufacturing",
+        "commercialization"
+      ],
+      "sources": [
+        {
+          "title": "Commerce Intends to Invest $169 Million in Tech Hubs Funding",
+          "url": "https://www.eda.gov/news/press-release/2026/07/20/us-department-commerce-intends-invest-169-million-tech-hubs-funding",
+          "evidenceDate": "2026-07-20",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "Tech Hubs Phase 1 Fact Sheet",
+          "url": "https://www.eda.gov/sites/default/files/2023-10/EDA_TECH_HUBS_Phase_1_Fact_Sheet.pdf",
+          "evidenceDate": "2023-10-23",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "The July 2026 federal release says EDA intends to award $30 million; it does not establish that the award is fully disbursed. The 2023 date marks hub designation. Regional development initiative, not a degree program.",
+      "page": "federal",
+      "group": "NIST & Commerce",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "doe-bes-mse",
+      "name": "BES Materials Sciences and Engineering Division",
+      "acronym": "BES MSE",
+      "kind": "Foundational research funding portfolio",
+      "lead": "DOE Office of Science, Basic Energy Sciences",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": null,
+      "status": "Current division and research portfolio",
+      "focus": "Support materials discovery, synthesis, condensed-matter theory and experiments, characterization, and quantum information science.",
+      "materials": "A foundational source of support for quantum-materials physics, chemistry and synthesis.",
+      "topics": [
+        "materials synthesis",
+        "condensed matter",
+        "characterization",
+        "theory"
+      ],
+      "sources": [
+        {
+          "title": "Materials Sciences and Engineering Division",
+          "url": "https://science.osti.gov/bes/mse",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Broad materials-science portfolio rather than a single quantum institute. Its intellectual and funding scope is wider than National Quantum Initiative programs.",
+      "page": "federal",
+      "group": "DOE",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "doe-efrc",
+      "name": "Energy Frontier Research Centers",
+      "acronym": "EFRC",
+      "kind": "Multi-institutional basic-research program",
+      "lead": "DOE Office of Science, Basic Energy Sciences",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2009,
+      "status": "Current program; 2026 funding opportunity announced",
+      "focus": "Support multidisciplinary teams addressing fundamental energy-science questions, including selected quantum-materials and quantum-systems topics.",
+      "materials": "Selected centers connect materials chemistry, condensed-matter physics, synthesis and energy technologies.",
+      "topics": [
+        "basic energy science",
+        "materials",
+        "chemistry",
+        "team science"
+      ],
+      "sources": [
+        {
+          "title": "Energy Frontier Research Centers",
+          "url": "https://science.osti.gov/bes/efrc",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "DOE Announces $352 Million EFRC Funding Opportunity",
+          "url": "https://www.energy.gov/science/articles/energy-department-announces-352-million-energy-frontier-research-centers",
+          "evidenceDate": "2026-03-03",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "EFRCs are broader than quantum materials and distinct from the five DOE National QIS Research Centers. The $352 million March 2026 announcement is a funding opportunity, not a completed award roster. Selected relevant EFRCs linked here are examples, not an exhaustive EFRC inventory.",
+      "page": "federal",
+      "group": "DOE",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "doe-nsrc",
+      "name": "Nanoscale Science Research Centers",
+      "acronym": "NSRCs",
+      "kind": "National user-facility network",
+      "lead": "DOE Office of Science, Basic Energy Sciences",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": null,
+      "status": "Five current DOE user facilities",
+      "focus": "Provide external researchers with nanomaterials synthesis, fabrication, characterization and theory capabilities.",
+      "materials": "Shared infrastructure supports quantum materials alongside many other nanoscience fields.",
+      "topics": [
+        "user facilities",
+        "synthesis",
+        "nanofabrication",
+        "characterization"
+      ],
+      "sources": [
+        {
+          "title": "DOE Nanoscale Science Research Centers",
+          "url": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        },
+        {
+          "title": "NSRC Facilities",
+          "url": "https://nsrc.energy.gov/facilities",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "The five facilities listed separately form the complete named NSRC roster: CFN, CINT, CNM, CNMS and the Molecular Foundry. These are broad nanoscience facilities, not five quantum-only centers. User access is a facility-access mechanism, not a university degree.",
+      "page": "federal",
+      "group": "DOE",
+      "checkedDate": "2026-10-29",
+      "parentId": null
+    },
+    {
+      "id": "cfn",
+      "name": "Center for Functional Nanomaterials",
+      "acronym": "CFN",
+      "kind": "DOE national user facility",
+      "lead": "Brookhaven National Laboratory",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2008,
+      "status": "Current user facility",
+      "focus": "Nanomaterials synthesis, fabrication, microscopy, spectroscopy, computation and self-assembly.",
+      "materials": "Fabrication and characterization support nanoscale materials, including quantum-relevant structures.",
+      "topics": [
+        "nanomaterials",
+        "self-assembly",
+        "characterization"
+      ],
+      "sources": [
+        {
+          "title": "Center for Functional Nanomaterials",
+          "url": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CFN",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "One of the five DOE NSRCs; broad nanoscience infrastructure rather than a quantum-only institute. Start year is the start of operations reported by DOE. User access and available techniques should be checked on the facility site.",
+      "page": "labs",
+      "parentId": "doe-nsrc",
+      "group": "DOE nanoscale user facilities",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "cint",
+      "name": "Center for Integrated Nanotechnologies",
+      "acronym": "CINT",
+      "kind": "DOE national user facility",
+      "lead": "Los Alamos and Sandia National Laboratories",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2006,
+      "status": "Current user facility",
+      "focus": "Integrate nanostructures across length scales through synthesis, optical studies, electronic measurements and theory.",
+      "materials": "Quantum-confined structures and nanoscale electronic and optical behavior connect to materials research.",
+      "topics": [
+        "nanostructures",
+        "nanophotonics",
+        "nanoelectronics"
+      ],
+      "sources": [
+        {
+          "title": "Center for Integrated Nanotechnologies",
+          "url": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CINT",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "One of the five DOE NSRCs; broad nanoscience infrastructure rather than a quantum-only institute. Start year is the start of operations reported by DOE. User access and available techniques should be checked on the facility site.",
+      "page": "labs",
+      "parentId": "doe-nsrc",
+      "group": "DOE nanoscale user facilities",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "cnm",
+      "name": "Center for Nanoscale Materials",
+      "acronym": "CNM",
+      "kind": "DOE national user facility",
+      "lead": "Argonne National Laboratory",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2007,
+      "status": "Current user facility",
+      "focus": "Create and characterize nanoscale functional materials, complex oxides, magnetic systems and nanophotonics.",
+      "materials": "Directly relevant electronic, magnetic and low-dimensional materials capabilities.",
+      "topics": [
+        "complex oxides",
+        "magnetic materials",
+        "nanofabrication"
+      ],
+      "sources": [
+        {
+          "title": "Center for Nanoscale Materials",
+          "url": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CNM",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "One of the five DOE NSRCs; broad nanoscience infrastructure rather than a quantum-only institute. Start year is the start of operations reported by DOE. User access and available techniques should be checked on the facility site.",
+      "page": "labs",
+      "parentId": "doe-nsrc",
+      "group": "DOE nanoscale user facilities",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "cnms",
+      "name": "Center for Nanophase Materials Sciences",
+      "acronym": "CNMS",
+      "kind": "DOE national user facility",
+      "lead": "Oak Ridge National Laboratory",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2006,
+      "status": "Current user facility",
+      "focus": "Combine precision synthesis, microscopy, nanofabrication, neutron-science links and theory for nanoscale behavior.",
+      "materials": "Investigate interfaces, reduced dimensionality and emergent behavior in complex materials.",
+      "topics": [
+        "interfaces",
+        "low-dimensional materials",
+        "emergence",
+        "synthesis"
+      ],
+      "sources": [
+        {
+          "title": "Center for Nanophase Materials Sciences",
+          "url": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/CNMS",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "One of the five DOE NSRCs; broad nanoscience infrastructure rather than a quantum-only institute. Start year is the start of operations reported by DOE. User access and available techniques should be checked on the facility site.",
+      "page": "labs",
+      "parentId": "doe-nsrc",
+      "group": "DOE nanoscale user facilities",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "molecular-foundry",
+      "name": "The Molecular Foundry",
+      "acronym": "TMF",
+      "kind": "DOE national user facility",
+      "lead": "Lawrence Berkeley National Laboratory",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2006,
+      "status": "Current user facility",
+      "focus": "Integrate nanomaterials synthesis, imaging, spectroscopy, theory and fabrication across physics and chemistry.",
+      "materials": "Synthesis, interfaces and atomic-scale characterization support quantum-materials research.",
+      "topics": [
+        "synthesis",
+        "interfaces",
+        "characterization",
+        "nanofabrication"
+      ],
+      "sources": [
+        {
+          "title": "The Molecular Foundry",
+          "url": "https://science.osti.gov/bes/suf/User-Facilities/Nanoscale-Science-Research-Centers/TMF",
+          "evidenceDate": "2026-10-29",
+          "note": "Official primary source; accessed 2026-10-29."
+        }
+      ],
+      "notes": "One of the five DOE NSRCs; broad nanoscience infrastructure rather than a quantum-only institute. Start year is the start of operations reported by DOE. User access and available techniques should be checked on the facility site.",
+      "page": "labs",
+      "parentId": "doe-nsrc",
+      "group": "DOE nanoscale user facilities",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "cats",
+      "name": "Center for the Advancement of Topological Semimetals",
+      "acronym": "CATS",
+      "kind": "Energy Frontier Research Center",
+      "lead": "Ames National Laboratory",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2018,
+      "status": "Listed by DOE; documented class 2018–2026",
+      "focus": "Discover, understand and control topological states in semimetals.",
+      "materials": "Connects synthesis and materials discovery to topological electronic behavior.",
+      "topics": [
+        "topology",
+        "semimetals",
+        "materials discovery"
+      ],
+      "sources": [
+        {
+          "title": "Center for the Advancement of Topological Semimetals",
+          "url": "https://science.osti.gov/bes/efrc/Centers/CATS",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2018–2026; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Continuation beyond the documented 2026 class endpoint has not been verified. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "cmqt",
+      "name": "Center for Molecular Quantum Transduction",
+      "acronym": "CMQT",
+      "kind": "Energy Frontier Research Center",
+      "lead": "Northwestern University",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2020,
+      "status": "Listed by DOE; documented class 2020–2028",
+      "focus": "Develop molecular approaches to quantum-to-quantum transduction using precisely controlled chemical structures.",
+      "materials": "Molecular synthesis and design connect chemistry directly to quantum information.",
+      "topics": [
+        "molecular materials",
+        "chemistry",
+        "quantum transduction"
+      ],
+      "sources": [
+        {
+          "title": "Center for Molecular Quantum Transduction",
+          "url": "https://science.osti.gov/bes/efrc/Centers/CMQT",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2020–2028; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "m2qm",
+      "name": "Center for Molecular Magnetic Quantum Materials",
+      "acronym": "M2QM",
+      "kind": "Energy Frontier Research Center",
+      "lead": "University of Florida",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2018,
+      "status": "Listed by DOE; documented class 2018–2026",
+      "focus": "Understand and design molecular magnetic quantum materials for computing and related technologies.",
+      "materials": "Bridges molecular chemistry, magnetism and quantum-materials physics.",
+      "topics": [
+        "molecular materials",
+        "magnetism",
+        "chemistry"
+      ],
+      "sources": [
+        {
+          "title": "Center for Molecular Magnetic Quantum Materials",
+          "url": "https://science.osti.gov/bes/efrc/Centers/M2QM",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2018–2026; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Continuation beyond the documented 2026 class endpoint has not been verified. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "pro-qm",
+      "name": "Programmable Quantum Materials",
+      "acronym": "Pro-QM",
+      "kind": "Energy Frontier Research Center",
+      "lead": "Columbia University",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2018,
+      "status": "Listed by DOE; documented class 2018–2026",
+      "focus": "Control quantum materials using light, electrical gating, magnetic proximity and mechanical manipulation.",
+      "materials": "Tune and create material states through external control and device environments.",
+      "topics": [
+        "materials control",
+        "light-matter interaction",
+        "interfaces"
+      ],
+      "sources": [
+        {
+          "title": "Programmable Quantum Materials",
+          "url": "https://science.osti.gov/bes/efrc/Centers/ProQM",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2018–2026; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Continuation beyond the documented 2026 class endpoint has not been verified. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "q-meen-c",
+      "name": "Quantum Materials for Energy Efficient Neuromorphic Computing",
+      "acronym": "Q-MEEN-C",
+      "kind": "Energy Frontier Research Center",
+      "lead": "University of California, San Diego",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2018,
+      "status": "Listed by DOE; documented class 2018–2026",
+      "focus": "Use quantum-materials behavior to develop energy-efficient, brain-inspired computing concepts.",
+      "materials": "Connects correlated materials and device behavior with neuromorphic architectures.",
+      "topics": [
+        "neuromorphic computing",
+        "energy efficiency",
+        "correlated materials"
+      ],
+      "sources": [
+        {
+          "title": "Quantum Materials for Energy Efficient Neuromorphic Computing",
+          "url": "https://science.osti.gov/bes/efrc/Centers/QMEENC",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2018–2026; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Continuation beyond the documented 2026 class endpoint has not been verified. Neuromorphic computing is distinct from quantum computing. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "qsqm",
+      "name": "Center for Quantum Sensing and Quantum Materials",
+      "acronym": "QSQM",
+      "kind": "Energy Frontier Research Center",
+      "lead": "University of Illinois Urbana-Champaign",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2020,
+      "status": "Listed by DOE; documented class 2020–2026",
+      "focus": "Develop scattering and scanning-probe spectroscopy to study quantum materials and charge dynamics.",
+      "materials": "Quantum sensing and advanced measurements reveal material states and dynamics.",
+      "topics": [
+        "sensing",
+        "spectroscopy",
+        "quantum materials"
+      ],
+      "sources": [
+        {
+          "title": "Center for Quantum Sensing and Quantum Materials",
+          "url": "https://science.osti.gov/bes/efrc/Centers/QSQM",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2020–2026; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Continuation beyond the documented 2026 class endpoint has not been verified. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "qupidc",
+      "name": "Quantum Photonic Integrated Design Center",
+      "acronym": "QuPIDC",
+      "kind": "Energy Frontier Research Center",
+      "lead": "Purdue University",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2024,
+      "status": "Listed by DOE; documented class 2024–2028",
+      "focus": "Co-design integrated photonic systems for strongly interacting light and matter and many-body quantum states.",
+      "materials": "Heterogeneous solid-state photonic platforms connect materials design to quantum functions.",
+      "topics": [
+        "photonics",
+        "light-matter interaction",
+        "co-design"
+      ],
+      "sources": [
+        {
+          "title": "Quantum Photonic Integrated Design Center",
+          "url": "https://science.osti.gov/bes/efrc/Centers/QuPIDC",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2024–2028; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "ceemag",
+      "name": "Center for Energy Efficient Magnonics",
+      "acronym": "CEEMag",
+      "kind": "Energy Frontier Research Center",
+      "lead": "SLAC National Accelerator Laboratory",
+      "funder": "DOE Office of Science, Basic Energy Sciences",
+      "agency": "DOE",
+      "startYear": 2024,
+      "status": "Listed by DOE; documented class 2024–2028",
+      "focus": "Understand and control magnon generation, propagation and transduction for efficient microelectronics.",
+      "materials": "Magnetic materials support spin-wave transport and device concepts.",
+      "topics": [
+        "magnonics",
+        "magnetism",
+        "microelectronics"
+      ],
+      "sources": [
+        {
+          "title": "Center for Energy Efficient Magnonics",
+          "url": "https://science.osti.gov/bes/efrc/Centers/CEEMag",
+          "evidenceDate": "2026-10-29",
+          "note": "Official center profile lists class 2024–2028; accessed 2026-10-29."
+        }
+      ],
+      "notes": "Selected quantum-relevant EFRC, not part of the five DOE National QIS Research Centers. Dates describe the class shown by DOE, not a separately verified current award expiration date.",
+      "page": "labs",
+      "parentId": "doe-efrc",
+      "group": "DOE Energy Frontier Research Centers",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nqi",
+      "name": "National Quantum Initiative",
+      "acronym": "NQI",
+      "page": "federal",
+      "group": "Coordination",
+      "kind": "National coordination framework",
+      "lead": "Participating federal agencies",
+      "funder": "Multiple federal agencies",
+      "focus": "Coordinates U.S. quantum research, infrastructure and workforce efforts.",
+      "materials": "An institutional framework for quantum science; many materials research traditions and programs predate it.",
+      "startYear": 2018,
+      "status": "Framework established by the 2018 Act",
+      "notes": "The initiative is not a single grant program. The agency pages below provide current center rosters; the quantum.gov overview still displays the earlier five-institute NSF roster.",
+      "topics": [
+        "policy",
+        "coordination",
+        "workforce"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum Initiative",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "DOE: center renewal and NQI background",
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-qlci",
+      "name": "Quantum Leap Challenge Institutes",
+      "acronym": "QLCI",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Research institute program",
+      "lead": "U.S. National Science Foundation",
+      "funder": "NSF",
+      "focus": "Supports large interdisciplinary teams working on quantum computation, simulation and sensing.",
+      "materials": "Connects physics, materials, computing and engineering; institutes differ in how directly they study materials.",
+      "startYear": 2020,
+      "status": "Eight institutes listed; three new and five renewed in August 2026",
+      "notes": "All eight institutes in the current NSF roster are included in this directory. Q-SEnSE and RQS are NSF institutes; collaboration with NIST does not change their funding program.",
+      "topics": [
+        "computing",
+        "simulation",
+        "sensing"
+      ],
+      "sources": [
+        {
+          "title": "Quantum Leap Challenge Institutes",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: eight institutes, 25 August 2026",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "ftqsaa",
+      "name": "Fault Tolerant Quantum Systems, Architectures and Applications",
+      "acronym": "FTQSAA",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "Harvard University; UCLA and MIT co-lead",
+      "funder": "NSF QLCI",
+      "focus": "Robust hardware and software for fault-tolerant quantum systems.",
+      "materials": "Materials research contributes to more reliable quantum hardware.",
+      "startYear": 2026,
+      "status": "New institute announced August 2026",
+      "notes": "Year marks the initial institute announcement.",
+      "topics": [
+        "fault tolerance",
+        "quantum computing"
+      ],
+      "sources": [
+        {
+          "title": "Fault Tolerant Quantum Systems, Architectures and Applications",
+          "url": "https://vast.cs.ucla.edu/news/2026-08/vast-lab-part-newly-formed-nsf-quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "hqan",
+      "name": "Hybrid Quantum Architectures and Networks",
+      "acronym": "HQAN",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "University of Illinois Urbana-Champaign",
+      "funder": "NSF QLCI",
+      "focus": "Links different kinds of quantum processors in modular networks.",
+      "materials": "Interfaces must connect qubits made from different physical platforms.",
+      "startYear": 2020,
+      "status": "Renewal announced August 2026",
+      "notes": "Year marks the initial institute announcement.",
+      "topics": [
+        "quantum networks",
+        "hybrid systems"
+      ],
+      "sources": [
+        {
+          "title": "Hybrid Quantum Architectures and Networks",
+          "url": "https://hqan.illinois.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "marquis",
+      "name": "Manufacturable and Resilient Superconducting Quantum Information Systems",
+      "acronym": "MARQUIS",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "Princeton University",
+      "funder": "NSF QLCI",
+      "focus": "Develops reproducible superconducting circuit components.",
+      "materials": "Connects Josephson-junction materials with semiconductor fabrication.",
+      "startYear": 2026,
+      "status": "New institute announced August 2026",
+      "notes": "Year marks the initial institute announcement.",
+      "topics": [
+        "superconductivity",
+        "Josephson junctions",
+        "fabrication"
+      ],
+      "sources": [
+        {
+          "title": "Manufacturable and Resilient Superconducting Quantum Information Systems",
+          "url": "https://engineering.dartmouth.edu/news/dartmouth-to-participate-in-nsf-funded-institute-to-meet-quantum-computing-challenges",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "practiqal",
+      "name": "Physics and Engineering of Practical Quantum Error Correction",
+      "acronym": "PRACTIQAL",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "Yale University",
+      "funder": "NSF QLCI",
+      "focus": "Combines device physics, algorithms and engineering for quantum error correction.",
+      "materials": "Studies practical hardware platforms, including superconducting circuits and neutral atoms.",
+      "startYear": 2026,
+      "status": "New institute announced August 2026",
+      "notes": "Year marks the initial institute announcement.",
+      "topics": [
+        "error correction",
+        "superconductivity",
+        "neutral atoms"
+      ],
+      "sources": [
+        {
+          "title": "Physics and Engineering of Practical Quantum Error Correction",
+          "url": "https://practiqal.yale.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "ciqc",
+      "name": "Challenge Institute for Quantum Computation",
+      "acronym": "CIQC",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "University of California, Berkeley",
+      "funder": "NSF QLCI",
+      "focus": "Studies computing architectures and algorithms across quantum platforms.",
+      "materials": "Solid-state systems join atomic platforms in a shared computing research effort.",
+      "startYear": 2020,
+      "status": "Renewal announced August 2026",
+      "notes": "Year marks the initial institute announcement.",
+      "topics": [
+        "computing",
+        "algorithms",
+        "solid-state systems"
+      ],
+      "sources": [
+        {
+          "title": "Challenge Institute for Quantum Computation",
+          "url": "https://ciqc.berkeley.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "qubbe",
+      "name": "Quantum Sensing for Biophysics and Bioengineering",
+      "acronym": "QuBBE",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "University of Chicago",
+      "funder": "NSF QLCI",
+      "focus": "Develops sensitive quantum probes for biological processes.",
+      "materials": "Nanoprobes connect device materials, sensing, biology and medicine.",
+      "startYear": 2021,
+      "status": "Renewal announced August 2026",
+      "notes": "Year marks the initial institute announcement.",
+      "topics": [
+        "sensing",
+        "biophysics",
+        "nanoprobes"
+      ],
+      "sources": [
+        {
+          "title": "Quantum Sensing for Biophysics and Bioengineering",
+          "url": "https://qubbe.uchicago.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "qsense",
+      "name": "Quantum Systems through Entangled Science and Engineering",
+      "acronym": "Q-SEnSE",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "University of Colorado Boulder; based within JILA",
+      "funder": "NSF QLCI",
+      "focus": "Advances quantum measurement, sensors and precision clocks.",
+      "materials": "Brings physics, engineering and chemistry together around sensing platforms.",
+      "startYear": 2020,
+      "status": "Renewal announced August 2026",
+      "notes": "NIST is a partner; NSF funds the QLCI. Year marks the initial institute announcement.",
+      "topics": [
+        "sensing",
+        "metrology",
+        "clocks",
+        "chemistry"
+      ],
+      "sources": [
+        {
+          "title": "Quantum Systems through Entangled Science and Engineering",
+          "url": "https://www.colorado.edu/research/qsense/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "rqs",
+      "name": "Institute for Robust Quantum Simulation",
+      "acronym": "RQS",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Quantum Leap Challenge Institute",
+      "lead": "University of Maryland",
+      "funder": "NSF QLCI",
+      "focus": "Builds reliable quantum simulators and methods for using them.",
+      "materials": "Quantum simulation provides a way to investigate complex interacting systems.",
+      "startYear": 2021,
+      "status": "Renewal announced August 2026",
+      "notes": "Year marks the initial institute announcement.",
+      "topics": [
+        "simulation",
+        "many-body physics",
+        "computing"
+      ],
+      "sources": [
+        {
+          "title": "Institute for Robust Quantum Simulation",
+          "url": "https://rqs.umd.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF official QLCI roster",
+          "url": "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2026 new institutes and renewals",
+          "url": "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-qlci",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-mrsec",
+      "name": "Materials Research Science and Engineering Centers",
+      "acronym": "MRSEC",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Materials center program",
+      "lead": "U.S. National Science Foundation",
+      "funder": "NSF, Division of Materials Research",
+      "focus": "Supports interdisciplinary materials research and shared experimental facilities.",
+      "materials": "Selected centers study quantum materials; the program covers a much wider materials landscape.",
+      "startYear": 1994,
+      "status": "Current official listing",
+      "notes": "Predates the 2018 NQI. This directory does not list every MRSEC or imply that every MRSEC is a quantum center.",
+      "topics": [
+        "materials",
+        "interdisciplinary research",
+        "facilities"
+      ],
+      "sources": [
+        {
+          "title": "Materials Research Science and Engineering Centers",
+          "url": "https://www.nsf.gov/funding/opportunities/mrsec-materials-research-science-engineering-centers",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF historical centers table: MRSEC began 1994",
+          "url": "https://nsf-gov-resources.nsf.gov/about/budget/fy2001/ideas.htm",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "ciqm",
+      "name": "Center for Integrated Quantum Materials",
+      "acronym": "CIQM",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "NSF Science and Technology Center",
+      "lead": "Harvard University, with MIT and Howard University",
+      "funder": "NSF Science and Technology Centers program",
+      "focus": "Studies quantum materials for information processing, sensing and communication.",
+      "materials": "Brings graphene, topological systems and diamond-based platforms into materials and device research.",
+      "startYear": 2013,
+      "status": "Current official listing",
+      "notes": "An NSF Science and Technology Center, not a QLCI. Founded before the NQI; current website activity does not establish the end date of its federal award.",
+      "topics": [
+        "topology",
+        "graphene",
+        "diamond",
+        "quantum materials"
+      ],
+      "sources": [
+        {
+          "title": "Center for Integrated Quantum Materials",
+          "url": "https://ciqm.harvard.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "MIT: CIQM announced in 2013",
+          "url": "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-nqvl",
+      "name": "National Quantum Virtual Laboratory — Quantum Testbeds",
+      "acronym": "NQVL",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Shared infrastructure and translation program",
+      "lead": "U.S. National Science Foundation",
+      "funder": "NSF",
+      "focus": "Develops distributed quantum testbeds and access to shared capabilities.",
+      "materials": "Testbeds connect device development, research users and technology translation.",
+      "startYear": null,
+      "status": "Quantum Testbeds solicitation listed",
+      "notes": "Pilot, design and implementation stages are distinct; the solicitation is not evidence that a complete national laboratory network is already operating.",
+      "topics": [
+        "testbeds",
+        "infrastructure",
+        "translation"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum Virtual Laboratory — Quantum Testbeds",
+          "url": "https://www.nsf.gov/funding/opportunities/nqvl-nsf-national-quantum-virtual-laboratory-quantum-testbeds",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-nqni",
+      "name": "National Quantum and Nanotechnology Infrastructure",
+      "acronym": "NQNI",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "National infrastructure initiative",
+      "lead": "U.S. National Science Foundation",
+      "funder": "NSF",
+      "focus": "Expands access to quantum and nanoscale research facilities.",
+      "materials": "Shared fabrication and characterization support materials and device research.",
+      "startYear": 2026,
+      "status": "Initiative announced February 2026",
+      "notes": "The announcement anticipates a network of sites. A completed award roster has not been verified here; this is not a list of established NQNI facilities.",
+      "topics": [
+        "nanotechnology",
+        "fabrication",
+        "characterization",
+        "facilities"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum and Nanotechnology Infrastructure",
+          "url": "https://www.nsf.gov/funding/opportunities/nqni-national-quantum-nanotechnology-infrastructure",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: NQNI announcement",
+          "url": "https://www.nsf.gov/news/nsf-launches-100m-national-quantum-nanotechnology-research",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-expandqise",
+      "name": "Expanding Capacity in Quantum Information Science and Engineering",
+      "acronym": "ExpandQISE",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Research capacity and training program",
+      "lead": "U.S. National Science Foundation",
+      "funder": "NSF",
+      "focus": "Builds quantum research and education capacity at a wider range of institutions.",
+      "materials": "Supports teams and expertise that can participate in quantum materials and device research.",
+      "startYear": null,
+      "status": "Documented 2024 solicitation and awards",
+      "notes": "The cited funding cycle is historical; check the NSF page for future opportunities. This entry does not imply an open call.",
+      "topics": [
+        "capacity building",
+        "education",
+        "quantum information"
+      ],
+      "sources": [
+        {
+          "title": "Expanding Capacity in Quantum Information Science and Engineering",
+          "url": "https://www.nsf.gov/funding/opportunities/expandqise-expanding-capacity-quantum-information-science-engineering/505985/nsf24-523/solicitation",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: 2024 ExpandQISE awards",
+          "url": "https://www.nsf.gov/news/quantum-science-engineering-expands-across-nation-39m-nsf",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-cqis",
+      "name": "Connections in Quantum Information Science",
+      "acronym": "CQIS",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Cross-program funding route",
+      "lead": "Participating NSF divisions",
+      "funder": "NSF",
+      "focus": "Connects quantum information proposals with participating disciplinary programs.",
+      "materials": "Links chemistry, materials, physics, computing, mathematics and engineering.",
+      "startYear": null,
+      "status": "Current official listing",
+      "notes": "A cross-cutting route through participating programs, not one institute or one award.",
+      "topics": [
+        "chemistry",
+        "materials",
+        "quantum information",
+        "interdisciplinary research"
+      ],
+      "sources": [
+        {
+          "title": "Connections in Quantum Information Science",
+          "url": "https://www.nsf.gov/funding/opportunities/cqis-connections-quantum-information-science",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-cmp",
+      "name": "Condensed Matter Physics",
+      "acronym": "CMP",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Core research program",
+      "lead": "NSF Division of Materials Research",
+      "funder": "NSF",
+      "focus": "Supports fundamental experimental and combined experimental–theoretical condensed matter research.",
+      "materials": "A continuing disciplinary home for electronic, magnetic and other collective behavior in materials.",
+      "startYear": null,
+      "status": "Current official listing",
+      "notes": "Broader than quantum technologies; basic materials research does not depend on an immediate device application.",
+      "topics": [
+        "condensed matter",
+        "magnetism",
+        "correlations"
+      ],
+      "sources": [
+        {
+          "title": "Condensed Matter Physics",
+          "url": "https://www.nsf.gov/funding/opportunities/condensed-matter-physics",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-dmref",
+      "name": "Designing Materials to Revolutionize and Engineer our Future",
+      "acronym": "DMREF",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Materials discovery program",
+      "lead": "U.S. National Science Foundation",
+      "funder": "NSF",
+      "focus": "Connects experiments, computation, theory and data to accelerate materials discovery.",
+      "materials": "A route for quantum materials design within a broader materials program.",
+      "startYear": null,
+      "status": "Current official listing",
+      "notes": "Associated with the Materials Genome Initiative; not a quantum-only program.",
+      "topics": [
+        "materials design",
+        "computation",
+        "synthesis",
+        "data science"
+      ],
+      "sources": [
+        {
+          "title": "Designing Materials to Revolutionize and Engineer our Future",
+          "url": "https://www.nsf.gov/funding/opportunities/dmref-designing-materials-revolutionize-engineer-our-future",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-mip",
+      "name": "Materials Innovation Platforms",
+      "acronym": "MIP",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Materials research user platforms",
+      "lead": "NSF Division of Materials Research",
+      "funder": "NSF",
+      "focus": "Combines materials synthesis, characterization and theoretical tools in shared platforms.",
+      "materials": "Users can develop new electronic and quantum materials through iterative design.",
+      "startYear": 2015,
+      "status": "Platform network; cited NSF funding solicitation is archived",
+      "notes": "An archived call is not evidence that the platform network has closed. Consult the platform network for access and current facilities.",
+      "topics": [
+        "materials synthesis",
+        "user facilities",
+        "electronic materials"
+      ],
+      "sources": [
+        {
+          "title": "Materials Innovation Platforms",
+          "url": "https://www.nsf.gov/funding/opportunities/mip-materials-innovation-platforms/505133/nsf25-521",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "Materials Innovation Platforms network",
+          "url": "https://mip.org/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "NSF: program established in 2015",
+          "url": "https://www.nsf.gov/funding/opportunities/mip-materials-innovation-platforms/505133/nsf19-526/solicitation",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "nsf-foundries",
+      "name": "Quantum foundries / Quantum Accelerators for Materials Science and Engineering",
+      "acronym": "Q-AMASE-i",
+      "page": "federal",
+      "group": "NSF",
+      "kind": "Materials research infrastructure awards",
+      "lead": "NSF Division of Materials Research",
+      "funder": "NSF",
+      "focus": "Supports coordinated creation and characterization of materials for quantum technologies.",
+      "materials": "Makes materials discovery and synthesis part of quantum hardware development.",
+      "startYear": null,
+      "status": "Current official listing",
+      "notes": "UCSB Quantum Foundry and MonArk are documented examples. This entry is not a claim of an open funding call or a complete award history.",
+      "topics": [
+        "materials synthesis",
+        "foundries",
+        "characterization"
+      ],
+      "sources": [
+        {
+          "title": "Quantum foundries / Quantum Accelerators for Materials Science and Engineering",
+          "url": "https://quantumfoundry.ucsb.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "MonArk Quantum Foundry",
+          "url": "https://www.monarkfoundry.org/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "ucsb-foundry",
+      "name": "UCSB Quantum Foundry",
+      "acronym": "UCSB QF",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "Quantum materials foundry",
+      "lead": "University of California, Santa Barbara",
+      "funder": "NSF Q-AMASE-i",
+      "focus": "Develops materials and interfaces for coherent quantum systems.",
+      "materials": "Studies entangled states, topological materials and interfaces linking quantum platforms.",
+      "startYear": null,
+      "status": "Current official listing",
+      "notes": "",
+      "topics": [
+        "topology",
+        "interfaces",
+        "synthesis",
+        "coherence"
+      ],
+      "sources": [
+        {
+          "title": "UCSB Quantum Foundry",
+          "url": "https://quantumfoundry.ucsb.edu/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-foundries",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "monark",
+      "name": "MonArk Quantum Foundry",
+      "acronym": "MonArk",
+      "page": "labs",
+      "group": "NSF institutes & foundries",
+      "kind": "Quantum materials foundry",
+      "lead": "Montana State University and University of Arkansas",
+      "funder": "NSF Q-AMASE-i",
+      "focus": "Develops and characterizes two-dimensional materials for quantum devices.",
+      "materials": "Links atomically thin materials, magnetism, ferroelectricity and quantum information.",
+      "startYear": 2021,
+      "status": "Current official listing",
+      "notes": "The year marks the September 2021 foundry announcement.",
+      "topics": [
+        "2D materials",
+        "magnetism",
+        "ferroelectricity"
+      ],
+      "sources": [
+        {
+          "title": "MonArk Quantum Foundry",
+          "url": "https://www.monarkfoundry.org/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "nsf-foundries",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "doe-qis",
+      "name": "National Quantum Information Science Research Centers",
+      "acronym": "NQISRC",
+      "page": "federal",
+      "group": "DOE",
+      "kind": "National research center program",
+      "lead": "DOE Office of Science",
+      "funder": "U.S. Department of Energy",
+      "focus": "Coordinates five national-laboratory-led research consortia.",
+      "materials": "Materials, quantum devices, software and scientific applications are developed together.",
+      "startYear": 2020,
+      "status": "All five centers renewed in November 2025",
+      "notes": "DOE announced a five-year renewal subject to appropriations and award negotiations. The five named centers are all included in this directory.",
+      "topics": [
+        "quantum materials",
+        "computing",
+        "networks",
+        "sensing"
+      ],
+      "sources": [
+        {
+          "title": "National Quantum Information Science Research Centers",
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "c2qa",
+      "name": "Co-design Center for Quantum Advantage",
+      "acronym": "C2QA",
+      "page": "labs",
+      "group": "DOE quantum centers",
+      "kind": "DOE National QIS Research Center",
+      "lead": "Brookhaven National Laboratory",
+      "funder": "DOE Office of Science",
+      "focus": "Co-designs materials and modular quantum systems.",
+      "materials": "Superconducting circuits and diamond platforms connect chemistry, growth and device performance.",
+      "startYear": 2020,
+      "status": "Renewal announced November 2025",
+      "notes": "Year marks the initial center award. Research priorities can evolve between award periods.",
+      "topics": [
+        "superconductivity",
+        "diamond",
+        "materials design"
+      ],
+      "sources": [
+        {
+          "title": "Co-design Center for Quantum Advantage",
+          "url": "https://www.bnl.gov/quantumcenter/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "DOE: five-center renewal",
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "doe-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "sqms",
+      "name": "Superconducting Quantum Materials and Systems Center",
+      "acronym": "SQMS",
+      "page": "labs",
+      "group": "DOE quantum centers",
+      "kind": "DOE National QIS Research Center",
+      "lead": "Fermi National Accelerator Laboratory",
+      "funder": "DOE Office of Science",
+      "focus": "Studies long-lived superconducting quantum systems.",
+      "materials": "Materials quality and loss mechanisms matter for cavities and microwave quantum devices.",
+      "startYear": 2020,
+      "status": "Renewal announced November 2025",
+      "notes": "Year marks the initial center award. Research priorities can evolve between award periods.",
+      "topics": [
+        "superconductivity",
+        "coherence",
+        "cavities"
+      ],
+      "sources": [
+        {
+          "title": "Superconducting Quantum Materials and Systems Center",
+          "url": "https://sqms.fnal.gov/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "DOE: five-center renewal",
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "doe-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "q-next",
+      "name": "Next Generation Quantum Science and Engineering",
+      "acronym": "Q-NEXT",
+      "page": "labs",
+      "group": "DOE quantum centers",
+      "kind": "DOE National QIS Research Center",
+      "lead": "Argonne National Laboratory",
+      "funder": "DOE Office of Science",
+      "focus": "Develops quantum components for communication and sensing.",
+      "materials": "Materials and fabrication connect research-scale components with reproducible devices.",
+      "startYear": 2020,
+      "status": "Renewal announced November 2025",
+      "notes": "Year marks the initial center award. Research priorities can evolve between award periods.",
+      "topics": [
+        "materials",
+        "networks",
+        "sensing"
+      ],
+      "sources": [
+        {
+          "title": "Next Generation Quantum Science and Engineering",
+          "url": "https://www.q-next.org/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "DOE: five-center renewal",
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "doe-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "qsa",
+      "name": "Quantum Systems Accelerator",
+      "acronym": "QSA",
+      "page": "labs",
+      "group": "DOE quantum centers",
+      "kind": "DOE National QIS Research Center",
+      "lead": "Lawrence Berkeley National Laboratory; Sandia National Laboratories partner",
+      "funder": "DOE Office of Science",
+      "focus": "Advances quantum processors for scientific computing.",
+      "materials": "Uses atomic and superconducting platforms; materials science is one part of its wider mission.",
+      "startYear": 2020,
+      "status": "Renewal announced November 2025",
+      "notes": "Year marks the initial center award. Research priorities can evolve between award periods.",
+      "topics": [
+        "quantum computing",
+        "trapped ions",
+        "neutral atoms",
+        "superconductivity"
+      ],
+      "sources": [
+        {
+          "title": "Quantum Systems Accelerator",
+          "url": "https://quantumsystemsaccelerator.org/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "DOE: five-center renewal",
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "doe-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "qsc",
+      "name": "Quantum Science Center",
+      "acronym": "QSC",
+      "page": "labs",
+      "group": "DOE quantum centers",
+      "kind": "DOE National QIS Research Center",
+      "lead": "Oak Ridge National Laboratory",
+      "funder": "DOE Office of Science",
+      "focus": "Connects quantum hardware and high-performance computing for science.",
+      "materials": "Quantum materials provide research problems and potential device platforms.",
+      "startYear": 2020,
+      "status": "Renewal announced November 2025",
+      "notes": "Year marks the initial center award. Research priorities can evolve between award periods.",
+      "topics": [
+        "quantum materials",
+        "computing",
+        "simulation"
+      ],
+      "sources": [
+        {
+          "title": "Quantum Science Center",
+          "url": "https://qscience.org/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        },
+        {
+          "title": "DOE: five-center renewal",
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": "doe-qis",
+      "checkedDate": "2026-10-29"
+    },
+    {
+      "id": "ndaa-qis",
+      "name": "NDAA-designated Quantum Information Science Research Centers",
+      "acronym": "NDAA QIS centers",
+      "page": "federal",
+      "group": "Defense",
+      "kind": "Designated defense research center network",
+      "lead": "LPS and the Air Force, Naval and Army research laboratories",
+      "funder": "U.S. defense agencies",
+      "focus": "Connects designated federal laboratories working on quantum information science.",
+      "materials": "Materials and hardware development sit alongside sensing, networking and computation.",
+      "startYear": null,
+      "status": "Four centers named in the official federal roster",
+      "notes": "The FY2020 NDAA authorized this center structure. These are distinct from NSF and DOE center programs.",
+      "topics": [
+        "defense research",
+        "quantum hardware",
+        "sensing"
+      ],
+      "sources": [
+        {
+          "title": "NDAA-designated Quantum Information Science Research Centers",
+          "url": "https://www.quantum.gov/qis-centers/",
+          "evidenceDate": "2026-10-29",
+          "note": "Official source checked 29 October 2026."
+        }
+      ],
+      "parentId": null,
+      "checkedDate": "2026-10-29"
+    }
+  ]
+}

@@ -182,3 +182,17 @@ This is a browser display gate, not server-side access control or encryption. St
 The existing GitHub Pages configuration was read during this update: it serves the root of the `main` branch. To publish a reviewed update, commit the static pages, shared scripts, styles, and `data/` assets and merge/push to `main`. No build step is needed. Keep raw workbooks and the full normalized audit outside the web repository. Review the Pages build and verify the deployed source selector after publishing.
 
 The initial WoS integration was developed on `codex/wos-source-selector`; the About page and access-gate update were developed on `codex/about-and-password`. The raw Excel files and full normalized audit remain local; only the processed website subset belongs in the published site.
+
+## Institutional directory (October 2026)
+
+The three separate directory pages are linked from every main navigation bar:
+
+- `programs.html`: selected degree programs, certificates and research networks.
+- `labs.html`: institutes, research centers, facilities and industry partnerships.
+- `federal.html`: major U.S. funding families, coordination and infrastructure initiatives.
+
+`data/institutions.json` contains 85 source-linked entries checked on 29 October 2026. Each entity has one home page, a host/lead, a separate funding/support field, research focus, materials connection, status notes and official sources. `parentId` links a lab to its program. Four complete named rosters are represented: eight NSF QLCIs (the August 2026 roster), five DOE National QIS Research Centers, five DOE NSRCs and four NDAA QIS centers. Other institutions and EFRCs are selected examples; the directory is not a complete global inventory or a live list of open funding calls.
+
+`directory-core.js` implements filtering, entry links and CSV export. `directory.js` renders the three pages after the existing access gate resolves; it does not load or merge the publication datasets. Search (`q`), group (`group`) and publication context (`source`) are retained in URLs. Entity fragments open their source/status notes. The CSV contains the filtered page entries and their source URLs.
+
+When updating the directory, verify the official roster or source, retain historical/announced status distinctions, update `checkedDate`, and run `node --test tests/*.test.js`. A live institutional page alone does not verify continued award funding. The NSF and DOE center networks, NSF Science and Technology Centers, EFRCs, university degrees and philanthropic networks are distinct organizational forms.

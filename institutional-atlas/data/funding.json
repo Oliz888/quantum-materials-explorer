@@ -1,16 +1,18 @@
 {
-  "version": 1,
-  "retrievalDate": "2026-10-29",
+  "version": 2,
+  "retrievalDate": "2026-11-03",
   "currency": "USD",
-  "title": "Selected NSF award records for an experimental institutional map",
+  "title": "Selected multi-agency funding evidence for Institutional Atlas V2",
   "methodology": {
-    "source": "NSF Awards API",
+    "source": "NSF Awards API and official agency, national laboratory and university announcements",
     "sourceDocumentation": "https://resources.research.gov/common/webapi/awardapisearch-v1.htm",
-    "selection": "Purposive evidence sample: quantum-materials foundries/CIQM and training awards represented in the directory; selected MRSECs with quantum-materials research; all eight 2026 NSF QLCI awards. This is not a systematic or exhaustive quantum-materials funding search.",
-    "universe": "19 unique NSF prime-award records at 14 recipient universities, with record starts spanning 2013–2026. No DOE/DOD/private funding totals are included.",
-    "aggregation": "Deduplicate by NSF award ID. Sum only fundsObligatedAmt for selected scope types and dates. Assign each full prime award only once, to its named recipient university. Do not multiply by partner count or add an award again via linked center entries. A university total means selected records only.",
+    "selection": "Purposive sample: 19 retained NSF awards, 10 DOE National QIS center phases, 5 DOE quantum-materials EFRC phases, and 8 DARPA, NIST, EDA and defense project announcements. This is not a comprehensive funding census.",
+    "universe": "42 distinct funding records; NSF values checked 29 October 2026, added non-NSF announcements checked 3 November 2026.",
+    "aggregation": "Deduplicate by record ID, preserving agency identity. Only cumulative obligations with a named recipient enter recipient-obligation sums. Whole-center totals, program investments and contract ceilings are not added to obligations or assigned to individual consortium members. Distinct-project counts collapse renewal phases using projectKey.",
     "defaultScope": [
-      "quantum-materials"
+      "quantum-materials",
+      "mixed-materials",
+      "broader-qis"
     ],
     "scopeDefinitions": {
       "quantum-materials": "Award abstract explicitly centers research/training on quantum materials; includes full award administration and education, not pure research spend.",
@@ -18,18 +20,17 @@
       "broader-qis": "Whole quantum information science institute award; contains materials connections but not restricted to quantum materials."
     },
     "limitations": [
-      "Amounts are cumulative obligations as retrieved, not cash spent, annual budgets, direct awards to every collaborator, or total funding received by a university.",
-      "Funding amounts across different start dates and award durations are not a controlled performance comparison. Show dates and allow scope/date filtering.",
-      "Missing award records mean not assessed in this selected sample, not zero support.",
-      "The original announced or estimated amount can differ from cumulative obligations after amendments; do not merge these fields.",
-      "Some listed award end dates are past and some are estimated future dates. Do not describe all sums as current active funding.",
-      "MRSEC and QLCI institution matches do not establish funding for a university degree/minor/certificate; entryMatchType distinguishes university-level links.",
-      "The sample is appropriate for evidence-backed highlights, not a ranking of university research quality or a comprehensive national funding leaderboard.",
-      "NSF award web pages depend on client rendering and may show an empty shell in text-only readers; the official API URL supplies the verified record."
+      "NSF cumulative obligations, announced consortium totals, contract ceilings and planned investments have different meanings and are not summed together.",
+      "No comprehensive national or institutional funding total is claimed. Missing records or institutional shares mean not assessed, not zero.",
+      "Partnership links are specific to the cited phase and include only institutions mapped in this atlas; they are not complete membership rosters.",
+      "Five-year planned DOE outyear funding is subject to congressional appropriations; announced totals are not proof of full obligations or expenditure.",
+      "Renewals count as separate funding-phase records, but once per project for project-count highlights.",
+      "Whole MRSEC and QIS awards include work beyond quantum materials; the quantum-materials-only amount is not established.",
+      "Directory milestones and funding announcements may refer to the same broader development. Timeline event counts are not grant counts or monetary totals."
     ],
-    "recommendedUiLabel": "Selected NSF obligations (USD; prime recipient; as of 29 Oct 2026)",
+    "recommendedUiLabel": "Funding linked to a host: named recipient, lead, or documented partner",
     "recommendedMissingLabel": "No award assessed in this sample",
-    "retrieval": "Fetched each official record by award ID and retained monetary/date fields; scope tags were assigned by reading the official abstract.",
+    "retrieval": "NSF API snapshot retained unchanged in monetary/date fields; new announcements checked against primary sources. Dates for announcements are not asserted as contract start dates.",
     "excludedExample": {
       "awardId": "2614298",
       "reason": "The 2026 Harvard MRSEC abstract focuses on soft materials, hydrogels and vesicles, with no explicit quantum-materials research theme; excluded despite Harvard hosting other quantum activity."
@@ -86,7 +87,14 @@
         "FY 2021 = $4,434,922.00",
         "FY 2022 = $3,734,931.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-1231319",
+      "projectKey": "nsf-ciqm",
+      "mapAgency": "NSF",
+      "programName": "Center for Integrated Quantum Materials",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2013-10-01 to 2027-03-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "1906325",
@@ -126,7 +134,14 @@
         "FY 2023 = $6,372,588.00",
         "FY 2025 = $5,999,998.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-1906325",
+      "projectKey": "nsf-ucsb-foundry",
+      "mapAgency": "NSF",
+      "programName": "UCSB Quantum Foundry",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2019-09-15 to 2027-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "1906383",
@@ -163,7 +178,14 @@
         "FY 2022 = $5,432,678.00",
         "FY 2023 = $5,490,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-1906383",
+      "projectKey": "nsf-monark",
+      "mapAgency": "NSF",
+      "programName": "MonArk Quantum Foundry",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2021-09-15 to 2027-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2244310",
@@ -198,7 +220,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2023 = $3,000,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2244310",
+      "projectKey": "nsf-yale-qmse",
+      "mapAgency": "NSF",
+      "programName": "Yale quantum materials traineeship",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2023-07-15 to 2028-06-30",
+      "partnerHostIds": []
     },
     {
       "awardId": "2244274",
@@ -235,7 +264,14 @@
         "FY 2024 = $683,681.00",
         "FY 2025 = $1,091,319.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2244274",
+      "projectKey": "nsf-monark",
+      "mapAgency": "NSF",
+      "programName": "Arkansas 2D quantum materials traineeship",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2023-08-15 to 2028-07-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2011738",
@@ -275,7 +311,14 @@
         "FY 2024 = $2,850,000.00",
         "FY 2025 = $2,850,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2011738",
+      "projectKey": "nsf-columbia-quantum-materials",
+      "mapAgency": "NSF",
+      "programName": "Columbia PAQM MRSEC",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2020-09-01 to 2026-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2614607",
@@ -310,7 +353,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $3,000,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2614607",
+      "projectKey": "nsf-columbia-quantum-materials",
+      "mapAgency": "NSF",
+      "programName": "Columbia Advanced Electronic Materials MRSEC",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2032-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2308979",
@@ -348,7 +398,14 @@
         "FY 2025 = $2,850,000.00",
         "FY 2026 = $3,000,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2308979",
+      "projectKey": "nsf-2308979",
+      "mapAgency": "NSF",
+      "programName": "UW Molecular Engineering Materials Center",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2023-09-01 to 2029-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2309037",
@@ -386,7 +443,14 @@
         "FY 2025 = $2,850,000.00",
         "FY 2026 = $3,000,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2309037",
+      "projectKey": "nsf-2309037",
+      "mapAgency": "NSF",
+      "programName": "Illinois MRSEC",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2023-09-01 to 2029-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2309000",
@@ -424,7 +488,14 @@
         "FY 2025 = $2,850,000.00",
         "FY 2026 = $3,030,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2309000",
+      "projectKey": "nsf-2309000",
+      "mapAgency": "NSF",
+      "programName": "Wisconsin MRSEC",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2023-09-01 to 2029-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2614599",
@@ -459,7 +530,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $2,000,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2614599",
+      "projectKey": "nsf-2614599",
+      "mapAgency": "NSF",
+      "programName": "Princeton Center for Complex Materials",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2032-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2553576",
@@ -494,7 +572,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $7,500,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2553576",
+      "projectKey": "nsf-qubbe",
+      "mapAgency": "NSF",
+      "programName": "QuBBE",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2553619",
@@ -529,7 +614,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $7,500,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2553619",
+      "projectKey": "nsf-ftqsaa",
+      "mapAgency": "NSF",
+      "programName": "FTQSAA",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2553574",
@@ -564,7 +656,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $7,500,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2553574",
+      "projectKey": "nsf-rqs",
+      "mapAgency": "NSF",
+      "programName": "RQS",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2553633",
@@ -599,7 +698,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $6,560,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2553633",
+      "projectKey": "nsf-marquis",
+      "mapAgency": "NSF",
+      "programName": "MARQUIS",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2553595",
@@ -634,7 +740,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $7,420,617.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2553595",
+      "projectKey": "nsf-ciqc",
+      "mapAgency": "NSF",
+      "programName": "CIQC",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2552714",
@@ -669,7 +782,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $7,500,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2552714",
+      "projectKey": "nsf-qsense",
+      "mapAgency": "NSF",
+      "programName": "Q-SEnSE",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2553578",
@@ -704,7 +824,14 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $7,500,000.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2553578",
+      "projectKey": "nsf-hqan",
+      "mapAgency": "NSF",
+      "programName": "HQAN",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
     },
     {
       "awardId": "2552449",
@@ -739,7 +866,1577 @@
       "fiscalYearObligationsAsReported": [
         "FY 2026 = $8,964,126.00"
       ],
-      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred."
+      "attribution": "Prime recipient only; includes funds the recipient may pass to collaborators. Partner/subaward shares are not inferred.",
+      "recordId": "nsf-2552449",
+      "projectKey": "nsf-practiqal",
+      "mapAgency": "NSF",
+      "programName": "PRACTIQAL",
+      "allocationScope": "prime-recipient",
+      "periodLabel": "2026-09-01 to 2031-08-31",
+      "partnerHostIds": []
+    },
+    {
+      "recordId": "doe-c2qa-2020",
+      "awardId": "doe-c2qa-2020",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "C2QA — initial phase",
+      "shortTitle": "C2QA — initial phase",
+      "amountUSD": 115000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2020-08-26",
+      "year": 2020,
+      "periodLabel": "Five-year phase announced in 2020 (2020–2025)",
+      "leadHostId": "brookhaven",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "ames",
+        "columbia",
+        "harvard",
+        "howard",
+        "mit",
+        "montana",
+        "nasa-ames",
+        "northwestern",
+        "princeton",
+        "ucsb",
+        "washington",
+        "yale"
+      ],
+      "hostIds": [
+        "brookhaven",
+        "ames",
+        "columbia",
+        "harvard",
+        "howard",
+        "mit",
+        "montana",
+        "nasa-ames",
+        "northwestern",
+        "princeton",
+        "ucsb",
+        "washington",
+        "yale"
+      ],
+      "relatedEntryIds": [
+        "c2qa",
+        "doe-qis"
+      ],
+      "officialUrl": "https://www.bnl.gov/newsroom/news.php?a=217392",
+      "sourceUrls": [
+        "https://www.bnl.gov/newsroom/news.php?a=217392"
+      ],
+      "evidenceExcerpt": "Total planned funding for the center is $115 million over five years",
+      "scopeType": "broader-qis",
+      "scopeNote": "Materials, devices and software are combined to achieve useful quantum computing; the full budget is broader than materials.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 15000000,
+      "firstYearLabel": "FY2020; included in total, not additional",
+      "awardTitle": "C2QA — initial phase",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2020,
+      "projectKey": "doe-c2qa",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Brookhaven National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://www.bnl.gov/newsroom/news.php?a=217392",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-c2qa-2025",
+      "awardId": "doe-c2qa-2025",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "C2QA — renewal",
+      "shortTitle": "C2QA — renewal",
+      "amountUSD": 125000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2025-11-04",
+      "year": 2025,
+      "periodLabel": "Five-year renewal announced in 2025 (2025–2030)",
+      "leadHostId": "brookhaven",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "columbia",
+        "harvard",
+        "howard",
+        "mit",
+        "nasa-ames",
+        "northwestern",
+        "princeton",
+        "ucsb",
+        "washington",
+        "yale"
+      ],
+      "hostIds": [
+        "brookhaven",
+        "columbia",
+        "harvard",
+        "howard",
+        "mit",
+        "nasa-ames",
+        "northwestern",
+        "princeton",
+        "ucsb",
+        "washington",
+        "yale"
+      ],
+      "relatedEntryIds": [
+        "c2qa",
+        "doe-qis"
+      ],
+      "officialUrl": "https://www.bnl.gov/newsroom/news.php?a=222687",
+      "sourceUrls": [
+        "https://www.bnl.gov/newsroom/news.php?a=222687"
+      ],
+      "evidenceExcerpt": "$125 million in funding over five years",
+      "scopeType": "broader-qis",
+      "scopeNote": "Coherence-driven materials design and modular system architectures; full center award also funds devices and computing.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "awardTitle": "C2QA — renewal",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2025,
+      "projectKey": "doe-c2qa",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Brookhaven National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://www.bnl.gov/newsroom/news.php?a=222687",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-sqms-2020",
+      "awardId": "doe-sqms-2020",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "SQMS — initial phase",
+      "shortTitle": "SQMS — initial phase",
+      "amountUSD": 115000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2020-08-26",
+      "year": 2020,
+      "periodLabel": "Five-year phase announced in 2020 (2020–2025)",
+      "leadHostId": "fermilab",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "northwestern",
+        "ames",
+        "nasa-ames"
+      ],
+      "hostIds": [
+        "fermilab",
+        "northwestern",
+        "ames",
+        "nasa-ames"
+      ],
+      "relatedEntryIds": [
+        "sqms",
+        "doe-qis"
+      ],
+      "officialUrl": "https://news.fnal.gov/2020/08/fermilab-to-lead-115-million-national-quantum-initiative-center-to-build-revolutionary-quantum-computer-with-rigetti-computing-northwestern-university-ames-laboratory-nasa-infn-and-additional-par/",
+      "sourceUrls": [
+        "https://news.fnal.gov/2020/08/fermilab-to-lead-115-million-national-quantum-initiative-center-to-build-revolutionary-quantum-computer-with-rigetti-computing-northwestern-university-ames-laboratory-nasa-infn-and-additional-par/"
+      ],
+      "evidenceExcerpt": "Total planned DOE funding for the center is $115 million over five years",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Superconducting materials and decoherence underpin this center, but the total also covers computing, sensing and system construction.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 15000000,
+      "firstYearLabel": "FY2020; included in total, not additional",
+      "excludedMatchingContributionUSD": 8000000,
+      "excludedMatchingContributionNote": "Partner matching contributions are excluded from the DOE amount.",
+      "awardTitle": "SQMS — initial phase",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2020,
+      "projectKey": "doe-sqms",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Fermi National Accelerator Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://news.fnal.gov/2020/08/fermilab-to-lead-115-million-national-quantum-initiative-center-to-build-revolutionary-quantum-computer-with-rigetti-computing-northwestern-university-ames-laboratory-nasa-infn-and-additional-par/",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-sqms-2025",
+      "awardId": "doe-sqms-2025",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "SQMS — renewal",
+      "shortTitle": "SQMS — renewal",
+      "amountUSD": 125000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2025-11-04",
+      "year": 2025,
+      "periodLabel": "Five-year renewal announced in 2025 (2025–2030)",
+      "leadHostId": "fermilab",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "ames",
+        "nasa-ames",
+        "northwestern",
+        "colorado",
+        "maryland",
+        "oregon"
+      ],
+      "hostIds": [
+        "fermilab",
+        "ames",
+        "nasa-ames",
+        "northwestern",
+        "colorado",
+        "maryland",
+        "oregon"
+      ],
+      "relatedEntryIds": [
+        "sqms",
+        "doe-qis"
+      ],
+      "officialUrl": "https://news.fnal.gov/2025/11/fermilabs-sqms-center-funded-with-125-million-to-shape-the-future-of-quantum-information-science/",
+      "sourceUrls": [
+        "https://news.fnal.gov/2025/11/fermilabs-sqms-center-funded-with-125-million-to-shape-the-future-of-quantum-information-science/"
+      ],
+      "evidenceExcerpt": "The total planned funding is $125 million over five years",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Materials and device research remains central; the total also includes processors, networking, cryogenics and sensing.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 25000000,
+      "firstYearLabel": "First year; included in total, not additional",
+      "awardTitle": "SQMS — renewal",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2025,
+      "projectKey": "doe-sqms",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Fermi National Accelerator Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://news.fnal.gov/2025/11/fermilabs-sqms-center-funded-with-125-million-to-shape-the-future-of-quantum-information-science/",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-q-next-2020",
+      "awardId": "doe-q-next-2020",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "Q-NEXT — initial phase",
+      "shortTitle": "Q-NEXT — initial phase",
+      "amountUSD": 115000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2020-08-26",
+      "year": 2020,
+      "periodLabel": "Five-year phase announced in 2020 (2020–2025)",
+      "leadHostId": "argonne",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "slac",
+        "northwestern",
+        "ucsb",
+        "chicago",
+        "illinois",
+        "wisconsin"
+      ],
+      "hostIds": [
+        "argonne",
+        "slac",
+        "northwestern",
+        "ucsb",
+        "chicago",
+        "illinois",
+        "wisconsin"
+      ],
+      "relatedEntryIds": [
+        "q-next",
+        "doe-qis"
+      ],
+      "officialUrl": "https://www6.slac.stanford.edu/news/2020-08-26-slac-and-stanford-become-founding-partners-q-next-national-quantum-center",
+      "sourceUrls": [
+        "https://www6.slac.stanford.edu/news/2020-08-26-slac-and-stanford-become-founding-partners-q-next-national-quantum-center"
+      ],
+      "evidenceExcerpt": "Q-NEXT will be funded by the Department of Energy at $115 million over five years",
+      "scopeType": "broader-qis",
+      "scopeNote": "Quantum materials foundries and devices support a broader quantum information distribution effort.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 15000000,
+      "firstYearLabel": "FY2020; included in total, not additional",
+      "awardTitle": "Q-NEXT — initial phase",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2020,
+      "projectKey": "doe-q-next",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Argonne National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://www6.slac.stanford.edu/news/2020-08-26-slac-and-stanford-become-founding-partners-q-next-national-quantum-center",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-q-next-2025",
+      "awardId": "doe-q-next-2025",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "Q-NEXT — renewal",
+      "shortTitle": "Q-NEXT — renewal",
+      "amountUSD": 125000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2025-11-04",
+      "year": 2025,
+      "periodLabel": "Five-year renewal announced in 2025; first-year allocation described as FY2026",
+      "leadHostId": "argonne",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "slac",
+        "chicago",
+        "wisconsin"
+      ],
+      "hostIds": [
+        "argonne",
+        "slac",
+        "chicago",
+        "wisconsin"
+      ],
+      "relatedEntryIds": [
+        "q-next",
+        "doe-qis"
+      ],
+      "officialUrl": "https://www6.slac.stanford.edu/news/2025-11-04-q-next-quantum-center-renewed-five-years",
+      "sourceUrls": [
+        "https://www6.slac.stanford.edu/news/2025-11-04-q-next-quantum-center-renewed-five-years",
+        "https://news.uchicago.edu/story/quantum-research-centers-led-argonne-and-fermilab-renewed-five-years",
+        "https://research.wisc.edu/uncategorized/2025/11/06/uw-madison-builds-on-partnerships-at-chicago-quantum-summit/"
+      ],
+      "evidenceExcerpt": "Q-NEXT will be funded by DOE at $125 million over the next five years",
+      "scopeType": "broader-qis",
+      "scopeNote": "Three goals cover communication, sensing and materials; the announced budget does not isolate materials.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 25000000,
+      "firstYearLabel": "FY2026 per SLAC; included in total",
+      "sourceDateNote": "Main release 2025-11-04; partner confirmations 2025-11-06. Argonne original page returned 403; accessible SLAC official release verifies amount.",
+      "awardTitle": "Q-NEXT — renewal",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2025,
+      "projectKey": "doe-q-next",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Argonne National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://www6.slac.stanford.edu/news/2025-11-04-q-next-quantum-center-renewed-five-years",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        },
+        {
+          "url": "https://news.uchicago.edu/story/quantum-research-centers-led-argonne-and-fermilab-renewed-five-years",
+          "title": "Official partnership evidence",
+          "checkedDate": "2026-11-03"
+        },
+        {
+          "url": "https://research.wisc.edu/uncategorized/2025/11/06/uw-madison-builds-on-partnerships-at-chicago-quantum-summit/",
+          "title": "Official partnership evidence",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-qsa-2020",
+      "awardId": "doe-qsa-2020",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "Quantum Systems Accelerator — initial phase",
+      "shortTitle": "Quantum Systems Accelerator — initial phase",
+      "amountUSD": 115000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2020-08-26",
+      "year": 2020,
+      "periodLabel": "Five-year phase announced in 2020 (2020–2025)",
+      "leadHostId": "lbnl",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "sandia",
+        "colorado",
+        "harvard",
+        "mit",
+        "berkeley",
+        "maryland"
+      ],
+      "hostIds": [
+        "lbnl",
+        "sandia",
+        "colorado",
+        "harvard",
+        "mit",
+        "berkeley",
+        "maryland"
+      ],
+      "relatedEntryIds": [
+        "qsa",
+        "doe-qis"
+      ],
+      "officialUrl": "https://newscenter.lbl.gov/2020/08/26/quantum-systems-accelerator/",
+      "sourceUrls": [
+        "https://newscenter.lbl.gov/2020/08/26/quantum-systems-accelerator/"
+      ],
+      "evidenceExcerpt": "Total planned funding for the center is $115 million over five years",
+      "scopeType": "broader-qis",
+      "scopeNote": "Neutral atoms, trapped ions and superconducting circuits; broader quantum-computing systems research.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 15000000,
+      "firstYearLabel": "FY2020; included in total, not additional",
+      "awardTitle": "Quantum Systems Accelerator — initial phase",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2020,
+      "projectKey": "doe-qsa",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Lawrence Berkeley National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://newscenter.lbl.gov/2020/08/26/quantum-systems-accelerator/",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-qsa-2025",
+      "awardId": "doe-qsa-2025",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "Quantum Systems Accelerator — renewal",
+      "shortTitle": "Quantum Systems Accelerator — renewal",
+      "amountUSD": 125000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2025-11-04",
+      "year": 2025,
+      "periodLabel": "Five-year renewal announced in 2025 (2025–2030)",
+      "leadHostId": "lbnl",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "sandia"
+      ],
+      "hostIds": [
+        "lbnl",
+        "sandia"
+      ],
+      "relatedEntryIds": [
+        "qsa",
+        "doe-qis"
+      ],
+      "officialUrl": "https://cs.lbl.gov/news-and-events/news/2025/the-quantum-systems-accelerator-embarks-on-next-five-years-of-pioneering-quantum-technologies-for-science/",
+      "sourceUrls": [
+        "https://cs.lbl.gov/news-and-events/news/2025/the-quantum-systems-accelerator-embarks-on-next-five-years-of-pioneering-quantum-technologies-for-science/",
+        "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information"
+      ],
+      "evidenceExcerpt": "The total planned funding for QSA is $125 million over five years",
+      "scopeType": "broader-qis",
+      "scopeNote": "Quantum computer prototypes, error correction and scaling across several qubit technologies.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 25000000,
+      "firstYearLabel": "Year one; included in total, not additional",
+      "sourceDateNote": "Article corresponds to the 2025-11-04 announcement and was last edited 2025-11-06.",
+      "awardTitle": "Quantum Systems Accelerator — renewal",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2025,
+      "projectKey": "doe-qsa",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Lawrence Berkeley National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://cs.lbl.gov/news-and-events/news/2025/the-quantum-systems-accelerator-embarks-on-next-five-years-of-pioneering-quantum-technologies-for-science/",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        },
+        {
+          "url": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+          "title": "Official partnership evidence",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-qsc-2020",
+      "awardId": "doe-qsc-2020",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "Quantum Science Center — initial phase",
+      "shortTitle": "Quantum Science Center — initial phase",
+      "amountUSD": 115000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2020-08-26",
+      "year": 2020,
+      "periodLabel": "Five-year phase announced in 2020 (2020–2025)",
+      "leadHostId": "oak-ridge",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "fermilab",
+        "harvard",
+        "los-alamos",
+        "princeton",
+        "purdue",
+        "berkeley",
+        "ucsb",
+        "maryland",
+        "washington"
+      ],
+      "hostIds": [
+        "oak-ridge",
+        "fermilab",
+        "harvard",
+        "los-alamos",
+        "princeton",
+        "purdue",
+        "berkeley",
+        "ucsb",
+        "maryland",
+        "washington"
+      ],
+      "relatedEntryIds": [
+        "qsc",
+        "doe-qis"
+      ],
+      "officialUrl": "https://www.ornl.gov/news/ornl-partners-receive-115-million-establish-quantum-science-center/",
+      "sourceUrls": [
+        "https://www.ornl.gov/news/ornl-partners-receive-115-million-establish-quantum-science-center/"
+      ],
+      "evidenceExcerpt": "Total planned funding for the center is $115 million over five years",
+      "scopeType": "quantum-materials",
+      "scopeNote": "The initial center explicitly focuses on topological quantum materials for manipulating, transferring and storing quantum information.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 15000000,
+      "firstYearLabel": "FY2020; included in total, not additional",
+      "awardTitle": "Quantum Science Center — initial phase",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2020,
+      "projectKey": "doe-qsc",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Oak Ridge National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://www.ornl.gov/news/ornl-partners-receive-115-million-establish-quantum-science-center/",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-qsc-2025",
+      "awardId": "doe-qsc-2025",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "National Quantum Information Science Research Centers",
+      "programEntryId": "doe-qis",
+      "project": "Quantum Science Center — renewal",
+      "shortTitle": "Quantum Science Center — renewal",
+      "amountUSD": 125000000,
+      "currency": "USD",
+      "amountType": "announced-center-plan",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2025-11-04",
+      "year": 2025,
+      "periodLabel": "Five-year renewal through 2030",
+      "leadHostId": "oak-ridge",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "los-alamos",
+        "purdue",
+        "berkeley",
+        "ucsd"
+      ],
+      "hostIds": [
+        "oak-ridge",
+        "los-alamos",
+        "purdue",
+        "berkeley",
+        "ucsd"
+      ],
+      "relatedEntryIds": [
+        "qsc",
+        "doe-qis"
+      ],
+      "officialUrl": "https://www.ornl.gov/news/ornl-partners-secure-125m-renewal-quantum-science-center/",
+      "sourceUrls": [
+        "https://www.ornl.gov/news/ornl-partners-secure-125m-renewal-quantum-science-center/"
+      ],
+      "evidenceExcerpt": "The total planned funding for the Quantum Science Center is $125 million over 5 years",
+      "scopeType": "broader-qis",
+      "scopeNote": "Renewal focuses on quantum-accelerated HPC; experimental quantum materials provide validation benchmarks within a broader computation program.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Whole multi-institution center/consortium amount. Institutional shares are not specified; do not assign the full amount to either the lead or partners as money received. Planned outyear funding depends on congressional appropriations; not cumulative obligations, expenditure, or an annual budget."
+      ],
+      "firstYearUSD": 25000000,
+      "firstYearLabel": "Year one; included in total, not additional",
+      "sourceDateNote": "Published 2025-11-04; updated 2026-03-05.",
+      "awardTitle": "Quantum Science Center — renewal",
+      "programName": "National Quantum Information Science Research Centers",
+      "announcementYear": 2025,
+      "projectKey": "doe-qsc",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Oak Ridge National Laboratory",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://www.ornl.gov/news/ornl-partners-secure-125m-renewal-quantum-science-center/",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-pro-qm-2018",
+      "awardId": "doe-pro-qm-2018",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "programEntryId": "doe-efrc",
+      "project": "Programmable Quantum Materials — initial phase",
+      "shortTitle": "Programmable Quantum Materials — initial phase",
+      "amountUSD": 10700000,
+      "currency": "USD",
+      "amountType": "announced-center-award",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2018-09-24",
+      "year": 2018,
+      "periodLabel": "Initial phase announced in 2018; followed by the 2022 renewal",
+      "leadHostId": "columbia",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "washington"
+      ],
+      "hostIds": [
+        "columbia",
+        "washington"
+      ],
+      "relatedEntryIds": [
+        "pro-qm",
+        "doe-efrc"
+      ],
+      "officialUrl": "https://science.fas.columbia.edu/news/columbia-receives-10-7-million-for-department-of-energy-frontier-research-center/",
+      "sourceUrls": [
+        "https://science.fas.columbia.edu/news/columbia-receives-10-7-million-for-department-of-energy-frontier-research-center/"
+      ],
+      "evidenceExcerpt": "Columbia University and collaborators have been awarded $10.7 million",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Manipulating quantum materials and controlling their properties using external conditions.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Announced consortium award amount, not a university-only budget or expenditure. Source does not provide an exact legal award start/end date. Institutional shares are not specified."
+      ],
+      "awardTitle": "Programmable Quantum Materials — initial phase",
+      "programName": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "announcementYear": 2018,
+      "projectKey": "doe-pro-qm",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Columbia University",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://science.fas.columbia.edu/news/columbia-receives-10-7-million-for-department-of-energy-frontier-research-center/",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-pro-qm-2022",
+      "awardId": "doe-pro-qm-2022",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "programEntryId": "doe-efrc",
+      "project": "Programmable Quantum Materials — renewal",
+      "shortTitle": "Programmable Quantum Materials — renewal",
+      "amountUSD": 12600000,
+      "currency": "USD",
+      "amountType": "announced-center-award",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2022-08-26",
+      "year": 2022,
+      "periodLabel": "Four-year renewal announced in 2022 (2022–2026)",
+      "leadHostId": "columbia",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "washington",
+        "brookhaven"
+      ],
+      "hostIds": [
+        "columbia",
+        "washington",
+        "brookhaven"
+      ],
+      "relatedEntryIds": [
+        "pro-qm",
+        "doe-efrc"
+      ],
+      "officialUrl": "https://quantum.columbia.edu/news/columbia-continue-creating-programmable-quantum-materials",
+      "sourceUrls": [
+        "https://quantum.columbia.edu/news/columbia-continue-creating-programmable-quantum-materials"
+      ],
+      "evidenceExcerpt": "will receive $12.6 million over the next four years",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Creating and controlling quantum phases, topology, interfaces, heterostructures and imaging.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Announced multi-institution center award; no partner allocation disclosed. Four-year period is from the announcement, not verified legal start/end dates. NYSTAR matching support is not part of the DOE amount."
+      ],
+      "excludedMatchingContributionUSD": 500000,
+      "excludedMatchingContributionNote": "New York State NYSTAR matching commitment of up to $500,000 is separate and excluded from DOE total.",
+      "awardTitle": "Programmable Quantum Materials — renewal",
+      "programName": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "announcementYear": 2022,
+      "projectKey": "doe-pro-qm",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Columbia University",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://quantum.columbia.edu/news/columbia-continue-creating-programmable-quantum-materials",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-cmqt-2020",
+      "awardId": "doe-cmqt-2020",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "programEntryId": "doe-efrc",
+      "project": "Center for Molecular Quantum Transduction — initial phase",
+      "shortTitle": "Center for Molecular Quantum Transduction — initial phase",
+      "amountUSD": 12400000,
+      "currency": "USD",
+      "amountType": "announced-center-award",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2020-07-02",
+      "year": 2020,
+      "periodLabel": "Four years beginning 1 August 2020",
+      "leadHostId": "northwestern",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "argonne",
+        "berkeley",
+        "lbnl",
+        "ucsd",
+        "princeton",
+        "wisconsin"
+      ],
+      "hostIds": [
+        "northwestern",
+        "argonne",
+        "berkeley",
+        "lbnl",
+        "ucsd",
+        "princeton",
+        "wisconsin"
+      ],
+      "relatedEntryIds": [
+        "cmqt",
+        "doe-efrc"
+      ],
+      "officialUrl": "https://trienens-institute.northwestern.edu/news-events/news/2020/center-for-molecular-quantum-transduction-awarded-12.4-million-as-doe-efrc.html",
+      "sourceUrls": [
+        "https://trienens-institute.northwestern.edu/news-events/news/2020/center-for-molecular-quantum-transduction-awarded-12.4-million-as-doe-efrc.html",
+        "https://chicagoquantum.org/news/center-molecular-quantum-transduction-awarded-124-million-doe-efrc"
+      ],
+      "evidenceExcerpt": "The funding will support a four-year enterprise that begins on August 1, 2020.",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Hard and soft materials synthesis, molecular structure and interfaces underpin quantum-to-quantum transduction.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Center-wide four-year award; no institution-specific share disclosed. Partner links derive from the Chicago Quantum Exchange original announcement, including joint Argonne/Northwestern and UC Berkeley/LBNL affiliations; those links do not demonstrate a separate subaward."
+      ],
+      "startDate": "2020-08-01",
+      "awardTitle": "Center for Molecular Quantum Transduction — initial phase",
+      "programName": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "announcementYear": 2020,
+      "projectKey": "doe-cmqt",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Northwestern University",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://trienens-institute.northwestern.edu/news-events/news/2020/center-for-molecular-quantum-transduction-awarded-12.4-million-as-doe-efrc.html",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        },
+        {
+          "url": "https://chicagoquantum.org/news/center-molecular-quantum-transduction-awarded-124-million-doe-efrc",
+          "title": "Official partnership evidence",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-cmqt-2024",
+      "awardId": "doe-cmqt-2024",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "programEntryId": "doe-efrc",
+      "project": "Center for Molecular Quantum Transduction — renewal",
+      "shortTitle": "Center for Molecular Quantum Transduction — renewal",
+      "amountUSD": 14500000,
+      "currency": "USD",
+      "amountType": "announced-center-award",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2024-09-05",
+      "year": 2024,
+      "periodLabel": "Four-year renewal announced in 2024 (2024–2028)",
+      "leadHostId": "northwestern",
+      "recipientHostId": null,
+      "partnerHostIds": [
+        "berkeley",
+        "ucsd",
+        "chicago",
+        "princeton",
+        "mit",
+        "wisconsin"
+      ],
+      "hostIds": [
+        "northwestern",
+        "berkeley",
+        "ucsd",
+        "chicago",
+        "princeton",
+        "mit",
+        "wisconsin"
+      ],
+      "relatedEntryIds": [
+        "cmqt",
+        "doe-efrc"
+      ],
+      "officialUrl": "https://news.northwestern.edu/stories/2024/september/u-s-department-of-energy-reinvests-in-northwesterns-quantum-science-research?fj=1",
+      "sourceUrls": [
+        "https://news.northwestern.edu/stories/2024/september/u-s-department-of-energy-reinvests-in-northwesterns-quantum-science-research?fj=1"
+      ],
+      "evidenceExcerpt": "$14.5 million grant renews quantum transduction center for another four years",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Molecular qubits, chemically synthesized spin systems, quantum materials and hybrid photonic structures.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Center-wide renewal amount; no university-by-university allocation disclosed. Dates are announcement and stated duration, not legal award dates."
+      ],
+      "awardTitle": "Center for Molecular Quantum Transduction — renewal",
+      "programName": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "announcementYear": 2024,
+      "projectKey": "doe-cmqt",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "Northwestern University",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://news.northwestern.edu/stories/2024/september/u-s-department-of-energy-reinvests-in-northwesterns-quantum-science-research?fj=1",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "doe-q-meen-c-2022",
+      "awardId": "doe-q-meen-c-2022",
+      "identifierMeaning": "Locally constructed unique record ID for one announced funding phase; not an agency award number.",
+      "agency": "DOE",
+      "program": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "programEntryId": "doe-efrc",
+      "project": "Quantum Materials for Energy Efficient Neuromorphic Computing — renewal",
+      "shortTitle": "Quantum Materials for Energy Efficient Neuromorphic Computing — renewal",
+      "amountUSD": 12600000,
+      "currency": "USD",
+      "amountType": "announced-center-award",
+      "amountMeaning": "Announced total for the center or collaboration across the stated funding phase, not an institution-specific amount.",
+      "announcementDate": "2022-09-28",
+      "year": 2022,
+      "periodLabel": "Renewal announced in 2022; article does not specify exact award dates",
+      "leadHostId": "ucsd",
+      "recipientHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "ucsd"
+      ],
+      "relatedEntryIds": [
+        "q-meen-c",
+        "doe-efrc"
+      ],
+      "officialUrl": "https://jacobsschool.ucsd.edu/news/release/3514?id=3514",
+      "sourceUrls": [
+        "https://jacobsschool.ucsd.edu/news/release/3514?id=3514"
+      ],
+      "evidenceExcerpt": "the Department of Energy (DOE) has announced $12.6 million in renewed funding for the center.",
+      "scopeType": "quantum-materials",
+      "scopeNote": "Electronic and magnetic quantum materials for energy-efficient neuromorphic hardware.",
+      "retrievalDate": "2026-11-03",
+      "allocationScope": "consortium",
+      "includeInInstitutionTotals": false,
+      "partnerCoverageNote": "Only partners explicitly documented in the cited phase sources and already mapped in V2 are linked; this is not the complete partnership roster.",
+      "limitations": [
+        "Center-wide renewal amount; university share and detailed award term are not specified in this source. The article links a current PI roster, but historical partner membership for this phase was not reconstructed."
+      ],
+      "agencyAwardNumber": "DE-SC0019273",
+      "awardTitle": "Quantum Materials for Energy Efficient Neuromorphic Computing — renewal",
+      "programName": "Basic Energy Sciences — Energy Frontier Research Centers",
+      "announcementYear": 2022,
+      "projectKey": "doe-q-meen-c",
+      "attribution": "Full center or collaboration amount. No amount is assigned to an individual university or laboratory. Institutional shares are not disclosed.",
+      "leadInstitution": "University of California San Diego",
+      "recipientInstitution": "",
+      "mapAgency": "DOE",
+      "sources": [
+        {
+          "url": "https://jacobsschool.ucsd.edu/news/release/3514?id=3514",
+          "title": "Official project announcement",
+          "checkedDate": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "recordId": "DARPA-QBI-UMD-ARLIS-2026",
+      "agency": "DARPA",
+      "program": "Quantum Benchmarking Initiative (QBI)",
+      "project": "UMD ARLIS independent evaluation and quantum applications",
+      "amountUSD": 34800000,
+      "currency": "USD",
+      "amountType": "announced-ceiling",
+      "announcementYear": 2026,
+      "periodLabel": "4.5-year contract; announced 8 January 2026",
+      "publicationDate": "2026-01-08",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": "maryland",
+      "leadInstitution": "University of Maryland — Applied Research Laboratory for Intelligence and Security (ARLIS)",
+      "recipientHostId": "maryland",
+      "hostIds": [
+        "maryland"
+      ],
+      "partnerHostIds": [],
+      "relatedEntryIds": [
+        "darpa-qbi"
+      ],
+      "scopeType": "broader-qis",
+      "sources": [
+        {
+          "title": "UMD ARLIS: QBI research contract",
+          "url": "https://www.arlis.umd.edu/about/news-events/umd-arlis-researchers-awarded-348m-research-contract-advance-darpas-quantum",
+          "publicationDate": "2026-01-08",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "a new contract worth up to $34.8 million over 4.5 years",
+          "note": ""
+        }
+      ],
+      "officialUrl": "https://www.arlis.umd.edu/about/news-events/umd-arlis-researchers-awarded-348m-research-contract-advance-darpas-quantum",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Maximum value of a 4.5-year research contract to UMD ARLIS. This is a ceiling, not verified obligations or expenditure. The broader $100m hub envelope is excluded from this record.",
+      "awardTitle": "UMD ARLIS independent evaluation and quantum applications",
+      "shortTitle": "UMD ARLIS independent evaluation and quantum applications",
+      "programName": "Quantum Benchmarking Initiative (QBI)",
+      "announcementDate": "2026-01-08",
+      "awardId": "DARPA-QBI-UMD-ARLIS-2026",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "darpa-qbi-umd-arlis",
+      "amountMeaning": "Maximum value of a 4.5-year research contract to UMD ARLIS. This is a ceiling, not verified obligations or expenditure.",
+      "recipientInstitution": "University of Maryland — Applied Research Laboratory for Intelligence and Security (ARLIS)",
+      "scopeNote": "Selected broader quantum information project; the quantum-materials-only budget is not disclosed.",
+      "mapAgency": "DARPA",
+      "partnerCoverageNote": "Named recipient under the cited contract announcement; the ceiling is not a verified obligation."
+    },
+    {
+      "recordId": "NIST-QMEC-2026",
+      "agency": "NIST",
+      "program": "Quantum Manufacturing Engineering Center (QMEC)",
+      "project": "Initial planned investment in quantum manufacturing",
+      "amountUSD": 20000000,
+      "currency": "USD",
+      "amountType": "planned-program-investment",
+      "announcementYear": 2026,
+      "periodLabel": "Initial investment announced 29 June 2026; spending period not specified",
+      "publicationDate": "2026-06-29",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": null,
+      "leadInstitution": "SRI International",
+      "recipientHostId": null,
+      "hostIds": [],
+      "partnerHostIds": [],
+      "relatedEntryIds": [
+        "qmec"
+      ],
+      "scopeType": "broader-qis",
+      "sources": [
+        {
+          "title": "NIST: launches center to drive manufacture of quantum technologies",
+          "url": "https://www.nist.gov/news-events/news/2026/06/nist-launches-center-drive-manufacture-quantum-technologies",
+          "publicationDate": "2026-06-29",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "NIST plans to make an initial investment of $20 million in the center’s activities.",
+          "note": ""
+        }
+      ],
+      "officialUrl": "https://www.nist.gov/news-events/news/2026/06/nist-launches-center-drive-manufacture-quantum-technologies",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Planned initial investment in the center under an agreement with SRI International. Spending period and institutional allocations are not disclosed. The project total is recorded once and is not allocated in full to individual partners.",
+      "awardTitle": "Initial planned investment in quantum manufacturing",
+      "shortTitle": "Initial planned investment in quantum manufacturing",
+      "programName": "Quantum Manufacturing Engineering Center (QMEC)",
+      "announcementDate": "2026-06-29",
+      "awardId": "NIST-QMEC-2026",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "nist-qmec",
+      "amountMeaning": "Planned initial investment in the center under an agreement with SRI International. Spending period and institutional allocations are not disclosed.",
+      "recipientInstitution": "",
+      "scopeNote": "Selected broader quantum information project; the quantum-materials-only budget is not disclosed.",
+      "mapAgency": "NIST & Commerce",
+      "partnerCoverageNote": "No university or national-laboratory allocation is disclosed in this announcement."
+    },
+    {
+      "recordId": "EDA-ELEVATE-QUANTUM-2024",
+      "agency": "Commerce / EDA",
+      "program": "Regional Technology and Innovation Hubs",
+      "project": "Elevate Quantum Tech Hub — Phase 2 implementation",
+      "amountUSD": 40500000,
+      "currency": "USD",
+      "amountType": "announced-consortium-award",
+      "announcementYear": 2024,
+      "periodLabel": "Phase 2 implementation award announced 2 July 2024; award period not specified",
+      "publicationDate": "2024-07-02",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": null,
+      "leadInstitution": "Elevate Quantum consortium",
+      "recipientHostId": null,
+      "hostIds": [
+        "mines",
+        "colorado",
+        "sandia"
+      ],
+      "partnerHostIds": [
+        "mines",
+        "colorado",
+        "sandia"
+      ],
+      "relatedEntryIds": [
+        "elevate-quantum"
+      ],
+      "scopeType": "broader-qis",
+      "sources": [
+        {
+          "title": "Colorado School of Mines: Elevate Quantum awarded $40.5M",
+          "url": "https://www.mines.edu/news/all-news/2024/elevate-quantum-awarded-405m-to-expand-quantum-ecosystem-in-colorado-mountain-west.html",
+          "publicationDate": "2024-07-02",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "it has been awarded $40.5 million in federal funding",
+          "note": "Confirms Mines participation. Amount is the consortium federal award, not Mines funding."
+        },
+        {
+          "title": "EDA: Elevate Quantum Tech Hub",
+          "url": "https://www.eda.gov/funding/programs/regional-technology-and-innovation-hubs/2023/Elevate-Quantum-Tech-Hub",
+          "publicationDate": null,
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "EDA awarded this Tech Hub grant funding of approximately $41 million",
+          "note": "Agency rounds the same award to approximately $41 million; not a second award."
+        },
+        {
+          "title": "CU Boulder: regional quantum boost",
+          "url": "https://www.colorado.edu/today/2024/07/02/cu-boulder-elevate-quantum-partners-ready-127m-regional-quantum-boost",
+          "publicationDate": "2024-07-02",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "Elevate Quantum, of which CU Boulder is a key partner",
+          "note": "Confirms $40.5 million federal component separately from state contributions."
+        },
+        {
+          "title": "Sandia: 2025 national-security accomplishments",
+          "url": "https://www.sandia.gov/news/publications/labs-accomplishments/article/2025/national-security-4/",
+          "publicationDate": null,
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "In July 2024, Sandia joined with Elevate Quantum",
+          "note": "Confirms Sandia partner/facility/workforce role; no share amount disclosed."
+        }
+      ],
+      "officialUrl": "https://www.mines.edu/news/all-news/2024/elevate-quantum-awarded-405m-to-expand-quantum-ecosystem-in-colorado-mountain-west.html",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Federal award to the Elevate Quantum consortium, excluding state matching funds and projected private investment. Individual partner shares are not disclosed. The project total is recorded once and is not allocated in full to individual partners. EDA rounds this same award to approximately $41m; it is not a second award.",
+      "awardTitle": "Elevate Quantum Tech Hub — Phase 2 implementation",
+      "shortTitle": "Elevate Quantum Tech Hub — Phase 2 implementation",
+      "programName": "Regional Technology and Innovation Hubs",
+      "announcementDate": "2024-07-02",
+      "awardId": "EDA-ELEVATE-QUANTUM-2024",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "eda-elevate-quantum",
+      "amountMeaning": "Federal award to the Elevate Quantum consortium, excluding state matching funds and projected private investment. Individual partner shares are not disclosed.",
+      "recipientInstitution": "",
+      "scopeNote": "Selected broader quantum information project; the quantum-materials-only budget is not disclosed.",
+      "mapAgency": "NIST & Commerce",
+      "partnerCoverageNote": "Links show documented participants already included in this atlas; this is not a full partnership roster. Individual shares are unknown."
+    },
+    {
+      "recordId": "AFOSR-MURI-QRAM-2021",
+      "agency": "DOD / AFOSR",
+      "program": "Multidisciplinary University Research Initiative (MURI)",
+      "project": "Towards Robust Scalable Quantum Random Access Memories",
+      "amountUSD": 7500000,
+      "currency": "USD",
+      "amountType": "announced-consortium-award",
+      "announcementYear": 2021,
+      "periodLabel": "Five-year project announced in 2021",
+      "publicationDate": "2021-09-20",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": "chicago",
+      "leadInstitution": "University of Chicago",
+      "recipientHostId": null,
+      "hostIds": [
+        "chicago",
+        "yale",
+        "maryland"
+      ],
+      "partnerHostIds": [
+        "yale",
+        "maryland"
+      ],
+      "relatedEntryIds": [
+        "dod-muri",
+        "afosr-qis"
+      ],
+      "scopeType": "broader-qis",
+      "sources": [
+        {
+          "title": "UMD: QRAM MURI award",
+          "url": "https://research.umd.edu/news/wu-part-75m-muri-award-develop-scalable-quantum-random-access-memory-architecture",
+          "publicationDate": "2021-09-20",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "a multi-institutional team awarded $7.5 million",
+          "note": "Names University of Chicago, Yale and Maryland; five-year project with AFOSR funding."
+        },
+        {
+          "title": "DOD FY2021 selected MURI projects, page 4 topic 23",
+          "url": "https://www.cto.mil/wp-content/uploads/2021/02/FY21-MURI-press-release-03FEB21.pdf",
+          "publicationDate": "2021-02-03",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "Towards Robust Scalable Quantum Random Access Memories",
+          "note": "Topic 23 lists Chicago as primary university, Yale and Maryland as subaward universities, and Liang Jiang as PI."
+        }
+      ],
+      "officialUrl": "https://research.umd.edu/news/wu-part-75m-muri-award-develop-scalable-quantum-random-access-memory-architecture",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Five-year award for the research consortium. The lead and partners are documented; university-level shares are not disclosed. The project total is recorded once and is not allocated in full to individual partners.",
+      "awardTitle": "Towards Robust Scalable Quantum Random Access Memories",
+      "shortTitle": "Towards Robust Scalable Quantum Random Access Memories",
+      "programName": "Multidisciplinary University Research Initiative (MURI)",
+      "announcementDate": "2021-09-20",
+      "awardId": "AFOSR-MURI-QRAM-2021",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "afosr-muri-qram",
+      "amountMeaning": "Five-year award for the research consortium. The lead and partners are documented; university-level shares are not disclosed.",
+      "recipientInstitution": "",
+      "scopeNote": "Selected broader quantum information project; the quantum-materials-only budget is not disclosed.",
+      "mapAgency": "Defense",
+      "partnerCoverageNote": "Links show documented participants already included in this atlas; this is not a full partnership roster. Individual shares are unknown."
+    },
+    {
+      "recordId": "AFOSR-COLUMBIA-NQUBIT-2026",
+      "agency": "DOD / AFOSR",
+      "program": "Quantum computing research grant",
+      "project": "N-qubit gate architectures across theory, compilation and hardware",
+      "amountUSD": 7500000,
+      "currency": "USD",
+      "amountType": "announced-consortium-award",
+      "announcementYear": 2026,
+      "periodLabel": "Announced 7 April 2026; project period not specified",
+      "publicationDate": "2026-04-07",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": "columbia",
+      "leadInstitution": "Columbia University",
+      "recipientHostId": null,
+      "hostIds": [
+        "columbia",
+        "yale",
+        "ucsd"
+      ],
+      "partnerHostIds": [
+        "yale",
+        "ucsd"
+      ],
+      "relatedEntryIds": [
+        "afosr-qis"
+      ],
+      "scopeType": "broader-qis",
+      "sources": [
+        {
+          "title": "Columbia Data Science Institute: Transforming Uncertainty",
+          "url": "https://datascience.columbia.edu/news/transforming-uncertainty-new-path-quantum-computing",
+          "publicationDate": "2026-04-07",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "$7.5 million grant from the Air Force Office of Scientific Research",
+          "note": "Henry Yuen is lead PI; Columbia, Yale and UC San Diego are named participants."
+        }
+      ],
+      "officialUrl": "https://datascience.columbia.edu/news/transforming-uncertainty-new-path-quantum-computing",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Grant total for the multi-university research team. University shares and an exact grant period are not disclosed. The project total is recorded once and is not allocated in full to individual partners.",
+      "awardTitle": "N-qubit gate architectures across theory, compilation and hardware",
+      "shortTitle": "N-qubit gate architectures across theory, compilation and hardware",
+      "programName": "Quantum computing research grant",
+      "announcementDate": "2026-04-07",
+      "awardId": "AFOSR-COLUMBIA-NQUBIT-2026",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "afosr-columbia-nqubit",
+      "amountMeaning": "Grant total for the multi-university research team. University shares and an exact grant period are not disclosed.",
+      "recipientInstitution": "",
+      "scopeNote": "Selected broader quantum information project; the quantum-materials-only budget is not disclosed.",
+      "mapAgency": "Defense",
+      "partnerCoverageNote": "Links show documented participants already included in this atlas; this is not a full partnership roster. Individual shares are unknown."
+    },
+    {
+      "recordId": "DOD-MURI-CISS-2023",
+      "agency": "DOD",
+      "program": "Multidisciplinary University Research Initiative (MURI)",
+      "project": "Quantum spin effects in chiral matter",
+      "amountUSD": 7500000,
+      "currency": "USD",
+      "amountType": "announced-consortium-award",
+      "announcementYear": 2023,
+      "periodLabel": "Five-year award announced 5 April 2023",
+      "publicationDate": "2023-04-05",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": null,
+      "leadInstitution": "North Carolina State University",
+      "recipientHostId": null,
+      "hostIds": [
+        "illinois"
+      ],
+      "partnerHostIds": [
+        "illinois"
+      ],
+      "relatedEntryIds": [
+        "dod-muri"
+      ],
+      "scopeType": "quantum-materials",
+      "sources": [
+        {
+          "title": "NC State: quantum spin effects in chiral matter award",
+          "url": "https://sciences.ncsu.edu/news/department-of-defense-awards-physicist-sun-7-5-million-muri-grant/",
+          "publicationDate": "2023-04-05",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "a $7.5 million grant to study quantum spin effects in chiral matter",
+          "note": "NC State is lead; $3.5 million of the total is specifically allocated to NC State. Illinois, UNC Chapel Hill and Duke are partners."
+        }
+      ],
+      "officialUrl": "https://sciences.ncsu.edu/news/department-of-defense-awards-physicist-sun-7-5-million-muri-grant/",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Five-year consortium award. The source discloses a $3.5m NC State share within this total; the Illinois share is unknown. The project total is recorded once and is not allocated in full to individual partners.",
+      "disclosedAllocations": [
+        {
+          "institution": "North Carolina State University",
+          "hostId": null,
+          "amountUSD": 3500000,
+          "meaning": "Named university share included in the $7.5 million consortium total."
+        }
+      ],
+      "unmappedPartners": [
+        "University of North Carolina at Chapel Hill",
+        "Duke University"
+      ],
+      "awardTitle": "Quantum spin effects in chiral matter",
+      "shortTitle": "Quantum spin effects in chiral matter",
+      "programName": "Multidisciplinary University Research Initiative (MURI)",
+      "announcementDate": "2023-04-05",
+      "awardId": "DOD-MURI-CISS-2023",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "dod-muri-ciss",
+      "amountMeaning": "Five-year consortium award. The source discloses a $3.5m NC State share within this total; the Illinois share is unknown.",
+      "recipientInstitution": "",
+      "scopeNote": "Quantum materials research; the full consortium amount includes all participating institutions.",
+      "mapAgency": "Defense",
+      "partnerCoverageNote": "Links show documented participants already included in this atlas; this is not a full partnership roster. Individual shares are unknown."
+    },
+    {
+      "recordId": "DOD-MURI-MAJORANA-2022",
+      "agency": "DOD",
+      "program": "Multidisciplinary University Research Initiative (MURI)",
+      "project": "Semiconductor–superconductor materials for Majorana zero-mode qubits",
+      "amountUSD": 7500000,
+      "currency": "USD",
+      "amountType": "announced-consortium-award",
+      "announcementYear": 2022,
+      "periodLabel": "FY2022 award; five years under the FY2022 MURI announcement",
+      "publicationDate": "2022-04-15",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": null,
+      "leadInstitution": "New York University",
+      "recipientHostId": null,
+      "hostIds": [
+        "illinois",
+        "yale",
+        "maryland"
+      ],
+      "partnerHostIds": [
+        "illinois",
+        "yale",
+        "maryland"
+      ],
+      "relatedEntryIds": [
+        "dod-muri"
+      ],
+      "scopeType": "quantum-materials",
+      "sources": [
+        {
+          "title": "Illinois Physics: Majorana zero-mode MURI award",
+          "url": "https://physics.illinois.edu/news/dod-muri-award-2022-explore-creation-of-qubits-based-on-majorana-zero-modes",
+          "publicationDate": "2022-04-15",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "a $7.5 million project",
+          "note": "Names NYU Javad Shabani as PI and Illinois Angela Kou as participant; materials system is a semiconductor–superconductor hybrid."
+        },
+        {
+          "title": "NYU-issued release, hosted by EurekAlert",
+          "url": "https://www.eurekalert.org/news-releases/948298",
+          "publicationDate": "2022-03-31",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "Yale University, the University at Buffalo, the University of Maryland, the University of Pittsburgh, and the University of Illinois, Urbana-Champaign",
+          "note": "Official institutional press release syndicated by AAAS; original NYU URL returns 405 in this reader."
+        },
+        {
+          "title": "DOD: FY2022 MURI announcement",
+          "url": "https://www.defense.gov/News/Releases/Release/Article/2953234/department-of-defense-announces-university-research-funding-awards/",
+          "publicationDate": "2022-03-03",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "for five years each",
+          "note": "Five-year duration applies to the selected FY2022 projects, subject to progress and funding availability."
+        }
+      ],
+      "officialUrl": "https://physics.illinois.edu/news/dod-muri-award-2022-explore-creation-of-qubits-based-on-majorana-zero-modes",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Five-year project total for the NYU-led consortium. Shares for Illinois, Yale and Maryland are not disclosed. The project total is recorded once and is not allocated in full to individual partners.",
+      "unmappedPartners": [
+        "University at Buffalo",
+        "University of Pittsburgh"
+      ],
+      "awardTitle": "Semiconductor–superconductor materials for Majorana zero-mode qubits",
+      "shortTitle": "Semiconductor–superconductor materials for Majorana zero-mode qubits",
+      "programName": "Multidisciplinary University Research Initiative (MURI)",
+      "announcementDate": "2022-04-15",
+      "awardId": "DOD-MURI-MAJORANA-2022",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "dod-muri-majorana",
+      "amountMeaning": "Five-year project total for the NYU-led consortium. Shares for Illinois, Yale and Maryland are not disclosed.",
+      "recipientInstitution": "",
+      "scopeNote": "Quantum materials research; the full consortium amount includes all participating institutions.",
+      "mapAgency": "Defense",
+      "partnerCoverageNote": "Links show documented participants already included in this atlas; this is not a full partnership roster. Individual shares are unknown."
+    },
+    {
+      "recordId": "DOD-MURI-DISLOCATIONS-2023",
+      "agency": "DOD",
+      "program": "Multidisciplinary University Research Initiative (MURI)",
+      "project": "Dislocations as One Dimensional Quantum Matters",
+      "amountUSD": 7500000,
+      "currency": "USD",
+      "amountType": "estimated-consortium-award",
+      "announcementYear": 2023,
+      "periodLabel": "Estimated five-year award announced in 2023",
+      "publicationDate": "2023-06-28",
+      "startDate": null,
+      "endDate": null,
+      "leadHostId": null,
+      "leadInstitution": "The Ohio State University",
+      "recipientHostId": null,
+      "hostIds": [
+        "chicago"
+      ],
+      "partnerHostIds": [
+        "chicago"
+      ],
+      "relatedEntryIds": [
+        "dod-muri"
+      ],
+      "scopeType": "quantum-materials",
+      "sources": [
+        {
+          "title": "Ohio State: Defense MURI for quantum materials research",
+          "url": "https://quantum.osu.edu/story/defense-muri-program",
+          "publicationDate": "2023-06-28",
+          "checkedDate": "2026-11-03",
+          "evidenceExcerpt": "An estimated $7.5 million will support the multidisciplinary research team over five years.",
+          "note": "Maryam Ghazisaeidi leads; University of Chicago David Awschalom and Giulia Galli are named collaborators."
+        }
+      ],
+      "officialUrl": "https://quantum.osu.edu/story/defense-muri-program",
+      "retrievalDate": "2026-11-03",
+      "attribution": "Estimated five-year award to the Ohio State-led research team. Chicago is a documented partner with an undisclosed share. The project total is recorded once and is not allocated in full to individual partners.",
+      "awardTitle": "Dislocations as One Dimensional Quantum Matters",
+      "shortTitle": "Dislocations as One Dimensional Quantum Matters",
+      "programName": "Multidisciplinary University Research Initiative (MURI)",
+      "announcementDate": "2023-06-28",
+      "awardId": "DOD-MURI-DISLOCATIONS-2023",
+      "identifierMeaning": "Local ID for an announcement record, not an agency award number.",
+      "projectKey": "dod-muri-dislocations",
+      "amountMeaning": "Estimated five-year award to the Ohio State-led research team. Chicago is a documented partner with an undisclosed share.",
+      "recipientInstitution": "",
+      "scopeNote": "Quantum materials research; the full consortium amount includes all participating institutions.",
+      "mapAgency": "Defense",
+      "partnerCoverageNote": "Links show documented participants already included in this atlas; this is not a full partnership roster. Individual shares are unknown."
+    }
+  ],
+  "nsfRetrievalDate": "2026-10-29",
+  "contextOnly": [
+    {
+      "agency": "DOE",
+      "amountUSD": 625000000,
+      "year": 2025,
+      "role": "Five-center program envelope, excluded from additive records.",
+      "sourceUrl": "https://www.energy.gov/articles/energy-department-announces-625-million-advance-next-phase-national-quantum-information",
+      "note": "DOE announcement identifies $125m in FY2025 for the five-center program and later years contingent on appropriations. Individual-center releases each separately confirm $125m over five years. Q-NEXT source instead calls its $25m first year FY2026; preserve the source-specific distinction."
+    },
+    {
+      "agency": "DOE",
+      "amountUSD": 625000000,
+      "year": 2020,
+      "role": "Solicitation/program ceiling, excluded from additive records.",
+      "sourceUrl": "https://www.energy.gov/articles/department-energy-announces-625-million-new-quantum-centers",
+      "note": "Initial solicitation ceiling should not be substituted for the five $115m initial-center announcements (sum $575m). Do not invent allocation of the remaining program difference."
     }
   ]
 }

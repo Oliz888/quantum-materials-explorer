@@ -1,0 +1,149 @@
+{
+  "scope": "Official BES QIS targeted-call project rosters; materials-related and broader-QIS entries separated. Not a comprehensive list of every DOE grant, obligation, or activity from 2000–2026.",
+  "collections": [
+    {
+      "id": "bes-qis-2018",
+      "source": "https://science.osti.gov/-/media/bes/pdf/Funding/BES_QIS_Research_Awards_FY-2018.pdf",
+      "sourceProjectCount": 27,
+      "includedProjectPhases": 27,
+      "excludedProjectCount": 0,
+      "amountCoverage": "No project-level amount disclosed by source roster",
+      "year": 2018
+    },
+    {
+      "id": "bes-qis-2019",
+      "source": "https://science.osti.gov/-/media/bes/pdf/Funding/BES_QIS_Award_Abstracts_FY-2019.pdf",
+      "sourceProjectCount": 20,
+      "includedProjectPhases": 20,
+      "excludedProjectCount": 0,
+      "amountCoverage": "No project-level amount disclosed by source roster",
+      "year": 2019
+    },
+    {
+      "id": "bes-qis-2021",
+      "source": "https://science.osti.gov/-/media/bes/pdf/Funding/2021/2449_BES_QIS_Awards_List.pdf",
+      "sourceProjectCount": 29,
+      "includedProjectPhases": 29,
+      "excludedProjectCount": 0,
+      "amountCoverage": "No project-level amount disclosed by source roster",
+      "year": 2021
+    },
+    {
+      "id": "bes-nsrc-2018",
+      "source": "https://science.osti.gov/-/media/bes/pdf/Funding/BES_QIS_NSRC_Awards_FY-2018.pdf",
+      "sourceProjectCount": 7,
+      "includedProjectPhases": 7,
+      "excludedProjectCount": 0,
+      "amountCoverage": "No project-level amount disclosed by source roster",
+      "year": 2018
+    },
+    {
+      "id": "bes-nsrc-2021",
+      "source": "https://science.osti.gov/-/media/bes/pdf/Funding/2021/QIS-NSRC_Award_List.pdf",
+      "sourceProjectCount": 8,
+      "includedProjectPhases": 8,
+      "excludedProjectCount": 0,
+      "amountCoverage": "No project-level amount disclosed by source roster",
+      "year": 2021
+    },
+    {
+      "id": "efrc-2018",
+      "year": 2018,
+      "source": "https://galligroup.uchicago.edu/images/news/FY2018_EFRC_Award_List.pdf",
+      "sourceProjectCount": 42,
+      "includedProjectPhases": 7,
+      "newProjectPhases": 6,
+      "alreadyPresentPhases": 1,
+      "excludedProjectCount": 35,
+      "selectionRule": "Centers explicitly focused on quantum materials, quantum coherence, molecular quantum states, topological matter, quantum sensing, or magnonics; not all materials/energy EFRCs.",
+      "amountCoverage": "Mixed known institutional announcements and undisclosed roster phase amounts"
+    },
+    {
+      "id": "efrc-2020",
+      "year": 2020,
+      "source": "https://science.osti.gov/-/media/bes/pdf/Funding/EFRC_Awards_July2020.pdf",
+      "sourceProjectCount": 10,
+      "includedProjectPhases": 2,
+      "newProjectPhases": 1,
+      "alreadyPresentPhases": 1,
+      "excludedProjectCount": 8,
+      "selectionRule": "Centers explicitly focused on quantum materials, quantum coherence, molecular quantum states, topological matter, quantum sensing, or magnonics; not all materials/energy EFRCs.",
+      "amountCoverage": "Mixed known institutional announcements and undisclosed roster phase amounts"
+    },
+    {
+      "id": "efrc-2022",
+      "year": 2022,
+      "source": "https://science.osti.gov/-/media/bes/pdf/awards/EFRC-awards-sheet-8-25.pdf",
+      "sourceProjectCount": 43,
+      "includedProjectPhases": 6,
+      "newProjectPhases": 4,
+      "alreadyPresentPhases": 2,
+      "excludedProjectCount": 37,
+      "selectionRule": "Centers explicitly focused on quantum materials, quantum coherence, molecular quantum states, topological matter, quantum sensing, or magnonics; not all materials/energy EFRCs.",
+      "amountCoverage": "Mixed known institutional announcements and undisclosed roster phase amounts"
+    },
+    {
+      "id": "efrc-2024",
+      "year": 2024,
+      "source": "https://science.osti.gov/-/media/funding/pdf/Awards-Lists/2024/Awards-List-Spreadsheet---FY24-EFRC.pdf",
+      "sourceProjectCount": 10,
+      "includedProjectPhases": 4,
+      "newProjectPhases": 3,
+      "alreadyPresentPhases": 1,
+      "excludedProjectCount": 6,
+      "selectionRule": "Centers explicitly focused on quantum materials, quantum coherence, molecular quantum states, topological matter, quantum sensing, or magnonics; not all materials/energy EFRCs.",
+      "amountCoverage": "Mixed known institutional announcements and undisclosed roster phase amounts"
+    },
+    {
+      "id": "sc-2026-mixed-roster",
+      "year": 2026,
+      "source": "https://science.osti.gov/Funding-Opportunities/Award/awards%20announcement",
+      "sourceProjectCount": 217,
+      "includedProjectPhases": 13,
+      "excludedProjectCount": 204,
+      "selectedSourceRows": [
+        19,
+        46,
+        48,
+        62,
+        63,
+        64,
+        71,
+        84,
+        89,
+        107,
+        108,
+        159,
+        166
+      ],
+      "selectionRule": "Manual title screen for explicit condensed-matter quantum states, excitonic/correlated/magnetic/topological materials, superconducting conductors, and phonon/qubit-material sensing. General quantum algorithms, field theory, nuclear/fusion theory, workshops, generic semiconductor/energy materials and company sensors without a clear quantum-materials object are excluded."
+    }
+  ],
+  "requestedWindow": "2000–4 November 2026",
+  "actualPhaseYears": [
+    2008,
+    2026
+  ],
+  "knownPhaseAmounts": 35,
+  "unknownPhaseAmounts": 108,
+  "totalPhaseRecords": 143,
+  "limitations": [
+    "Complete within the five selected BES targeted-call rosters, not all federal or DOE awards. Roster phases do not provide expenditure totals.",
+    "2018/2019/2021 QIS call records include the complete named portfolio; broader QIS entries are explicitly distinguished from direct quantum-materials research.",
+    "From FY2022 BES QIS support is integrated into annual core calls and Early Career competitions; no comprehensive single quantum-materials grant roster or reproducible full PAMS export was obtained.",
+    "2000–2007 and many later individual awards remain uncovered. Historical examples begin in 2008. Absence means not collected, not no funding.",
+    "The 2026 EFRC $352m announcement is a solicitation and is excluded from award records. No recipient roster was located for that call as of 4 November 2026.",
+    "2026 mixed selections were manually screened by project title; 13 of 217 source rows included. No dollar amount inferred from the $320m program envelope.",
+    "Host links identify leads or documented collaborators, not institutional receipts. No consortium total is assigned to either lead or partner.",
+    "2014 BES portfolio support snapshots are retained separately and excluded from phase totals because annual support can overlap multi-year awards.",
+    "PAMS was identified as the official public award search but a full export was not obtained. SBIR/STTR, ARPA-E, isotope supply projects, all core BES grants, and unclassified national-lab funding work proposals are not exhaustively covered."
+  ],
+  "officialPortfolioContext": "https://science.osti.gov/bes/Research/qis",
+  "portfolioSnapshotCoverage": {
+    "explicitTitleCount": 11,
+    "annualSupportSnapshots": 9,
+    "multiYearPhaseAmounts": 2,
+    "multiYearAmountsIncludedOnceAsRecords": true,
+    "source": "https://science.osti.gov/-/media/bes/pdf/reports/2015/BES_FY2014_research_summaries.pdf"
+  }
+}

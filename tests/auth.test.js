@@ -51,7 +51,7 @@ test('bootstrap waits for unlock; About and Physics Map do not load publication 
     const document={body:{dataset:{view}},createElement(){return {};},head:{appendChild(s){loaded.push(s.src);s.onload();}}};
     const task=vm.runInNewContext(fs.readFileSync(path.join(root,'bootstrap.js'),'utf8'),{window:{QMAuth:{ready}},document,console});
     await Promise.resolve();assert.equal(loaded.length,0);resolve();await task;
-    if(view==='institutional-atlas')assert.deepEqual(loaded,['institutional-atlas/data/bundle.js?v=4','institutional-atlas/atlas-core.js?v=4','institutional-atlas/atlas.js?v=4']);
+    if(view==='institutional-atlas')assert.deepEqual(loaded,['institutional-atlas/data/bundle.js?v=5','institutional-atlas/atlas-core.js?v=5','institutional-atlas/atlas.js?v=5']);
     else if(view==='institutions')assert.deepEqual(loaded,['directory-core.js?v=2','directory.js?v=2']);
     else if(view==='about')assert.deepEqual(loaded,['about.js?v=1']);
     else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map.js?v=4']);

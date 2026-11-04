@@ -1,0 +1,2108 @@
+{
+  "schemaVersion": "1.0",
+  "createdAt": "2026-11-04",
+  "nodes": [
+    {
+      "id": "physical-sciences",
+      "label": "Physical sciences",
+      "url": "https://www.nature.com/subjects/physical-sciences",
+      "system": "nature-ontology",
+      "facets": [
+        "discipline"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/chemistry/nphys",
+        "https://www.nature.com/subjects/materials-science/nphys",
+        "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+        "https://www.nature.com/subjects/physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 0,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "physics",
+      "label": "Physics",
+      "url": "https://www.nature.com/subjects/physics",
+      "system": "nature-ontology",
+      "facets": [
+        "discipline"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/physics/nphys",
+        "https://www.nature.com/subjects/quantum-physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 1,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "chemistry",
+      "label": "Chemistry",
+      "url": "https://www.nature.com/subjects/chemistry",
+      "system": "nature-ontology",
+      "facets": [
+        "discipline"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/chemistry/nphys",
+        "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+        "https://www.nature.com/subjects/materials-chemistry/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 1,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "materials-science",
+      "label": "Materials science",
+      "url": "https://www.nature.com/subjects/materials-science",
+      "system": "nature-ontology",
+      "facets": [
+        "discipline"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/materials-for-devices/nphys",
+        "https://www.nature.com/subjects/materials-science/nphys",
+        "https://www.nature.com/subjects/nanoscale-materials/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 1,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "nanoscience-and-technology",
+      "label": "Nanoscience and technology",
+      "url": "https://www.nature.com/subjects/nanoscience-and-technology",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/graphene/nphys",
+        "https://www.nature.com/subjects/nanoscale-devices/nphys",
+        "https://www.nature.com/subjects/nanoscale-materials/nphys",
+        "https://www.nature.com/subjects/nanoscience-and-technology/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 1,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "condensed-matter-physics",
+      "label": "Condensed-matter physics",
+      "url": "https://www.nature.com/subjects/condensed-matter-physics",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+        "https://www.nature.com/subjects/ferroelectrics-and-multiferroics/nphys",
+        "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+        "https://www.nature.com/subjects/materials-science/nphys",
+        "https://www.nature.com/subjects/phase-transitions-and-critical-phenomena/nphys",
+        "https://www.nature.com/subjects/physics/nphys",
+        "https://www.nature.com/subjects/semiconductors/nphys",
+        "https://www.nature.com/subjects/superconducting-properties-and-materials/nphys",
+        "https://www.nature.com/subjects/topological-matter/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 2,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "quantum-physics",
+      "label": "Quantum physics",
+      "url": "https://www.nature.com/subjects/quantum-physics",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/physics/nphys",
+        "https://www.nature.com/subjects/quantum-information/nphys",
+        "https://www.nature.com/subjects/quantum-physics/nphys",
+        "https://www.nature.com/subjects/quantum-simulation/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 2,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "materials-chemistry",
+      "label": "Materials chemistry",
+      "url": "https://www.nature.com/subjects/materials-chemistry",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/chemistry/nphys",
+        "https://www.nature.com/subjects/graphene/nphys",
+        "https://www.nature.com/subjects/materials-chemistry/nphys",
+        "https://www.nature.com/subjects/superconductors/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 2,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "inorganic-chemistry",
+      "label": "Inorganic chemistry",
+      "url": "https://www.nature.com/subjects/inorganic-chemistry",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/chemistry/nphys",
+        "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+        "https://www.nature.com/subjects/solid-state-chemistry/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 2,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "solid-state-chemistry",
+      "label": "Solid-state chemistry",
+      "url": "https://www.nature.com/subjects/solid-state-chemistry",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+        "https://www.nature.com/subjects/solid-state-chemistry/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "materials-for-devices",
+      "label": "Materials for devices",
+      "url": "https://www.nature.com/subjects/materials-for-devices",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family",
+        "application/device"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/electronic-devices/nphys",
+        "https://www.nature.com/subjects/materials-for-devices/nphys",
+        "https://www.nature.com/subjects/materials-science/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 2,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "nanoscale-materials",
+      "label": "Nanoscale materials",
+      "url": "https://www.nature.com/subjects/nanoscale-materials",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+        "https://www.nature.com/subjects/graphene/nphys",
+        "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+        "https://www.nature.com/subjects/materials-science/nphys",
+        "https://www.nature.com/subjects/nanoscale-materials/nphys",
+        "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+        "https://www.nature.com/subjects/quantum-dots/nphys",
+        "https://www.nature.com/subjects/synthesis-and-processing/nphys",
+        "https://www.nature.com/subjects/two-dimensional-materials/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 2,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "nanoscale-devices",
+      "label": "Nanoscale devices",
+      "url": "https://www.nature.com/subjects/nanoscale-devices",
+      "system": "nature-ontology",
+      "facets": [
+        "application/device"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/electronic-devices/nphys",
+        "https://www.nature.com/subjects/nanoscale-devices/nphys",
+        "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+        "https://www.nature.com/subjects/quantum-information/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 2,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "electronic-properties-and-materials",
+      "label": "Electronic properties and materials",
+      "url": "https://www.nature.com/subjects/electronic-properties-and-materials",
+      "system": "nature-ontology",
+      "facets": [
+        "property",
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+        "https://www.nature.com/subjects/nanoscale-materials/nphys"
+      ],
+      "isSeedArticleSubject": true,
+      "articleCountScope": "Collected Nature Portfolio channel research/review/protocol records only; see separate collection coverage.",
+      "displayLayer": 3,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "electronic-devices",
+      "label": "Electronic devices",
+      "url": "https://www.nature.com/subjects/electronic-devices",
+      "system": "nature-ontology",
+      "facets": [
+        "application/device"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/electronic-devices/nphys",
+        "https://www.nature.com/subjects/materials-for-devices/nphys",
+        "https://www.nature.com/subjects/nanoscale-devices/nphys"
+      ],
+      "isSeedArticleSubject": true,
+      "articleCountScope": "Collected Nature Portfolio channel research/review/protocol records only; see separate collection coverage.",
+      "displayLayer": 3,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "ferroelectrics-and-multiferroics",
+      "label": "Ferroelectrics and multiferroics",
+      "url": "https://www.nature.com/subjects/ferroelectrics-and-multiferroics",
+      "system": "nature-ontology",
+      "facets": [
+        "property",
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/ferroelectrics-and-multiferroics/nphys"
+      ],
+      "isSeedArticleSubject": true,
+      "articleCountScope": "Collected Nature Portfolio channel research/review/protocol records only; see separate collection coverage.",
+      "displayLayer": 3,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "superconducting-properties-and-materials",
+      "label": "Superconducting properties and materials",
+      "url": "https://www.nature.com/subjects/superconducting-properties-and-materials",
+      "system": "nature-ontology",
+      "facets": [
+        "phenomenon",
+        "property",
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/superconducting-properties-and-materials/nphys"
+      ],
+      "isSeedArticleSubject": true,
+      "articleCountScope": "Collected Nature Portfolio channel research/review/protocol records only; see separate collection coverage.",
+      "displayLayer": 3,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "superconductors",
+      "label": "Superconductors",
+      "url": "https://www.nature.com/subjects/superconductors",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/materials-chemistry/nphys",
+        "https://www.nature.com/subjects/superconductors/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "electronic-materials",
+      "label": "Electronic materials",
+      "url": "https://www.nature.com/subjects/electronic-materials",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/materials-chemistry/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "magnetic-materials",
+      "label": "Magnetic materials",
+      "url": "https://www.nature.com/subjects/magnetic-materials",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/materials-chemistry/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "topological-matter",
+      "label": "Topological matter",
+      "url": "https://www.nature.com/subjects/topological-matter",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area",
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/topological-defects/nphys",
+        "https://www.nature.com/subjects/topological-insulators/nphys",
+        "https://www.nature.com/subjects/topological-matter/nphys"
+      ],
+      "isSeedArticleSubject": true,
+      "articleCountScope": "Collected Nature Portfolio channel research/review/protocol records only; see separate collection coverage.",
+      "displayLayer": 3,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "topological-defects",
+      "label": "Topological defects",
+      "url": "https://www.nature.com/subjects/topological-defects",
+      "system": "nature-ontology",
+      "facets": [
+        "phenomenon",
+        "structure"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/topological-defects/nphys",
+        "https://www.nature.com/subjects/topological-matter/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "topological-insulators",
+      "label": "Topological insulators",
+      "url": "https://www.nature.com/subjects/topological-insulators",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/topological-insulators/nphys",
+        "https://www.nature.com/subjects/topological-matter/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "two-dimensional-materials",
+      "label": "Two-dimensional materials",
+      "url": "https://www.nature.com/subjects/two-dimensional-materials",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family",
+        "structure"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/nanoscale-materials/nphys",
+        "https://www.nature.com/subjects/semiconductors/nphys",
+        "https://www.nature.com/subjects/two-dimensional-materials/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "magnetic-properties-and-materials",
+      "label": "Magnetic properties and materials",
+      "url": "https://www.nature.com/subjects/magnetic-properties-and-materials",
+      "system": "nature-ontology",
+      "facets": [
+        "property",
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+        "https://www.nature.com/subjects/nanoscale-materials/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "synthesis-and-processing",
+      "label": "Synthesis and processing",
+      "url": "https://www.nature.com/subjects/synthesis-and-processing",
+      "system": "nature-ontology",
+      "facets": [
+        "method"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/nanoscale-materials/nphys",
+        "https://www.nature.com/subjects/synthesis-and-processing/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "semiconductors",
+      "label": "Semiconductors",
+      "url": "https://www.nature.com/subjects/semiconductors",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/quantum-dots/nphys",
+        "https://www.nature.com/subjects/semiconductors/nphys",
+        "https://www.nature.com/subjects/two-dimensional-materials/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "spintronics",
+      "label": "Spintronics",
+      "url": "https://www.nature.com/subjects/spintronics",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area",
+        "application/device"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "quantum-hall",
+      "label": "Quantum Hall",
+      "url": "https://www.nature.com/subjects/quantum-hall",
+      "system": "nature-ontology",
+      "facets": [
+        "phenomenon"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "phase-transitions-and-critical-phenomena",
+      "label": "Phase transitions and critical phenomena",
+      "url": "https://www.nature.com/subjects/phase-transitions-and-critical-phenomena",
+      "system": "nature-ontology",
+      "facets": [
+        "phenomenon"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+        "https://www.nature.com/subjects/phase-transitions-and-critical-phenomena/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "quantum-fluids-and-solids",
+      "label": "Quantum fluids and solids",
+      "url": "https://www.nature.com/subjects/quantum-fluids-and-solids",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area",
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "ferromagnetism",
+      "label": "Ferromagnetism",
+      "url": "https://www.nature.com/subjects/ferromagnetism",
+      "system": "nature-ontology",
+      "facets": [
+        "phenomenon",
+        "property"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/condensed-matter-physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "quantum-simulation",
+      "label": "Quantum simulation",
+      "url": "https://www.nature.com/subjects/quantum-simulation",
+      "system": "nature-ontology",
+      "facets": [
+        "method",
+        "research-area"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/quantum-physics/nphys",
+        "https://www.nature.com/subjects/quantum-simulation/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "quantum-information",
+      "label": "Quantum information",
+      "url": "https://www.nature.com/subjects/quantum-information",
+      "system": "nature-ontology",
+      "facets": [
+        "research-area",
+        "application/device"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/nanoscale-devices/nphys",
+        "https://www.nature.com/subjects/quantum-information/nphys",
+        "https://www.nature.com/subjects/quantum-physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "qubits",
+      "label": "Qubits",
+      "url": "https://www.nature.com/subjects/qubits",
+      "system": "nature-ontology",
+      "facets": [
+        "research-object"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/quantum-physics/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "graphene",
+      "label": "Graphene",
+      "url": "https://www.nature.com/subjects/graphene",
+      "system": "nature-ontology",
+      "facets": [
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/graphene/nphys",
+        "https://www.nature.com/subjects/materials-chemistry/nphys",
+        "https://www.nature.com/subjects/nanoscale-materials/nphys",
+        "https://www.nature.com/subjects/nanoscience-and-technology/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "quantum-dots",
+      "label": "Quantum dots",
+      "url": "https://www.nature.com/subjects/quantum-dots",
+      "system": "nature-ontology",
+      "facets": [
+        "structure",
+        "material-family"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/nanoscale-materials/nphys",
+        "https://www.nature.com/subjects/quantum-dots/nphys",
+        "https://www.nature.com/subjects/semiconductors/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "synthesis-of-graphene",
+      "label": "Synthesis of graphene",
+      "url": "https://www.nature.com/subjects/synthesis-of-graphene",
+      "system": "nature-ontology",
+      "facets": [
+        "method"
+      ],
+      "facetBasis": "Editorial reading aid; these facet labels are not supplied by Nature. Multiple facets may apply.",
+      "sourceUrls": [
+        "https://www.nature.com/subjects/graphene/nphys"
+      ],
+      "isSeedArticleSubject": false,
+      "articleCountScope": "Not counted in the initial five-channel collection.",
+      "displayLayer": 4,
+      "systemLabel": "Nature ontology"
+    },
+    {
+      "id": "topological-phases-in-quantum-systems",
+      "label": "Topological Phases in Quantum Systems",
+      "url": "https://www.nature.com/subjects/topological-phases-in-quantum-systems",
+      "system": "nature-citation-topic",
+      "facets": [
+        "research-topic"
+      ],
+      "facetBasis": "Editorial reading aid; not a Nature ontology node.",
+      "sourceUrls": [
+        "https://www.nature.com/articles/nphys4274",
+        "https://www.nature.com/nature-index/topics/l4/topological-phases-in-quantum-systems"
+      ],
+      "isSeedArticleSubject": false,
+      "isSeedArticleRelatedCitationTopic": true,
+      "displayLayer": 3,
+      "articleCountScope": "Separate citation-topic channel; not interchangeable with the five Nature ontology subject searches. Nature Index trend counts cover all publications and must not be used as Nature-only counts.",
+      "systemLabel": "Nature citation topic"
+    }
+  ],
+  "edges": [
+    {
+      "source": "physical-sciences",
+      "target": "chemistry",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/chemistry/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/chemistry/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Physical sciences",
+          "linkUrl": "https://www.nature.com/subjects/physical-sciences/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/chemistry.html",
+          "cacheSha256": "a8af2edcf748c62d63eb4a4987bbd941cd7fa562bee12072ca0fb316cea45fc4"
+        }
+      ]
+    },
+    {
+      "source": "chemistry",
+      "target": "inorganic-chemistry",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/chemistry/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/chemistry/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Inorganic chemistry",
+          "linkUrl": "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/chemistry.html",
+          "cacheSha256": "a8af2edcf748c62d63eb4a4987bbd941cd7fa562bee12072ca0fb316cea45fc4"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Chemistry",
+          "linkUrl": "https://www.nature.com/subjects/chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/inorganic-chemistry.html",
+          "cacheSha256": "f043f0c50e2b9c302b2f44414e0616d52d49eea916a4c3e4da47fab36faaec30"
+        }
+      ]
+    },
+    {
+      "source": "chemistry",
+      "target": "materials-chemistry",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/chemistry/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/chemistry/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Materials chemistry",
+          "linkUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/chemistry.html",
+          "cacheSha256": "a8af2edcf748c62d63eb4a4987bbd941cd7fa562bee12072ca0fb316cea45fc4"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Chemistry",
+          "linkUrl": "https://www.nature.com/subjects/chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-chemistry.html",
+          "cacheSha256": "9d29ad2f54ee49ceee9bcd5b86f626a926b32da18a0023e5d7ab9b97d271b49f"
+        }
+      ]
+    },
+    {
+      "source": "materials-science",
+      "target": "condensed-matter-physics",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Materials science",
+          "linkUrl": "https://www.nature.com/subjects/materials-science/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-science/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-science.html",
+          "cacheSha256": "a622bc5d881753ec43ee678e10a7a85d8554d20ad53374673e938e9291316b0a"
+        }
+      ]
+    },
+    {
+      "source": "physics",
+      "target": "condensed-matter-physics",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Physics",
+          "linkUrl": "https://www.nature.com/subjects/physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/physics.html",
+          "cacheSha256": "e3707da616770de28c38e02f3c125173e841d51d39cdb348a73084041a4743da"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "electronic-properties-and-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Electronic properties and materials",
+          "linkUrl": "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/electronic-properties-and-materials.html",
+          "cacheSha256": "e8117f42090d5fc95ce61359989ca5fd4ba507d16a45261ed72d711927aac62a"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "ferroelectrics-and-multiferroics",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Ferroelectrics and multiferroics",
+          "linkUrl": "https://www.nature.com/subjects/ferroelectrics-and-multiferroics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/ferroelectrics-and-multiferroics/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/ferroelectrics-and-multiferroics.html",
+          "cacheSha256": "43680eda24ddc40faa4d0020dbfb82606a6bc8cb5b31ff244e3f0d9a1832712c"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "ferromagnetism",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Ferromagnetism",
+          "linkUrl": "https://www.nature.com/subjects/ferromagnetism/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "magnetic-properties-and-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Magnetic properties and materials",
+          "linkUrl": "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/magnetic-properties-and-materials.html",
+          "cacheSha256": "c231283efc1e1b88626956c8f39a19e4267c64c2f0af097e20a5856ac5227e57"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "phase-transitions-and-critical-phenomena",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Phase transitions and critical phenomena",
+          "linkUrl": "https://www.nature.com/subjects/phase-transitions-and-critical-phenomena/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/phase-transitions-and-critical-phenomena/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/phase-transitions-and-critical-phenomena.html",
+          "cacheSha256": "78c031dd714f38ab506c54fa726181bacdab2ad959ad8cd830e49934fd1069ce"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "quantum-fluids-and-solids",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum fluids and solids",
+          "linkUrl": "https://www.nature.com/subjects/quantum-fluids-and-solids/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "quantum-hall",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum Hall",
+          "linkUrl": "https://www.nature.com/subjects/quantum-hall/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "semiconductors",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Semiconductors",
+          "linkUrl": "https://www.nature.com/subjects/semiconductors/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/semiconductors/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/semiconductors.html",
+          "cacheSha256": "1bc700b8773adbb5964128b0b294a7e7123c99e26fd66fff63bba84a9af64877"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "spintronics",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Spintronics",
+          "linkUrl": "https://www.nature.com/subjects/spintronics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "superconducting-properties-and-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Superconducting properties and materials",
+          "linkUrl": "https://www.nature.com/subjects/superconducting-properties-and-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/superconducting-properties-and-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/superconducting-properties-and-materials.html",
+          "cacheSha256": "51d4a3cf5dcfddba2ec75e659701c580bd6bb6f87a8a97f0bdd03a80f39762ff"
+        }
+      ]
+    },
+    {
+      "source": "condensed-matter-physics",
+      "target": "topological-matter",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Topological matter",
+          "linkUrl": "https://www.nature.com/subjects/topological-matter/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/condensed-matter-physics.html",
+          "cacheSha256": "e9f0d40d45bf1a3430f7041c4f74476e54a2f5ae3db238aac0e41172e86f1ea3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/topological-matter/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Condensed-matter physics",
+          "linkUrl": "https://www.nature.com/subjects/condensed-matter-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/topological-matter.html",
+          "cacheSha256": "816fedade882d6ad8a23032638d3fd191b1bf931e328d784a307d7a8e6eafcff"
+        }
+      ]
+    },
+    {
+      "source": "materials-for-devices",
+      "target": "electronic-devices",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/electronic-devices/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/electronic-devices/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Materials for devices",
+          "linkUrl": "https://www.nature.com/subjects/materials-for-devices/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/electronic-devices.html",
+          "cacheSha256": "97a3771533aaeda58c98026e902e26bbd3011531026ad7dc10827004555851f4"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-for-devices/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Electronic devices",
+          "linkUrl": "https://www.nature.com/subjects/electronic-devices/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-for-devices.html",
+          "cacheSha256": "63c27d3094e601fd8ea1f6a9e308cb4ab0d39418abeefb347d9589dd4caefa4b"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-devices",
+      "target": "electronic-devices",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/electronic-devices/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/electronic-devices/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale devices",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/electronic-devices.html",
+          "cacheSha256": "97a3771533aaeda58c98026e902e26bbd3011531026ad7dc10827004555851f4"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Electronic devices",
+          "linkUrl": "https://www.nature.com/subjects/electronic-devices/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-devices.html",
+          "cacheSha256": "fd706322ef42df340a8e8bc13103a92f9130066eb72aa6fecd7bdceaa0a03737"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-materials",
+      "target": "electronic-properties-and-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/electronic-properties-and-materials.html",
+          "cacheSha256": "e8117f42090d5fc95ce61359989ca5fd4ba507d16a45261ed72d711927aac62a"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Electronic properties and materials",
+          "linkUrl": "https://www.nature.com/subjects/electronic-properties-and-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        }
+      ]
+    },
+    {
+      "source": "materials-chemistry",
+      "target": "graphene",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Materials chemistry",
+          "linkUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/graphene.html",
+          "cacheSha256": "c11f9e3f045a699874cca9360e33396f08d861d0860828c6248288d676105f15"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Graphene",
+          "linkUrl": "https://www.nature.com/subjects/graphene/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-chemistry.html",
+          "cacheSha256": "9d29ad2f54ee49ceee9bcd5b86f626a926b32da18a0023e5d7ab9b97d271b49f"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-materials",
+      "target": "graphene",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/graphene.html",
+          "cacheSha256": "c11f9e3f045a699874cca9360e33396f08d861d0860828c6248288d676105f15"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Graphene",
+          "linkUrl": "https://www.nature.com/subjects/graphene/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        }
+      ]
+    },
+    {
+      "source": "nanoscience-and-technology",
+      "target": "graphene",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscience and technology",
+          "linkUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/graphene.html",
+          "cacheSha256": "c11f9e3f045a699874cca9360e33396f08d861d0860828c6248288d676105f15"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Graphene",
+          "linkUrl": "https://www.nature.com/subjects/graphene/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscience-and-technology.html",
+          "cacheSha256": "8ff8798a89dbfde95967dce83c65705f2ff3301c3f4986073cb287b4fce2348a"
+        }
+      ]
+    },
+    {
+      "source": "graphene",
+      "target": "synthesis-of-graphene",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/graphene/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Synthesis of graphene",
+          "linkUrl": "https://www.nature.com/subjects/synthesis-of-graphene/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/graphene.html",
+          "cacheSha256": "c11f9e3f045a699874cca9360e33396f08d861d0860828c6248288d676105f15"
+        }
+      ]
+    },
+    {
+      "source": "inorganic-chemistry",
+      "target": "solid-state-chemistry",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Solid-state chemistry",
+          "linkUrl": "https://www.nature.com/subjects/solid-state-chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/inorganic-chemistry.html",
+          "cacheSha256": "f043f0c50e2b9c302b2f44414e0616d52d49eea916a4c3e4da47fab36faaec30"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/solid-state-chemistry/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Inorganic chemistry",
+          "linkUrl": "https://www.nature.com/subjects/inorganic-chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/solid-state-chemistry.html",
+          "cacheSha256": "8ef55ebc82b6603c23539a096da9989423b7ad8f0d3be2afe91c119ae6edd710"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-materials",
+      "target": "magnetic-properties-and-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/magnetic-properties-and-materials.html",
+          "cacheSha256": "c231283efc1e1b88626956c8f39a19e4267c64c2f0af097e20a5856ac5227e57"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Magnetic properties and materials",
+          "linkUrl": "https://www.nature.com/subjects/magnetic-properties-and-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        }
+      ]
+    },
+    {
+      "source": "materials-chemistry",
+      "target": "electronic-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Electronic materials",
+          "linkUrl": "https://www.nature.com/subjects/electronic-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-chemistry.html",
+          "cacheSha256": "9d29ad2f54ee49ceee9bcd5b86f626a926b32da18a0023e5d7ab9b97d271b49f"
+        }
+      ]
+    },
+    {
+      "source": "materials-chemistry",
+      "target": "magnetic-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Magnetic materials",
+          "linkUrl": "https://www.nature.com/subjects/magnetic-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-chemistry.html",
+          "cacheSha256": "9d29ad2f54ee49ceee9bcd5b86f626a926b32da18a0023e5d7ab9b97d271b49f"
+        }
+      ]
+    },
+    {
+      "source": "materials-chemistry",
+      "target": "superconductors",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Superconductors",
+          "linkUrl": "https://www.nature.com/subjects/superconductors/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-chemistry.html",
+          "cacheSha256": "9d29ad2f54ee49ceee9bcd5b86f626a926b32da18a0023e5d7ab9b97d271b49f"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/superconductors/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Materials chemistry",
+          "linkUrl": "https://www.nature.com/subjects/materials-chemistry/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/superconductors.html",
+          "cacheSha256": "548dff1adb72b4cbf3c1f1ab0b299e9afc6fb059daa400ea904c870e97adbb87"
+        }
+      ]
+    },
+    {
+      "source": "materials-science",
+      "target": "materials-for-devices",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/materials-for-devices/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-for-devices/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Materials science",
+          "linkUrl": "https://www.nature.com/subjects/materials-science/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-for-devices.html",
+          "cacheSha256": "63c27d3094e601fd8ea1f6a9e308cb4ab0d39418abeefb347d9589dd4caefa4b"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-science/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Materials for devices",
+          "linkUrl": "https://www.nature.com/subjects/materials-for-devices/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-science.html",
+          "cacheSha256": "a622bc5d881753ec43ee678e10a7a85d8554d20ad53374673e938e9291316b0a"
+        }
+      ]
+    },
+    {
+      "source": "physical-sciences",
+      "target": "materials-science",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/materials-science/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-science/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Physical sciences",
+          "linkUrl": "https://www.nature.com/subjects/physical-sciences/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-science.html",
+          "cacheSha256": "a622bc5d881753ec43ee678e10a7a85d8554d20ad53374673e938e9291316b0a"
+        }
+      ]
+    },
+    {
+      "source": "materials-science",
+      "target": "nanoscale-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/materials-science/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/materials-science/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/materials-science.html",
+          "cacheSha256": "a622bc5d881753ec43ee678e10a7a85d8554d20ad53374673e938e9291316b0a"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Materials science",
+          "linkUrl": "https://www.nature.com/subjects/materials-science/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        }
+      ]
+    },
+    {
+      "source": "nanoscience-and-technology",
+      "target": "nanoscale-devices",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscience and technology",
+          "linkUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-devices.html",
+          "cacheSha256": "fd706322ef42df340a8e8bc13103a92f9130066eb72aa6fecd7bdceaa0a03737"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Nanoscale devices",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscience-and-technology.html",
+          "cacheSha256": "8ff8798a89dbfde95967dce83c65705f2ff3301c3f4986073cb287b4fce2348a"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-devices",
+      "target": "quantum-information",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum information",
+          "linkUrl": "https://www.nature.com/subjects/quantum-information/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-devices.html",
+          "cacheSha256": "fd706322ef42df340a8e8bc13103a92f9130066eb72aa6fecd7bdceaa0a03737"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-information/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale devices",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-devices/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-information.html",
+          "cacheSha256": "864991a30be2a6e8d37f54b5356cdb5f2add587dc0fead01818a60bffca25485"
+        }
+      ]
+    },
+    {
+      "source": "nanoscience-and-technology",
+      "target": "nanoscale-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscience and technology",
+          "linkUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscience-and-technology.html",
+          "cacheSha256": "8ff8798a89dbfde95967dce83c65705f2ff3301c3f4986073cb287b4fce2348a"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-materials",
+      "target": "quantum-dots",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum dots",
+          "linkUrl": "https://www.nature.com/subjects/quantum-dots/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-dots/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-dots.html",
+          "cacheSha256": "687dbddcc64e1fd044d029b272cc10207beaebf7a8003aa4a84b17bac780bb70"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-materials",
+      "target": "synthesis-and-processing",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Synthesis and processing",
+          "linkUrl": "https://www.nature.com/subjects/synthesis-and-processing/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/synthesis-and-processing/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/synthesis-and-processing.html",
+          "cacheSha256": "8970acebd5da4a54809c3c52507c49e9f63bba5b544ce6ff6a7b9d2810bcb25f"
+        }
+      ]
+    },
+    {
+      "source": "nanoscale-materials",
+      "target": "two-dimensional-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Two-dimensional materials",
+          "linkUrl": "https://www.nature.com/subjects/two-dimensional-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscale-materials.html",
+          "cacheSha256": "4f202f26fafdf3c85f952b7af3755c0819ea0ed20149c8ae467233958a495bb3"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/two-dimensional-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Nanoscale materials",
+          "linkUrl": "https://www.nature.com/subjects/nanoscale-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/two-dimensional-materials.html",
+          "cacheSha256": "1fe44ccd990bbcebf2a64cdc75910050bdb5dd328626104ecf7e2ba10a79c8d0"
+        }
+      ]
+    },
+    {
+      "source": "physical-sciences",
+      "target": "nanoscience-and-technology",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/nanoscience-and-technology/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Physical sciences",
+          "linkUrl": "https://www.nature.com/subjects/physical-sciences/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/nanoscience-and-technology.html",
+          "cacheSha256": "8ff8798a89dbfde95967dce83c65705f2ff3301c3f4986073cb287b4fce2348a"
+        }
+      ]
+    },
+    {
+      "source": "physical-sciences",
+      "target": "physics",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/physics/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/physics/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Physical sciences",
+          "linkUrl": "https://www.nature.com/subjects/physical-sciences/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/physics.html",
+          "cacheSha256": "e3707da616770de28c38e02f3c125173e841d51d39cdb348a73084041a4743da"
+        }
+      ]
+    },
+    {
+      "source": "physics",
+      "target": "quantum-physics",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum physics",
+          "linkUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/physics.html",
+          "cacheSha256": "e3707da616770de28c38e02f3c125173e841d51d39cdb348a73084041a4743da"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Physics",
+          "linkUrl": "https://www.nature.com/subjects/physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-physics.html",
+          "cacheSha256": "e83275daf64152cd622e874a3486e07faf5875ba671565727487128a4afff83e"
+        }
+      ]
+    },
+    {
+      "source": "semiconductors",
+      "target": "quantum-dots",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/quantum-dots/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-dots/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Semiconductors",
+          "linkUrl": "https://www.nature.com/subjects/semiconductors/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-dots.html",
+          "cacheSha256": "687dbddcc64e1fd044d029b272cc10207beaebf7a8003aa4a84b17bac780bb70"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/semiconductors/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum dots",
+          "linkUrl": "https://www.nature.com/subjects/quantum-dots/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/semiconductors.html",
+          "cacheSha256": "1bc700b8773adbb5964128b0b294a7e7123c99e26fd66fff63bba84a9af64877"
+        }
+      ]
+    },
+    {
+      "source": "quantum-physics",
+      "target": "quantum-information",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/quantum-information/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-information/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Quantum physics",
+          "linkUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-information.html",
+          "cacheSha256": "864991a30be2a6e8d37f54b5356cdb5f2add587dc0fead01818a60bffca25485"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum information",
+          "linkUrl": "https://www.nature.com/subjects/quantum-information/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-physics.html",
+          "cacheSha256": "e83275daf64152cd622e874a3486e07faf5875ba671565727487128a4afff83e"
+        }
+      ]
+    },
+    {
+      "source": "quantum-physics",
+      "target": "quantum-simulation",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Quantum simulation",
+          "linkUrl": "https://www.nature.com/subjects/quantum-simulation/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-physics.html",
+          "cacheSha256": "e83275daf64152cd622e874a3486e07faf5875ba671565727487128a4afff83e"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-simulation/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Quantum physics",
+          "linkUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-simulation.html",
+          "cacheSha256": "748ef24b1f1b0e2908895216f559b8dd58ee0463c2a39a20d7ba6c8f7623ff94"
+        }
+      ]
+    },
+    {
+      "source": "quantum-physics",
+      "target": "qubits",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/quantum-physics/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Qubits",
+          "linkUrl": "https://www.nature.com/subjects/qubits/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/quantum-physics.html",
+          "cacheSha256": "e83275daf64152cd622e874a3486e07faf5875ba671565727487128a4afff83e"
+        }
+      ]
+    },
+    {
+      "source": "semiconductors",
+      "target": "two-dimensional-materials",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/semiconductors/nphys",
+      "evidenceLabel": "Browse narrower subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/semiconductors/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Two-dimensional materials",
+          "linkUrl": "https://www.nature.com/subjects/two-dimensional-materials/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/semiconductors.html",
+          "cacheSha256": "1bc700b8773adbb5964128b0b294a7e7123c99e26fd66fff63bba84a9af64877"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/two-dimensional-materials/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Semiconductors",
+          "linkUrl": "https://www.nature.com/subjects/semiconductors/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/two-dimensional-materials.html",
+          "cacheSha256": "1fe44ccd990bbcebf2a64cdc75910050bdb5dd328626104ecf7e2ba10a79c8d0"
+        }
+      ]
+    },
+    {
+      "source": "topological-matter",
+      "target": "topological-defects",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/topological-defects/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/topological-defects/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Topological matter",
+          "linkUrl": "https://www.nature.com/subjects/topological-matter/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/topological-defects.html",
+          "cacheSha256": "a9fd85c08de2f7306570027812983fa7e51ce9885946c80765ade658847b54ec"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/topological-matter/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Topological defects",
+          "linkUrl": "https://www.nature.com/subjects/topological-defects/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/topological-matter.html",
+          "cacheSha256": "816fedade882d6ad8a23032638d3fd191b1bf931e328d784a307d7a8e6eafcff"
+        }
+      ]
+    },
+    {
+      "source": "topological-matter",
+      "target": "topological-insulators",
+      "relation": "broaderThan",
+      "system": "Nature ontology",
+      "basis": "publisher-explicit-hierarchy",
+      "sourceUrl": "https://www.nature.com/subjects/topological-insulators/nphys",
+      "evidenceLabel": "Browse broader subjects",
+      "evidence": [
+        {
+          "sourceUrl": "https://www.nature.com/subjects/topological-insulators/nphys",
+          "sourceSection": "Browse broader subjects",
+          "linkLabel": "Topological matter",
+          "linkUrl": "https://www.nature.com/subjects/topological-matter/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/topological-insulators.html",
+          "cacheSha256": "919e1242fdb3a5b6c2c4fa6b3ff56adb454e6f53dc0cdba0c0ea323edb89d230"
+        },
+        {
+          "sourceUrl": "https://www.nature.com/subjects/topological-matter/nphys",
+          "sourceSection": "Browse narrower subjects",
+          "linkLabel": "Topological insulators",
+          "linkUrl": "https://www.nature.com/subjects/topological-insulators/nphys",
+          "retrievedAt": "2026-11-04",
+          "cacheFile": "subject-structure-cache/topological-matter.html",
+          "cacheSha256": "816fedade882d6ad8a23032638d3fd191b1bf931e328d784a307d7a8e6eafcff"
+        }
+      ]
+    }
+  ],
+  "seedArticle": {
+    "id": "10.1038/nphys4274",
+    "title": "Emergent functions of quantum materials",
+    "authors": [
+      "Yoshinori Tokura",
+      "Masashi Kawasaki",
+      "Naoto Nagaosa"
+    ],
+    "publicationDate": "2017-09-25",
+    "year": 2017,
+    "journal": "Nature Physics",
+    "volume": "13",
+    "pages": "1056–1068",
+    "url": "https://www.nature.com/articles/nphys4274",
+    "subjectAssignments": [
+      {
+        "subjectId": "electronic-devices",
+        "relation": "hasSubject",
+        "basis": "article dc.subject metadata and Explore related subjects anchor with data-track-type=Nature ontology",
+        "sourceUrl": "https://www.nature.com/articles/nphys4274"
+      },
+      {
+        "subjectId": "electronic-properties-and-materials",
+        "relation": "hasSubject",
+        "basis": "article dc.subject metadata and Explore related subjects anchor with data-track-type=Nature ontology",
+        "sourceUrl": "https://www.nature.com/articles/nphys4274"
+      },
+      {
+        "subjectId": "ferroelectrics-and-multiferroics",
+        "relation": "hasSubject",
+        "basis": "article dc.subject metadata and Explore related subjects anchor with data-track-type=Nature ontology",
+        "sourceUrl": "https://www.nature.com/articles/nphys4274"
+      },
+      {
+        "subjectId": "superconducting-properties-and-materials",
+        "relation": "hasSubject",
+        "basis": "article dc.subject metadata and Explore related subjects anchor with data-track-type=Nature ontology",
+        "sourceUrl": "https://www.nature.com/articles/nphys4274"
+      },
+      {
+        "subjectId": "topological-matter",
+        "relation": "hasSubject",
+        "basis": "article dc.subject metadata and Explore related subjects anchor with data-track-type=Nature ontology",
+        "sourceUrl": "https://www.nature.com/articles/nphys4274"
+      }
+    ],
+    "relatedCitationTopics": [
+      {
+        "subjectId": "topological-phases-in-quantum-systems",
+        "relation": "hasRelatedCitationTopic",
+        "basis": "Explore related subjects anchor with data-track-type=Nature citation topic; absent from the five dc.subject metadata values",
+        "sourceUrl": "https://www.nature.com/articles/nphys4274"
+      }
+    ]
+  },
+  "citationTopicHierarchy": {
+    "system": "Nature citation topic / Nature Research Intelligence topics",
+    "sourceUrl": "https://www.nature.com/nature-index/topics/l4/topological-phases-in-quantum-systems",
+    "basis": "Official breadcrumb links on the topic page; this is a separate scheme, not linked by assumed equivalence to Nature ontology nodes.",
+    "levels": [
+      {
+        "label": "Physical sciences",
+        "url": "https://www.nature.com/nature-index/topics/topic-explorer#physical-sciences"
+      },
+      {
+        "label": "Quantum Physics",
+        "url": "https://www.nature.com/nature-index/topics/l2/quantum-physics"
+      },
+      {
+        "label": "Quantum Technologies",
+        "url": "https://www.nature.com/nature-index/topics/l3/quantum-technologies"
+      },
+      {
+        "label": "Topological Phases in Quantum Systems",
+        "url": "https://www.nature.com/nature-index/topics/l4/topological-phases-in-quantum-systems"
+      }
+    ],
+    "countWarning": "Nature Index topic trends explicitly cover articles across all publications, not only Nature journals or the selected subject channel."
+  },
+  "coverage": {
+    "selection": "Purposeful connected subset around the seed article’s five Nature ontology subjects, with physics, chemistry, materials science, nanoscience, and selected related topics. Not a complete Nature subject taxonomy.",
+    "hierarchyBasis": "Every graph edge is an explicit Browse broader subjects or Browse narrower subjects link on an official Nature Physics subject page. Broader/narrower is an editorial browsing hierarchy, not a historical lineage or proof of disciplinary causation.",
+    "nodeFacetBasis": "Node facets such as property, phenomenon, material-family, method, and application/device are our non-exclusive reading aids. They must be labeled as editorial facets and must not be presented as publisher-supplied ontological types.",
+    "multiParentPolicy": "Preserve every verified parent-child edge whose endpoints are in this selected graph. The same topic may have several parents. Other official parents outside the selected graph are recorded in omittedHierarchyEdges.",
+    "countWarning": "The selected Nature channels contain research beyond quantum materials. Their counts are channel publication counts, not a quantum-materials-only corpus, and overlapping subject counts must not be summed without article-level deduplication.",
+    "noInventedQuantumMaterialsNode": "No official quantum-materials ontology node is asserted here. An interface may add a clearly marked editorial umbrella node and source its conceptual connections separately.",
+    "quantumConfinement": "A direct /subjects/quantum-confinement/nphys probe returned HTTP 404 on 2026-11-04; no Nature hierarchy node or count is invented for it. Quantum dots remains a verified materials/structure node; a confinement mechanism link would require a separately sourced editorial relation.",
+    "retrievedAt": "2026-11-04",
+    "sourcePages": 29,
+    "includedNodeCount": 39,
+    "includedHierarchyEdgeCount": 47
+  }
+}

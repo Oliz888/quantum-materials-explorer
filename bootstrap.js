@@ -9,6 +9,12 @@
     });
   }
   try {
+    if(document.body.dataset.view==='knowledge-graph') {
+      await load('knowledge-graph/data/bundle.js?v=1');
+      await load('knowledge-graph/core.js?v=1');
+      await load('knowledge-graph/graph.js?v=1');
+      return;
+    }
     if(['physics-map','physics-map-v2'].includes(document.body.dataset.view)) {
       await load('physics-map-readings.js?v=1');
       await load('physics-map-data.js?v=2');

@@ -897,7 +897,7 @@
       "country": "United States",
       "funder": "Gordon and Betty Moore Foundation",
       "startYear": 2013,
-      "status": "Extended in 2025; investigator competitions scheduled through 2026",
+      "status": "2025 ten-year extension; 2026 theory-center continuation grants published; new investigator competitions underway",
       "focus": "Supports discovery-driven quantum materials research through people, experimental tools, synthesis, theory and collaboration.",
       "materials": "Focuses on emergent behavior, correlated electrons, entanglement, engineered quantum matter and non-equilibrium phenomena.",
       "topics": [
@@ -922,13 +922,14 @@
           "note": "Undated current page checked 2026-10-29. Current competition page covers synthesis, experiment and theory; fundamental emergence prioritized over near-term devices."
         }
       ],
-      "notes": "A private philanthropic initiative, not U.S. federal funding. The November 2026 theory call was still a scheduled future event on the 2026-10-29 verification date.",
-      "checkedDate": "2026-10-29",
-      "page": "programs",
-      "group": "Philanthropy & international networks",
+      "notes": "Private foundation funding. Specific grants are linked below; the $230 million initiative extension is context only and is not assigned to individual institutions.",
+      "checkedDate": "2026-11-04",
+      "page": "philanthropy",
+      "group": "Moore Foundation",
       "parentId": null,
       "pages": [
-        "programs"
+        "programs",
+        "philanthropy"
       ],
       "milestones": [
         {
@@ -940,16 +941,17 @@
         },
         {
           "year": 2025,
-          "title": "EPiQS receives a ten-year extension",
+          "title": "Moore approves $230 million, ten-year EPiQS extension",
           "type": "funding",
           "sourceUrl": "https://www.moore.org/initiative-strategy-detail?initiativeId=emergent-phenomena-in-quantum-systems",
-          "note": "Extension approved in 2025; scheduled future calls are not treated as completed awards.",
+          "note": "Initiative-level planned envelope; not added to individual grants or assigned to campuses.",
           "id": "moore-epiqs-event-2"
         }
       ],
       "hostIds": [],
       "locations": [],
-      "locationNote": "Distributed investigator and materials-synthesis network. The foundation headquarters is not a research-site proxy; individual awardees and host institutions would need separate mapping."
+      "locationNote": "Distributed research initiative: no foundation-headquarters pin. Recipient universities are linked through grant records.",
+      "funderType": "private-foundation"
     },
     {
       "id": "dod-muri",
@@ -5588,6 +5590,501 @@
         "fsu"
       ],
       "locationNote": "Approximate city point, not a building or laboratory coordinate. Source identifies the university location."
+    },
+    {
+      "id": "epiqs-theory-caltech",
+      "name": "EPiQS Theory Center — Caltech",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "California Institute of Technology",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2019,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8682.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8682.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8682",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8682",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "caltech"
+      ],
+      "locations": [
+        {
+          "label": "California Institute of Technology — Pasadena, California",
+          "lat": 34.14,
+          "lon": -118.14,
+          "sourceUrl": "https://www.pma.caltech.edu/about/contact",
+          "precision": "city",
+          "role": "University host",
+          "city": "Pasadena",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-theory-stanford",
+      "name": "EPiQS Theory Center — Stanford",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "Stanford University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2014,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8686.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8686.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8686",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8686",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF4302",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4302",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "stanford"
+      ],
+      "locations": [
+        {
+          "label": "Stanford University — Stanford, California",
+          "lat": 37.43,
+          "lon": -122.17,
+          "sourceUrl": "https://physics.stanford.edu/about/contact",
+          "precision": "city",
+          "role": "University host",
+          "city": "Stanford",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-theory-harvard",
+      "name": "EPiQS Theory Center — Harvard",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "Harvard University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2014,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8683.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8683.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8683",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8683",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF4306",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4306",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "harvard"
+      ],
+      "locations": [
+        {
+          "label": "Harvard University — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.physics.harvard.edu/contact",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Cambridge",
+          "state": "Massachusetts",
+          "stateCode": "MA",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-theory-mit",
+      "name": "EPiQS Theory Center — MIT",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "Massachusetts Institute of Technology",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2014,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8684.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8684.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8684",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8684",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF4303",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4303",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "mit"
+      ],
+      "locations": [
+        {
+          "label": "Massachusetts Institute of Technology — Cambridge, Massachusetts",
+          "lat": 42.37,
+          "lon": -71.11,
+          "sourceUrl": "https://www.mit.edu/contact/",
+          "precision": "city",
+          "role": "Joint host",
+          "city": "Cambridge",
+          "state": "Massachusetts",
+          "stateCode": "MA",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-theory-princeton",
+      "name": "EPiQS Theory Center — Princeton",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "Princeton University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2019,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8685.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8685.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8685",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8685",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "princeton"
+      ],
+      "locations": [
+        {
+          "label": "Princeton University — Princeton, New Jersey",
+          "lat": 40.36,
+          "lon": -74.67,
+          "sourceUrl": "https://president.princeton.edu/about-office",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Princeton",
+          "state": "New Jersey",
+          "stateCode": "NJ",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-theory-berkeley",
+      "name": "EPiQS Theory Center — UC Berkeley",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "University of California Berkeley",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2014,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8688.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8688.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8688",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8688",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF4307",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4307",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "berkeley"
+      ],
+      "locations": [
+        {
+          "label": "University of California Berkeley — Berkeley, California",
+          "lat": 37.87,
+          "lon": -122.27,
+          "sourceUrl": "https://ciqc.berkeley.edu/",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Berkeley",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-theory-ucsb",
+      "name": "EPiQS Theory Center — UC Santa Barbara",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "University of California Santa Barbara",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2014,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8690.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8690.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8690",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8690",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF4304",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4304",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "ucsb"
+      ],
+      "locations": [
+        {
+          "label": "University of California Santa Barbara — Santa Barbara area, California",
+          "lat": 34.42,
+          "lon": -119.7,
+          "sourceUrl": "https://www.ucsb.edu/contact",
+          "precision": "city",
+          "role": "Lead host",
+          "city": "Santa Barbara area",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-theory-illinois",
+      "name": "EPiQS Theory Center — Illinois Urbana-Champaign",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "Moore EPiQS theory centers",
+      "kind": "Foundation-supported theory center / postdoctoral research program",
+      "lead": "University of Illinois Urbana-Champaign",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Supports theory research on emergent quantum phenomena and postdoctoral researchers.",
+      "materials": "Theoretical quantum materials research; a research program, not a formal degree.",
+      "startYear": 2014,
+      "status": "Continuation grant awarded February 2026; 36-month term listed",
+      "notes": "Successive grants are grouped as one host theory-center program. Grant dates mark awards, not universal founding dates. No allocation to unrelated campus centers is inferred.",
+      "topics": [
+        "quantum materials",
+        "theory",
+        "EPiQS",
+        "postdoctoral research"
+      ],
+      "sources": [
+        {
+          "title": "Moore Foundation GBMF8691.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8691.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF8691",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8691",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore Foundation GBMF4305",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4305",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "illinois"
+      ],
+      "locations": [
+        {
+          "label": "University of Illinois Urbana-Champaign — Urbana, Illinois",
+          "lat": 40.11,
+          "lon": -88.21,
+          "sourceUrl": "https://hqan.illinois.edu/",
+          "precision": "city",
+          "role": "Program host",
+          "city": "Urbana",
+          "state": "Illinois",
+          "stateCode": "IL",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
     }
-  ]
+  ],
+  "epiqsCheckedDate": "2026-11-04"
 }

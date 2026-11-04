@@ -1,13 +1,13 @@
 {
-  "version": 2,
-  "retrievalDate": "2026-11-03",
+  "version": 3,
+  "retrievalDate": "2026-11-04",
   "currency": "USD",
-  "title": "Selected multi-agency funding evidence for Institutional Atlas V2",
+  "title": "Selected federal and private-foundation funding evidence for Institutional Atlas V2",
   "methodology": {
-    "source": "NSF Awards API and official agency, national laboratory and university announcements",
+    "source": "NSF Awards API and official agency, national laboratory and university announcements; Moore Foundation official grant database and initiative-filtered portfolio",
     "sourceDocumentation": "https://resources.research.gov/common/webapi/awardapisearch-v1.htm",
-    "selection": "Purposive sample: 19 retained NSF awards, 10 DOE National QIS center phases, 5 DOE quantum-materials EFRC phases, and 8 DARPA, NIST, EDA and defense project announcements. This is not a comprehensive funding census.",
-    "universe": "42 distinct funding records; NSF values checked 29 October 2026, added non-NSF announcements checked 3 November 2026.",
+    "selection": "Selected federal records retained from the previous V2, plus EPiQS theory-center and investigator grants checked individually against the Moore Foundation database. This is not a comprehensive funding census.",
+    "universe": "84 distinct funding records; source-specific check dates retained.",
     "aggregation": "Deduplicate by record ID, preserving agency identity. Only cumulative obligations with a named recipient enter recipient-obligation sums. Whole-center totals, program investments and contract ceilings are not added to obligations or assigned to individual consortium members. Distinct-project counts collapse renewal phases using projectKey.",
     "defaultScope": [
       "quantum-materials",
@@ -26,11 +26,12 @@
       "Five-year planned DOE outyear funding is subject to congressional appropriations; announced totals are not proof of full obligations or expenditure.",
       "Renewals count as separate funding-phase records, but once per project for project-count highlights.",
       "Whole MRSEC and QIS awards include work beyond quantum materials; the quantum-materials-only amount is not established.",
-      "Directory milestones and funding announcements may refer to the same broader development. Timeline event counts are not grant counts or monetary totals."
+      "Directory milestones and funding announcements may refer to the same broader development. Timeline event counts are not grant counts or monetary totals.",
+      "Private-foundation grants are a separate amount basis from federal obligations. The award month and database term do not establish actual disbursement dates. The EPiQS initiative envelope is not added to individual grants."
     ],
     "recommendedUiLabel": "Funding linked to a host: named recipient, lead, or documented partner",
     "recommendedMissingLabel": "No award assessed in this sample",
-    "retrieval": "NSF API snapshot retained unchanged in monetary/date fields; new announcements checked against primary sources. Dates for announcements are not asserted as contract start dates.",
+    "retrieval": "Previous federal evidence and its check dates retained; Moore Foundation grants checked 4 November 2026. Award months are not asserted as project-start dates.",
     "excludedExample": {
       "awardId": "2614298",
       "reason": "The 2026 Harvard MRSEC abstract focuses on soft materials, hydrogels and vesicles, with no explicit quantum-materials research theme; excluded despite Harvard hosting other quantum activity."
@@ -2418,6 +2419,2688 @@
       "scopeNote": "Quantum materials research; the full consortium amount includes all participating institutions.",
       "mapAgency": "Defense",
       "partnerCoverageNote": "Links show documented participants already included in this atlas; this is not a full partnership roster. Individual shares are unknown."
+    },
+    {
+      "recordId": "moore-gbmf8682.01",
+      "awardId": "GBMF8682.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Caltech · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-caltech",
+      "amountUSD": 651669,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "caltech",
+      "recipientInstitution": "California Institute of Technology, Division of Physics, Mathematics and Astronomy",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "caltech"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-caltech"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Caltech",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8682.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8682.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8682.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8682.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8682",
+      "awardId": "GBMF8682",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Caltech · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-caltech",
+      "amountUSD": 987671,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "caltech",
+      "recipientInstitution": "California Institute of Technology, Division of Physics, Mathematics and Astronomy",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "caltech"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-caltech"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Caltech",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8682.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8682",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8682",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8682",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8686.01",
+      "awardId": "GBMF8686.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Stanford · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-stanford",
+      "amountUSD": 767000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "stanford",
+      "recipientInstitution": "Stanford University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "stanford"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-stanford"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Stanford",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8686.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8686.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8686.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8686.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8686",
+      "awardId": "GBMF8686",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Stanford · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-stanford",
+      "amountUSD": 1163226,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "stanford",
+      "recipientInstitution": "Stanford University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "stanford"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-stanford"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Stanford",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8686.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8686",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8686",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8686",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf4302",
+      "awardId": "GBMF4302",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Moore Scholars in Theory of Quantum Materials",
+      "shortTitle": "Stanford · Moore theory scholars",
+      "projectKey": "moore-epiqs-theory-stanford",
+      "amountUSD": 1522000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-04",
+      "datePrecision": "month",
+      "dateLabel": "Apr 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Apr 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "stanford",
+      "recipientInstitution": "Stanford University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "stanford"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-stanford"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of the Moore Postdoctoral and Visiting Scholars in Theory of Quantum Materials program at Stanford University.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Stanford",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8686.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4302",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4302",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4302",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8683.01",
+      "awardId": "GBMF8683.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Harvard · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-harvard",
+      "amountUSD": 724718,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "harvard",
+      "recipientInstitution": "Harvard University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "harvard"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-harvard"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Harvard",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8683.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8683.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8683.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8683.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8683",
+      "awardId": "GBMF8683",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Harvard · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-harvard",
+      "amountUSD": 1273800,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "harvard",
+      "recipientInstitution": "Harvard University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "harvard"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-harvard"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Harvard",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8683.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8683",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8683",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8683",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf4306",
+      "awardId": "GBMF4306",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Moore Scholars in Theory of Quantum Materials",
+      "shortTitle": "Harvard · Moore theory scholars",
+      "projectKey": "moore-epiqs-theory-harvard",
+      "amountUSD": 931000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-04",
+      "datePrecision": "month",
+      "dateLabel": "Apr 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Apr 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "harvard",
+      "recipientInstitution": "Harvard University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "harvard"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-harvard"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of the Moore Postdoctoral Scholars in Theory of Quantum Materials program at Harvard University.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Harvard",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8683.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4306",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4306",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4306",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8684.01",
+      "awardId": "GBMF8684.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "MIT · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-mit",
+      "amountUSD": 582070,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-mit"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — MIT",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8684.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8684.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8684.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8684.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8684",
+      "awardId": "GBMF8684",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "MIT · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-mit",
+      "amountUSD": 1222219,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-mit"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — MIT",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8684.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8684",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8684",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8684",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf4303",
+      "awardId": "GBMF4303",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Moore Scholars in Theory of Quantum Materials",
+      "shortTitle": "MIT · Moore theory scholars",
+      "projectKey": "moore-epiqs-theory-mit",
+      "amountUSD": 1493196,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-04",
+      "datePrecision": "month",
+      "dateLabel": "Apr 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Apr 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-mit"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of the Moore Postdoctoral and Visiting Scholars in Theory of Quantum Materials program.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — MIT",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8684.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4303",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4303",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4303",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8685.01",
+      "awardId": "GBMF8685.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Princeton · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-princeton",
+      "amountUSD": 599022,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "princeton",
+      "recipientInstitution": "Princeton University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "princeton"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-princeton"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Princeton",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8685.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8685.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8685.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8685.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8685",
+      "awardId": "GBMF8685",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Princeton · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-princeton",
+      "amountUSD": 1148000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "princeton",
+      "recipientInstitution": "Princeton University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "princeton"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-princeton"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Princeton",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8685.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8685",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8685",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8685",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8688.01",
+      "awardId": "GBMF8688.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "UC Berkeley · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-berkeley",
+      "amountUSD": 705935,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "berkeley",
+      "recipientInstitution": "University of California, Berkeley Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "berkeley"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-berkeley"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — UC Berkeley",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8688.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8688.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8688.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8688.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8688",
+      "awardId": "GBMF8688",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "UC Berkeley · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-berkeley",
+      "amountUSD": 1310125,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "berkeley",
+      "recipientInstitution": "University of California, Berkeley Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "berkeley"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-berkeley"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — UC Berkeley",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8688.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8688",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8688",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8688",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf4307",
+      "awardId": "GBMF4307",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Moore Scholars in Theory of Quantum Materials",
+      "shortTitle": "UC Berkeley · Moore theory scholars",
+      "projectKey": "moore-epiqs-theory-berkeley",
+      "amountUSD": 1012000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-04",
+      "datePrecision": "month",
+      "dateLabel": "Apr 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Apr 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "berkeley",
+      "recipientInstitution": "University of California, Berkeley Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "berkeley"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-berkeley"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of the Moore Postdoctoral Scholars in Theory of Quantum Materials program at University of California, Berkeley.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — UC Berkeley",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8688.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4307",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4307",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4307",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8690.01",
+      "awardId": "GBMF8690.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "UC Santa Barbara · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-ucsb",
+      "amountUSD": 707804,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "ucsb",
+      "recipientInstitution": "University of California, Santa Barbara Kavli Institute for Theoretical Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "ucsb"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-ucsb"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — UC Santa Barbara",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8690.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8690.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8690.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8690.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8690",
+      "awardId": "GBMF8690",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "UC Santa Barbara · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-ucsb",
+      "amountUSD": 1463816,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "ucsb",
+      "recipientInstitution": "University of California, Santa Barbara Kavli Institute for Theoretical Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "ucsb"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-ucsb"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — UC Santa Barbara",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8690.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8690",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8690",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8690",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf4304",
+      "awardId": "GBMF4304",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Moore Scholars in Theory of Quantum Materials",
+      "shortTitle": "UC Santa Barbara · Moore theory scholars",
+      "projectKey": "moore-epiqs-theory-ucsb",
+      "amountUSD": 1536000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-04",
+      "datePrecision": "month",
+      "dateLabel": "Apr 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Apr 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "ucsb",
+      "recipientInstitution": "University of California, Santa Barbara Kavli Institute for Theoretical Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "ucsb"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-ucsb"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of the Moore Postdoctoral Scholars in Theory of Quantum Materials program at University of California, Santa Barbara.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — UC Santa Barbara",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8690.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4304",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4304",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4304",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8691.01",
+      "awardId": "GBMF8691.01",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Continued Support for Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Illinois Urbana-Champaign · Theory center continuation",
+      "projectKey": "moore-epiqs-theory-illinois",
+      "amountUSD": 743776,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2026,
+      "awardDate": "2026-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2026",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2026 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "illinois",
+      "recipientInstitution": "University of Illinois at Urbana-Champaign, Department of Physics and Institute for Condensed Matter Theory",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "illinois"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-illinois"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Illinois Urbana-Champaign",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8691.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8691.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8691.01",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8691.01",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf8691",
+      "awardId": "GBMF8691",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Emergent Phenomena in Quantum Systems Theory Center",
+      "shortTitle": "Illinois Urbana-Champaign · EPiQS theory center",
+      "projectKey": "moore-epiqs-theory-illinois",
+      "amountUSD": 1157651,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2019 · 66 months listed term",
+      "termMonths": 66,
+      "recipientHostId": "illinois",
+      "recipientInstitution": "University of Illinois at Urbana-Champaign, Department of Physics and Institute for Condensed Matter Theory",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "illinois"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-illinois"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of theoretical investigations of emergent phenomena in quantum materials.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Illinois Urbana-Champaign",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8691.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF8691",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF8691",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF8691",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf4305",
+      "awardId": "GBMF4305",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Theory centers",
+      "awardTitle": "Moore Scholars in Theory of Quantum Materials",
+      "shortTitle": "Illinois Urbana-Champaign · Moore theory scholars",
+      "projectKey": "moore-epiqs-theory-illinois",
+      "amountUSD": 1529000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-04",
+      "datePrecision": "month",
+      "dateLabel": "Apr 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Apr 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "illinois",
+      "recipientInstitution": "University of Illinois at Urbana-Champaign, Department of Physics and Institute for Condensed Matter Theory",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "illinois"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs",
+        "epiqs-theory-illinois"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "In support of the Moore Postdoctoral Scholars in Theory of Quantum Materials program at the University of Illinois.",
+      "researchGroup": {
+        "name": "EPiQS Theory Center — Illinois Urbana-Champaign",
+        "url": "https://www.moore.org/grant-detail?grantId=GBMF8691.01"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4305",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4305",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4305",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Attributed only to the recipient institution and named research activity in the official grant record. The listed award month is not an asserted project start date; the listed term may reflect extensions. No cash disbursement or internal lab allocation is inferred."
+    },
+    {
+      "recordId": "moore-gbmf4412",
+      "awardId": "GBMF4412",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "Robert Cava Materials Synthesis Investigator Award",
+      "shortTitle": "Robert Cava Materials Synthesis Investigator Award",
+      "projectKey": "moore-epiqs-robert-cava",
+      "amountUSD": 1900000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-08",
+      "datePrecision": "month",
+      "dateLabel": "Aug 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Aug 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "princeton",
+      "recipientInstitution": "Princeton University, Department of Chemistry",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "princeton"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Find new superconductors and develop ways to synthesize quantum materials.",
+      "researchGroup": {
+        "name": "Cava Lab",
+        "url": "https://cava.princeton.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4412",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4412",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Cava Lab — institutional affiliation",
+          "url": "https://chemistry.princeton.edu/faculty-research/faculty/robert-j-cava/",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4412",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Robert Cava"
+    },
+    {
+      "recordId": "moore-gbmf9066",
+      "awardId": "GBMF9066",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "Robert Cava Materials Synthesis Investigator",
+      "shortTitle": "Robert Cava Materials Synthesis Investigator",
+      "projectKey": "moore-epiqs-robert-cava",
+      "amountUSD": 1700000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2019 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "princeton",
+      "recipientInstitution": "Princeton University, Department of Chemistry",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "princeton"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Investigate magnetic and electronic compounds, superconducting high-entropy alloys, and methods for growing iridates.",
+      "researchGroup": {
+        "name": "Cava Lab",
+        "url": "https://cava.princeton.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9066",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9066",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Cava Lab — institutional affiliation",
+          "url": "https://chemistry.princeton.edu/faculty-research/faculty/robert-j-cava/",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9066",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Robert Cava"
+    },
+    {
+      "recordId": "moore-gbmf9064",
+      "awardId": "GBMF9064",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "Leslie Schoop Materials Synthesis Investigator",
+      "shortTitle": "Leslie Schoop Materials Synthesis Investigator",
+      "projectKey": "moore-epiqs-leslie-schoop",
+      "amountUSD": 2000001,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2019 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "princeton",
+      "recipientInstitution": "Princeton University, Department of Chemistry",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "princeton"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Create layered magnets, topological compounds with strong correlations, and new two-dimensional materials.",
+      "researchGroup": {
+        "name": "Schoop Lab",
+        "url": "https://schoop.princeton.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9064",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9064",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Schoop Lab — institutional affiliation",
+          "url": "https://chemistry.princeton.edu/faculty-research/faculty/leslie-schoop/",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9064",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally. Current official database value is $2,000,001; retain this rather than substituting rounded amounts from older announcements.",
+      "principalInvestigator": "Leslie Schoop"
+    },
+    {
+      "recordId": "moore-gbmf3848",
+      "awardId": "GBMF3848",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis fellows",
+      "awardTitle": "Joseph Checkelsky, Moore Fellow in Materials Synthesis",
+      "shortTitle": "Joseph Checkelsky, Moore Fellow in Materials Synthesis",
+      "projectKey": "moore-epiqs-joseph-checkelsky",
+      "amountUSD": 1500000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2013,
+      "awardDate": "2013-08",
+      "datePrecision": "month",
+      "dateLabel": "Aug 2013",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Aug 2013 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Build a synthesis laboratory to discover and control electronic materials in bulk-crystal and thin-film forms.",
+      "researchGroup": {
+        "name": "Checkelsky Lab",
+        "url": "https://checkelsky.mit.edu/group/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF3848",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF3848",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Checkelsky Lab — institutional affiliation",
+          "url": "https://physics.mit.edu/faculty/joseph-checkelsky/",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF3848",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Joseph Checkelsky"
+    },
+    {
+      "recordId": "moore-gbmf9070",
+      "awardId": "GBMF9070",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "Joseph Checkelsky Materials Synthesis Investigator",
+      "shortTitle": "Joseph Checkelsky Materials Synthesis Investigator",
+      "projectKey": "moore-epiqs-joseph-checkelsky",
+      "amountUSD": 2118119,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2019 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Create materials whose electronic structures realize kagome, Lieb, and Dice lattice models.",
+      "researchGroup": {
+        "name": "Checkelsky Lab",
+        "url": "https://checkelsky.mit.edu/group/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9070",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9070",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Checkelsky Lab — institutional affiliation",
+          "url": "https://physics.mit.edu/faculty/joseph-checkelsky/",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9070",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Joseph Checkelsky"
+    },
+    {
+      "recordId": "moore-gbmf4540",
+      "awardId": "GBMF4540",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Nuh Gedik Experimental Investigator in Quantum Materials Award",
+      "shortTitle": "Nuh Gedik Experimental Investigator in Quantum Materials Award",
+      "projectKey": "moore-epiqs-nuh-gedik",
+      "amountUSD": 1800000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2014,
+      "awardDate": "2014-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2014",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2014 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Use light to change quantum materials and track their dynamics with photoemission and electron diffraction.",
+      "researchGroup": {
+        "name": "Gedik Group",
+        "url": "https://web.mit.edu/gediklab/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF4540",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4540",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Gedik Group — institutional affiliation",
+          "url": "https://web.mit.edu/~gediklab/members.html",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF4540",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Nuh Gedik"
+    },
+    {
+      "recordId": "moore-gbmf9459",
+      "awardId": "GBMF9459",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Nuh Gedik Experimental Investigator Award",
+      "shortTitle": "Nuh Gedik Experimental Investigator Award",
+      "projectKey": "moore-epiqs-nuh-gedik",
+      "amountUSD": 1808744,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2020,
+      "awardDate": "2020-05",
+      "datePrecision": "month",
+      "dateLabel": "May 2020",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded May 2020 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Explore how light can control topology and ordered phases in quantum materials.",
+      "researchGroup": {
+        "name": "Gedik Group",
+        "url": "https://web.mit.edu/gediklab/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9459",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9459",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Gedik Group — institutional affiliation",
+          "url": "https://web.mit.edu/~gediklab/members.html",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9459",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Nuh Gedik"
+    },
+    {
+      "recordId": "moore-gbmf9463",
+      "awardId": "GBMF9463",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Pablo Jarillo-Herrero Experimental Investigator Award",
+      "shortTitle": "Pablo Jarillo-Herrero Experimental Investigator Award",
+      "projectKey": "moore-epiqs-pablo-jarillo-herrero",
+      "amountUSD": 1760000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2020,
+      "awardDate": "2020-05",
+      "datePrecision": "month",
+      "dateLabel": "May 2020",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded May 2020 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "mit",
+      "recipientInstitution": "Massachusetts Institute of Technology, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "mit"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Study correlated and topological states in stacks of two-dimensional materials with controlled twist angles.",
+      "researchGroup": {
+        "name": "Jarillo-Herrero Group",
+        "url": "https://jarillo-herrero.mit.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9463",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9463",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Jarillo-Herrero Group — institutional affiliation",
+          "url": "https://physics.mit.edu/faculty/pablo-jarillo-herrero/",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9463",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Pablo Jarillo-Herrero"
+    },
+    {
+      "recordId": "moore-gbmf9464",
+      "awardId": "GBMF9464",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Alessandra Lanzara Experimental Investigator Award",
+      "shortTitle": "Alessandra Lanzara Experimental Investigator Award",
+      "projectKey": "moore-epiqs-alessandra-lanzara",
+      "amountUSD": 1900000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2020,
+      "awardDate": "2020-05",
+      "datePrecision": "month",
+      "dateLabel": "May 2020",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded May 2020 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "berkeley",
+      "recipientInstitution": "University of California, Berkeley Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "berkeley"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Develop high-resolution electron microscopy that can track electronic behavior in space, momentum, and time.",
+      "researchGroup": {
+        "name": "Lanzara Group",
+        "url": "https://physics.berkeley.edu/node/1820"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9464",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9464",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Lanzara Group — institutional affiliation",
+          "url": "https://physics.berkeley.edu/node/1820",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9464",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Alessandra Lanzara"
+    },
+    {
+      "recordId": "moore-gbmf9067",
+      "awardId": "GBMF9067",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "James Analytis Materials Synthesis Investigator",
+      "shortTitle": "James Analytis Materials Synthesis Investigator",
+      "projectKey": "moore-epiqs-james-analytis",
+      "amountUSD": 1870000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2019 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "berkeley",
+      "recipientInstitution": "University of California, Berkeley Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "berkeley"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Synthesize low-symmetry materials whose electronic and magnetic behavior arises from strong quantum interactions.",
+      "researchGroup": {
+        "name": "Analytis Lab",
+        "url": "https://physics.berkeley.edu/research-faculty/research-groups/analytis-lab"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9067",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9067",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Analytis Lab — institutional affiliation",
+          "url": "https://physics.berkeley.edu/research-faculty/research-groups/analytis-lab",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9067",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "James Analytis"
+    },
+    {
+      "recordId": "moore-gbmf10637",
+      "awardId": "GBMF10637",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis fellows",
+      "awardTitle": "Kwabena Bediako, Moore Fellow in Materials Synthesis",
+      "shortTitle": "Kwabena Bediako, Moore Fellow in Materials Synthesis",
+      "projectKey": "moore-epiqs-kwabena-bediako",
+      "amountUSD": 1320000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2021,
+      "awardDate": "2021-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2021",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2021 · 49 months listed term",
+      "termMonths": 49,
+      "recipientHostId": "berkeley",
+      "recipientInstitution": "University of California, Berkeley College of Chemistry",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "berkeley"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Create new layered and two-dimensional materials with unusual collective electronic and magnetic behavior.",
+      "researchGroup": {
+        "name": "Bediako Lab",
+        "url": "https://www.bediakolab.org/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF10637",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF10637",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Bediako Lab — institutional affiliation",
+          "url": "https://chemistry.berkeley.edu/people/kwabena-bediako",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF10637",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Kwabena Bediako"
+    },
+    {
+      "recordId": "moore-gbmf9468",
+      "awardId": "GBMF9468",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Amir Yacoby Experimental Investigator Award",
+      "shortTitle": "Amir Yacoby Experimental Investigator Award",
+      "projectKey": "moore-epiqs-amir-yacoby",
+      "amountUSD": 1760000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2020,
+      "awardDate": "2020-05",
+      "datePrecision": "month",
+      "dateLabel": "May 2020",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded May 2020 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "harvard",
+      "recipientInstitution": "Harvard University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "harvard"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Develop spin-wave probes of quantum materials and build artificial topological superconductors.",
+      "researchGroup": {
+        "name": "Yacoby Lab",
+        "url": "https://yacoby.physics.harvard.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9468",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9468",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Yacoby Lab — institutional affiliation",
+          "url": "https://yacoby.physics.harvard.edu/people",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9468",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Amir Yacoby"
+    },
+    {
+      "recordId": "moore-gbmf6760",
+      "awardId": "GBMF6760",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis fellows",
+      "awardTitle": "Julia Mundy, Moore Fellow in Materials Synthesis",
+      "shortTitle": "Julia Mundy, Moore Fellow in Materials Synthesis",
+      "projectKey": "moore-epiqs-julia-mundy",
+      "amountUSD": 1320000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2018,
+      "awardDate": "2018-02",
+      "datePrecision": "month",
+      "dateLabel": "Feb 2018",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Feb 2018 · 36 months listed term",
+      "termMonths": 36,
+      "recipientHostId": "harvard",
+      "recipientInstitution": "Harvard University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "harvard"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Synthesize and characterize metastable oxide materials by controlling their local chemistry atom by atom.",
+      "researchGroup": {
+        "name": "Mundy Group",
+        "url": "https://mundy.physics.harvard.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF6760",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF6760",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Mundy Group — institutional affiliation",
+          "url": "https://seas.harvard.edu/person/julia-mundy",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF6760",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Julia Mundy"
+    },
+    {
+      "recordId": "moore-gbmf9455",
+      "awardId": "GBMF9455",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Dmitri Basov Experimental Investigator Award",
+      "shortTitle": "Dmitri Basov Experimental Investigator Award",
+      "projectKey": "moore-epiqs-dmitri-basov",
+      "amountUSD": 1600000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2020,
+      "awardDate": "2020-05",
+      "datePrecision": "month",
+      "dateLabel": "May 2020",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded May 2020 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "columbia",
+      "recipientInstitution": "Columbia University, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "columbia"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Use nanoscale optical measurements to investigate unusual quantum states in atomically thin materials.",
+      "researchGroup": {
+        "name": "Basov Laboratory",
+        "url": "https://infrared.cni.columbia.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9455",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9455",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Basov Laboratory — institutional affiliation",
+          "url": "https://infrared.cni.columbia.edu/",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9455",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Dmitri Basov"
+    },
+    {
+      "recordId": "moore-gbmf12766",
+      "awardId": "GBMF12766",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis fellows",
+      "awardTitle": "Aravind Devarakonda, Moore Fellow in Materials Synthesis",
+      "shortTitle": "Aravind Devarakonda, Moore Fellow in Materials Synthesis",
+      "projectKey": "moore-epiqs-aravind-devarakonda",
+      "amountUSD": 1200000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2024,
+      "awardDate": "2024-07",
+      "datePrecision": "month",
+      "dateLabel": "Jul 2024",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Jul 2024 · 48 months listed term",
+      "termMonths": 48,
+      "recipientHostId": "columbia",
+      "recipientInstitution": "Columbia University, Department of Applied Physics and Applied Mathematics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "columbia"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Synthesize low-dimensional materials and superlattices to study correlated and topological electronic phases.",
+      "researchGroup": {
+        "name": "Devarakonda Lab",
+        "url": "https://www.devarakonda-lab.com/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF12766",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF12766",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Devarakonda Lab — institutional affiliation",
+          "url": "https://quantum.columbia.edu/directory/aravind-devarakonda",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF12766",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Aravind Devarakonda"
+    },
+    {
+      "recordId": "moore-gbmf9074",
+      "awardId": "GBMF9074",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "Ivan Bozovic Materials Synthesis Investigator",
+      "shortTitle": "Ivan Bozovic Materials Synthesis Investigator",
+      "projectKey": "moore-epiqs-ivan-bozovic",
+      "amountUSD": 1427411,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2019 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "yale",
+      "recipientInstitution": "Yale University, Department of Chemistry",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "yale"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Grow cuprate superconductors, topological films, and metal hydrides with atomic-layer molecular beam epitaxy.",
+      "researchGroup": {
+        "name": "Bozovic Lab",
+        "url": "https://nanoscaleimaging.yale.edu/people/ivan-bozovic"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9074",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9074",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Bozovic Lab — institutional affiliation",
+          "url": "https://nanoscaleimaging.yale.edu/people/ivan-bozovic",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record. The Yale profile also lists a Brookhaven appointment; this does not establish Brookhaven as recipient or funded partner of GBMF9074, which is mapped only to Yale."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9074",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Ivan Bozovic"
+    },
+    {
+      "recordId": "moore-gbmf9071",
+      "awardId": "GBMF9071",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "Johnpierre Paglione Materials Synthesis Investigator",
+      "shortTitle": "Johnpierre Paglione Materials Synthesis Investigator",
+      "projectKey": "moore-epiqs-johnpierre-paglione",
+      "amountUSD": 1878000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2019 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "maryland",
+      "recipientInstitution": "University of Maryland, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "maryland"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Improve quantum-materials synthesis and use machine learning to speed materials discovery.",
+      "researchGroup": {
+        "name": "Paglione Research Group",
+        "url": "https://www.vector.umd.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9071",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9071",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Paglione Research Group — institutional affiliation",
+          "url": "https://umdphysics.umd.edu/directory/faculty/current/paglione.html",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9071",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Johnpierre Paglione"
+    },
+    {
+      "recordId": "moore-gbmf9065",
+      "awardId": "GBMF9065",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Materials synthesis investigators",
+      "awardTitle": "Chang-Beom Eom Materials Synthesis Investigator",
+      "shortTitle": "Chang-Beom Eom Materials Synthesis Investigator",
+      "projectKey": "moore-epiqs-chang-beom-eom",
+      "amountUSD": 1700000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2019,
+      "awardDate": "2019-11",
+      "datePrecision": "month",
+      "dateLabel": "Nov 2019",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded Nov 2019 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "wisconsin",
+      "recipientInstitution": "University of Wisconsin-Madison, Research and Sponsored Programs",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "wisconsin"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Control chemical composition and point defects in oxide films and their interfaces.",
+      "researchGroup": {
+        "name": "Oxide Lab — Eom Group",
+        "url": "https://oxide.engr.wisc.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9065",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9065",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Oxide Lab — Eom Group — institutional affiliation",
+          "url": "https://oxide.engr.wisc.edu/members.html",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9065",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Chang-Beom Eom"
+    },
+    {
+      "recordId": "moore-gbmf9452",
+      "awardId": "GBMF9452",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Peter Abbamonte Experimental Investigator Award",
+      "shortTitle": "Peter Abbamonte Experimental Investigator Award",
+      "projectKey": "moore-epiqs-peter-abbamonte",
+      "amountUSD": 2010000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2020,
+      "awardDate": "2020-05",
+      "datePrecision": "month",
+      "dateLabel": "May 2020",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded May 2020 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "illinois",
+      "recipientInstitution": "University of Illinois at Urbana-Champaign, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "illinois"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Use electron scattering and spectroscopy to measure charge dynamics in strange metals and superconductors.",
+      "researchGroup": {
+        "name": "Abbamonte Group",
+        "url": "https://abbamonte.physics.illinois.edu/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9452",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9452",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Abbamonte Group — institutional affiliation",
+          "url": "https://physics.illinois.edu/people/directory/profile/abbamont",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9452",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Peter Abbamonte"
+    },
+    {
+      "recordId": "moore-gbmf9465",
+      "awardId": "GBMF9465",
+      "identifierMeaning": "Official Gordon and Betty Moore Foundation grant identifier.",
+      "agency": "Moore Foundation",
+      "funderName": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "mapAgency": "Moore Foundation",
+      "programName": "Emergent Phenomena in Quantum Systems (EPiQS)",
+      "program": "EPiQS",
+      "portfolio": "Experimental investigators",
+      "awardTitle": "Vidya Madhavan Experimental Investigator Award",
+      "shortTitle": "Vidya Madhavan Experimental Investigator Award",
+      "projectKey": "moore-epiqs-vidya-madhavan",
+      "amountUSD": 1760000,
+      "currency": "USD",
+      "amountType": "foundation-grant",
+      "amountMeaning": "Foundation grant amount published for this recipient and term; not a federal obligation or a payment/expenditure total.",
+      "announcementYear": 2020,
+      "awardDate": "2020-05",
+      "datePrecision": "month",
+      "dateLabel": "May 2020",
+      "startDate": null,
+      "endDate": null,
+      "periodLabel": "Awarded May 2020 · 60 months listed term",
+      "termMonths": 60,
+      "recipientHostId": "illinois",
+      "recipientInstitution": "University of Illinois at Urbana-Champaign, Department of Physics",
+      "leadHostId": null,
+      "partnerHostIds": [],
+      "hostIds": [
+        "illinois"
+      ],
+      "relatedEntryIds": [
+        "moore-epiqs"
+      ],
+      "scopeType": "quantum-materials",
+      "scopeNote": "Develop scanning tunneling microscopy to track nonequilibrium electronic dynamics and quantum critical behavior in thin materials.",
+      "researchGroup": {
+        "name": "Madhavan Lab",
+        "url": "https://madhavanlab.org/"
+      },
+      "sources": [
+        {
+          "title": "Moore Foundation grant GBMF9465",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9465",
+          "checkedDate": "2026-11-04",
+          "note": "Exact grant-header amount, month awarded, recipient and listed term."
+        },
+        {
+          "title": "Moore Foundation EPiQS grant portfolio",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "checkedDate": "2026-11-04",
+          "note": "The official initiative filter confirms EPiQS membership."
+        },
+        {
+          "title": "Madhavan Lab — institutional affiliation",
+          "url": "https://physics.illinois.edu/people/directory/profile/vm1",
+          "checkedDate": "2026-11-04",
+          "note": "Official university or laboratory page identifies this named investigator and research group at the grant-recipient institution. Grant recipient and investigator identity are independently established by the Moore grant record."
+        }
+      ],
+      "officialUrl": "https://www.moore.org/grant-detail?grantId=GBMF9465",
+      "retrievalDate": "2026-11-04",
+      "attribution": "Grant amount published in the official Moore grant record, not expenditure or an annual payment. Date is month of award; precise start/end dates are not supplied. Research group association identifies the named investigator; recipient is the listed university/department, not the PI personally.",
+      "principalInvestigator": "Vidya Madhavan"
     }
   ],
   "nsfRetrievalDate": "2026-10-29",
@@ -2437,6 +5120,16 @@
       "role": "Solicitation/program ceiling, excluded from additive records.",
       "sourceUrl": "https://www.energy.gov/articles/department-energy-announces-625-million-new-quantum-centers",
       "note": "Initial solicitation ceiling should not be substituted for the five $115m initial-center announcements (sum $575m). Do not invent allocation of the remaining program difference."
+    },
+    {
+      "agency": "Moore Foundation",
+      "funderType": "private-foundation",
+      "amountUSD": 230000000,
+      "year": 2025,
+      "periodLabel": "Ten-year extension approved in 2025",
+      "role": "Initiative-level planned envelope; excluded from grant records and host totals.",
+      "sourceUrl": "https://www.moore.org/initiative-strategy-detail?initiativeId=emergent-phenomena-in-quantum-systems",
+      "note": "The planned EPiQS extension supports future talent, tools and engineered matter, and ecosystem work. It is not a completed award to any university and is not added to individual grants."
     }
   ]
 }

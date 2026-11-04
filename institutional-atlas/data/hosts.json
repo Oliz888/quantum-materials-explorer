@@ -1,13 +1,13 @@
 {
-  "version": 1,
+  "version": 2,
   "checkedDate": "2026-10-29",
-  "basis": "Consolidation of the current sourced institutions.json directory; no new institution-level factual coverage claimed.",
-  "sourceDataPath": "data/institutions.json",
+  "basis": "Sourced V2 directory with EPiQS theory-center and university additions checked 4 November 2026; earlier entries retain their original check dates.",
+  "sourceDataPath": "institutional-atlas/data/institutions.json",
   "statistics": {
-    "distinctHosts": 40,
-    "mappedEntries": 57,
+    "distinctHosts": 42,
+    "mappedEntries": 65,
     "unplacedEntries": 36,
-    "universityHosts": 25
+    "universityHosts": 27
   },
   "hosts": [
     {
@@ -1539,11 +1539,13 @@
       "hostEntryIds": [
         "qsqm",
         "hqan",
-        "illinois-qis-minor"
+        "illinois-qis-minor",
+        "epiqs-theory-illinois"
       ],
       "labEntryIds": [
         "qsqm",
-        "hqan"
+        "hqan",
+        "epiqs-theory-illinois"
       ],
       "educationEvidence": [
         {
@@ -1579,7 +1581,8 @@
         "https://hqan.illinois.edu/",
         "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
         "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
-        "https://iquist.illinois.edu/education/minor"
+        "https://iquist.illinois.edu/education/minor",
+        "https://www.moore.org/grant-detail?grantId=GBMF8691.01"
       ],
       "coverageNotes": [
         "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
@@ -1588,7 +1591,7 @@
       "lat": 40.11,
       "lon": -88.21,
       "precision": "city",
-      "listedLabCenterCount": 2,
+      "listedLabCenterCount": 3,
       "formalEducationEntryCount": 1,
       "hasFormalEducationalPathway": true,
       "hasQuantumMaterialsSpecificEducation": false,
@@ -1663,11 +1666,13 @@
       "country": "United States",
       "hostEntryIds": [
         "ftqsaa",
-        "ciqm"
+        "ciqm",
+        "epiqs-theory-harvard"
       ],
       "labEntryIds": [
         "ftqsaa",
-        "ciqm"
+        "ciqm",
+        "epiqs-theory-harvard"
       ],
       "educationEvidence": [],
       "researchRouteEntryIds": [
@@ -1694,7 +1699,8 @@
         "https://www.physics.harvard.edu/contact",
         "https://ciqm.harvard.edu/",
         "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
-        "https://ciqm.harvard.edu/overview1.html"
+        "https://ciqm.harvard.edu/overview1.html",
+        "https://www.moore.org/grant-detail?grantId=GBMF8683.01"
       ],
       "coverageNotes": [
         "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
@@ -1705,7 +1711,7 @@
       "lat": 42.37,
       "lon": -71.11,
       "precision": "city",
-      "listedLabCenterCount": 2,
+      "listedLabCenterCount": 3,
       "formalEducationEntryCount": 0,
       "hasFormalEducationalPathway": false,
       "hasQuantumMaterialsSpecificEducation": false,
@@ -1727,11 +1733,13 @@
       "country": "United States",
       "hostEntryIds": [
         "ftqsaa",
-        "ciqm"
+        "ciqm",
+        "epiqs-theory-mit"
       ],
       "labEntryIds": [
         "ftqsaa",
-        "ciqm"
+        "ciqm",
+        "epiqs-theory-mit"
       ],
       "educationEvidence": [],
       "researchRouteEntryIds": [
@@ -1758,7 +1766,8 @@
         "https://www.mit.edu/contact/",
         "https://ciqm.harvard.edu/",
         "https://news.mit.edu/index.php/2013/center-for-integrated-quantum-materials",
-        "https://ciqm.harvard.edu/overview1.html"
+        "https://ciqm.harvard.edu/overview1.html",
+        "https://www.moore.org/grant-detail?grantId=GBMF8684.01"
       ],
       "coverageNotes": [
         "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
@@ -1769,7 +1778,7 @@
       "lat": 42.37,
       "lon": -71.11,
       "precision": "city",
-      "listedLabCenterCount": 2,
+      "listedLabCenterCount": 3,
       "formalEducationEntryCount": 0,
       "hasFormalEducationalPathway": false,
       "hasQuantumMaterialsSpecificEducation": false,
@@ -1847,10 +1856,12 @@
       "country": "United States",
       "hostEntryIds": [
         "marquis",
-        "princeton-qse-minor"
+        "princeton-qse-minor",
+        "epiqs-theory-princeton"
       ],
       "labEntryIds": [
-        "marquis"
+        "marquis",
+        "epiqs-theory-princeton"
       ],
       "educationEvidence": [
         {
@@ -1886,7 +1897,8 @@
         "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
         "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
         "https://president.princeton.edu/about-office",
-        "https://quantum.princeton.edu/education/qse-minor-program"
+        "https://quantum.princeton.edu/education/qse-minor-program",
+        "https://www.moore.org/grant-detail?grantId=GBMF8685.01"
       ],
       "coverageNotes": [
         "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
@@ -1895,7 +1907,7 @@
       "lat": 40.36,
       "lon": -74.67,
       "precision": "city",
-      "listedLabCenterCount": 1,
+      "listedLabCenterCount": 2,
       "formalEducationEntryCount": 1,
       "hasFormalEducationalPathway": true,
       "hasQuantumMaterialsSpecificEducation": false,
@@ -1916,10 +1928,12 @@
       "id": "berkeley",
       "country": "United States",
       "hostEntryIds": [
-        "ciqc"
+        "ciqc",
+        "epiqs-theory-berkeley"
       ],
       "labEntryIds": [
-        "ciqc"
+        "ciqc",
+        "epiqs-theory-berkeley"
       ],
       "educationEvidence": [],
       "researchRouteEntryIds": [],
@@ -1941,7 +1955,8 @@
         "https://ciqc.berkeley.edu/",
         "https://www.nsf.gov/mps/quantum-leap-challenge-institutes",
         "https://www.nsf.gov/news/eight-nsf-research-institutes-propel-us-quantum-science-290m",
-        "https://ciqc.berkeley.edu/about/"
+        "https://ciqc.berkeley.edu/about/",
+        "https://www.moore.org/grant-detail?grantId=GBMF8688.01"
       ],
       "coverageNotes": [
         "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
@@ -1950,7 +1965,7 @@
       "lat": 37.87,
       "lon": -122.27,
       "precision": "city",
-      "listedLabCenterCount": 1,
+      "listedLabCenterCount": 2,
       "formalEducationEntryCount": 0,
       "hasFormalEducationalPathway": false,
       "hasQuantumMaterialsSpecificEducation": false,
@@ -2030,10 +2045,12 @@
       "id": "ucsb",
       "country": "United States",
       "hostEntryIds": [
-        "ucsb-foundry"
+        "ucsb-foundry",
+        "epiqs-theory-ucsb"
       ],
       "labEntryIds": [
-        "ucsb-foundry"
+        "ucsb-foundry",
+        "epiqs-theory-ucsb"
       ],
       "educationEvidence": [],
       "researchRouteEntryIds": [],
@@ -2053,7 +2070,8 @@
       ],
       "sourceUrls": [
         "https://quantumfoundry.ucsb.edu/",
-        "https://www.ucsb.edu/contact"
+        "https://www.ucsb.edu/contact",
+        "https://www.moore.org/grant-detail?grantId=GBMF8690.01"
       ],
       "coverageNotes": [
         "Counts cover only entries in this selected directory; they are not a census of campus laboratories, funding, researchers or institutional quality.",
@@ -2062,7 +2080,7 @@
       "lat": 34.42,
       "lon": -119.7,
       "precision": "city",
-      "listedLabCenterCount": 1,
+      "listedLabCenterCount": 2,
       "formalEducationEntryCount": 0,
       "hasFormalEducationalPathway": false,
       "hasQuantumMaterialsSpecificEducation": false,
@@ -2491,6 +2509,102 @@
         "education": "observed",
         "funding": "awaiting distinct-award evidence; missing is not zero"
       }
+    },
+    {
+      "id": "caltech",
+      "hostId": "caltech",
+      "displayName": "California Institute of Technology",
+      "shortLabel": "Caltech",
+      "kind": "university",
+      "city": "Pasadena",
+      "state": "California",
+      "stateCode": "CA",
+      "country": "United States",
+      "lat": 34.14,
+      "lon": -118.14,
+      "precision": "city",
+      "locations": [
+        {
+          "label": "California Institute of Technology — Pasadena, California",
+          "lat": 34.14,
+          "lon": -118.14,
+          "sourceUrl": "https://www.pma.caltech.edu/about/contact",
+          "precision": "city",
+          "role": "University host",
+          "city": "Pasadena",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-theory-caltech"
+      ],
+      "labEntryIds": [
+        "epiqs-theory-caltech"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "sourceUrls": [
+        "https://www.pma.caltech.edu/about/contact",
+        "https://www.moore.org/grant-detail?grantId=GBMF8682.01"
+      ],
+      "coverageNotes": [
+        "Approximate host-city coordinates, not laboratory-building positions.",
+        "Selected EPiQS evidence only; absence of education entries does not mean no degree programs."
+      ],
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "id": "stanford",
+      "hostId": "stanford",
+      "displayName": "Stanford University",
+      "shortLabel": "Stanford",
+      "kind": "university",
+      "city": "Stanford",
+      "state": "California",
+      "stateCode": "CA",
+      "country": "United States",
+      "lat": 37.43,
+      "lon": -122.17,
+      "precision": "city",
+      "locations": [
+        {
+          "label": "Stanford University — Stanford, California",
+          "lat": 37.43,
+          "lon": -122.17,
+          "sourceUrl": "https://physics.stanford.edu/about/contact",
+          "precision": "city",
+          "role": "University host",
+          "city": "Stanford",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-theory-stanford"
+      ],
+      "labEntryIds": [
+        "epiqs-theory-stanford"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [],
+      "sourceUrls": [
+        "https://physics.stanford.edu/about/contact",
+        "https://www.moore.org/grant-detail?grantId=GBMF8686.01"
+      ],
+      "coverageNotes": [
+        "Approximate host-city coordinates, not laboratory-building positions.",
+        "Selected EPiQS evidence only; absence of education entries does not mean no degree programs."
+      ],
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
     }
   ],
   "entryHostLinks": [
@@ -2941,6 +3055,62 @@
       "role": "Program host",
       "sourceUrl": "https://www.chem.fsu.edu/qist/",
       "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-caltech",
+      "hostId": "caltech",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8682.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-stanford",
+      "hostId": "stanford",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8686.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-harvard",
+      "hostId": "harvard",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8683.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-mit",
+      "hostId": "mit",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8684.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-princeton",
+      "hostId": "princeton",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8685.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-berkeley",
+      "hostId": "berkeley",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8688.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-ucsb",
+      "hostId": "ucsb",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8690.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-theory-illinois",
+      "hostId": "illinois",
+      "role": "Grant-recipient theory center",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8691.01",
+      "jointHost": false
     }
   ],
   "unplacedEntries": [
@@ -2953,8 +3123,8 @@
     {
       "entryId": "moore-epiqs",
       "name": "Emergent Phenomena in Quantum Systems Initiative",
-      "page": "programs",
-      "reason": "Distributed investigator and materials-synthesis network. The foundation headquarters is not a research-site proxy; individual awardees and host institutions would need separate mapping."
+      "page": "philanthropy",
+      "reason": "Distributed initiative; individual grant recipients are mapped, not the foundation headquarters."
     },
     {
       "entryId": "dod-muri",
@@ -3304,5 +3474,6 @@
     ],
     "defaultRecommendation": "Prefer transparent evidence badges and separate education / centers / verified-funding lenses. If a combined score is shown, keep weights visible and adjustable; expose all numerator records. Keep unknown funding visually unknown, not $0.",
     "importantLimit": "The directory was intentionally selected, so any score measures evidence captured here, not the strongest universities worldwide."
-  }
+  },
+  "epiqsCheckedDate": "2026-11-04"
 }

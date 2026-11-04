@@ -1,0 +1,298 @@
+{
+  "checkedDate": "2026-11-04",
+  "sourceUrl": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+  "listingSHA256": "776f64e5224a5e6410dbbf04dbbe29f3f18fc1c0a7afb92e84d92e4c2dba7177",
+  "officialListingCount": 135,
+  "detailRecordsChecked": 135,
+  "previousSelectedCount": 42,
+  "newRecordsAdded": 93,
+  "grantIds": [
+    "GBMF10104",
+    "GBMF10215",
+    "GBMF10276",
+    "GBMF10277",
+    "GBMF10279",
+    "GBMF10436",
+    "GBMF10637",
+    "GBMF10638",
+    "GBMF10731",
+    "GBMF10748",
+    "GBMF11069",
+    "GBMF11070",
+    "GBMF11071",
+    "GBMF11918",
+    "GBMF12760",
+    "GBMF12761",
+    "GBMF12765",
+    "GBMF12766",
+    "GBMF14076",
+    "GBMF14095",
+    "GBMF14096",
+    "GBMF14097",
+    "GBMF14251",
+    "GBMF14260",
+    "GBMF3795",
+    "GBMF3848",
+    "GBMF3850",
+    "GBMF4302",
+    "GBMF4303",
+    "GBMF4304",
+    "GBMF4305",
+    "GBMF4306",
+    "GBMF4307",
+    "GBMF4374",
+    "GBMF4410",
+    "GBMF4411",
+    "GBMF4412",
+    "GBMF4413",
+    "GBMF4414",
+    "GBMF4415",
+    "GBMF4416",
+    "GBMF4417",
+    "GBMF4418",
+    "GBMF4419",
+    "GBMF4420",
+    "GBMF4474",
+    "GBMF4529",
+    "GBMF4530",
+    "GBMF4531",
+    "GBMF4532",
+    "GBMF4533",
+    "GBMF4533.01",
+    "GBMF4534",
+    "GBMF4534.01",
+    "GBMF4535",
+    "GBMF4536",
+    "GBMF4537",
+    "GBMF4538",
+    "GBMF4539",
+    "GBMF4540",
+    "GBMF4541",
+    "GBMF4542",
+    "GBMF4543",
+    "GBMF4544",
+    "GBMF4545",
+    "GBMF4546",
+    "GBMF4547",
+    "GBMF4630",
+    "GBMF4779",
+    "GBMF4838",
+    "GBMF4858",
+    "GBMF4859",
+    "GBMF4860",
+    "GBMF5305",
+    "GBMF5306",
+    "GBMF5307",
+    "GBMF6402",
+    "GBMF6759",
+    "GBMF6760",
+    "GBMF6791",
+    "GBMF7481",
+    "GBMF8682",
+    "GBMF8682.01",
+    "GBMF8683",
+    "GBMF8683.01",
+    "GBMF8684",
+    "GBMF8684.01",
+    "GBMF8685",
+    "GBMF8685.01",
+    "GBMF8686",
+    "GBMF8686.01",
+    "GBMF8688",
+    "GBMF8688.01",
+    "GBMF8690",
+    "GBMF8690.01",
+    "GBMF8691",
+    "GBMF8691.01",
+    "GBMF9062",
+    "GBMF9062.01",
+    "GBMF9063",
+    "GBMF9064",
+    "GBMF9065",
+    "GBMF9066",
+    "GBMF9067",
+    "GBMF9068",
+    "GBMF9069",
+    "GBMF9070",
+    "GBMF9071",
+    "GBMF9072",
+    "GBMF9073",
+    "GBMF9074",
+    "GBMF9212",
+    "GBMF9452",
+    "GBMF9453",
+    "GBMF9454",
+    "GBMF9455",
+    "GBMF9456",
+    "GBMF9457",
+    "GBMF9458",
+    "GBMF9459",
+    "GBMF9460",
+    "GBMF9461",
+    "GBMF9462",
+    "GBMF9463",
+    "GBMF9464",
+    "GBMF9465",
+    "GBMF9466",
+    "GBMF9467",
+    "GBMF9468",
+    "GBMF9469",
+    "GBMF9470",
+    "GBMF9471",
+    "GBMF9615",
+    "GBMF9615.01",
+    "GBMF9616"
+  ],
+  "missingGrantIds": [],
+  "duplicateGrantIds": [],
+  "amountUSD": 196892206,
+  "amountMeaning": "Sum of published grant amounts in the EPiQS-filtered listing, including one shared-initiative grant; not EPiQS-only cash spending.",
+  "mixedScopeCount": 1,
+  "mixedScopeGrantIds": [
+    "GBMF4474"
+  ],
+  "mixedScopeAmountUSD": 846456,
+  "yearRange": [
+    2013,
+    2026
+  ],
+  "byYear": {
+    "2013": {
+      "count": 3,
+      "amountUSD": 7138000
+    },
+    "2014": {
+      "count": 38,
+      "amountUSD": 66320825
+    },
+    "2015": {
+      "count": 5,
+      "amountUSD": 9141004
+    },
+    "2016": {
+      "count": 5,
+      "amountUSD": 4498328
+    },
+    "2017": {
+      "count": 3,
+      "amountUSD": 2446444
+    },
+    "2018": {
+      "count": 3,
+      "amountUSD": 2131472
+    },
+    "2019": {
+      "count": 21,
+      "amountUSD": 32131991
+    },
+    "2020": {
+      "count": 23,
+      "amountUSD": 38193031
+    },
+    "2021": {
+      "count": 9,
+      "amountUSD": 10018229
+    },
+    "2022": {
+      "count": 5,
+      "amountUSD": 5859169
+    },
+    "2023": {
+      "count": 1,
+      "amountUSD": 578925
+    },
+    "2024": {
+      "count": 5,
+      "amountUSD": 5916500
+    },
+    "2026": {
+      "count": 14,
+      "amountUSD": 12518288
+    }
+  },
+  "byType": {
+    "Bridge support": {
+      "count": 1,
+      "amountUSD": 3661871
+    },
+    "Community, training & coordination": {
+      "count": 11,
+      "amountUSD": 6300271
+    },
+    "Experimental investigators": {
+      "count": 41,
+      "amountUSD": 72003237
+    },
+    "Materials synthesis fellows": {
+      "count": 8,
+      "amountUSD": 10654455
+    },
+    "Materials synthesis investigators": {
+      "count": 25,
+      "amountUSD": 45851681
+    },
+    "Research on research & evaluation": {
+      "count": 1,
+      "amountUSD": 1071729
+    },
+    "Research tools & projects": {
+      "count": 26,
+      "amountUSD": 34117264
+    },
+    "Theory centers & scholars": {
+      "count": 22,
+      "amountUSD": 23231698
+    }
+  },
+  "mappedHostCount": 30,
+  "unmappedGrantCount": 8,
+  "unmappedRecipientCount": 6,
+  "classificationMethod": "Eight editorial grant types read from official titles and purposes. Exact official titles are retained. Types organize the portfolio; they are not asserted to be Moore's formal taxonomy.",
+  "completenessBoundary": "All 135 unique grants visible in the official EPiQS initiative-filtered public listing checked 4 November 2026. Excludes unpublished awards and other initiatives, including Experimental Physics Investigators. The public listing may change after this date.",
+  "unmappedRecipients": [
+    {
+      "name": "American Chemical Society",
+      "grantIds": [
+        "GBMF14251"
+      ],
+      "reason": "Postdoctoral bridge-support intermediary. Do not allocate the portfolio grant to individual universities or infer participating laboratory recipients. Headquarters is not a funded research campus."
+    },
+    {
+      "name": "CIFAR",
+      "grantIds": [
+        "GBMF4474"
+      ],
+      "reason": "Network and meeting partnership; no single university or physical laboratory recipient. Moore explicitly locates CIFAR in Toronto."
+    },
+    {
+      "name": "Institut national de la recherche scientifique",
+      "grantIds": [
+        "GBMF12761"
+      ],
+      "reason": "Official grant names INRS but no individual PI or specific center. Relevant materials center spans Varennes and Montreal; do not choose a specific award location without grant-specific evidence."
+    },
+    {
+      "name": "Institute for Complex Adaptive Matter",
+      "grantIds": [
+        "GBMF9616",
+        "GBMF5305"
+      ],
+      "reason": "Distributed network and QuantEmX exchange/workshop program. Administrative contact at UC Davis does not allocate the grant to UC Davis or other branches. Moore grantee-detail link redirects to the UC parent; retain exact grant-level recipient."
+    },
+    {
+      "name": "University of British Columbia",
+      "grantIds": [
+        "GBMF11071",
+        "GBMF4779"
+      ],
+      "reason": "Department of Physics and Astronomy named in recipient. Retain in directory/table; no US map point."
+    },
+    {
+      "name": "Université de Sherbrooke",
+      "grantIds": [
+        "GBMF5306"
+      ],
+      "reason": "Physics Department named in recipient. Retain in directory/table; no US map point."
+    }
+  ]
+}

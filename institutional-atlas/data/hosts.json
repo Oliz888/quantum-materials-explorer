@@ -1,13 +1,13 @@
 {
   "version": 2,
   "checkedDate": "2026-10-29",
-  "basis": "Sourced V2 directory with EPiQS theory-center and university additions checked 4 November 2026; earlier entries retain their original check dates.",
+  "basis": "V2 directory with complete public EPiQS recipient evidence checked 4 November 2026; earlier source dates retained.",
   "sourceDataPath": "institutional-atlas/data/institutions.json",
   "statistics": {
-    "distinctHosts": 42,
-    "mappedEntries": 65,
-    "unplacedEntries": 36,
-    "universityHosts": 27
+    "distinctHosts": 55,
+    "mappedEntries": 81,
+    "unplacedEntries": 42,
+    "universityHosts": 40
   },
   "hosts": [
     {
@@ -2586,10 +2586,12 @@
         }
       ],
       "hostEntryIds": [
-        "epiqs-theory-stanford"
+        "epiqs-theory-stanford",
+        "stanford-glam"
       ],
       "labEntryIds": [
-        "epiqs-theory-stanford"
+        "epiqs-theory-stanford",
+        "stanford-glam"
       ],
       "educationEvidence": [],
       "researchRouteEntryIds": [],
@@ -2601,7 +2603,637 @@
         "Approximate host-city coordinates, not laboratory-building positions.",
         "Selected EPiQS evidence only; absence of education entries does not mean no degree programs."
       ],
+      "listedLabCenterCount": 2,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "Cornell University",
+      "shortLabel": "Cornell",
+      "kind": "university",
+      "city": "Ithaca",
+      "state": "New York",
+      "stateCode": "NY",
+      "country": "United States",
+      "lat": 42.44,
+      "lon": -76.5,
+      "sourceUrls": [
+        "https://physics.cornell.edu/general-contacts"
+      ],
+      "id": "cornell",
+      "hostId": "cornell",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 42.44,
+          "lon": -76.5,
+          "city": "Ithaca",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States",
+          "label": "Cornell University — Ithaca",
+          "sourceUrl": "https://physics.cornell.edu/general-contacts",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-cornell",
+        "cornell-lassp"
+      ],
+      "labEntryIds": [
+        "cornell-lassp"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-cornell"
+      ],
+      "coverageNotes": [
+        "Physics and LASSP official contact page gives Ithaca, New York.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
       "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "Indiana University Bloomington",
+      "shortLabel": "Indiana",
+      "kind": "university",
+      "city": "Bloomington",
+      "state": "Indiana",
+      "stateCode": "IN",
+      "country": "United States",
+      "lat": 39.17,
+      "lon": -86.52,
+      "sourceUrls": [
+        "https://luddy.iu.edu/about/contact.html"
+      ],
+      "id": "indiana",
+      "hostId": "indiana",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 39.17,
+          "lon": -86.52,
+          "city": "Bloomington",
+          "state": "Indiana",
+          "stateCode": "IN",
+          "country": "United States",
+          "label": "Indiana University Bloomington — Bloomington",
+          "sourceUrl": "https://luddy.iu.edu/about/contact.html",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-indiana"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-indiana"
+      ],
+      "coverageNotes": [
+        "Luddy School official contact page gives Bloomington, Indiana.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "Iowa State University",
+      "shortLabel": "Iowa State",
+      "kind": "university",
+      "city": "Ames",
+      "state": "Iowa",
+      "stateCode": "IA",
+      "country": "United States",
+      "lat": 42.03,
+      "lon": -93.62,
+      "sourceUrls": [
+        "https://www.physastro.iastate.edu/contact"
+      ],
+      "id": "iowa-state",
+      "hostId": "iowa-state",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 42.03,
+          "lon": -93.62,
+          "city": "Ames",
+          "state": "Iowa",
+          "stateCode": "IA",
+          "country": "United States",
+          "label": "Iowa State University — Ames",
+          "sourceUrl": "https://www.physastro.iastate.edu/contact",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-iowa-state"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-iowa-state"
+      ],
+      "coverageNotes": [
+        "Physics and Astronomy official contact page gives Ames, Iowa. Separate legal recipient from Ames National Laboratory.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "Johns Hopkins University",
+      "shortLabel": "Johns Hopkins",
+      "kind": "university",
+      "city": "Baltimore",
+      "state": "Maryland",
+      "stateCode": "MD",
+      "country": "United States",
+      "lat": 39.29,
+      "lon": -76.61,
+      "sourceUrls": [
+        "https://physics-astronomy.jhu.edu/about/contact/"
+      ],
+      "id": "johns-hopkins",
+      "hostId": "johns-hopkins",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 39.29,
+          "lon": -76.61,
+          "city": "Baltimore",
+          "state": "Maryland",
+          "stateCode": "MD",
+          "country": "United States",
+          "label": "Johns Hopkins University — Baltimore",
+          "sourceUrl": "https://physics-astronomy.jhu.edu/about/contact/",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-johns-hopkins"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-johns-hopkins"
+      ],
+      "coverageNotes": [
+        "Physics and Astronomy official directions page gives Baltimore, Maryland.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "New York University",
+      "shortLabel": "NYU",
+      "kind": "university",
+      "city": "New York",
+      "state": "New York",
+      "stateCode": "NY",
+      "country": "United States",
+      "lat": 40.73,
+      "lon": -73.99,
+      "sourceUrls": [
+        "https://physics.nyu.edu/kentlab/contactinformation.html"
+      ],
+      "id": "nyu",
+      "hostId": "nyu",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 40.73,
+          "lon": -73.99,
+          "city": "New York",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States",
+          "label": "New York University — New York",
+          "sourceUrl": "https://physics.nyu.edu/kentlab/contactinformation.html",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-nyu"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-nyu"
+      ],
+      "coverageNotes": [
+        "NYU-hosted physics laboratory contact page places the Physics Department at 726 Broadway, New York, NY. Geography evidence only; no association of the grant with the Kent group is inferred.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "Pennsylvania State University",
+      "shortLabel": "Penn State",
+      "kind": "university",
+      "city": "University Park",
+      "state": "Pennsylvania",
+      "stateCode": "PA",
+      "country": "United States",
+      "lat": 40.8,
+      "lon": -77.86,
+      "sourceUrls": [
+        "https://researchsupport.psu.edu/osp/"
+      ],
+      "id": "penn-state",
+      "hostId": "penn-state",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 40.8,
+          "lon": -77.86,
+          "city": "University Park",
+          "state": "Pennsylvania",
+          "stateCode": "PA",
+          "country": "United States",
+          "label": "Pennsylvania State University — University Park",
+          "sourceUrl": "https://researchsupport.psu.edu/osp/",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-penn-state"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-penn-state"
+      ],
+      "coverageNotes": [
+        "Office of Sponsored Programs official page gives University Park, Pennsylvania. OSP administers awards and is not a research laboratory.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "Rice University",
+      "shortLabel": "Rice",
+      "kind": "university",
+      "city": "Houston",
+      "state": "Texas",
+      "stateCode": "TX",
+      "country": "United States",
+      "lat": 29.72,
+      "lon": -95.4,
+      "sourceUrls": [
+        "https://physics.rice.edu/about/contact"
+      ],
+      "id": "rice",
+      "hostId": "rice",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 29.72,
+          "lon": -95.4,
+          "city": "Houston",
+          "state": "Texas",
+          "stateCode": "TX",
+          "country": "United States",
+          "label": "Rice University — Houston",
+          "sourceUrl": "https://physics.rice.edu/about/contact",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-rice"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-rice"
+      ],
+      "coverageNotes": [
+        "Physics and Astronomy official contact page gives Houston, Texas.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "Rutgers University–New Brunswick",
+      "shortLabel": "Rutgers",
+      "kind": "university",
+      "city": "Piscataway",
+      "state": "New Jersey",
+      "stateCode": "NJ",
+      "country": "United States",
+      "lat": 40.52,
+      "lon": -74.46,
+      "sourceUrls": [
+        "https://physics.rutgers.edu/contact-us"
+      ],
+      "id": "rutgers",
+      "hostId": "rutgers",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 40.52,
+          "lon": -74.46,
+          "city": "Piscataway",
+          "state": "New Jersey",
+          "stateCode": "NJ",
+          "country": "United States",
+          "label": "Rutgers University–New Brunswick — Piscataway",
+          "sourceUrl": "https://physics.rutgers.edu/contact-us",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-rutgers",
+        "rutgers-rcem"
+      ],
+      "labEntryIds": [
+        "rutgers-rcem"
+      ],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-rutgers"
+      ],
+      "coverageNotes": [
+        "Physics and Astronomy official contact page gives Piscataway, New Jersey; excludes Rutgers Newark and Camden.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 1,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "University of California Irvine",
+      "shortLabel": "UC Irvine",
+      "kind": "university",
+      "city": "Irvine",
+      "state": "California",
+      "stateCode": "CA",
+      "country": "United States",
+      "lat": 33.65,
+      "lon": -117.84,
+      "sourceUrls": [
+        "https://www.physics.uci.edu/node/10040"
+      ],
+      "id": "uci",
+      "hostId": "uci",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 33.65,
+          "lon": -117.84,
+          "city": "Irvine",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States",
+          "label": "University of California Irvine — Irvine",
+          "sourceUrl": "https://www.physics.uci.edu/node/10040",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-uci"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-uci"
+      ],
+      "coverageNotes": [
+        "Physics and Astronomy official contact page gives Irvine, California.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "University of Pennsylvania",
+      "shortLabel": "Penn",
+      "kind": "university",
+      "city": "Philadelphia",
+      "state": "Pennsylvania",
+      "stateCode": "PA",
+      "country": "United States",
+      "lat": 39.95,
+      "lon": -75.19,
+      "sourceUrls": [
+        "https://www.upenn.edu/about/contact"
+      ],
+      "id": "penn",
+      "hostId": "penn",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 39.95,
+          "lon": -75.19,
+          "city": "Philadelphia",
+          "state": "Pennsylvania",
+          "stateCode": "PA",
+          "country": "United States",
+          "label": "University of Pennsylvania — Philadelphia",
+          "sourceUrl": "https://www.upenn.edu/about/contact",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-penn"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-penn"
+      ],
+      "coverageNotes": [
+        "University official contact page gives Philadelphia, Pennsylvania.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "University of Rochester",
+      "shortLabel": "Rochester",
+      "kind": "university",
+      "city": "Rochester",
+      "state": "New York",
+      "stateCode": "NY",
+      "country": "United States",
+      "lat": 43.13,
+      "lon": -77.63,
+      "sourceUrls": [
+        "https://www.hajim.rochester.edu/about/contact.html"
+      ],
+      "id": "rochester",
+      "hostId": "rochester",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 43.13,
+          "lon": -77.63,
+          "city": "Rochester",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States",
+          "label": "University of Rochester — Rochester",
+          "sourceUrl": "https://www.hajim.rochester.edu/about/contact.html",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-rochester"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-rochester"
+      ],
+      "coverageNotes": [
+        "Hajim engineering school official contact page gives Rochester, New York. No named PI is inferred from the grant title.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "University of Tennessee Knoxville",
+      "shortLabel": "Tennessee",
+      "kind": "university",
+      "city": "Knoxville",
+      "state": "Tennessee",
+      "stateCode": "TN",
+      "country": "United States",
+      "lat": 35.96,
+      "lon": -83.93,
+      "sourceUrls": [
+        "https://tickle.utk.edu/mse/staff/"
+      ],
+      "id": "tennessee",
+      "hostId": "tennessee",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 35.96,
+          "lon": -83.93,
+          "city": "Knoxville",
+          "state": "Tennessee",
+          "stateCode": "TN",
+          "country": "United States",
+          "label": "University of Tennessee Knoxville — Knoxville",
+          "sourceUrl": "https://tickle.utk.edu/mse/staff/",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-tennessee"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-tennessee"
+      ],
+      "coverageNotes": [
+        "Materials Science and Engineering official staff page gives Knoxville, Tennessee.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
+      "formalEducationEntryCount": 0,
+      "hasFormalEducationalPathway": false,
+      "hasQuantumMaterialsSpecificEducation": false
+    },
+    {
+      "displayName": "University of Texas at Austin",
+      "shortLabel": "UT Austin",
+      "kind": "university",
+      "city": "Austin",
+      "state": "Texas",
+      "stateCode": "TX",
+      "country": "United States",
+      "lat": 30.28,
+      "lon": -97.74,
+      "sourceUrls": [
+        "https://www.utexas.edu/contact-us"
+      ],
+      "id": "ut-austin",
+      "hostId": "ut-austin",
+      "precision": "city",
+      "locations": [
+        {
+          "lat": 30.28,
+          "lon": -97.74,
+          "city": "Austin",
+          "state": "Texas",
+          "stateCode": "TX",
+          "country": "United States",
+          "label": "University of Texas at Austin — Austin",
+          "sourceUrl": "https://www.utexas.edu/contact-us",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "hostEntryIds": [
+        "epiqs-recipient-ut-austin"
+      ],
+      "labEntryIds": [],
+      "educationEvidence": [],
+      "researchRouteEntryIds": [
+        "epiqs-recipient-ut-austin"
+      ],
+      "coverageNotes": [
+        "University official contact page gives Austin, Texas.",
+        "Rounded plotting coordinates are approximate map placement, not official geodetic or building coordinates.",
+        "EPiQS grant-recipient evidence does not establish a degree program or a separate physical laboratory."
+      ],
+      "listedLabCenterCount": 0,
       "formalEducationEntryCount": 0,
       "hasFormalEducationalPathway": false,
       "hasQuantumMaterialsSpecificEducation": false
@@ -3111,6 +3743,118 @@
       "role": "Grant-recipient theory center",
       "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF8691.01",
       "jointHost": false
+    },
+    {
+      "entryId": "stanford-glam",
+      "hostId": "stanford",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF9460",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-cornell",
+      "hostId": "cornell",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF9062.01",
+      "jointHost": false
+    },
+    {
+      "entryId": "cornell-lassp",
+      "hostId": "cornell",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF10436",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-indiana",
+      "hostId": "indiana",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF14096",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-iowa-state",
+      "hostId": "iowa-state",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF4411",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-johns-hopkins",
+      "hostId": "johns-hopkins",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF9454",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-nyu",
+      "hostId": "nyu",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF4838",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-penn-state",
+      "hostId": "penn-state",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF9063",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-rice",
+      "hostId": "rice",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF9470",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-rutgers",
+      "hostId": "rutgers",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF14095",
+      "jointHost": false
+    },
+    {
+      "entryId": "rutgers-rcem",
+      "hostId": "rutgers",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF4413",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-uci",
+      "hostId": "uci",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF14076",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-penn",
+      "hostId": "penn",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF9212",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-rochester",
+      "hostId": "rochester",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF10731",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-tennessee",
+      "hostId": "tennessee",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF9069",
+      "jointHost": false
+    },
+    {
+      "entryId": "epiqs-recipient-ut-austin",
+      "hostId": "ut-austin",
+      "role": "Named recipient host",
+      "sourceUrl": "https://www.moore.org/grant-detail?grantId=GBMF11918",
+      "jointHost": false
     }
   ],
   "unplacedEntries": [
@@ -3329,6 +4073,42 @@
       "name": "NDAA-designated Quantum Information Science Research Centers",
       "page": "federal",
       "reason": "No research-site coordinates assigned in this directory. Funding portfolios, regional consortia and coordination initiatives are not represented by an agency-headquarters pin; consult linked host institutions for research locations."
+    },
+    {
+      "entryId": "epiqs-recipient-acs",
+      "name": "American Chemical Society — EPiQS-supported activity",
+      "page": "programs",
+      "reason": "Postdoctoral bridge-support intermediary. Do not allocate the portfolio grant to individual universities or infer participating laboratory recipients. Headquarters is not a funded research campus."
+    },
+    {
+      "entryId": "epiqs-recipient-cifar",
+      "name": "CIFAR — EPiQS-supported activity",
+      "page": "programs",
+      "reason": "Network and meeting partnership; no single university or physical laboratory recipient. Moore explicitly locates CIFAR in Toronto."
+    },
+    {
+      "entryId": "epiqs-recipient-inrs",
+      "name": "Institut national de la recherche scientifique — EPiQS-supported activity",
+      "page": "programs",
+      "reason": "Official grant names INRS but no individual PI or specific center. Relevant materials center spans Varennes and Montreal; do not choose a specific award location without grant-specific evidence."
+    },
+    {
+      "entryId": "epiqs-recipient-icam",
+      "name": "Institute for Complex Adaptive Matter — EPiQS-supported activity",
+      "page": "programs",
+      "reason": "Distributed network and QuantEmX exchange/workshop program. Administrative contact at UC Davis does not allocate the grant to UC Davis or other branches. Moore grantee-detail link redirects to the UC parent; retain exact grant-level recipient."
+    },
+    {
+      "entryId": "epiqs-recipient-ubc",
+      "name": "University of British Columbia — EPiQS-supported activity",
+      "page": "programs",
+      "reason": "Department of Physics and Astronomy named in recipient. Retain in directory/table; no US map point."
+    },
+    {
+      "entryId": "epiqs-recipient-sherbrooke",
+      "name": "Université de Sherbrooke — EPiQS-supported activity",
+      "page": "programs",
+      "reason": "Physics Department named in recipient. Retain in directory/table; no US map point."
     }
   ],
   "campusAssociations": [

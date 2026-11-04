@@ -898,7 +898,7 @@
       "funder": "Gordon and Betty Moore Foundation",
       "startYear": 2013,
       "status": "2025 ten-year extension; 2026 theory-center continuation grants published; new investigator competitions underway",
-      "focus": "Supports discovery-driven quantum materials research through people, experimental tools, synthesis, theory and collaboration.",
+      "focus": "Supports quantum materials investigators, synthesis, theory, tools, training, bridge support and research on research.",
       "materials": "Focuses on emergent behavior, correlated electrons, entanglement, engineered quantum matter and non-equilibrium phenomena.",
       "topics": [
         "quantum materials",
@@ -920,9 +920,14 @@
           "url": "https://www.moore.org/initiative-additional-info?initiativeId=emergent-phenomena-in-quantum-systems",
           "evidenceDate": "2026-10-29",
           "note": "Undated current page checked 2026-10-29. Current competition page covers synthesis, experiment and theory; fundamental emergence prioritized over near-term devices."
+        },
+        {
+          "title": "Complete official EPiQS public grant listing",
+          "url": "https://www.moore.org/grants?filterProgram=01ddf360-a10f-68a5-8452-ff00002785c8&showAll=true",
+          "evidenceDate": "2026-11-04"
         }
       ],
-      "notes": "Private foundation funding. Specific grants are linked below; the $230 million initiative extension is context only and is not assigned to individual institutions.",
+      "notes": "All 135 grants in the initiative-filtered public listing checked 4 November 2026 are included in V2. Types are editorial groupings from official titles and purposes. Full grant amounts are distinct from annual payments and include one mixed-initiative grant.",
       "checkedDate": "2026-11-04",
       "page": "philanthropy",
       "group": "Moore Foundation",
@@ -6084,6 +6089,1162 @@
         }
       ],
       "locationNote": "Approximate host-city point; center funding is linked to the named university department or institute."
+    },
+    {
+      "id": "epiqs-recipient-acs",
+      "name": "American Chemical Society — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "American Chemical Society",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Bridge support",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2026,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Postdoctoral bridge-support intermediary. Do not allocate the portfolio grant to individual universities or infer participating laboratory recipients. Headquarters is not a funded research campus.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF14251",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF14251",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "Postdoctoral bridge-support intermediary. Do not allocate the portfolio grant to individual universities or infer participating laboratory recipients. Headquarters is not a funded research campus."
+    },
+    {
+      "id": "epiqs-recipient-cifar",
+      "name": "CIFAR — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "CIFAR",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Community, training & coordination",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2014,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Network and meeting partnership; no single university or physical laboratory recipient. Moore explicitly locates CIFAR in Toronto.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF4474",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4474",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "Network and meeting partnership; no single university or physical laboratory recipient. Moore explicitly locates CIFAR in Toronto."
+    },
+    {
+      "id": "epiqs-recipient-cornell",
+      "name": "Cornell University — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Cornell University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Experimental investigators; Materials synthesis investigators; Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2013,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9062.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9062.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF10436",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF10436",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF9457",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9457",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF9073",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9073",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4544",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4544",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF3850",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF3850",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "cornell"
+      ],
+      "locations": [
+        {
+          "lat": 42.44,
+          "lon": -76.5,
+          "city": "Ithaca",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States",
+          "label": "Cornell University — Ithaca",
+          "sourceUrl": "https://physics.cornell.edu/general-contacts",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-indiana",
+      "name": "Indiana University Bloomington — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Indiana University Bloomington",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Research on research & evaluation",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2026,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Luddy School is the recipient unit for a metascience study of quantum-materials innovation, not evidence of a physical quantum-materials laboratory.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF14096",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF14096",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "indiana"
+      ],
+      "locations": [
+        {
+          "lat": 39.17,
+          "lon": -86.52,
+          "city": "Bloomington",
+          "state": "Indiana",
+          "stateCode": "IN",
+          "country": "United States",
+          "label": "Indiana University Bloomington — Bloomington",
+          "sourceUrl": "https://luddy.iu.edu/about/contact.html",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Luddy School is the recipient unit for a metascience study of quantum-materials innovation, not evidence of a physical quantum-materials laboratory."
+    },
+    {
+      "id": "epiqs-recipient-inrs",
+      "name": "Institut national de la recherche scientifique — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Institut national de la recherche scientifique",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2024,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Official grant names INRS but no individual PI or specific center. Relevant materials center spans Varennes and Montreal; do not choose a specific award location without grant-specific evidence.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF12761",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF12761",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "Official grant names INRS but no individual PI or specific center. Relevant materials center spans Varennes and Montreal; do not choose a specific award location without grant-specific evidence."
+    },
+    {
+      "id": "epiqs-recipient-icam",
+      "name": "Institute for Complex Adaptive Matter — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Institute for Complex Adaptive Matter",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Community, training & coordination",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2016,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Distributed network and QuantEmX exchange/workshop program. Administrative contact at UC Davis does not allocate the grant to UC Davis or other branches. Moore grantee-detail link redirects to the UC parent; retain exact grant-level recipient.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9616",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9616",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF5305",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF5305",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "Distributed network and QuantEmX exchange/workshop program. Administrative contact at UC Davis does not allocate the grant to UC Davis or other branches. Moore grantee-detail link redirects to the UC parent; retain exact grant-level recipient."
+    },
+    {
+      "id": "epiqs-recipient-iowa-state",
+      "name": "Iowa State University — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Iowa State University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Materials synthesis investigators",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2014,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Department of Physics and Astronomy is the university recipient. Paul Canfield is named in the award title; no funding allocation to Ames National Laboratory is implied by any dual affiliation.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF4411",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4411",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "iowa-state"
+      ],
+      "locations": [
+        {
+          "lat": 42.03,
+          "lon": -93.62,
+          "city": "Ames",
+          "state": "Iowa",
+          "stateCode": "IA",
+          "country": "United States",
+          "label": "Iowa State University — Ames",
+          "sourceUrl": "https://www.physastro.iastate.edu/contact",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Department of Physics and Astronomy is the university recipient. Paul Canfield is named in the award title; no funding allocation to Ames National Laboratory is implied by any dual affiliation."
+    },
+    {
+      "id": "epiqs-recipient-johns-hopkins",
+      "name": "Johns Hopkins University — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Johns Hopkins University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Experimental investigators",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2014,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9454",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9454",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF9456",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9456",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4532",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4532",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "johns-hopkins"
+      ],
+      "locations": [
+        {
+          "lat": 39.29,
+          "lon": -76.61,
+          "city": "Baltimore",
+          "state": "Maryland",
+          "stateCode": "MD",
+          "country": "United States",
+          "label": "Johns Hopkins University — Baltimore",
+          "sourceUrl": "https://physics-astronomy.jhu.edu/about/contact/",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-nyu",
+      "name": "New York University — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "New York University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2015,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF4838",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4838",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "nyu"
+      ],
+      "locations": [
+        {
+          "lat": 40.73,
+          "lon": -73.99,
+          "city": "New York",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States",
+          "label": "New York University — New York",
+          "sourceUrl": "https://physics.nyu.edu/kentlab/contactinformation.html",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-penn-state",
+      "name": "Pennsylvania State University — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Pennsylvania State University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Materials synthesis investigators",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2019,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Administrative award office, not a research laboratory or center. Attribute funds to the university; any PI/group connection must come from the individual grant or official institutional evidence.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9063",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9063",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "penn-state"
+      ],
+      "locations": [
+        {
+          "lat": 40.8,
+          "lon": -77.86,
+          "city": "University Park",
+          "state": "Pennsylvania",
+          "stateCode": "PA",
+          "country": "United States",
+          "label": "Pennsylvania State University — University Park",
+          "sourceUrl": "https://researchsupport.psu.edu/osp/",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Administrative award office, not a research laboratory or center. Attribute funds to the university; any PI/group connection must come from the individual grant or official institutional evidence."
+    },
+    {
+      "id": "epiqs-recipient-rice",
+      "name": "Rice University — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Rice University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Experimental investigators; Materials synthesis investigators",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2014,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9470",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9470",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4417",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4417",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "rice"
+      ],
+      "locations": [
+        {
+          "lat": 29.72,
+          "lon": -95.4,
+          "city": "Houston",
+          "state": "Texas",
+          "stateCode": "TX",
+          "country": "United States",
+          "label": "Rice University — Houston",
+          "sourceUrl": "https://physics.rice.edu/about/contact",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-rutgers",
+      "name": "Rutgers University–New Brunswick — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Rutgers University–New Brunswick",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Community, training & coordination; Experimental investigators; Materials synthesis investigators; Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2014,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Center for Emergent Materials and Physics and Astronomy are explicitly named recipient units. This is a supported center affiliation, not a second grant or separate financial allocation.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF14095",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF14095",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF10104",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF10104",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF9453",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9453",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF6402",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF6402",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4534.01",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4534.01",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4413",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4413",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4418",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4418",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "rutgers"
+      ],
+      "locations": [
+        {
+          "lat": 40.52,
+          "lon": -74.46,
+          "city": "Piscataway",
+          "state": "New Jersey",
+          "stateCode": "NJ",
+          "country": "United States",
+          "label": "Rutgers University–New Brunswick — Piscataway",
+          "sourceUrl": "https://physics.rutgers.edu/contact-us",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Center for Emergent Materials and Physics and Astronomy are explicitly named recipient units. This is a supported center affiliation, not a second grant or separate financial allocation."
+    },
+    {
+      "id": "epiqs-recipient-ubc",
+      "name": "University of British Columbia — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "University of British Columbia",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2015,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Department of Physics and Astronomy named in recipient. Retain in directory/table; no US map point.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF11071",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF11071",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4779",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4779",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "Department of Physics and Astronomy named in recipient. Retain in directory/table; no US map point."
+    },
+    {
+      "id": "epiqs-recipient-uci",
+      "name": "University of California Irvine — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "University of California Irvine",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Community, training & coordination; Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2021,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF14076",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF14076",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF10276",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF10276",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "uci"
+      ],
+      "locations": [
+        {
+          "lat": 33.65,
+          "lon": -117.84,
+          "city": "Irvine",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States",
+          "label": "University of California Irvine — Irvine",
+          "sourceUrl": "https://www.physics.uci.edu/node/10040",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-penn",
+      "name": "University of Pennsylvania — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "University of Pennsylvania",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Community, training & coordination",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2020,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9212",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9212",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "penn"
+      ],
+      "locations": [
+        {
+          "lat": 39.95,
+          "lon": -75.19,
+          "city": "Philadelphia",
+          "state": "Pennsylvania",
+          "stateCode": "PA",
+          "country": "United States",
+          "label": "University of Pennsylvania — Philadelphia",
+          "sourceUrl": "https://www.upenn.edu/about/contact",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-rochester",
+      "name": "University of Rochester — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "University of Rochester",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2021,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF10731",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF10731",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "rochester"
+      ],
+      "locations": [
+        {
+          "lat": 43.13,
+          "lon": -77.63,
+          "city": "Rochester",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States",
+          "label": "University of Rochester — Rochester",
+          "sourceUrl": "https://www.hajim.rochester.edu/about/contact.html",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-tennessee",
+      "name": "University of Tennessee Knoxville — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "University of Tennessee Knoxville",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Materials synthesis investigators",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2014,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9069",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9069",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4416",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4416",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "tennessee"
+      ],
+      "locations": [
+        {
+          "lat": 35.96,
+          "lon": -83.93,
+          "city": "Knoxville",
+          "state": "Tennessee",
+          "stateCode": "TN",
+          "country": "United States",
+          "label": "University of Tennessee Knoxville — Knoxville",
+          "sourceUrl": "https://tickle.utk.edu/mse/staff/",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-ut-austin",
+      "name": "University of Texas at Austin — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "University of Texas at Austin",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Community, training & coordination",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2023,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF11918",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF11918",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "ut-austin"
+      ],
+      "locations": [
+        {
+          "lat": 30.28,
+          "lon": -97.74,
+          "city": "Austin",
+          "state": "Texas",
+          "stateCode": "TX",
+          "country": "United States",
+          "label": "University of Texas at Austin — Austin",
+          "sourceUrl": "https://www.utexas.edu/contact-us",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Recipient unit is affiliation evidence, not a separate center or a count of laboratories. Named investigator groups should be extracted per grant only where the title/purpose or an official institution page identifies them."
+    },
+    {
+      "id": "epiqs-recipient-sherbrooke",
+      "name": "Université de Sherbrooke — EPiQS-supported activity",
+      "acronym": "",
+      "page": "programs",
+      "pages": [
+        "programs"
+      ],
+      "group": "Moore EPiQS recipient research routes",
+      "kind": "Funded research / community activity; not a degree program",
+      "lead": "Université de Sherbrooke",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "Research tools & projects",
+      "materials": "EPiQS grants; grant details distinguish experimental research, tools, training and research on research.",
+      "startYear": 2016,
+      "status": "Public grant records checked 4 November 2026; current project operation is not inferred from an award date.",
+      "notes": "Recipient departments and offices are retained in individual grant records. This entry is a funding connection, not evidence of a new lab or educational credential. Physics Department named in recipient. Retain in directory/table; no US map point.",
+      "topics": [
+        "EPiQS",
+        "quantum materials",
+        "funding"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF5306",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF5306",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [],
+      "locations": [],
+      "locationNote": "Physics Department named in recipient. Retain in directory/table; no US map point."
+    },
+    {
+      "id": "cornell-lassp",
+      "name": "Laboratory of Atomic and Solid State Physics",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "University research units named by Moore",
+      "kind": "Research laboratory / center named in official grant recipient",
+      "lead": "Cornell University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "EPiQS-supported research at this named institutional unit.",
+      "materials": "Quantum materials",
+      "startYear": null,
+      "status": "Named recipient unit in the cited historical award records.",
+      "notes": "Named unit within the university. Grant amounts are counted once at the university recipient; no separate additional allocation is inferred.",
+      "topics": [
+        "EPiQS",
+        "quantum materials"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF10436",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF10436",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF9457",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9457",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4544",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4544",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "cornell"
+      ],
+      "locations": [
+        {
+          "lat": 42.44,
+          "lon": -76.5,
+          "city": "Ithaca",
+          "state": "New York",
+          "stateCode": "NY",
+          "country": "United States",
+          "label": "Cornell University — Ithaca",
+          "sourceUrl": "https://physics.cornell.edu/general-contacts",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Approximate university host location, not a lab-building location."
+    },
+    {
+      "id": "rutgers-rcem",
+      "name": "Center for Emergent Materials",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "University research units named by Moore",
+      "kind": "Research laboratory / center named in official grant recipient",
+      "lead": "Rutgers University–New Brunswick",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "EPiQS-supported research at this named institutional unit.",
+      "materials": "Quantum materials",
+      "startYear": null,
+      "status": "Named recipient unit in the cited historical award records.",
+      "notes": "Named unit within the university. Grant amounts are counted once at the university recipient; no separate additional allocation is inferred.",
+      "topics": [
+        "EPiQS",
+        "quantum materials"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF4413",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4413",
+          "evidenceDate": "2026-11-04"
+        },
+        {
+          "title": "Moore GBMF4418",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF4418",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "rutgers"
+      ],
+      "locations": [
+        {
+          "lat": 40.52,
+          "lon": -74.46,
+          "city": "Piscataway",
+          "state": "New Jersey",
+          "stateCode": "NJ",
+          "country": "United States",
+          "label": "Rutgers University–New Brunswick — Piscataway",
+          "sourceUrl": "https://physics.rutgers.edu/contact-us",
+          "precision": "city",
+          "role": "University host"
+        }
+      ],
+      "locationNote": "Approximate university host location, not a lab-building location."
+    },
+    {
+      "id": "stanford-glam",
+      "name": "Geballe Laboratory for Advanced Materials",
+      "acronym": "",
+      "page": "labs",
+      "pages": [
+        "labs"
+      ],
+      "group": "University research units named by Moore",
+      "kind": "Research laboratory / center named in official grant recipient",
+      "lead": "Stanford University",
+      "funder": "Gordon and Betty Moore Foundation",
+      "funderType": "private-foundation",
+      "parentId": "moore-epiqs",
+      "focus": "EPiQS-supported research at this named institutional unit.",
+      "materials": "Quantum materials",
+      "startYear": null,
+      "status": "Named recipient unit in the cited historical award records.",
+      "notes": "Named unit within the university. Grant amounts are counted once at the university recipient; no separate additional allocation is inferred.",
+      "topics": [
+        "EPiQS",
+        "quantum materials"
+      ],
+      "sources": [
+        {
+          "title": "Moore GBMF9460",
+          "url": "https://www.moore.org/grant-detail?grantId=GBMF9460",
+          "evidenceDate": "2026-11-04"
+        }
+      ],
+      "checkedDate": "2026-11-04",
+      "milestones": [],
+      "hostIds": [
+        "stanford"
+      ],
+      "locations": [
+        {
+          "label": "Stanford University — Stanford, California",
+          "lat": 37.43,
+          "lon": -122.17,
+          "sourceUrl": "https://physics.stanford.edu/about/contact",
+          "precision": "city",
+          "role": "University host",
+          "city": "Stanford",
+          "state": "California",
+          "stateCode": "CA",
+          "country": "United States"
+        }
+      ],
+      "locationNote": "Approximate university host location, not a lab-building location."
     }
   ],
   "epiqsCheckedDate": "2026-11-04"

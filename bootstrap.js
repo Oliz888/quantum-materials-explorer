@@ -27,8 +27,8 @@
     }
     if(document.body.dataset.view==='institutional-atlas') {
       await load('institutional-atlas/data/bundle.js?v=5');
-      await load('institutional-atlas/atlas-core.js?v=5');
-      await load('institutional-atlas/atlas.js?v=5');
+      await load('institutional-atlas/atlas-core.js?v=6');
+      await load('institutional-atlas/atlas.js?v=6');
       return;
     }
     if(document.body.dataset.view==='institutions') {

@@ -17,9 +17,7 @@ function matchesFundingLayers(a,s){if(!s.layers)return true;const federal=s.laye
 function fundingRecords(data,s={},hostIds=null){const phrase=normalize(s.query),words=phrase.split(' ').filter(Boolean),namedProject=phrase&&data.entries.some(e=>normalize(e.name)===phrase);const match=text=>namedProject?normalize(text).includes(phrase):words.every(w=>normalize(text).includes(w));return scopedAwards(data,s.fundingScope||'all').filter(a=>matchesFundingProgram(data,a,s)&&matchesFundingLayers(a,s)&&(!s.fundingSector||s.fundingSector==='all'||funderType(a)===s.fundingSector)&&(!s.fundingAgency||s.fundingAgency==='all'||a.agency===s.fundingAgency)&&(!s.fundingYear||s.fundingYear==='all'||fundingYear(a)===Number(s.fundingYear))&&(!s.fundingPortfolio||s.fundingPortfolio==='all'||grantType(a)===s.fundingPortfolio)&&(hostIds===null||awardHosts(a).some(id=>hostIds.includes(id)))&&match(awardSearchText(a)+' '+awardHosts(a).map(id=>data.byHost[id]?.displayName||'').join(' ')+' '+(a.leadInstitution||'')));}
 function portfolioSummary(awards){const grants=awards.filter(a=>a.program==='EPiQS'),types=unique(grants.map(a=>a.portfolio)).sort(),years=unique(grants.map(fundingYear)).sort((a,b)=>b-a);return{count:grants.length,amountUSD:grants.reduce((n,a)=>n+a.amountUSD,0),types,years:years.map(year=>{const rows=grants.filter(a=>fundingYear(a)===year);return{year,count:rows.length,amountUSD:rows.reduce((n,a)=>n+a.amountUSD,0),types:Object.fromEntries(types.map(type=>[type,rows.filter(a=>a.portfolio===type).length]))};})};}
 function fundingSummary(awards){const types=unique(awards.map(grantType)).sort(),years=unique(awards.map(fundingYear)).sort((a,b)=>b-a);return{count:awards.length,knownAmountCount:awards.filter(a=>Number.isFinite(a.amountUSD)).length,types,years:years.map(year=>{const rows=awards.filter(a=>fundingYear(a)===year);return{year,count:rows.length,types:Object.fromEntries(types.map(type=>[type,rows.filter(a=>grantType(a)===type).length]))};})};}
-function weights(w){const t=w.education+w.research+w.funding;return t?{education:w.education/t,research:w.research/t,funding:w.funding/t}:{education:0,research:0,funding:0};}
-function evidence(data,host,scope,w={education:40,research:35,funding:25},options={}){
- const linkedAwards=fundingRecords(data,{...options,fundingScope:scope},[host.id]);
+function hostEvidence(host, linkedAwards) {
  const awards=linkedAwards.filter(a=>a.recipientHostId===host.id&&amountKind(a)==='obligation');
  const recipientAnnouncements=linkedAwards.filter(a=>a.recipientHostId===host.id&&amountKind(a)==='recipient');
  const foundationAwards=linkedAwards.filter(a=>a.recipientHostId===host.id&&amountKind(a)==='foundation');
@@ -28,23 +26,57 @@ function evidence(data,host,scope,w={education:40,research:35,funding:25},option
  // A renewal is another funding phase, not another independent project.
  const projectCount=unique(linkedAwards.map(a=>a.projectKey||awardKey(a))).length;
  const education=host.educationEvidence.filter(e=>e.formalEducationalPathway),labIds=unique(host.labEntryIds);
- const basis=options.fundingMeasure||'obligations';
- const selectedAmount=basis==='foundation'?foundationAmount:basis==='announced'?announcedAmount:amount;
- const fundingValue=basis==='projects'?(projectCount||null):selectedAmount;
- const funding=basis==='projects'?Math.min(projectCount/4,1):selectedAmount===null?0:Math.min(Math.log1p(selectedAmount/1e6)/Math.log(51),1);
- const components={education:education.length?1:0,research:Math.min(labIds.length/4,1),funding};
- const wn=weights(w),combined=100*Object.keys(components).reduce((n,k)=>n+components[k]*wn[k],0);
- return{education,labIds,awards,amount,announcedAmount,recipientAnnouncements,foundationAwards,foundationAmount,linkedAwards,projectCount,fundingValue,components,combined,hasAny:education.length>0||labIds.length>0||linkedAwards.length>0};
+ return {education, labIds, awards, amount, announcedAmount, recipientAnnouncements,
+   foundationAwards, foundationAmount, linkedAwards, projectCount};
 }
-function score(ev,metric){return metric==='combined'?ev.combined:100*ev.components[metric];}
+
+function evidence(data, host, scope, options = {}) {
+  return hostEvidence(host, fundingRecords(data, {...options, fundingScope: scope}, [host.id]));
+}
+
+const rankingValues = {
+  education: ev => ev.education.length || null,
+  research: ev => ev.labIds.length || null,
+  projects: ev => ev.projectCount || null,
+  obligations: ev => ev.amount,
+  foundation: ev => ev.foundationAmount
+};
+
+// A rank is within one host type. Null means no documented value for this metric.
+function rankRows(hostRows, metric) {
+  const valueFor = rankingValues[metric];
+  const result = hostRows.map(({host, ev}) => ({host, ev, value: valueFor(ev), rank: null}));
+  result.sort((a, b) => (b.value ?? -1) - (a.value ?? -1) ||
+    a.host.displayName.localeCompare(b.host.displayName));
+  const groups = new Map();
+  for (const row of result) {
+    if (row.value === null) continue;
+    const previous = groups.get(row.host.kind);
+    const position = (previous?.position || 0) + 1;
+    row.rank = previous?.value === row.value ? previous.rank : position;
+    groups.set(row.host.kind, {position, value: row.value, rank: row.rank});
+  }
+  return result;
+}
 function filter(data,s){const layers=new Set(s.layers);let allowed=data.entries.filter(e=>(e.pages||[e.page]).some(p=>layers.has(p)));let programHostIds=null;const federalIds=new Set(data.fundingPrograms.filter(e=>(s.agency==='all'||e.group===s.agency)&&(s.program==='all'||e.id===s.program)).map(e=>e.id));if(s.agency!=='all'||s.program!=='all'){const descendantIds=new Set(data.entries.filter(e=>federalIds.has(e.parentId)).map(e=>e.id));const relatedHostIds=new Set([...data.hosts.filter(h=>h.hostEntryIds.some(id=>descendantIds.has(id))).map(h=>h.id),...data.awards.filter(a=>(a.relatedEntryIds||[]).some(id=>federalIds.has(id)||descendantIds.has(id))).flatMap(awardHosts)]);programHostIds=relatedHostIds;allowed=allowed.filter(e=>federalIds.has(e.id)||descendantIds.has(e.id)||((data.hostIdsByEntry[e.id]||[]).some(id=>relatedHostIds.has(id))));}
 if(s.state!=='all'){const ids=new Set(data.hosts.filter(h=>h.stateCode===s.state).flatMap(h=>h.hostEntryIds));const parents=new Set([...ids].map(id=>data.byEntry[id]?.parentId).filter(Boolean));allowed=allowed.filter(e=>ids.has(e.id)||parents.has(e.id));}
 const words=normalize(s.query).split(' ').filter(Boolean);let searchHostIds=null;if(words.length){const phrase=normalize(s.query),namedProject=data.entries.some(e=>normalize(e.name)===phrase);const match=text=>namedProject?normalize(text).includes(phrase):words.every(w=>normalize(text).includes(w));searchHostIds=new Set(data.hosts.filter(h=>h.hostEntryIds.some(id=>{const e=data.byEntry[id];return match([h.displayName,e.name,e.acronym,e.lead,e.focus,...e.topics].join(' '));})||data.awards.some(a=>awardHosts(a).includes(h.id)&&match(awardSearchText(a)+' '+h.displayName))).map(h=>h.id));}if(words.length)allowed=allowed.filter(e=>{const hostNames=(data.hostIdsByEntry[e.id]||[]).map(id=>data.byHost[id]?.displayName||'').join(' ');const relatedFunding=data.awards.filter(a=>(a.relatedEntryIds||[]).includes(e.id)||awardHosts(a).some(id=>(data.hostIdsByEntry[e.id]||[]).includes(id))).map(awardSearchText).join(' ');const text=normalize([e.name,e.acronym,e.lead,e.focus,e.topics.join(' '),hostNames,relatedFunding].join(' '));return words.every(w=>text.includes(w));});
 const ids=new Set(allowed.map(e=>e.id));if(layers.has('federal')||layers.has('philanthropy')){const federals=new Set(allowed.filter(e=>e.page==='federal'||e.page==='philanthropy').map(e=>e.id));for(const e of data.entries)if(federals.has(e.parentId))ids.add(e.id);for(const a of data.awards)if((a.relatedEntryIds||[]).some(id=>federals.has(id)||federals.has(data.byEntry[id]?.parentId)))for(const hid of awardHosts(a))for(const id of data.byHost[hid].hostEntryIds)ids.add(id);}const fundingOnlyPrograms=new Set(allowed.filter(e=>e.page==='federal'||e.page==='philanthropy').map(e=>e.id));const fundingOnlyHostIds=!layers.has('programs')&&!layers.has('labs')?new Set([...data.hosts.filter(h=>h.hostEntryIds.some(id=>fundingOnlyPrograms.has(data.byEntry[id]?.parentId))).map(h=>h.id),...fundingRecords(data,s).filter(a=>(a.relatedEntryIds||[]).some(id=>fundingOnlyPrograms.has(id)||fundingOnlyPrograms.has(data.byEntry[id]?.parentId))).flatMap(awardHosts)]):null;let hosts=data.hosts.filter(h=>(!fundingOnlyHostIds||fundingOnlyHostIds.has(h.id))&&(!searchHostIds||searchHostIds.has(h.id))&&(!programHostIds||programHostIds.has(h.id))&&(s.state==='all'||h.stateCode===s.state)&&h.hostEntryIds.some(id=>ids.has(id)));if((s.fundingScope&&s.fundingScope!=='all')||(s.fundingSector&&s.fundingSector!=='all')||(s.fundingAgency&&s.fundingAgency!=='all')||(s.fundingYear&&s.fundingYear!=='all')||(s.fundingPortfolio&&s.fundingPortfolio!=='all')){const fa=fundingRecords(data,s),fh=new Set(fa.flatMap(awardHosts)),fe=new Set(fa.flatMap(a=>a.relatedEntryIds||[]));hosts=hosts.filter(h=>fh.has(h.id));const he=new Set(hosts.flatMap(h=>h.hostEntryIds));allowed=allowed.filter(e=>he.has(e.id)||fe.has(e.id));}return{entries:allowed,hosts};}
-function rankings(data,hosts,s){return hosts.map(host=>{const ev=evidence(data,host,s.fundingScope,s.weights,s);return{host,ev,value:score(ev,s.metric)};}).sort((a,b)=>b.value-a.value||a.host.displayName.localeCompare(b.host.displayName));}
-function highlights(rows,n){return new Set(['university','laboratory'].flatMap(k=>rows.filter(r=>r.host.kind===k&&r.value>0).slice(0,n).map(r=>r.host.id)));}
+function rankings(data, hosts, filters) {
+  const byHost = new Map();
+  for (const award of fundingRecords(data, filters)) {
+    for (const id of awardHosts(award)) {
+      if (!byHost.has(id)) byHost.set(id, []);
+      byHost.get(id).push(award);
+    }
+  }
+  return rankRows(hosts.map(host => ({
+    host,
+    ev: hostEvidence(host, byHost.get(host.id) || [])
+  })), filters.metric);
+}
 function milestones(entries,{through=2026,type='all',year=null}={}){return entries.flatMap(e=>(e.milestones||[]).filter(m=>m.year<=through&&(type==='all'||m.type===type)&&(year===null||year===m.year)).map(m=>({...m,entryId:e.id,entryName:e.acronym||e.name}))).sort((a,b)=>b.year-a.year||a.title.localeCompare(b.title));}
 function project(lon,lat){const d=Math.PI/180;const n=(Math.sin(29.5*d)+Math.sin(45.5*d))/2;const c=Math.cos(29.5*d)**2+2*n*Math.sin(29.5*d);const rho=Math.sqrt(c-2*n*Math.sin(lat*d))/n;const rho0=Math.sqrt(c-2*n*Math.sin(37.5*d))/n;const theta=n*(lon+96)*d;return[700+1500*rho*Math.sin(theta),500-1500*(rho0-rho*Math.cos(theta))];}
 function path(geometry){const polygons=geometry.type==='Polygon'?[geometry.coordinates]:geometry.coordinates;return polygons.map(poly=>poly.map(ring=>ring.map((p,i)=>(i?'L':'M')+project(p[0],p[1]).map(n=>n.toFixed(2)).join(',')).join('')+'Z').join('')).join('');}
 function csv(rows){const cell=v=>'"'+String(v??'').replace(/^[\s]*([=+@-])/,"'$1").replace(/"/g,'""')+'"';return '\uFEFF'+rows.map(r=>r.map(cell).join(',')).join('\r\n');}
-return{matchesScope,grantType,fundingSummary,portfolioSummary,normalize,prepare,awardKey,awardHosts,matchesFundingLayers,matchesFundingProgram,fundingYear,funderType,amountKind,fundingRecords,scopedAwards,weights,evidence,score,filter,rankings,highlights,milestones,project,path,csv};});
+return{matchesScope,grantType,fundingSummary,portfolioSummary,normalize,prepare,awardKey,awardHosts,matchesFundingLayers,matchesFundingProgram,fundingYear,funderType,amountKind,fundingRecords,scopedAwards,evidence,filter,rankings,rankRows,milestones,project,path,csv};});

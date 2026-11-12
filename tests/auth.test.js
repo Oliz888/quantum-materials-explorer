@@ -54,18 +54,18 @@ test('bootstrap waits for unlock; About and Physics Map do not load publication 
     if(view==='institutional-atlas')assert.deepEqual(loaded,['institutional-atlas/data/bundle.js?v=5','institutional-atlas/atlas-core.js?v=5','institutional-atlas/atlas.js?v=5']);
     else if(view==='institutions')assert.deepEqual(loaded,['directory-core.js?v=2','directory.js?v=2']);
     else if(view==='about')assert.deepEqual(loaded,['about.js?v=1']);
-    else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map.js?v=4']);
-    else if(view==='physics-map-v2')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map-physh.js?v=1','physics-map-views.js?v=2','physics-map-v2.js?v=1']);
+    else if(view==='physics-map')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map.js?v=5']);
+    else if(view==='physics-map-v2')assert.deepEqual(loaded,['physics-map-readings.js?v=1','physics-map-data.js?v=2','physics-map-physh.js?v=1','physics-map-views.js?v=2','physics-map-v2.js?v=2']);
     else {assert.ok(loaded.some(x=>x.startsWith('data.js')));assert.ok(loaded.at(-1).startsWith('explorer.js'));}
   }
 });
 test('all routes start locked, share navigation and have no eager dataset scripts',()=>{
-  for(const file of ['index.html','collaboration.html','techniques.html','phenomena.html','about.html','physics-map.html','physics-map-v2.html','programs.html','labs.html','federal.html','institutional-atlas.html']){
+  for(const file of fs.readdirSync(root).filter(file => file.endsWith('.html'))){
     const html=fs.readFileSync(path.join(root,file),'utf8');
     assert.match(html,/<html[^>]+data-auth="locked"/);assert.match(html,/auth\.js\?v=2/);
     assert.match(html,/href="about\.html"/);assert.match(html,/data-lock-site/);
-    assert.match(html,/href="physics-map\.html"/);
     const nav=html.match(/<nav class="site-nav"[\s\S]*?<\/nav>/)[0];
+    assert.match(nav, /href="knowledge-graph-v2\.html"[^>]*>Field Map<\/a>/);
     assert.ok(nav.includes('href="programs.html"'));
     assert.doesNotMatch(nav,/href="(?:labs|federal)\.html"/);
     assert.doesNotMatch(html,/<script src="(?:data\.js|explorer\.js|graph-core\.js|institutional-atlas\/(?:data\/bundle|atlas-core|atlas)\.js)/);

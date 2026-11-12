@@ -1,0 +1,90 @@
+/* Common frame for the three maps, including the archived Nature preview. */
+body.field-map-page {
+  background: #f7f8fa;
+  color: #172b49;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.field-map-page > .site-nav {
+  height: 44px;
+  min-height: 44px;
+  padding: 0 16px;
+  gap: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  background: #0b1120;
+}
+
+.field-map-page > .site-nav a {
+  padding: 10px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.field-map-page > .site-nav .brand {
+  width: auto;
+  flex: 0 0 auto;
+  margin-right: 12px;
+  font-size: 15px;
+}
+
+.field-map-page > main {
+  max-width: 1520px;
+  margin: 0 auto;
+  padding: 24px 36px 64px;
+}
+
+.field-map-versions {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  margin: 0 0 26px;
+}
+
+.field-map-page .field-map-versions a {
+  display: grid;
+  place-items: center;
+  padding: 9px 14px;
+  border: 1px solid #dce3ed;
+  border-radius: 6px;
+  color: #245db7;
+  background: #fff;
+  font: 600 14px/1.4 -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.field-map-versions a:hover {
+  border-color: #96b4ee;
+}
+
+.field-map-page .field-map-versions a[aria-current] {
+  background: #eaf1ff;
+  border-color: #96b4ee;
+  color: #164ab2;
+}
+
+.field-map-versions a:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.field-map-page :is(.atlas-hero, .kg-hero) h1 {
+  font-family: inherit;
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1.15;
+  color: #172b49;
+}
+
+@media (max-width: 900px) {
+  .field-map-page > main { padding: 20px 16px 40px; }
+  .field-map-page > .site-nav { padding: 0 8px; }
+}
+
+@media (max-width: 560px) {
+  .field-map-versions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+  .field-map-page .field-map-versions a { padding: 8px 4px; font-size: 12px; }
+}

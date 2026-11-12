@@ -2,15 +2,21 @@
 <html lang="en" data-auth="locked"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Field Atlas V2 — Quantum Materials Explorer</title><meta name="description" content="Explore overlapping quantum-materials topics through PhySH, Goyal and npj classification lenses, with chemistry connections and a sourced timeline.">
 <style>html[data-auth="locked"] body > :not(#auth-gate):not(noscript){display:none!important}</style>
-<link rel="stylesheet" href="style.css?v=10"><link rel="stylesheet" href="physics-map-v2.css?v=2"><script src="auth.js?v=2" defer></script><script src="bootstrap.js?v=9" defer></script>
-</head><body data-view="physics-map-v2" class="atlas-page"><noscript>Enable JavaScript to use this map.</noscript>
+<link rel="stylesheet" href="style.css?v=10"><link rel="stylesheet" href="physics-map-v2.css?v=2"><script src="auth.js?v=2" defer></script><script src="bootstrap.js?v=10" defer></script>
+<link rel="stylesheet" href="field-map-navigation.css?v=1">
+<script src="field-map-navigation.js?v=1" defer></script>
+</head><body data-view="physics-map-v2" class="atlas-page field-map-page"><noscript>Enable JavaScript to use this map.</noscript>
 <nav class="site-nav" aria-label="Main navigation">
 <a href="index.html" class="brand">Quantum <span>Materials Explorer</span></a>
-<a href="index.html">Materials Co-occurrence</a><a href="collaboration.html">Collaboration</a><a href="techniques.html">Techniques × Materials</a><a href="phenomena.html">Phenomena Map</a><a href="physics-map.html" class="active" aria-current="page">Field Map</a><a href="programs.html">Programs</a>
+<a href="index.html">Materials Co-occurrence</a><a href="collaboration.html">Collaboration</a><a href="techniques.html">Techniques × Materials</a><a href="phenomena.html">Phenomena Map</a><a href="knowledge-graph-v2.html" class="active" aria-current="location">Field Map</a><a href="programs.html">Programs</a>
 <a href="about.html">About</a><button type="button" class="lock-site" data-lock-site>Lock site</button>
 </nav>
 <main class="atlas-shell" id="atlasMain">
-<nav class="map-versions" aria-label="Map version"><a href="physics-map.html" data-version="v1">V1 · Layered map</a><a href="physics-map-v2.html" aria-current="page" data-version="v2">V2 · Connected fields</a><a href="knowledge-graph.html">Nature · Knowledge graph</a></nav>
+<nav class="field-map-versions" aria-label="Field Map versions">
+  <a href="physics-map.html">V1 · Layered map</a>
+  <a href="physics-map-v2.html" aria-current="page">V2 · Connected fields</a>
+  <a href="knowledge-graph-v2.html">V3 · Knowledge graph</a>
+</nav>
 <header class="atlas-hero"><div><p class="eyebrow">QUANTUM MATERIALS / FIELD ATLAS V2</p><h1 data-i18n="title">A field across boundaries.</h1><p data-i18n="subtitle">Three classification lenses. Shared topics. Different questions.</p></div><button id="language" class="language-button" type="button">Chinese</button></header>
 <section class="lens-selector" aria-label="Map perspective"><div id="viewTabs" role="tablist" aria-label="Map perspective"></div><p data-i18n="switchNote">Changing the lens changes the grouping, not the topic.</p></section>
 <section class="atlas-workspace" aria-label="Interactive field atlas">

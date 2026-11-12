@@ -21,8 +21,8 @@
       if(document.body.dataset.view==='physics-map-v2') {
         await load('physics-map-physh.js?v=1');
         await load('physics-map-views.js?v=2');
-        await load('physics-map-v2.js?v=1');
-      } else await load('physics-map.js?v=4');
+        await load('physics-map-v2.js?v=2');
+      } else await load('physics-map.js?v=5');
       return;
     }
     if(document.body.dataset.view==='institutional-atlas') {

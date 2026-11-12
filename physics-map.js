@@ -250,7 +250,6 @@
     $('atlasSearch').placeholder = tr('searchHint');
     $('atlasAnnounce').textContent = route.map(id=>localized(A.get(id).name)).join(' → ');
     $('readingSources').innerHTML = ['physh', 'nature', 'cava', 'goyal'].map(id=>sourceLink(id)).join('');
-    document.querySelectorAll('[data-version]').forEach(a=>{const u=new URL(a.href);u.searchParams.set('source',source);u.searchParams.set('lang',lang);a.href=u;a.textContent=a.dataset.version==='v1'?(lang==='zh'?'V1 · 逐层地图':'V1 · Layered map'):(lang==='zh'?'V2 · 领域汇合':'V2 · Connected fields');});
     renderReadingContext(); renderMap(); renderDetails(); renderTimeline(); syncSource();
   }
   $('backLevel').onclick = () => { if (route.length > 1) goPath(route.slice(0, -1)); };
